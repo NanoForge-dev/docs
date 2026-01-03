@@ -36,13 +36,13 @@ jobs:
           pip install sphinx sphinx_rtd_theme myst_parser
       - name: build docs
         run: |
-          sphinx-build -d html . gh-pages
+          ./build.sh
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './gh-pages'
+          path: "./gh-pages"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
