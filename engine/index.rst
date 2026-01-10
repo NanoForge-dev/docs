@@ -4,8 +4,7 @@ Engine
 .. toctree::
     :maxdepth: 2
 
-    registry/index.rst
-    network/index.rst
+    registry
     documentation.rst
     how_to_use.rst
 
