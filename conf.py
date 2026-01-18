@@ -1,4 +1,4 @@
-extensions = ["breathe", "myst-parser"]
+extensions = ["breathe", "myst_parser"]
 
 html_theme = "sphinx_rtd_theme"
 
