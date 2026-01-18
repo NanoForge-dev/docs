@@ -2,7 +2,7 @@ ECS Documentation
 =================
 
 .. toctree::
-  :maxdepth: 2
 
-  wasm
-  typescript
+
+  wasm.rst
+  api/typescript.rst
