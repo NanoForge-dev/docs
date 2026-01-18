@@ -4,7 +4,7 @@
 
 ### InputEnum
 
-Defined in: [input.enum.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L1)
+Defined in: [input.enum.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L1)
 
 #### Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [input.enum.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f37
 AltLeft: "AltLeft";
 ```
 
-Defined in: [input.enum.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L57)
+Defined in: [input.enum.ts:57](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L57)
 
 ##### AltRight
 
@@ -22,7 +22,7 @@ Defined in: [input.enum.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f3
 AltRight: "AltRight";
 ```
 
-Defined in: [input.enum.ts:120](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L120)
+Defined in: [input.enum.ts:120](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L120)
 
 ##### ArrowDown
 
@@ -30,7 +30,7 @@ Defined in: [input.enum.ts:120](https://github.com/NanoForge-dev/Engine/blob/33f
 ArrowDown: "ArrowDown";
 ```
 
-Defined in: [input.enum.ts:128](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L128)
+Defined in: [input.enum.ts:128](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L128)
 
 ##### ArrowLeft
 
@@ -38,7 +38,7 @@ Defined in: [input.enum.ts:128](https://github.com/NanoForge-dev/Engine/blob/33f
 ArrowLeft: "ArrowLeft";
 ```
 
-Defined in: [input.enum.ts:125](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L125)
+Defined in: [input.enum.ts:125](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L125)
 
 ##### ArrowRight
 
@@ -46,7 +46,7 @@ Defined in: [input.enum.ts:125](https://github.com/NanoForge-dev/Engine/blob/33f
 ArrowRight: "ArrowRight";
 ```
 
-Defined in: [input.enum.ts:126](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L126)
+Defined in: [input.enum.ts:126](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L126)
 
 ##### ArrowUp
 
@@ -54,7 +54,7 @@ Defined in: [input.enum.ts:126](https://github.com/NanoForge-dev/Engine/blob/33f
 ArrowUp: "ArrowUp";
 ```
 
-Defined in: [input.enum.ts:123](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L123)
+Defined in: [input.enum.ts:123](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L123)
 
 ##### AudioVolumeMute
 
@@ -62,7 +62,7 @@ Defined in: [input.enum.ts:123](https://github.com/NanoForge-dev/Engine/blob/33f
 AudioVolumeMute: "AudioVolumeMute";
 ```
 
-Defined in: [input.enum.ts:113](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L113)
+Defined in: [input.enum.ts:113](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L113)
 
 ##### Backquote
 
@@ -70,7 +70,7 @@ Defined in: [input.enum.ts:113](https://github.com/NanoForge-dev/Engine/blob/33f
 Backquote: "Backquote";
 ```
 
-Defined in: [input.enum.ts:42](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L42)
+Defined in: [input.enum.ts:42](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L42)
 
 ##### Backslash
 
@@ -78,7 +78,7 @@ Defined in: [input.enum.ts:42](https://github.com/NanoForge-dev/Engine/blob/33f3
 Backslash: "Backslash";
 ```
 
-Defined in: [input.enum.ts:44](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L44)
+Defined in: [input.enum.ts:44](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L44)
 
 ##### Backspace
 
@@ -86,7 +86,7 @@ Defined in: [input.enum.ts:44](https://github.com/NanoForge-dev/Engine/blob/33f3
 Backspace: "Backspace";
 ```
 
-Defined in: [input.enum.ts:15](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L15)
+Defined in: [input.enum.ts:15](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L15)
 
 ##### BracketLeft
 
@@ -94,7 +94,7 @@ Defined in: [input.enum.ts:15](https://github.com/NanoForge-dev/Engine/blob/33f3
 BracketLeft: "BracketLeft";
 ```
 
-Defined in: [input.enum.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L27)
+Defined in: [input.enum.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L27)
 
 ##### BracketRight
 
@@ -102,7 +102,7 @@ Defined in: [input.enum.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f3
 BracketRight: "BracketRight";
 ```
 
-Defined in: [input.enum.ts:28](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L28)
+Defined in: [input.enum.ts:28](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L28)
 
 ##### BrowserBack
 
@@ -110,7 +110,7 @@ Defined in: [input.enum.ts:28](https://github.com/NanoForge-dev/Engine/blob/33f3
 BrowserBack: "BrowserBack";
 ```
 
-Defined in: [input.enum.ts:141](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L141)
+Defined in: [input.enum.ts:141](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L141)
 
 ##### BrowserFavorites
 
@@ -118,7 +118,7 @@ Defined in: [input.enum.ts:141](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserFavorites: "BrowserFavorites";
 ```
 
-Defined in: [input.enum.ts:137](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L137)
+Defined in: [input.enum.ts:137](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L137)
 
 ##### BrowserForward
 
@@ -126,7 +126,7 @@ Defined in: [input.enum.ts:137](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserForward: "BrowserForward";
 ```
 
-Defined in: [input.enum.ts:140](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L140)
+Defined in: [input.enum.ts:140](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L140)
 
 ##### BrowserHome
 
@@ -134,7 +134,7 @@ Defined in: [input.enum.ts:140](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserHome: "BrowserHome";
 ```
 
-Defined in: [input.enum.ts:117](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L117)
+Defined in: [input.enum.ts:117](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L117)
 
 ##### BrowserRefresh
 
@@ -142,7 +142,7 @@ Defined in: [input.enum.ts:117](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserRefresh: "BrowserRefresh";
 ```
 
-Defined in: [input.enum.ts:138](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L138)
+Defined in: [input.enum.ts:138](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L138)
 
 ##### BrowserSearch
 
@@ -150,7 +150,7 @@ Defined in: [input.enum.ts:138](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserSearch: "BrowserSearch";
 ```
 
-Defined in: [input.enum.ts:136](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L136)
+Defined in: [input.enum.ts:136](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L136)
 
 ##### BrowserStop
 
@@ -158,7 +158,7 @@ Defined in: [input.enum.ts:136](https://github.com/NanoForge-dev/Engine/blob/33f
 BrowserStop: "BrowserStop";
 ```
 
-Defined in: [input.enum.ts:139](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L139)
+Defined in: [input.enum.ts:139](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L139)
 
 ##### CapsLock
 
@@ -166,7 +166,7 @@ Defined in: [input.enum.ts:139](https://github.com/NanoForge-dev/Engine/blob/33f
 CapsLock: "CapsLock";
 ```
 
-Defined in: [input.enum.ts:59](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L59)
+Defined in: [input.enum.ts:59](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L59)
 
 ##### Comma
 
@@ -174,7 +174,7 @@ Defined in: [input.enum.ts:59](https://github.com/NanoForge-dev/Engine/blob/33f3
 Comma: "Comma";
 ```
 
-Defined in: [input.enum.ts:52](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L52)
+Defined in: [input.enum.ts:52](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L52)
 
 ##### ContextMenu
 
@@ -182,7 +182,7 @@ Defined in: [input.enum.ts:52](https://github.com/NanoForge-dev/Engine/blob/33f3
 ContextMenu: "ContextMenu";
 ```
 
-Defined in: [input.enum.ts:134](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L134)
+Defined in: [input.enum.ts:134](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L134)
 
 ##### ControlLeft
 
@@ -190,7 +190,7 @@ Defined in: [input.enum.ts:134](https://github.com/NanoForge-dev/Engine/blob/33f
 ControlLeft: "ControlLeft";
 ```
 
-Defined in: [input.enum.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L30)
+Defined in: [input.enum.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L30)
 
 ##### ControlRight
 
@@ -198,7 +198,7 @@ Defined in: [input.enum.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f3
 ControlRight: "ControlRight";
 ```
 
-Defined in: [input.enum.ts:112](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L112)
+Defined in: [input.enum.ts:112](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L112)
 
 ##### Convert
 
@@ -206,7 +206,7 @@ Defined in: [input.enum.ts:112](https://github.com/NanoForge-dev/Engine/blob/33f
 Convert: "Convert";
 ```
 
-Defined in: [input.enum.ts:105](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L105)
+Defined in: [input.enum.ts:105](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L105)
 
 ##### Delete
 
@@ -214,7 +214,7 @@ Defined in: [input.enum.ts:105](https://github.com/NanoForge-dev/Engine/blob/33f
 Delete: "Delete";
 ```
 
-Defined in: [input.enum.ts:131](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L131)
+Defined in: [input.enum.ts:131](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L131)
 
 ##### Digit0
 
@@ -222,7 +222,7 @@ Defined in: [input.enum.ts:131](https://github.com/NanoForge-dev/Engine/blob/33f
 Digit0: "Digit0";
 ```
 
-Defined in: [input.enum.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L12)
+Defined in: [input.enum.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L12)
 
 ##### Digit1
 
@@ -230,7 +230,7 @@ Defined in: [input.enum.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f3
 Digit1: "Digit1";
 ```
 
-Defined in: [input.enum.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L3)
+Defined in: [input.enum.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L3)
 
 ##### Digit2
 
@@ -238,7 +238,7 @@ Defined in: [input.enum.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit2: "Digit2";
 ```
 
-Defined in: [input.enum.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L4)
+Defined in: [input.enum.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L4)
 
 ##### Digit3
 
@@ -246,7 +246,7 @@ Defined in: [input.enum.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit3: "Digit3";
 ```
 
-Defined in: [input.enum.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L5)
+Defined in: [input.enum.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L5)
 
 ##### Digit4
 
@@ -254,7 +254,7 @@ Defined in: [input.enum.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit4: "Digit4";
 ```
 
-Defined in: [input.enum.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L6)
+Defined in: [input.enum.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L6)
 
 ##### Digit5
 
@@ -262,7 +262,7 @@ Defined in: [input.enum.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit5: "Digit5";
 ```
 
-Defined in: [input.enum.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L7)
+Defined in: [input.enum.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L7)
 
 ##### Digit6
 
@@ -270,7 +270,7 @@ Defined in: [input.enum.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit6: "Digit6";
 ```
 
-Defined in: [input.enum.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L8)
+Defined in: [input.enum.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L8)
 
 ##### Digit7
 
@@ -278,7 +278,7 @@ Defined in: [input.enum.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit7: "Digit7";
 ```
 
-Defined in: [input.enum.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L9)
+Defined in: [input.enum.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L9)
 
 ##### Digit8
 
@@ -286,7 +286,7 @@ Defined in: [input.enum.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f37
 Digit8: "Digit8";
 ```
 
-Defined in: [input.enum.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L10)
+Defined in: [input.enum.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L10)
 
 ##### Digit9
 
@@ -294,7 +294,7 @@ Defined in: [input.enum.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f3
 Digit9: "Digit9";
 ```
 
-Defined in: [input.enum.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L11)
+Defined in: [input.enum.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L11)
 
 ##### End
 
@@ -302,7 +302,7 @@ Defined in: [input.enum.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f3
 End: "End";
 ```
 
-Defined in: [input.enum.ts:127](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L127)
+Defined in: [input.enum.ts:127](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L127)
 
 ##### Enter
 
@@ -310,7 +310,7 @@ Defined in: [input.enum.ts:127](https://github.com/NanoForge-dev/Engine/blob/33f
 Enter: "Enter";
 ```
 
-Defined in: [input.enum.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L29)
+Defined in: [input.enum.ts:29](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L29)
 
 ##### Equal
 
@@ -318,7 +318,7 @@ Defined in: [input.enum.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f3
 Equal: "Equal";
 ```
 
-Defined in: [input.enum.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L14)
+Defined in: [input.enum.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L14)
 
 ##### Escape
 
@@ -326,7 +326,7 @@ Defined in: [input.enum.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f3
 Escape: "Escape";
 ```
 
-Defined in: [input.enum.ts:2](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L2)
+Defined in: [input.enum.ts:2](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L2)
 
 ##### F1
 
@@ -334,7 +334,7 @@ Defined in: [input.enum.ts:2](https://github.com/NanoForge-dev/Engine/blob/33f37
 F1: "F1";
 ```
 
-Defined in: [input.enum.ts:60](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L60)
+Defined in: [input.enum.ts:60](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L60)
 
 ##### F10
 
@@ -342,7 +342,7 @@ Defined in: [input.enum.ts:60](https://github.com/NanoForge-dev/Engine/blob/33f3
 F10: "F10";
 ```
 
-Defined in: [input.enum.ts:69](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L69)
+Defined in: [input.enum.ts:69](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L69)
 
 ##### F11
 
@@ -350,7 +350,7 @@ Defined in: [input.enum.ts:69](https://github.com/NanoForge-dev/Engine/blob/33f3
 F11: "F11";
 ```
 
-Defined in: [input.enum.ts:86](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L86)
+Defined in: [input.enum.ts:86](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L86)
 
 ##### F12
 
@@ -358,7 +358,7 @@ Defined in: [input.enum.ts:86](https://github.com/NanoForge-dev/Engine/blob/33f3
 F12: "F12";
 ```
 
-Defined in: [input.enum.ts:87](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L87)
+Defined in: [input.enum.ts:87](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L87)
 
 ##### F13
 
@@ -366,7 +366,7 @@ Defined in: [input.enum.ts:87](https://github.com/NanoForge-dev/Engine/blob/33f3
 F13: "F13";
 ```
 
-Defined in: [input.enum.ts:89](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L89)
+Defined in: [input.enum.ts:89](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L89)
 
 ##### F14
 
@@ -374,7 +374,7 @@ Defined in: [input.enum.ts:89](https://github.com/NanoForge-dev/Engine/blob/33f3
 F14: "F14";
 ```
 
-Defined in: [input.enum.ts:90](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L90)
+Defined in: [input.enum.ts:90](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L90)
 
 ##### F15
 
@@ -382,7 +382,7 @@ Defined in: [input.enum.ts:90](https://github.com/NanoForge-dev/Engine/blob/33f3
 F15: "F15";
 ```
 
-Defined in: [input.enum.ts:91](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L91)
+Defined in: [input.enum.ts:91](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L91)
 
 ##### F16
 
@@ -390,7 +390,7 @@ Defined in: [input.enum.ts:91](https://github.com/NanoForge-dev/Engine/blob/33f3
 F16: "F16";
 ```
 
-Defined in: [input.enum.ts:92](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L92)
+Defined in: [input.enum.ts:92](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L92)
 
 ##### F17
 
@@ -398,7 +398,7 @@ Defined in: [input.enum.ts:92](https://github.com/NanoForge-dev/Engine/blob/33f3
 F17: "F17";
 ```
 
-Defined in: [input.enum.ts:93](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L93)
+Defined in: [input.enum.ts:93](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L93)
 
 ##### F18
 
@@ -406,7 +406,7 @@ Defined in: [input.enum.ts:93](https://github.com/NanoForge-dev/Engine/blob/33f3
 F18: "F18";
 ```
 
-Defined in: [input.enum.ts:94](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L94)
+Defined in: [input.enum.ts:94](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L94)
 
 ##### F19
 
@@ -414,7 +414,7 @@ Defined in: [input.enum.ts:94](https://github.com/NanoForge-dev/Engine/blob/33f3
 F19: "F19";
 ```
 
-Defined in: [input.enum.ts:95](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L95)
+Defined in: [input.enum.ts:95](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L95)
 
 ##### F2
 
@@ -422,7 +422,7 @@ Defined in: [input.enum.ts:95](https://github.com/NanoForge-dev/Engine/blob/33f3
 F2: "F2";
 ```
 
-Defined in: [input.enum.ts:61](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L61)
+Defined in: [input.enum.ts:61](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L61)
 
 ##### F20
 
@@ -430,7 +430,7 @@ Defined in: [input.enum.ts:61](https://github.com/NanoForge-dev/Engine/blob/33f3
 F20: "F20";
 ```
 
-Defined in: [input.enum.ts:96](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L96)
+Defined in: [input.enum.ts:96](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L96)
 
 ##### F21
 
@@ -438,7 +438,7 @@ Defined in: [input.enum.ts:96](https://github.com/NanoForge-dev/Engine/blob/33f3
 F21: "F21";
 ```
 
-Defined in: [input.enum.ts:97](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L97)
+Defined in: [input.enum.ts:97](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L97)
 
 ##### F22
 
@@ -446,7 +446,7 @@ Defined in: [input.enum.ts:97](https://github.com/NanoForge-dev/Engine/blob/33f3
 F22: "F22";
 ```
 
-Defined in: [input.enum.ts:98](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L98)
+Defined in: [input.enum.ts:98](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L98)
 
 ##### F23
 
@@ -454,7 +454,7 @@ Defined in: [input.enum.ts:98](https://github.com/NanoForge-dev/Engine/blob/33f3
 F23: "F23";
 ```
 
-Defined in: [input.enum.ts:99](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L99)
+Defined in: [input.enum.ts:99](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L99)
 
 ##### F24
 
@@ -462,7 +462,7 @@ Defined in: [input.enum.ts:99](https://github.com/NanoForge-dev/Engine/blob/33f3
 F24: "F24";
 ```
 
-Defined in: [input.enum.ts:104](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L104)
+Defined in: [input.enum.ts:104](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L104)
 
 ##### F3
 
@@ -470,7 +470,7 @@ Defined in: [input.enum.ts:104](https://github.com/NanoForge-dev/Engine/blob/33f
 F3: "F3";
 ```
 
-Defined in: [input.enum.ts:62](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L62)
+Defined in: [input.enum.ts:62](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L62)
 
 ##### F4
 
@@ -478,7 +478,7 @@ Defined in: [input.enum.ts:62](https://github.com/NanoForge-dev/Engine/blob/33f3
 F4: "F4";
 ```
 
-Defined in: [input.enum.ts:63](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L63)
+Defined in: [input.enum.ts:63](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L63)
 
 ##### F5
 
@@ -486,7 +486,7 @@ Defined in: [input.enum.ts:63](https://github.com/NanoForge-dev/Engine/blob/33f3
 F5: "F5";
 ```
 
-Defined in: [input.enum.ts:64](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L64)
+Defined in: [input.enum.ts:64](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L64)
 
 ##### F6
 
@@ -494,7 +494,7 @@ Defined in: [input.enum.ts:64](https://github.com/NanoForge-dev/Engine/blob/33f3
 F6: "F6";
 ```
 
-Defined in: [input.enum.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L65)
+Defined in: [input.enum.ts:65](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L65)
 
 ##### F7
 
@@ -502,7 +502,7 @@ Defined in: [input.enum.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f3
 F7: "F7";
 ```
 
-Defined in: [input.enum.ts:66](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L66)
+Defined in: [input.enum.ts:66](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L66)
 
 ##### F8
 
@@ -510,7 +510,7 @@ Defined in: [input.enum.ts:66](https://github.com/NanoForge-dev/Engine/blob/33f3
 F8: "F8";
 ```
 
-Defined in: [input.enum.ts:67](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L67)
+Defined in: [input.enum.ts:67](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L67)
 
 ##### F9
 
@@ -518,7 +518,7 @@ Defined in: [input.enum.ts:67](https://github.com/NanoForge-dev/Engine/blob/33f3
 F9: "F9";
 ```
 
-Defined in: [input.enum.ts:68](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L68)
+Defined in: [input.enum.ts:68](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L68)
 
 ##### Home
 
@@ -526,7 +526,7 @@ Defined in: [input.enum.ts:68](https://github.com/NanoForge-dev/Engine/blob/33f3
 Home: "Home";
 ```
 
-Defined in: [input.enum.ts:122](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L122)
+Defined in: [input.enum.ts:122](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L122)
 
 ##### Insert
 
@@ -534,7 +534,7 @@ Defined in: [input.enum.ts:122](https://github.com/NanoForge-dev/Engine/blob/33f
 Insert: "Insert";
 ```
 
-Defined in: [input.enum.ts:130](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L130)
+Defined in: [input.enum.ts:130](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L130)
 
 ##### IntlBackslash
 
@@ -542,7 +542,7 @@ Defined in: [input.enum.ts:130](https://github.com/NanoForge-dev/Engine/blob/33f
 IntlBackslash: "IntlBackslash";
 ```
 
-Defined in: [input.enum.ts:85](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L85)
+Defined in: [input.enum.ts:85](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L85)
 
 ##### IntlRo
 
@@ -550,7 +550,7 @@ Defined in: [input.enum.ts:85](https://github.com/NanoForge-dev/Engine/blob/33f3
 IntlRo: "IntlRo";
 ```
 
-Defined in: [input.enum.ts:103](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L103)
+Defined in: [input.enum.ts:103](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L103)
 
 ##### IntlYen
 
@@ -558,7 +558,7 @@ Defined in: [input.enum.ts:103](https://github.com/NanoForge-dev/Engine/blob/33f
 IntlYen: "IntlYen";
 ```
 
-Defined in: [input.enum.ts:107](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L107)
+Defined in: [input.enum.ts:107](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L107)
 
 ##### KanaMode
 
@@ -566,7 +566,7 @@ Defined in: [input.enum.ts:107](https://github.com/NanoForge-dev/Engine/blob/33f
 KanaMode: "KanaMode";
 ```
 
-Defined in: [input.enum.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L100)
+Defined in: [input.enum.ts:100](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L100)
 
 ##### KeyA
 
@@ -574,7 +574,7 @@ Defined in: [input.enum.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f
 KeyA: "KeyA";
 ```
 
-Defined in: [input.enum.ts:31](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L31)
+Defined in: [input.enum.ts:31](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L31)
 
 ##### KeyB
 
@@ -582,7 +582,7 @@ Defined in: [input.enum.ts:31](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyB: "KeyB";
 ```
 
-Defined in: [input.enum.ts:49](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L49)
+Defined in: [input.enum.ts:49](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L49)
 
 ##### KeyC
 
@@ -590,7 +590,7 @@ Defined in: [input.enum.ts:49](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyC: "KeyC";
 ```
 
-Defined in: [input.enum.ts:47](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L47)
+Defined in: [input.enum.ts:47](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L47)
 
 ##### KeyD
 
@@ -598,7 +598,7 @@ Defined in: [input.enum.ts:47](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyD: "KeyD";
 ```
 
-Defined in: [input.enum.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L33)
+Defined in: [input.enum.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L33)
 
 ##### KeyE
 
@@ -606,7 +606,7 @@ Defined in: [input.enum.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyE: "KeyE";
 ```
 
-Defined in: [input.enum.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L19)
+Defined in: [input.enum.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L19)
 
 ##### KeyF
 
@@ -614,7 +614,7 @@ Defined in: [input.enum.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyF: "KeyF";
 ```
 
-Defined in: [input.enum.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L34)
+Defined in: [input.enum.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L34)
 
 ##### KeyG
 
@@ -622,7 +622,7 @@ Defined in: [input.enum.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyG: "KeyG";
 ```
 
-Defined in: [input.enum.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L35)
+Defined in: [input.enum.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L35)
 
 ##### KeyH
 
@@ -630,7 +630,7 @@ Defined in: [input.enum.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyH: "KeyH";
 ```
 
-Defined in: [input.enum.ts:36](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L36)
+Defined in: [input.enum.ts:36](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L36)
 
 ##### KeyI
 
@@ -638,7 +638,7 @@ Defined in: [input.enum.ts:36](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyI: "KeyI";
 ```
 
-Defined in: [input.enum.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L24)
+Defined in: [input.enum.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L24)
 
 ##### KeyJ
 
@@ -646,7 +646,7 @@ Defined in: [input.enum.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyJ: "KeyJ";
 ```
 
-Defined in: [input.enum.ts:37](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L37)
+Defined in: [input.enum.ts:37](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L37)
 
 ##### KeyK
 
@@ -654,7 +654,7 @@ Defined in: [input.enum.ts:37](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyK: "KeyK";
 ```
 
-Defined in: [input.enum.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L38)
+Defined in: [input.enum.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L38)
 
 ##### KeyL
 
@@ -662,7 +662,7 @@ Defined in: [input.enum.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyL: "KeyL";
 ```
 
-Defined in: [input.enum.ts:39](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L39)
+Defined in: [input.enum.ts:39](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L39)
 
 ##### KeyM
 
@@ -670,7 +670,7 @@ Defined in: [input.enum.ts:39](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyM: "KeyM";
 ```
 
-Defined in: [input.enum.ts:51](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L51)
+Defined in: [input.enum.ts:51](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L51)
 
 ##### KeyN
 
@@ -678,7 +678,7 @@ Defined in: [input.enum.ts:51](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyN: "KeyN";
 ```
 
-Defined in: [input.enum.ts:50](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L50)
+Defined in: [input.enum.ts:50](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L50)
 
 ##### KeyO
 
@@ -686,7 +686,7 @@ Defined in: [input.enum.ts:50](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyO: "KeyO";
 ```
 
-Defined in: [input.enum.ts:25](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L25)
+Defined in: [input.enum.ts:25](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L25)
 
 ##### KeyP
 
@@ -694,7 +694,7 @@ Defined in: [input.enum.ts:25](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyP: "KeyP";
 ```
 
-Defined in: [input.enum.ts:26](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L26)
+Defined in: [input.enum.ts:26](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L26)
 
 ##### KeyQ
 
@@ -702,7 +702,7 @@ Defined in: [input.enum.ts:26](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyQ: "KeyQ";
 ```
 
-Defined in: [input.enum.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L17)
+Defined in: [input.enum.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L17)
 
 ##### KeyR
 
@@ -710,7 +710,7 @@ Defined in: [input.enum.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyR: "KeyR";
 ```
 
-Defined in: [input.enum.ts:20](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L20)
+Defined in: [input.enum.ts:20](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L20)
 
 ##### KeyS
 
@@ -718,7 +718,7 @@ Defined in: [input.enum.ts:20](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyS: "KeyS";
 ```
 
-Defined in: [input.enum.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L32)
+Defined in: [input.enum.ts:32](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L32)
 
 ##### KeyT
 
@@ -726,7 +726,7 @@ Defined in: [input.enum.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyT: "KeyT";
 ```
 
-Defined in: [input.enum.ts:21](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L21)
+Defined in: [input.enum.ts:21](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L21)
 
 ##### KeyU
 
@@ -734,7 +734,7 @@ Defined in: [input.enum.ts:21](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyU: "KeyU";
 ```
 
-Defined in: [input.enum.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L23)
+Defined in: [input.enum.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L23)
 
 ##### KeyV
 
@@ -742,7 +742,7 @@ Defined in: [input.enum.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyV: "KeyV";
 ```
 
-Defined in: [input.enum.ts:48](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L48)
+Defined in: [input.enum.ts:48](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L48)
 
 ##### KeyW
 
@@ -750,7 +750,7 @@ Defined in: [input.enum.ts:48](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyW: "KeyW";
 ```
 
-Defined in: [input.enum.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L18)
+Defined in: [input.enum.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L18)
 
 ##### KeyX
 
@@ -758,7 +758,7 @@ Defined in: [input.enum.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyX: "KeyX";
 ```
 
-Defined in: [input.enum.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L46)
+Defined in: [input.enum.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L46)
 
 ##### KeyY
 
@@ -766,7 +766,7 @@ Defined in: [input.enum.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyY: "KeyY";
 ```
 
-Defined in: [input.enum.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L22)
+Defined in: [input.enum.ts:22](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L22)
 
 ##### KeyZ
 
@@ -774,7 +774,7 @@ Defined in: [input.enum.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f3
 KeyZ: "KeyZ";
 ```
 
-Defined in: [input.enum.ts:45](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L45)
+Defined in: [input.enum.ts:45](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L45)
 
 ##### Lang1
 
@@ -782,7 +782,7 @@ Defined in: [input.enum.ts:45](https://github.com/NanoForge-dev/Engine/blob/33f3
 Lang1: "Lang1";
 ```
 
-Defined in: [input.enum.ts:102](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L102)
+Defined in: [input.enum.ts:102](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L102)
 
 ##### Lang2
 
@@ -790,7 +790,7 @@ Defined in: [input.enum.ts:102](https://github.com/NanoForge-dev/Engine/blob/33f
 Lang2: "Lang2";
 ```
 
-Defined in: [input.enum.ts:101](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L101)
+Defined in: [input.enum.ts:101](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L101)
 
 ##### LaunchApp1
 
@@ -798,7 +798,7 @@ Defined in: [input.enum.ts:101](https://github.com/NanoForge-dev/Engine/blob/33f
 LaunchApp1: "LaunchApp1";
 ```
 
-Defined in: [input.enum.ts:142](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L142)
+Defined in: [input.enum.ts:142](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L142)
 
 ##### LaunchApp2
 
@@ -806,7 +806,7 @@ Defined in: [input.enum.ts:142](https://github.com/NanoForge-dev/Engine/blob/33f
 LaunchApp2: "LaunchApp2";
 ```
 
-Defined in: [input.enum.ts:114](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L114)
+Defined in: [input.enum.ts:114](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L114)
 
 ##### LaunchMail
 
@@ -814,7 +814,7 @@ Defined in: [input.enum.ts:114](https://github.com/NanoForge-dev/Engine/blob/33f
 LaunchMail: "LaunchMail";
 ```
 
-Defined in: [input.enum.ts:143](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L143)
+Defined in: [input.enum.ts:143](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L143)
 
 ##### MediaPlayPause
 
@@ -822,7 +822,7 @@ Defined in: [input.enum.ts:143](https://github.com/NanoForge-dev/Engine/blob/33f
 MediaPlayPause: "MediaPlayPause";
 ```
 
-Defined in: [input.enum.ts:115](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L115)
+Defined in: [input.enum.ts:115](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L115)
 
 ##### MediaStop
 
@@ -830,7 +830,7 @@ Defined in: [input.enum.ts:115](https://github.com/NanoForge-dev/Engine/blob/33f
 MediaStop: "MediaStop";
 ```
 
-Defined in: [input.enum.ts:116](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L116)
+Defined in: [input.enum.ts:116](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L116)
 
 ##### MediaTrackNext
 
@@ -838,7 +838,7 @@ Defined in: [input.enum.ts:116](https://github.com/NanoForge-dev/Engine/blob/33f
 MediaTrackNext: "MediaTrackNext";
 ```
 
-Defined in: [input.enum.ts:110](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L110)
+Defined in: [input.enum.ts:110](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L110)
 
 ##### MediaTrackPrevious
 
@@ -846,7 +846,7 @@ Defined in: [input.enum.ts:110](https://github.com/NanoForge-dev/Engine/blob/33f
 MediaTrackPrevious: "MediaTrackPrevious";
 ```
 
-Defined in: [input.enum.ts:109](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L109)
+Defined in: [input.enum.ts:109](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L109)
 
 ##### MetaLeft
 
@@ -854,7 +854,7 @@ Defined in: [input.enum.ts:109](https://github.com/NanoForge-dev/Engine/blob/33f
 MetaLeft: "MetaLeft";
 ```
 
-Defined in: [input.enum.ts:132](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L132)
+Defined in: [input.enum.ts:132](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L132)
 
 ##### MetaRight
 
@@ -862,7 +862,7 @@ Defined in: [input.enum.ts:132](https://github.com/NanoForge-dev/Engine/blob/33f
 MetaRight: "MetaRight";
 ```
 
-Defined in: [input.enum.ts:133](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L133)
+Defined in: [input.enum.ts:133](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L133)
 
 ##### Minus
 
@@ -870,7 +870,7 @@ Defined in: [input.enum.ts:133](https://github.com/NanoForge-dev/Engine/blob/33f
 Minus: "Minus";
 ```
 
-Defined in: [input.enum.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L13)
+Defined in: [input.enum.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L13)
 
 ##### NonConvert
 
@@ -878,7 +878,7 @@ Defined in: [input.enum.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f3
 NonConvert: "NonConvert";
 ```
 
-Defined in: [input.enum.ts:106](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L106)
+Defined in: [input.enum.ts:106](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L106)
 
 ##### NumLock
 
@@ -886,7 +886,7 @@ Defined in: [input.enum.ts:106](https://github.com/NanoForge-dev/Engine/blob/33f
 NumLock: "NumLock";
 ```
 
-Defined in: [input.enum.ts:121](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L121)
+Defined in: [input.enum.ts:121](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L121)
 
 ##### Numpad0
 
@@ -894,7 +894,7 @@ Defined in: [input.enum.ts:121](https://github.com/NanoForge-dev/Engine/blob/33f
 Numpad0: "Numpad0";
 ```
 
-Defined in: [input.enum.ts:83](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L83)
+Defined in: [input.enum.ts:83](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L83)
 
 ##### Numpad1
 
@@ -902,7 +902,7 @@ Defined in: [input.enum.ts:83](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad1: "Numpad1";
 ```
 
-Defined in: [input.enum.ts:80](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L80)
+Defined in: [input.enum.ts:80](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L80)
 
 ##### Numpad2
 
@@ -910,7 +910,7 @@ Defined in: [input.enum.ts:80](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad2: "Numpad2";
 ```
 
-Defined in: [input.enum.ts:81](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L81)
+Defined in: [input.enum.ts:81](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L81)
 
 ##### Numpad3
 
@@ -918,7 +918,7 @@ Defined in: [input.enum.ts:81](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad3: "Numpad3";
 ```
 
-Defined in: [input.enum.ts:82](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L82)
+Defined in: [input.enum.ts:82](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L82)
 
 ##### Numpad4
 
@@ -926,7 +926,7 @@ Defined in: [input.enum.ts:82](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad4: "Numpad4";
 ```
 
-Defined in: [input.enum.ts:76](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L76)
+Defined in: [input.enum.ts:76](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L76)
 
 ##### Numpad5
 
@@ -934,7 +934,7 @@ Defined in: [input.enum.ts:76](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad5: "Numpad5";
 ```
 
-Defined in: [input.enum.ts:77](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L77)
+Defined in: [input.enum.ts:77](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L77)
 
 ##### Numpad6
 
@@ -942,7 +942,7 @@ Defined in: [input.enum.ts:77](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad6: "Numpad6";
 ```
 
-Defined in: [input.enum.ts:78](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L78)
+Defined in: [input.enum.ts:78](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L78)
 
 ##### Numpad7
 
@@ -950,7 +950,7 @@ Defined in: [input.enum.ts:78](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad7: "Numpad7";
 ```
 
-Defined in: [input.enum.ts:72](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L72)
+Defined in: [input.enum.ts:72](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L72)
 
 ##### Numpad8
 
@@ -958,7 +958,7 @@ Defined in: [input.enum.ts:72](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad8: "Numpad8";
 ```
 
-Defined in: [input.enum.ts:73](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L73)
+Defined in: [input.enum.ts:73](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L73)
 
 ##### Numpad9
 
@@ -966,7 +966,7 @@ Defined in: [input.enum.ts:73](https://github.com/NanoForge-dev/Engine/blob/33f3
 Numpad9: "Numpad9";
 ```
 
-Defined in: [input.enum.ts:74](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L74)
+Defined in: [input.enum.ts:74](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L74)
 
 ##### NumpadAdd
 
@@ -974,7 +974,7 @@ Defined in: [input.enum.ts:74](https://github.com/NanoForge-dev/Engine/blob/33f3
 NumpadAdd: "NumpadAdd";
 ```
 
-Defined in: [input.enum.ts:79](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L79)
+Defined in: [input.enum.ts:79](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L79)
 
 ##### NumpadComma
 
@@ -982,7 +982,7 @@ Defined in: [input.enum.ts:79](https://github.com/NanoForge-dev/Engine/blob/33f3
 NumpadComma: "NumpadComma";
 ```
 
-Defined in: [input.enum.ts:108](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L108)
+Defined in: [input.enum.ts:108](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L108)
 
 ##### NumpadDecimal
 
@@ -990,7 +990,7 @@ Defined in: [input.enum.ts:108](https://github.com/NanoForge-dev/Engine/blob/33f
 NumpadDecimal: "NumpadDecimal";
 ```
 
-Defined in: [input.enum.ts:84](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L84)
+Defined in: [input.enum.ts:84](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L84)
 
 ##### NumpadDivide
 
@@ -998,7 +998,7 @@ Defined in: [input.enum.ts:84](https://github.com/NanoForge-dev/Engine/blob/33f3
 NumpadDivide: "NumpadDivide";
 ```
 
-Defined in: [input.enum.ts:118](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L118)
+Defined in: [input.enum.ts:118](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L118)
 
 ##### NumpadEnter
 
@@ -1006,7 +1006,7 @@ Defined in: [input.enum.ts:118](https://github.com/NanoForge-dev/Engine/blob/33f
 NumpadEnter: "NumpadEnter";
 ```
 
-Defined in: [input.enum.ts:111](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L111)
+Defined in: [input.enum.ts:111](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L111)
 
 ##### NumpadEqual
 
@@ -1014,7 +1014,7 @@ Defined in: [input.enum.ts:111](https://github.com/NanoForge-dev/Engine/blob/33f
 NumpadEqual: "NumpadEqual";
 ```
 
-Defined in: [input.enum.ts:88](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L88)
+Defined in: [input.enum.ts:88](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L88)
 
 ##### NumpadMultiply
 
@@ -1022,7 +1022,7 @@ Defined in: [input.enum.ts:88](https://github.com/NanoForge-dev/Engine/blob/33f3
 NumpadMultiply: "NumpadMultiply";
 ```
 
-Defined in: [input.enum.ts:56](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L56)
+Defined in: [input.enum.ts:56](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L56)
 
 ##### NumpadSubtract
 
@@ -1030,7 +1030,7 @@ Defined in: [input.enum.ts:56](https://github.com/NanoForge-dev/Engine/blob/33f3
 NumpadSubtract: "NumpadSubtract";
 ```
 
-Defined in: [input.enum.ts:75](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L75)
+Defined in: [input.enum.ts:75](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L75)
 
 ##### PageDown
 
@@ -1038,7 +1038,7 @@ Defined in: [input.enum.ts:75](https://github.com/NanoForge-dev/Engine/blob/33f3
 PageDown: "PageDown";
 ```
 
-Defined in: [input.enum.ts:129](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L129)
+Defined in: [input.enum.ts:129](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L129)
 
 ##### PageUp
 
@@ -1046,7 +1046,7 @@ Defined in: [input.enum.ts:129](https://github.com/NanoForge-dev/Engine/blob/33f
 PageUp: "PageUp";
 ```
 
-Defined in: [input.enum.ts:124](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L124)
+Defined in: [input.enum.ts:124](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L124)
 
 ##### Pause
 
@@ -1054,7 +1054,7 @@ Defined in: [input.enum.ts:124](https://github.com/NanoForge-dev/Engine/blob/33f
 Pause: "Pause";
 ```
 
-Defined in: [input.enum.ts:70](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L70)
+Defined in: [input.enum.ts:70](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L70)
 
 ##### Period
 
@@ -1062,7 +1062,7 @@ Defined in: [input.enum.ts:70](https://github.com/NanoForge-dev/Engine/blob/33f3
 Period: "Period";
 ```
 
-Defined in: [input.enum.ts:53](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L53)
+Defined in: [input.enum.ts:53](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L53)
 
 ##### Power
 
@@ -1070,7 +1070,7 @@ Defined in: [input.enum.ts:53](https://github.com/NanoForge-dev/Engine/blob/33f3
 Power: "Power";
 ```
 
-Defined in: [input.enum.ts:135](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L135)
+Defined in: [input.enum.ts:135](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L135)
 
 ##### PrintScreen
 
@@ -1078,7 +1078,7 @@ Defined in: [input.enum.ts:135](https://github.com/NanoForge-dev/Engine/blob/33f
 PrintScreen: "PrintScreen";
 ```
 
-Defined in: [input.enum.ts:119](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L119)
+Defined in: [input.enum.ts:119](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L119)
 
 ##### Quote
 
@@ -1086,7 +1086,7 @@ Defined in: [input.enum.ts:119](https://github.com/NanoForge-dev/Engine/blob/33f
 Quote: "Quote";
 ```
 
-Defined in: [input.enum.ts:41](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L41)
+Defined in: [input.enum.ts:41](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L41)
 
 ##### ScrollLock
 
@@ -1094,7 +1094,7 @@ Defined in: [input.enum.ts:41](https://github.com/NanoForge-dev/Engine/blob/33f3
 ScrollLock: "ScrollLock";
 ```
 
-Defined in: [input.enum.ts:71](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L71)
+Defined in: [input.enum.ts:71](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L71)
 
 ##### Semicolon
 
@@ -1102,7 +1102,7 @@ Defined in: [input.enum.ts:71](https://github.com/NanoForge-dev/Engine/blob/33f3
 Semicolon: "Semicolon";
 ```
 
-Defined in: [input.enum.ts:40](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L40)
+Defined in: [input.enum.ts:40](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L40)
 
 ##### ShiftLeft
 
@@ -1110,7 +1110,7 @@ Defined in: [input.enum.ts:40](https://github.com/NanoForge-dev/Engine/blob/33f3
 ShiftLeft: "ShiftLeft";
 ```
 
-Defined in: [input.enum.ts:43](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L43)
+Defined in: [input.enum.ts:43](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L43)
 
 ##### ShiftRight
 
@@ -1118,7 +1118,7 @@ Defined in: [input.enum.ts:43](https://github.com/NanoForge-dev/Engine/blob/33f3
 ShiftRight: "ShiftRight";
 ```
 
-Defined in: [input.enum.ts:55](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L55)
+Defined in: [input.enum.ts:55](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L55)
 
 ##### Slash
 
@@ -1126,7 +1126,7 @@ Defined in: [input.enum.ts:55](https://github.com/NanoForge-dev/Engine/blob/33f3
 Slash: "Slash";
 ```
 
-Defined in: [input.enum.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L54)
+Defined in: [input.enum.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L54)
 
 ##### Space
 
@@ -1134,7 +1134,7 @@ Defined in: [input.enum.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f3
 Space: "Space";
 ```
 
-Defined in: [input.enum.ts:58](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L58)
+Defined in: [input.enum.ts:58](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L58)
 
 ##### Tab
 
@@ -1142,13 +1142,13 @@ Defined in: [input.enum.ts:58](https://github.com/NanoForge-dev/Engine/blob/33f3
 Tab: "Tab";
 ```
 
-Defined in: [input.enum.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.enum.ts#L16)
+Defined in: [input.enum.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.enum.ts#L16)
 
 ## Classes
 
 ### InputLibrary
 
-Defined in: [input.library.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.library.ts#L6)
+Defined in: [input.library.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.library.ts#L6)
 
 #### Extends
 
@@ -1182,7 +1182,7 @@ BaseInputLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [input.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.library.ts#L9)
+Defined in: [input.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.library.ts#L9)
 
 ###### Returns
 
@@ -1196,7 +1196,7 @@ Defined in: [input.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/33
 __init(): Promise<void>;
 ```
 
-Defined in: [input.library.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.library.ts#L13)
+Defined in: [input.library.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.library.ts#L13)
 
 ###### Returns
 
@@ -1208,7 +1208,7 @@ Defined in: [input.library.ts:13](https://github.com/NanoForge-dev/Engine/blob/3
 getPressedKeys(): InputEnum[];
 ```
 
-Defined in: [input.library.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.library.ts#L22)
+Defined in: [input.library.ts:22](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.library.ts#L22)
 
 ###### Returns
 
@@ -1220,7 +1220,7 @@ Defined in: [input.library.ts:22](https://github.com/NanoForge-dev/Engine/blob/3
 isKeyPressed(key): boolean | undefined;
 ```
 
-Defined in: [input.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/input/src/input.library.ts#L17)
+Defined in: [input.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/input/src/input.library.ts#L17)
 
 ###### Parameters
 

@@ -4,7 +4,7 @@
 
 ### SoundLibrary
 
-Defined in: [sound.library.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L3)
+Defined in: [sound.library.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L3)
 
 #### Extends
 
@@ -38,7 +38,7 @@ BaseSoundLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [sound.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L7)
+Defined in: [sound.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L7)
 
 ###### Returns
 
@@ -52,7 +52,7 @@ Defined in: [sound.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/33
 __init(): Promise<void>;
 ```
 
-Defined in: [sound.library.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L11)
+Defined in: [sound.library.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L11)
 
 ###### Returns
 
@@ -64,7 +64,7 @@ Defined in: [sound.library.ts:11](https://github.com/NanoForge-dev/Engine/blob/3
 load(sound, file): void;
 ```
 
-Defined in: [sound.library.ts:42](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L42)
+Defined in: [sound.library.ts:42](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L42)
 
 ###### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [sound.library.ts:42](https://github.com/NanoForge-dev/Engine/blob/3
 mute(): void;
 ```
 
-Defined in: [sound.library.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L16)
+Defined in: [sound.library.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L16)
 
 ###### Returns
 
@@ -98,7 +98,7 @@ Defined in: [sound.library.ts:16](https://github.com/NanoForge-dev/Engine/blob/3
 play(sound): void;
 ```
 
-Defined in: [sound.library.ts:26](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/sound/src/sound.library.ts#L26)
+Defined in: [sound.library.ts:26](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/sound/src/sound.library.ts#L26)
 
 ###### Parameters
 

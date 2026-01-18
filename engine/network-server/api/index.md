@@ -4,7 +4,7 @@
 
 ### NetworkServerLibrary
 
-Defined in: [server.network.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/server.network.library.ts#L7)
+Defined in: [server.network.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/server.network.library.ts#L7)
 
 #### Extends
 
@@ -36,7 +36,7 @@ BaseNetworkLibrary.constructor
 tcp: TCPServer;
 ```
 
-Defined in: [server.network.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/server.network.library.ts#L12)
+Defined in: [server.network.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/server.network.library.ts#L12)
 
 ##### udp
 
@@ -44,7 +44,7 @@ Defined in: [server.network.library.ts:12](https://github.com/NanoForge-dev/Engi
 udp: UDPServer;
 ```
 
-Defined in: [server.network.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/server.network.library.ts#L9)
+Defined in: [server.network.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/server.network.library.ts#L9)
 
 #### Accessors
 
@@ -56,7 +56,7 @@ Defined in: [server.network.library.ts:9](https://github.com/NanoForge-dev/Engin
 get __name(): string;
 ```
 
-Defined in: [server.network.library.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/server.network.library.ts#L14)
+Defined in: [server.network.library.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/server.network.library.ts#L14)
 
 ###### Returns
 
@@ -70,7 +70,7 @@ Defined in: [server.network.library.ts:14](https://github.com/NanoForge-dev/Engi
 __init(context): Promise<void>;
 ```
 
-Defined in: [server.network.library.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/server.network.library.ts#L18)
+Defined in: [server.network.library.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/server.network.library.ts#L18)
 
 ###### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [server.network.library.ts:18](https://github.com/NanoForge-dev/Engi
 
 ### TCPServer
 
-Defined in: [tcp.server.network.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L8)
+Defined in: [tcp.server.network.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L8)
 
 TCPServer
 Reliable ordered send/receive of packets to multiple TCP clients
@@ -99,7 +99,7 @@ Reliable ordered send/receive of packets to multiple TCP clients
 getConnectedClients(): number[];
 ```
 
-Defined in: [tcp.server.network.ts:62](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L62)
+Defined in: [tcp.server.network.ts:62](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L62)
 
 Return a snapshot array of numeric client IDs currently connected.
 
@@ -115,7 +115,7 @@ number[]
 getReceivedPackets(): Map<number, Uint8Array<ArrayBufferLike>[]>;
 ```
 
-Defined in: [tcp.server.network.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L100)
+Defined in: [tcp.server.network.ts:100](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L100)
 
 Parse and return complete packets received from each client. Each packet is a `Uint8Array` buffer.
 
@@ -131,7 +131,7 @@ Map<number, Uint8Array[]> — mapping client ID to array of packets.
 listen(): void;
 ```
 
-Defined in: [tcp.server.network.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L29)
+Defined in: [tcp.server.network.ts:29](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L29)
 
 Start the WebSocket server and begin accepting clients.
 
@@ -147,7 +147,7 @@ void
 sendToClient(clientId, data): void;
 ```
 
-Defined in: [tcp.server.network.ts:86](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L86)
+Defined in: [tcp.server.network.ts:86](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L86)
 
 Send a payload to the client identified by `clientId`.
 
@@ -177,7 +177,7 @@ void
 sendToEverybody(data): void;
 ```
 
-Defined in: [tcp.server.network.ts:72](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/tcp.server.network.ts#L72)
+Defined in: [tcp.server.network.ts:72](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/tcp.server.network.ts#L72)
 
 Send a payload to every connected client.
 
@@ -199,7 +199,7 @@ void
 
 ### UDPServer
 
-Defined in: [udp.server.network.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L9)
+Defined in: [udp.server.network.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L9)
 
 UDPServer
 Fast but less reliable unordered send/receive to multiple UDP clients
@@ -212,7 +212,7 @@ Fast but less reliable unordered send/receive to multiple UDP clients
 getConnectedClients(): number[];
 ```
 
-Defined in: [udp.server.network.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L65)
+Defined in: [udp.server.network.ts:65](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L65)
 
 Return a snapshot array of client IDs with active data channels.
 
@@ -228,7 +228,7 @@ number[]
 getReceivedPackets(): Map<number, Uint8Array<ArrayBufferLike>[]>;
 ```
 
-Defined in: [udp.server.network.ts:108](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L108)
+Defined in: [udp.server.network.ts:108](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L108)
 
 Reassemble buffered chunks and return a map of clientId => complete packets.
 Partial packets are retained internally for the next call so callers may
@@ -246,7 +246,7 @@ Map<number, Uint8Array[]>
 listen(): void;
 ```
 
-Defined in: [udp.server.network.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L30)
+Defined in: [udp.server.network.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L30)
 
 Start the signaling WebSocket and accept incoming client offers (SDP/ICE).
 
@@ -262,7 +262,7 @@ void
 sendToClient(clientId, data): void;
 ```
 
-Defined in: [udp.server.network.ts:92](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L92)
+Defined in: [udp.server.network.ts:92](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L92)
 
 Send a packet to a single client via the unreliable data channel.
 The packet will be framed with the server's configured magic terminator
@@ -294,7 +294,7 @@ void
 sendToEverybody(data): void;
 ```
 
-Defined in: [udp.server.network.ts:76](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-server/src/udp.server.network.ts#L76)
+Defined in: [udp.server.network.ts:76](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-server/src/udp.server.network.ts#L76)
 
 Broadcast a packet to all connected clients over the unreliable data channels.
 The server will frame the provided data with the configured magic terminator.

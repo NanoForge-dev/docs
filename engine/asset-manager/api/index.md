@@ -4,7 +4,7 @@
 
 ### AssetManagerLibrary
 
-Defined in: [asset-manager.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/asset-manager/src/asset-manager.library.ts#L8)
+Defined in: [asset-manager.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/asset-manager/src/asset-manager.library.ts#L8)
 
 #### Extends
 
@@ -38,7 +38,7 @@ BaseAssetManagerLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [asset-manager.library.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/asset-manager/src/asset-manager.library.ts#L11)
+Defined in: [asset-manager.library.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/asset-manager/src/asset-manager.library.ts#L11)
 
 ###### Returns
 
@@ -52,7 +52,7 @@ Defined in: [asset-manager.library.ts:11](https://github.com/NanoForge-dev/Engin
 __init(context): Promise<void>;
 ```
 
-Defined in: [asset-manager.library.ts:15](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/asset-manager/src/asset-manager.library.ts#L15)
+Defined in: [asset-manager.library.ts:15](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/asset-manager/src/asset-manager.library.ts#L15)
 
 ###### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [asset-manager.library.ts:15](https://github.com/NanoForge-dev/Engin
 getAsset(path): NfFile;
 ```
 
-Defined in: [asset-manager.library.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/asset-manager/src/asset-manager.library.ts#L19)
+Defined in: [asset-manager.library.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/asset-manager/src/asset-manager.library.ts#L19)
 
 ###### Parameters
 

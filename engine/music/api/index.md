@@ -4,7 +4,7 @@
 
 ### MusicLibrary
 
-Defined in: [music.library.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L3)
+Defined in: [music.library.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L3)
 
 #### Extends
 
@@ -38,7 +38,7 @@ BaseMusicLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [music.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L8)
+Defined in: [music.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L8)
 
 ###### Returns
 
@@ -52,7 +52,7 @@ Defined in: [music.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33
 __init(): Promise<void>;
 ```
 
-Defined in: [music.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L12)
+Defined in: [music.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L12)
 
 ###### Returns
 
@@ -64,7 +64,7 @@ Defined in: [music.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/3
 load(music, file): void;
 ```
 
-Defined in: [music.library.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L46)
+Defined in: [music.library.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L46)
 
 ###### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [music.library.ts:46](https://github.com/NanoForge-dev/Engine/blob/3
 mute(): void;
 ```
 
-Defined in: [music.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L17)
+Defined in: [music.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L17)
 
 ###### Returns
 
@@ -98,7 +98,7 @@ Defined in: [music.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/3
 play(music): void;
 ```
 
-Defined in: [music.library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/music/src/music.library.ts#L27)
+Defined in: [music.library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/music/src/music.library.ts#L27)
 
 ###### Parameters
 

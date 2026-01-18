@@ -4,7 +4,7 @@
 
 ### NetworkClientLibrary
 
-Defined in: [client.network.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/client.network.library.ts#L7)
+Defined in: [client.network.library.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/client.network.library.ts#L7)
 
 #### Extends
 
@@ -36,7 +36,7 @@ BaseNetworkLibrary.constructor
 tcp: TCPClient;
 ```
 
-Defined in: [client.network.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/client.network.library.ts#L12)
+Defined in: [client.network.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/client.network.library.ts#L12)
 
 ##### udp
 
@@ -44,7 +44,7 @@ Defined in: [client.network.library.ts:12](https://github.com/NanoForge-dev/Engi
 udp: UDPClient;
 ```
 
-Defined in: [client.network.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/client.network.library.ts#L9)
+Defined in: [client.network.library.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/client.network.library.ts#L9)
 
 #### Accessors
 
@@ -56,7 +56,7 @@ Defined in: [client.network.library.ts:9](https://github.com/NanoForge-dev/Engin
 get __name(): string;
 ```
 
-Defined in: [client.network.library.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/client.network.library.ts#L14)
+Defined in: [client.network.library.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/client.network.library.ts#L14)
 
 ###### Returns
 
@@ -70,7 +70,7 @@ Defined in: [client.network.library.ts:14](https://github.com/NanoForge-dev/Engi
 __init(context): Promise<void>;
 ```
 
-Defined in: [client.network.library.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/client.network.library.ts#L18)
+Defined in: [client.network.library.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/client.network.library.ts#L18)
 
 ###### Parameters
 
@@ -86,7 +86,7 @@ Defined in: [client.network.library.ts:18](https://github.com/NanoForge-dev/Engi
 
 ### TCPClient
 
-Defined in: [tcp.client.network.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/tcp.client.network.ts#L6)
+Defined in: [tcp.client.network.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/tcp.client.network.ts#L6)
 
 TCPClient
 Reliable ordered send/receive of packets to a TCP server
@@ -99,7 +99,7 @@ Reliable ordered send/receive of packets to a TCP server
 connect(): Promise<void>;
 ```
 
-Defined in: [tcp.client.network.ts:25](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/tcp.client.network.ts#L25)
+Defined in: [tcp.client.network.ts:25](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/tcp.client.network.ts#L25)
 
 Initiate a WebSocket connection to the server (e.g. `ws://<ip>:<port>`).
 
@@ -115,7 +115,7 @@ Promise<void>
 getReceivedPackets(): Uint8Array<ArrayBufferLike>[];
 ```
 
-Defined in: [tcp.client.network.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/tcp.client.network.ts#L57)
+Defined in: [tcp.client.network.ts:57](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/tcp.client.network.ts#L57)
 
 Return an array of complete packets that were reassembled from received chunks.
 
@@ -131,7 +131,7 @@ Uint8Array[] — array of packet buffers.
 isConnected(): boolean;
 ```
 
-Defined in: [tcp.client.network.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/tcp.client.network.ts#L34)
+Defined in: [tcp.client.network.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/tcp.client.network.ts#L34)
 
 Return `true` when the underlying WebSocket is open.
 
@@ -147,7 +147,7 @@ boolean
 sendData(data): void;
 ```
 
-Defined in: [tcp.client.network.ts:44](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/tcp.client.network.ts#L44)
+Defined in: [tcp.client.network.ts:44](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/tcp.client.network.ts#L44)
 
 Send a payload to the server.
 
@@ -169,7 +169,7 @@ void
 
 ### UDPClient
 
-Defined in: [udp.client.network.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/udp.client.network.ts#L6)
+Defined in: [udp.client.network.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/udp.client.network.ts#L6)
 
 UDPClient
 Fast but less reliable send/receive of packets to a UDP server
@@ -182,7 +182,7 @@ Fast but less reliable send/receive of packets to a UDP server
 connect(): Promise<void>;
 ```
 
-Defined in: [udp.client.network.ts:25](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/udp.client.network.ts#L25)
+Defined in: [udp.client.network.ts:25](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/udp.client.network.ts#L25)
 
 Open a WebSocket for signaling, create an RTCPeerConnection and initiate an SDP offer.
 
@@ -198,7 +198,7 @@ Promise<void>
 getReceivedPackets(): Uint8Array<ArrayBufferLike>[];
 ```
 
-Defined in: [udp.client.network.ts:60](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/udp.client.network.ts#L60)
+Defined in: [udp.client.network.ts:60](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/udp.client.network.ts#L60)
 
 Return an array of complete packets reassembled from received data-channel chunks.
 
@@ -214,7 +214,7 @@ Uint8Array[] — array of packet buffers.
 isConnected(): boolean;
 ```
 
-Defined in: [udp.client.network.ts:37](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/udp.client.network.ts#L37)
+Defined in: [udp.client.network.ts:37](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/udp.client.network.ts#L37)
 
 Return `true` when the RTCDataChannel is open.
 
@@ -230,7 +230,7 @@ boolean
 sendData(data): void;
 ```
 
-Defined in: [udp.client.network.ts:47](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/network-client/src/udp.client.network.ts#L47)
+Defined in: [udp.client.network.ts:47](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/network-client/src/udp.client.network.ts#L47)
 
 Send a payload on the data channel.
 

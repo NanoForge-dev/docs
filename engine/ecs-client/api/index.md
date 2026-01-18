@@ -4,7 +4,7 @@
 
 ### ECSClientLibrary
 
-Defined in: [ecs-client-library.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-client/src/ecs-client-library.ts#L6)
+Defined in: [ecs-client-library.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-client/src/ecs-client-library.ts#L6)
 
 #### Extends
 
@@ -18,7 +18,7 @@ Defined in: [ecs-client-library.ts:6](https://github.com/NanoForge-dev/Engine/bl
 new ECSClientLibrary(): ECSClientLibrary;
 ```
 
-Defined in: [ecs-client-library.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-client/src/ecs-client-library.ts#L7)
+Defined in: [ecs-client-library.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-client/src/ecs-client-library.ts#L7)
 
 ###### Returns
 
@@ -40,7 +40,7 @@ AbstractECSLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [ecs-client-library.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-client/src/ecs-client-library.ts#L12)
+Defined in: [ecs-client-library.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-client/src/ecs-client-library.ts#L12)
 
 ###### Returns
 
@@ -54,7 +54,7 @@ Defined in: [ecs-client-library.ts:12](https://github.com/NanoForge-dev/Engine/b
 __init(context): Promise<void>;
 ```
 
-Defined in: [ecs-client-library.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-client/src/ecs-client-library.ts#L16)
+Defined in: [ecs-client-library.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-client/src/ecs-client-library.ts#L16)
 
 ###### Parameters
 

@@ -221,7 +221,7 @@ If given value is not a string, then it returns false.
 function Default(defaultValue): PropertyDecorator;
 ```
 
-Defined in: [packages/config/src/default.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/config/src/default.ts#L4)
+Defined in: [packages/config/src/default.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/config/src/default.ts#L4)
 
 #### Parameters
 
@@ -1254,7 +1254,7 @@ If given value is not a string, then it returns false.
 function IsIpOrFQDN(validationOptions?): (object, propertyName) => void;
 ```
 
-Defined in: [packages/config/src/validators/is-ip-or-fqdn.validator.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/config/src/validators/is-ip-or-fqdn.validator.ts#L3)
+Defined in: [packages/config/src/validators/is-ip-or-fqdn.validator.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/config/src/validators/is-ip-or-fqdn.validator.ts#L3)
 
 #### Parameters
 

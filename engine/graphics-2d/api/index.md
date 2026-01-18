@@ -4,7 +4,7 @@
 
 ### Graphics2DLibrary
 
-Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/graphics-2d.library.ts#L5)
+Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/graphics-2d.library.ts#L5)
 
 #### Extends
 
@@ -38,7 +38,7 @@ BaseGraphicsLibrary.constructor
 get __name(): string;
 ```
 
-Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/graphics-2d.library.ts#L8)
+Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/graphics-2d.library.ts#L8)
 
 ###### Returns
 
@@ -52,7 +52,7 @@ Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:8](https://github.c
 get stage(): Stage;
 ```
 
-Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/graphics-2d.library.ts#L12)
+Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/graphics-2d.library.ts#L12)
 
 ###### Returns
 
@@ -66,7 +66,7 @@ Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:12](https://github.
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/graphics-2d.library.ts#L17)
+Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/graphics-2d.library.ts#L17)
 
 ###### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:17](https://github.
 __run(): Promise<void>;
 ```
 
-Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:28](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/graphics-2d.library.ts#L28)
+Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:28](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/graphics-2d.library.ts#L28)
 
 ###### Returns
 
@@ -98,7 +98,7 @@ Defined in: [packages/graphics-2d/src/graphics-2d.library.ts:28](https://github.
 type Animation = Konva.Animation;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L3)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L3)
 
 ***
 
@@ -108,7 +108,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/Nan
 type Arc = Konva.Arc;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L6)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L6)
 
 ***
 
@@ -118,7 +118,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/Nan
 type ArcConfig = Konva.ArcConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L9)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L9)
 
 ***
 
@@ -128,7 +128,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:9](https://github.com/Nan
 type Arrow = Konva.Arrow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L11)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L11)
 
 ***
 
@@ -138,7 +138,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/Na
 type ArrowConfig = Konva.ArrowConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L14)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L14)
 
 ***
 
@@ -148,7 +148,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:14](https://github.com/Na
 type Canvas = typeof Konva.Canvas;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L16)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L16)
 
 ***
 
@@ -158,7 +158,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/Na
 type Circle = Konva.Circle;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L19)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L19)
 
 ***
 
@@ -168,7 +168,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/Na
 type CircleConfig = Konva.CircleConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L22)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:22](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L22)
 
 ***
 
@@ -178,7 +178,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:22](https://github.com/Na
 type Container = Konva.Container;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L24)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L24)
 
 ***
 
@@ -188,7 +188,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/Na
 type ContainerConfig = Konva.ContainerConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L27)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L27)
 
 ***
 
@@ -198,7 +198,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:27](https://github.com/Na
 type Context = Konva.Context;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L29)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L29)
 
 ***
 
@@ -208,7 +208,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/Na
 type DD = typeof Konva.DD;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L32)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:32](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L32)
 
 ***
 
@@ -218,7 +218,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:32](https://github.com/Na
 type Easings = typeof Konva.Easings;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L35)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L35)
 
 ***
 
@@ -228,7 +228,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:35](https://github.com/Na
 type Ellipse = Konva.Ellipse;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L38)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L38)
 
 ***
 
@@ -238,7 +238,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/Na
 type EllipseConfig = Konva.EllipseConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:41](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L41)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:41](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L41)
 
 ***
 
@@ -248,7 +248,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:41](https://github.com/Na
 type FastLayer = Konva.FastLayer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L43)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L43)
 
 ***
 
@@ -258,7 +258,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/Na
 type Filters = typeof Konva.Filters;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L46)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L46)
 
 ***
 
@@ -268,7 +268,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:46](https://github.com/Na
 type Group = Konva.Group;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L49)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L49)
 
 ***
 
@@ -278,7 +278,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/Na
 type GroupConfig = Konva.GroupConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:52](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L52)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:52](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L52)
 
 ***
 
@@ -288,7 +288,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:52](https://github.com/Na
 type Image = Konva.Image;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L54)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L54)
 
 ***
 
@@ -298,7 +298,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/Na
 type ImageConfig = Konva.ImageConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L57)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:57](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L57)
 
 ***
 
@@ -308,7 +308,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:57](https://github.com/Na
 type KonvaEventListener<This, EventType> = Konva.KonvaEventListener<This, EventType>;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:59](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L59)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:59](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L59)
 
 #### Type Parameters
 
@@ -328,7 +328,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:59](https://github.com/Na
 type KonvaEventObject<EventType> = Konva.KonvaEventObject<EventType>;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:61](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L61)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:61](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L61)
 
 #### Type Parameters
 
@@ -344,7 +344,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:61](https://github.com/Na
 type KonvaPointerEvent = Konva.KonvaPointerEvent;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:63](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L63)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:63](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L63)
 
 ***
 
@@ -354,7 +354,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:63](https://github.com/Na
 type Label = Konva.Label;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L65)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L65)
 
 ***
 
@@ -364,7 +364,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/Na
 type LabelConfig = Konva.LabelConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:68](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L68)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:68](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L68)
 
 ***
 
@@ -374,7 +374,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:68](https://github.com/Na
 type Layer = Konva.Layer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L70)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L70)
 
 ***
 
@@ -384,7 +384,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/Na
 type LayerConfig = Konva.LayerConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:73](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L73)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:73](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L73)
 
 ***
 
@@ -394,7 +394,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:73](https://github.com/Na
 type Line = Konva.Line;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L75)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L75)
 
 ***
 
@@ -404,7 +404,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/Na
 type LineConfig = Konva.LineConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:78](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L78)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:78](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L78)
 
 ***
 
@@ -414,7 +414,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:78](https://github.com/Na
 type Node = Konva.Node;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L80)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L80)
 
 ***
 
@@ -424,7 +424,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/Na
 type NodeConfig = Konva.NodeConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:83](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L83)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:83](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L83)
 
 ***
 
@@ -434,7 +434,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:83](https://github.com/Na
 type Path = Konva.Path;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L85)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L85)
 
 ***
 
@@ -444,7 +444,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/Na
 type PathConfig = Konva.PathConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:88](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L88)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:88](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L88)
 
 ***
 
@@ -454,7 +454,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:88](https://github.com/Na
 type Rect = Konva.Rect;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L90)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L90)
 
 ***
 
@@ -464,7 +464,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/Na
 type RectConfig = Konva.RectConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:93](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L93)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:93](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L93)
 
 ***
 
@@ -474,7 +474,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:93](https://github.com/Na
 type RegularPolygon = Konva.RegularPolygon;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L95)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L95)
 
 ***
 
@@ -484,7 +484,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/Na
 type RegularPolygonConfig = Konva.RegularPolygonConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:98](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L98)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:98](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L98)
 
 ***
 
@@ -494,7 +494,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:98](https://github.com/Na
 type Ring = Konva.Ring;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L100)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L100)
 
 ***
 
@@ -504,7 +504,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/N
 type RingConfig = Konva.RingConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:103](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L103)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:103](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L103)
 
 ***
 
@@ -514,7 +514,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:103](https://github.com/N
 type Shape = Konva.Shape;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L105)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L105)
 
 ***
 
@@ -524,7 +524,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/N
 type ShapeConfig = Konva.ShapeConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:108](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L108)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:108](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L108)
 
 ***
 
@@ -534,7 +534,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:108](https://github.com/N
 type Sprite = Konva.Sprite;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L110)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L110)
 
 ***
 
@@ -544,7 +544,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/N
 type SpriteConfig = Konva.SpriteConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:113](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L113)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:113](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L113)
 
 ***
 
@@ -554,7 +554,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:113](https://github.com/N
 type Stage = Konva.Stage;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L115)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L115)
 
 ***
 
@@ -564,7 +564,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/N
 type StageConfig = Konva.StageConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:118](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L118)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:118](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L118)
 
 ***
 
@@ -574,7 +574,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:118](https://github.com/N
 type Star = Konva.Star;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L120)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L120)
 
 ***
 
@@ -584,7 +584,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/N
 type StarConfig = Konva.StarConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:123](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L123)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:123](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L123)
 
 ***
 
@@ -594,7 +594,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:123](https://github.com/N
 type Tag = Konva.Tag;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L125)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L125)
 
 ***
 
@@ -604,7 +604,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/N
 type TagConfig = Konva.TagConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:128](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L128)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:128](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L128)
 
 ***
 
@@ -614,7 +614,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:128](https://github.com/N
 type Text = Konva.Text;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L130)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L130)
 
 ***
 
@@ -624,7 +624,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/N
 type TextConfig = Konva.TextConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:133](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L133)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:133](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L133)
 
 ***
 
@@ -634,7 +634,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:133](https://github.com/N
 type TextPath = Konva.TextPath;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L135)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L135)
 
 ***
 
@@ -644,7 +644,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/N
 type TextPathConfig = Konva.TextPathConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:138](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L138)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:138](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L138)
 
 ***
 
@@ -654,7 +654,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:138](https://github.com/N
 type Transform = Konva.Transform;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L140)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L140)
 
 ***
 
@@ -664,7 +664,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/N
 type Transformer = Konva.Transformer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L143)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L143)
 
 ***
 
@@ -674,7 +674,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/N
 type TransformerConfig = Konva.TransformerConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:146](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L146)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:146](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L146)
 
 ***
 
@@ -684,7 +684,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:146](https://github.com/N
 type Tween = Konva.Tween;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L148)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L148)
 
 ***
 
@@ -694,7 +694,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/N
 type TweenConfig = Konva.TweenConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:151](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L151)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:151](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L151)
 
 ***
 
@@ -704,7 +704,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:151](https://github.com/N
 type Util = typeof Konva.Util;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:153](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L153)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:153](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L153)
 
 ***
 
@@ -714,7 +714,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:153](https://github.com/N
 type Vector2d = Konva.Vector2d;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:156](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L156)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:156](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L156)
 
 ***
 
@@ -724,7 +724,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:156](https://github.com/N
 type Wedge = Konva.Wedge;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:158](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L158)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:158](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L158)
 
 ***
 
@@ -734,7 +734,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:158](https://github.com/N
 type WedgeConfig = Konva.WedgeConfig;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:161](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L161)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:161](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L161)
 
 ## Variables
 
@@ -744,7 +744,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:161](https://github.com/N
 const _global: any = Konva._global;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:163](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L163)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:163](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L163)
 
 ***
 
@@ -754,7 +754,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:163](https://github.com/N
 const _injectGlobal: (Konva) => void = Konva._injectGlobal;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:165](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L165)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:165](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L165)
 
 #### Parameters
 
@@ -774,7 +774,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:165](https://github.com/N
 const _mouseDblClickPointerId: null = Konva._mouseDblClickPointerId;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:167](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L167)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:167](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L167)
 
 ***
 
@@ -784,7 +784,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:167](https://github.com/N
 const _mouseInDblClickWindow: boolean = Konva._mouseInDblClickWindow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:169](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L169)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:169](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L169)
 
 ***
 
@@ -794,7 +794,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:169](https://github.com/N
 const _mouseListenClick: boolean = Konva._mouseListenClick;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:171](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L171)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:171](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L171)
 
 ***
 
@@ -804,7 +804,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:171](https://github.com/N
 const _pointerDblClickPointerId: null = Konva._pointerDblClickPointerId;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:173](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L173)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:173](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L173)
 
 ***
 
@@ -814,7 +814,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:173](https://github.com/N
 const _pointerInDblClickWindow: boolean = Konva._pointerInDblClickWindow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:175](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L175)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:175](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L175)
 
 ***
 
@@ -824,7 +824,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:175](https://github.com/N
 const _pointerListenClick: boolean = Konva._pointerListenClick;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:177](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L177)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:177](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L177)
 
 ***
 
@@ -834,7 +834,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:177](https://github.com/N
 const _renderBackend: string = Konva._renderBackend;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:179](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L179)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:179](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L179)
 
 ***
 
@@ -844,7 +844,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:179](https://github.com/N
 const _touchDblClickPointerId: null = Konva._touchDblClickPointerId;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:181](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L181)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:181](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L181)
 
 ***
 
@@ -854,7 +854,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:181](https://github.com/N
 const _touchInDblClickWindow: boolean = Konva._touchInDblClickWindow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:183](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L183)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:183](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L183)
 
 ***
 
@@ -864,7 +864,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:183](https://github.com/N
 const _touchListenClick: boolean = Konva._touchListenClick;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:185](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L185)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:185](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L185)
 
 ***
 
@@ -874,7 +874,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:185](https://github.com/N
 const angleDeg: boolean = Konva.angleDeg;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:187](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L187)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:187](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L187)
 
 ***
 
@@ -884,7 +884,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:187](https://github.com/N
 const Animation: typeof Animation = Konva.Animation;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L3)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L3)
 
 ***
 
@@ -894,7 +894,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:3](https://github.com/Nan
 const Arc: typeof Arc = Konva.Arc;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L6)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L6)
 
 ***
 
@@ -904,7 +904,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:6](https://github.com/Nan
 const Arrow: typeof Arrow = Konva.Arrow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L11)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L11)
 
 ***
 
@@ -914,7 +914,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:11](https://github.com/Na
 const autoDrawEnabled: boolean = Konva.autoDrawEnabled;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:189](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L189)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:189](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L189)
 
 ***
 
@@ -924,7 +924,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:189](https://github.com/N
 const Canvas: typeof Canvas = Konva.Canvas;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L16)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L16)
 
 ***
 
@@ -934,7 +934,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:16](https://github.com/Na
 const capturePointerEventsEnabled: boolean = Konva.capturePointerEventsEnabled;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:191](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L191)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:191](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L191)
 
 ***
 
@@ -944,7 +944,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:191](https://github.com/N
 const Circle: typeof Circle = Konva.Circle;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L19)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L19)
 
 ***
 
@@ -954,7 +954,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:19](https://github.com/Na
 const Container: typeof Container = Konva.Container;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L24)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L24)
 
 ***
 
@@ -964,7 +964,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:24](https://github.com/Na
 const Context: typeof Context = Konva.Context;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L29)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L29)
 
 ***
 
@@ -974,7 +974,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:29](https://github.com/Na
 const dblClickWindow: number = Konva.dblClickWindow;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:193](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L193)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:193](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L193)
 
 ***
 
@@ -984,7 +984,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:193](https://github.com/N
 const DD: object = Konva.DD;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L32)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:32](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L32)
 
 #### Type Declaration
 
@@ -1074,7 +1074,7 @@ _endDragBefore(evt?): void;
 const document: any = Konva.document;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:195](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L195)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:195](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L195)
 
 ***
 
@@ -1084,7 +1084,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:195](https://github.com/N
 const dragButtons: number[] = Konva.dragButtons;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:197](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L197)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:197](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L197)
 
 ***
 
@@ -1094,7 +1094,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:197](https://github.com/N
 const dragDistance: number = Konva.dragDistance;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:199](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L199)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:199](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L199)
 
 ***
 
@@ -1104,7 +1104,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:199](https://github.com/N
 const Easings: object = Konva.Easings;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L35)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L35)
 
 #### Type Declaration
 
@@ -1658,7 +1658,7 @@ StrongEaseOut(
 const Ellipse: typeof Ellipse = Konva.Ellipse;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L38)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L38)
 
 ***
 
@@ -1668,7 +1668,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:38](https://github.com/Na
 const enableTrace: boolean = Konva.enableTrace;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:201](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L201)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:201](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L201)
 
 ***
 
@@ -1678,7 +1678,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:201](https://github.com/N
 const FastLayer: typeof FastLayer = Konva.FastLayer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L43)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L43)
 
 ***
 
@@ -1688,7 +1688,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:43](https://github.com/Na
 const Filters: object = Konva.Filters;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L46)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L46)
 
 #### Type Declaration
 
@@ -1820,7 +1820,7 @@ Threshold: Filter;
 const getAngle: (angle) => number = Konva.getAngle;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:203](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L203)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:203](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L203)
 
 #### Parameters
 
@@ -1840,7 +1840,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:203](https://github.com/N
 const Group: typeof Group = Konva.Group;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L49)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L49)
 
 ***
 
@@ -1850,7 +1850,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:49](https://github.com/Na
 const hitOnDragEnabled: boolean = Konva.hitOnDragEnabled;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:205](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L205)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:205](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L205)
 
 ***
 
@@ -1860,7 +1860,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:205](https://github.com/N
 const Image: typeof Image = Konva.Image;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L54)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L54)
 
 ***
 
@@ -1870,7 +1870,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:54](https://github.com/Na
 const isBrowser: boolean = Konva.isBrowser;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:207](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L207)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:207](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L207)
 
 ***
 
@@ -1880,7 +1880,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:207](https://github.com/N
 const isDragging: () => boolean = Konva.isDragging;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:211](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L211)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:211](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L211)
 
 #### Returns
 
@@ -1894,7 +1894,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:211](https://github.com/N
 const isDragReady: () => boolean = Konva.isDragReady;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:209](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L209)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:209](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L209)
 
 #### Returns
 
@@ -1908,7 +1908,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:209](https://github.com/N
 const isTransforming: () => boolean = Konva.isTransforming;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:213](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L213)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:213](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L213)
 
 #### Returns
 
@@ -1922,7 +1922,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:213](https://github.com/N
 const isUnminified: boolean = Konva.isUnminified;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:215](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L215)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:215](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L215)
 
 ***
 
@@ -1932,7 +1932,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:215](https://github.com/N
 const Label: typeof Label = Konva.Label;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L65)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L65)
 
 ***
 
@@ -1942,7 +1942,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:65](https://github.com/Na
 const Layer: typeof Layer = Konva.Layer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L70)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L70)
 
 ***
 
@@ -1952,7 +1952,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:70](https://github.com/Na
 const legacyTextRendering: boolean = Konva.legacyTextRendering;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:217](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L217)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:217](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L217)
 
 ***
 
@@ -1962,7 +1962,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:217](https://github.com/N
 const Line: typeof Line = Konva.Line;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L75)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L75)
 
 ***
 
@@ -1972,7 +1972,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:75](https://github.com/Na
 const Node: typeof Node = Konva.Node;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L80)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L80)
 
 ***
 
@@ -1982,7 +1982,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:80](https://github.com/Na
 const Path: typeof Path = Konva.Path;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L85)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L85)
 
 ***
 
@@ -1992,7 +1992,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:85](https://github.com/Na
 const pixelRatio: number = Konva.pixelRatio;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:219](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L219)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:219](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L219)
 
 ***
 
@@ -2002,7 +2002,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:219](https://github.com/N
 const pointerEventsEnabled: boolean = Konva.pointerEventsEnabled;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:221](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L221)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:221](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L221)
 
 ***
 
@@ -2012,7 +2012,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:221](https://github.com/N
 const Rect: typeof Rect = Konva.Rect;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L90)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L90)
 
 ***
 
@@ -2022,7 +2022,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:90](https://github.com/Na
 const RegularPolygon: typeof RegularPolygon = Konva.RegularPolygon;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L95)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L95)
 
 ***
 
@@ -2032,7 +2032,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:95](https://github.com/Na
 const releaseCanvasOnDestroy: boolean = Konva.releaseCanvasOnDestroy;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:223](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L223)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:223](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L223)
 
 ***
 
@@ -2042,7 +2042,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:223](https://github.com/N
 const Ring: typeof Ring = Konva.Ring;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L100)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L100)
 
 ***
 
@@ -2052,7 +2052,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:100](https://github.com/N
 const Shape: typeof Shape = Konva.Shape;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L105)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L105)
 
 ***
 
@@ -2062,7 +2062,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:105](https://github.com/N
 const shapes: object = Konva.shapes;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:225](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L225)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:225](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L225)
 
 #### Index Signature
 
@@ -2078,7 +2078,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:225](https://github.com/N
 const showWarnings: boolean = Konva.showWarnings;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:227](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L227)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:227](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L227)
 
 ***
 
@@ -2088,7 +2088,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:227](https://github.com/N
 const Sprite: typeof Sprite = Konva.Sprite;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L110)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L110)
 
 ***
 
@@ -2098,7 +2098,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:110](https://github.com/N
 const Stage: typeof Stage = Konva.Stage;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L115)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L115)
 
 ***
 
@@ -2108,7 +2108,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:115](https://github.com/N
 const stages: Stage[] = Konva.stages;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:229](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L229)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:229](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L229)
 
 ***
 
@@ -2118,7 +2118,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:229](https://github.com/N
 const Star: typeof Star = Konva.Star;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L120)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L120)
 
 ***
 
@@ -2128,7 +2128,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:120](https://github.com/N
 const Tag: typeof Tag = Konva.Tag;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L125)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L125)
 
 ***
 
@@ -2138,7 +2138,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:125](https://github.com/N
 const Text: typeof Text = Konva.Text;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L130)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L130)
 
 ***
 
@@ -2148,7 +2148,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:130](https://github.com/N
 const TextPath: typeof TextPath = Konva.TextPath;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L135)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L135)
 
 ***
 
@@ -2158,7 +2158,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:135](https://github.com/N
 const Transform: typeof Transform = Konva.Transform;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L140)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L140)
 
 ***
 
@@ -2168,7 +2168,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:140](https://github.com/N
 const Transformer: typeof Transformer = Konva.Transformer;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L143)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L143)
 
 ***
 
@@ -2178,7 +2178,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:143](https://github.com/N
 const Tween: typeof Tween = Konva.Tween;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L148)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L148)
 
 ***
 
@@ -2188,7 +2188,7 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:148](https://github.com/N
 const Util: object = Konva.Util;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:153](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L153)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:153](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L153)
 
 #### Type Declaration
 
@@ -3323,7 +3323,7 @@ warn(str): void;
 const version: string = Konva.version;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:231](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L231)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:231](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L231)
 
 ***
 
@@ -3333,4 +3333,4 @@ Defined in: [packages/graphics-2d/src/exports/konva.ts:231](https://github.com/N
 const Wedge: typeof Wedge = Konva.Wedge;
 ```
 
-Defined in: [packages/graphics-2d/src/exports/konva.ts:158](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/graphics-2d/src/exports/konva.ts#L158)
+Defined in: [packages/graphics-2d/src/exports/konva.ts:158](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/graphics-2d/src/exports/konva.ts#L158)

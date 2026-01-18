@@ -4,7 +4,7 @@
 
 ### DefaultLibrariesEnum
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L19)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L19)
 
 #### Enumeration Members
 
@@ -14,7 +14,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:19]
 ASSET_MANAGER: 0;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:20](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L20)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:20](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L20)
 
 ##### COMPONENT\_SYSTEM
 
@@ -22,7 +22,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:20]
 COMPONENT_SYSTEM: 1;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:21](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L21)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:21](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L21)
 
 ##### GRAPHICS
 
@@ -30,7 +30,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:21]
 GRAPHICS: 2;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L22)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:22](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L22)
 
 ##### INPUT
 
@@ -38,7 +38,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:22]
 INPUT: 3;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L23)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L23)
 
 ##### MUSIC
 
@@ -46,7 +46,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:23]
 MUSIC: 6;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:26](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L26)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:26](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L26)
 
 ##### NETWORK
 
@@ -54,7 +54,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:26]
 NETWORK: 4;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L24)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L24)
 
 ##### SOUND
 
@@ -62,13 +62,13 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:24]
 SOUND: 5;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:25](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L25)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:25](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L25)
 
 ***
 
 ### LibraryStatusEnum
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L1)
+Defined in: [packages/common/src/context/contexts/library.context.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L1)
 
 #### Enumeration Members
 
@@ -78,7 +78,7 @@ Defined in: [packages/common/src/context/contexts/library.context.ts:1](https://
 CLEAR: "CLEAR";
 ```
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L4)
+Defined in: [packages/common/src/context/contexts/library.context.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L4)
 
 ##### LOADED
 
@@ -86,7 +86,7 @@ Defined in: [packages/common/src/context/contexts/library.context.ts:4](https://
 LOADED: "LOADED";
 ```
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L3)
+Defined in: [packages/common/src/context/contexts/library.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L3)
 
 ##### UNLOADED
 
@@ -94,13 +94,13 @@ Defined in: [packages/common/src/context/contexts/library.context.ts:3](https://
 UNLOADED: "UNLOADED";
 ```
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:2](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L2)
+Defined in: [packages/common/src/context/contexts/library.context.ts:2](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L2)
 
 ## Classes
 
 ### `abstract` ApplicationContext
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L1)
+Defined in: [packages/common/src/context/contexts/application.context.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L1)
 
 #### Constructors
 
@@ -122,7 +122,7 @@ new ApplicationContext(): ApplicationContext;
 protected _delta: number;
 ```
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L3)
+Defined in: [packages/common/src/context/contexts/application.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L3)
 
 #### Accessors
 
@@ -134,7 +134,7 @@ Defined in: [packages/common/src/context/contexts/application.context.ts:3](http
 get delta(): number;
 ```
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L9)
+Defined in: [packages/common/src/context/contexts/application.context.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L9)
 
 ###### Returns
 
@@ -148,7 +148,7 @@ Defined in: [packages/common/src/context/contexts/application.context.ts:9](http
 get isRunning(): boolean;
 ```
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L5)
+Defined in: [packages/common/src/context/contexts/application.context.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L5)
 
 ###### Returns
 
@@ -162,7 +162,7 @@ Defined in: [packages/common/src/context/contexts/application.context.ts:5](http
 abstract muteSoundLibraries(): void;
 ```
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L17)
+Defined in: [packages/common/src/context/contexts/application.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L17)
 
 ###### Returns
 
@@ -174,7 +174,7 @@ Defined in: [packages/common/src/context/contexts/application.context.ts:17](htt
 setIsRunning(value): void;
 ```
 
-Defined in: [packages/common/src/context/contexts/application.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/application.context.ts#L13)
+Defined in: [packages/common/src/context/contexts/application.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/application.context.ts#L13)
 
 ###### Parameters
 
@@ -190,7 +190,7 @@ Defined in: [packages/common/src/context/contexts/application.context.ts:13](htt
 
 ### `abstract` BaseAssetManagerLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L6)
+Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L6)
 
 #### Extends
 
@@ -208,7 +208,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.libra
 new BaseAssetManagerLibrary(rawOptions?): BaseAssetManagerLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -234,7 +234,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -252,7 +252,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -276,7 +276,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -300,7 +300,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -328,7 +328,7 @@ Library.__clear
 abstract __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L7)
+Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L7)
 
 ###### Parameters
 
@@ -356,7 +356,7 @@ Library.__init
 abstract getAsset(path): NfFile;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L9)
+Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/asset-manager.library.abstract.ts#L9)
 
 ###### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/asset-manager.libra
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -394,7 +394,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseComponentSystemLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts#L5)
+Defined in: [packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts#L5)
 
 #### Extends
 
@@ -412,7 +412,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/component-system.li
 new BaseComponentSystemLibrary(rawOptions?): BaseComponentSystemLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -438,7 +438,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -456,7 +456,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -480,7 +480,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -504,7 +504,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -532,7 +532,7 @@ Library.__clear
 __init(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L30)
+Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L30)
 
 ###### Parameters
 
@@ -560,7 +560,7 @@ Library.__init
 abstract __run(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts#L9)
+Defined in: [packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/component-system.library.abstract.ts#L9)
 
 ###### Parameters
 
@@ -582,7 +582,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/component-system.li
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -598,7 +598,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseGraphicsLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts#L5)
+Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts#L5)
 
 #### Extends
 
@@ -616,7 +616,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.ab
 new BaseGraphicsLibrary(rawOptions?): BaseGraphicsLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -642,7 +642,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -660,7 +660,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -684,7 +684,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -708,7 +708,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -736,7 +736,7 @@ Library.__clear
 __init(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L30)
+Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L30)
 
 ###### Parameters
 
@@ -764,7 +764,7 @@ Library.__init
 abstract __run(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts#L6)
+Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/graphics.library.abstract.ts#L6)
 
 ###### Parameters
 
@@ -786,7 +786,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/graphics.library.ab
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -802,7 +802,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseInputLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/input.library.abstract.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/input.library.abstract.ts#L4)
+Defined in: [packages/common/src/library/libraries/abstracts/input.library.abstract.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/input.library.abstract.ts#L4)
 
 #### Extends
 
@@ -820,7 +820,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/input.library.abstr
 new BaseInputLibrary(rawOptions?): BaseInputLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -846,7 +846,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -864,7 +864,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -888,7 +888,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -912,7 +912,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -940,7 +940,7 @@ Library.__clear
 __init(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L30)
+Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L30)
 
 ###### Parameters
 
@@ -968,7 +968,7 @@ Library.__init
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -984,7 +984,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseMusicLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L5)
+Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L5)
 
 #### Extends
 
@@ -1002,7 +1002,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstr
 new BaseMusicLibrary(rawOptions?): BaseMusicLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -1028,7 +1028,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -1046,7 +1046,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -1070,7 +1070,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -1094,7 +1094,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -1122,7 +1122,7 @@ Library.__clear
 abstract __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L6)
+Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L6)
 
 ###### Parameters
 
@@ -1150,7 +1150,7 @@ Library.__init
 abstract mute(): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L13)
+Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L13)
 
 mutes or unmutes the sound.
 
@@ -1168,7 +1168,7 @@ mutes or unmutes the sound.
 abstract play(sound): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L8)
+Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstract.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/music.library.abstract.ts#L8)
 
 ###### Parameters
 
@@ -1186,7 +1186,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/music.library.abstr
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -1202,7 +1202,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseNetworkLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/network.library.abstract.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/network.library.abstract.ts#L4)
+Defined in: [packages/common/src/library/libraries/abstracts/network.library.abstract.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/network.library.abstract.ts#L4)
 
 #### Extends
 
@@ -1220,7 +1220,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/network.library.abs
 new BaseNetworkLibrary(rawOptions?): BaseNetworkLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -1246,7 +1246,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -1264,7 +1264,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -1288,7 +1288,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -1312,7 +1312,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -1340,7 +1340,7 @@ Library.__clear
 __init(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L30)
+Defined in: [packages/common/src/library/libraries/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L30)
 
 ###### Parameters
 
@@ -1368,7 +1368,7 @@ Library.__init
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -1384,7 +1384,7 @@ Library.throwNotInitializedError
 
 ### `abstract` BaseSoundLibrary
 
-Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L5)
+Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L5)
 
 #### Extends
 
@@ -1402,7 +1402,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstr
 new BaseSoundLibrary(rawOptions?): BaseSoundLibrary;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L10)
+Defined in: [packages/common/src/library/libraries/library.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L10)
 
 ###### Parameters
 
@@ -1428,7 +1428,7 @@ Library.constructor
 protected _relationship: RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L8)
+Defined in: [packages/common/src/library/libraries/library.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L8)
 
 ###### Inherited from
 
@@ -1446,7 +1446,7 @@ Library._relationship
 get abstract __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L27)
+Defined in: [packages/common/src/library/libraries/library.ts:27](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L27)
 
 ###### Returns
 
@@ -1470,7 +1470,7 @@ Library.__name
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L23)
+Defined in: [packages/common/src/library/libraries/library.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L23)
 
 ###### Returns
 
@@ -1494,7 +1494,7 @@ Library.__relationship
 __clear(_context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L33)
+Defined in: [packages/common/src/library/libraries/library.ts:33](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L33)
 
 ###### Parameters
 
@@ -1522,7 +1522,7 @@ Library.__clear
 abstract __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L6)
+Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L6)
 
 ###### Parameters
 
@@ -1550,7 +1550,7 @@ Library.__init
 abstract mute(): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L13)
+Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L13)
 
 mutes or unmutes the sound.
 
@@ -1568,7 +1568,7 @@ mutes or unmutes the sound.
 abstract play(sound): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L8)
+Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstract.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/abstracts/sound.library.abstract.ts#L8)
 
 ###### Parameters
 
@@ -1586,7 +1586,7 @@ Defined in: [packages/common/src/library/libraries/abstracts/sound.library.abstr
 protected throwNotInitializedError(): never;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.ts#L35)
+Defined in: [packages/common/src/library/libraries/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.ts#L35)
 
 ###### Returns
 
@@ -1602,7 +1602,7 @@ Library.throwNotInitializedError
 
 ### ClearContext
 
-Defined in: [packages/common/src/context/contexts/executions/clear.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/clear.context.ts#L3)
+Defined in: [packages/common/src/context/contexts/executions/clear.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/clear.context.ts#L3)
 
 #### Extends
 
@@ -1616,7 +1616,7 @@ Defined in: [packages/common/src/context/contexts/executions/clear.context.ts:3]
 new ClearContext(applicationContext, libraryManager): ClearContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L8)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L8)
 
 ###### Parameters
 
@@ -1648,7 +1648,7 @@ BaseContext.constructor
 get application(): ApplicationContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L13)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L13)
 
 ###### Returns
 
@@ -1668,7 +1668,7 @@ BaseContext.application
 get libraries(): LibraryManager;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L17)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L17)
 
 ###### Returns
 
@@ -1684,7 +1684,7 @@ BaseContext.libraries
 
 ### ClientLibraryManager
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L13)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L13)
 
 #### Constructors
 
@@ -1694,7 +1694,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 new ClientLibraryManager(libraryManager): ClientLibraryManager;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L16)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L16)
 
 ###### Parameters
 
@@ -1714,7 +1714,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 get<T>(sym): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:20](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L20)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:20](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L20)
 
 ###### Type Parameters
 
@@ -1738,7 +1738,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getAssetManager<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:40](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L40)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:40](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L40)
 
 ###### Type Parameters
 
@@ -1756,7 +1756,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getComponentSystem<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L24)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L24)
 
 ###### Type Parameters
 
@@ -1774,7 +1774,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getGraphics<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:28](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L28)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:28](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L28)
 
 ###### Type Parameters
 
@@ -1792,7 +1792,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getInput<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:36](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L36)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:36](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L36)
 
 ###### Type Parameters
 
@@ -1810,7 +1810,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getMusic<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:48](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L48)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:48](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L48)
 
 ###### Type Parameters
 
@@ -1828,7 +1828,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getNetwork<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L32)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:32](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L32)
 
 ###### Type Parameters
 
@@ -1846,7 +1846,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 getSound<T>(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:44](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/client-library.manager.ts#L44)
+Defined in: [packages/common/src/library/manager/managers/client-library.manager.ts:44](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/client-library.manager.ts#L44)
 
 ###### Type Parameters
 
@@ -1862,7 +1862,7 @@ Defined in: [packages/common/src/library/manager/managers/client-library.manager
 
 ### Context
 
-Defined in: [packages/common/src/context/contexts/client.context.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/client.context.ts#L4)
+Defined in: [packages/common/src/context/contexts/client.context.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/client.context.ts#L4)
 
 #### Constructors
 
@@ -1872,7 +1872,7 @@ Defined in: [packages/common/src/context/contexts/client.context.ts:4](https://g
 new Context(applicationContext, libraryManager): Context;
 ```
 
-Defined in: [packages/common/src/context/contexts/client.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/client.context.ts#L8)
+Defined in: [packages/common/src/context/contexts/client.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/client.context.ts#L8)
 
 ###### Parameters
 
@@ -1898,7 +1898,7 @@ Defined in: [packages/common/src/context/contexts/client.context.ts:8](https://g
 get app(): ApplicationContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/client.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/client.context.ts#L13)
+Defined in: [packages/common/src/context/contexts/client.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/client.context.ts#L13)
 
 ###### Returns
 
@@ -1912,7 +1912,7 @@ Defined in: [packages/common/src/context/contexts/client.context.ts:13](https://
 get libs(): ClientLibraryManager;
 ```
 
-Defined in: [packages/common/src/context/contexts/client.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/client.context.ts#L17)
+Defined in: [packages/common/src/context/contexts/client.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/client.context.ts#L17)
 
 ###### Returns
 
@@ -1922,7 +1922,7 @@ Defined in: [packages/common/src/context/contexts/client.context.ts:17](https://
 
 ### ExecutionContext
 
-Defined in: [packages/common/src/context/contexts/executions/execution.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/execution.context.ts#L3)
+Defined in: [packages/common/src/context/contexts/executions/execution.context.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/execution.context.ts#L3)
 
 #### Extends
 
@@ -1936,7 +1936,7 @@ Defined in: [packages/common/src/context/contexts/executions/execution.context.t
 new ExecutionContext(applicationContext, libraryManager): ExecutionContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L8)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L8)
 
 ###### Parameters
 
@@ -1968,7 +1968,7 @@ BaseContext.constructor
 get application(): ApplicationContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L13)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L13)
 
 ###### Returns
 
@@ -1988,7 +1988,7 @@ BaseContext.application
 get libraries(): LibraryManager;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L17)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L17)
 
 ###### Returns
 
@@ -2004,7 +2004,7 @@ BaseContext.libraries
 
 ### InitContext
 
-Defined in: [packages/common/src/context/contexts/executions/init.context.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/init.context.ts#L6)
+Defined in: [packages/common/src/context/contexts/executions/init.context.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/init.context.ts#L6)
 
 #### Extends
 
@@ -2022,7 +2022,7 @@ new InitContext(
    options): InitContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/init.context.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/init.context.ts#L11)
+Defined in: [packages/common/src/context/contexts/executions/init.context.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/init.context.ts#L11)
 
 ###### Parameters
 
@@ -2062,7 +2062,7 @@ BaseContext.constructor
 get application(): ApplicationContext;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L13)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L13)
 
 ###### Returns
 
@@ -2082,7 +2082,7 @@ BaseContext.application
 get canvas(): HTMLCanvasElement | undefined;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/init.context.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/init.context.ts#L24)
+Defined in: [packages/common/src/context/contexts/executions/init.context.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/init.context.ts#L24)
 
 ###### Returns
 
@@ -2096,7 +2096,7 @@ Defined in: [packages/common/src/context/contexts/executions/init.context.ts:24]
 get config(): IConfigRegistry;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/init.context.ts:32](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/init.context.ts#L32)
+Defined in: [packages/common/src/context/contexts/executions/init.context.ts:32](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/init.context.ts#L32)
 
 ###### Returns
 
@@ -2110,7 +2110,7 @@ Defined in: [packages/common/src/context/contexts/executions/init.context.ts:32]
 get files(): Map<string, string>;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/init.context.ts:28](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/init.context.ts#L28)
+Defined in: [packages/common/src/context/contexts/executions/init.context.ts:28](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/init.context.ts#L28)
 
 ###### Returns
 
@@ -2124,7 +2124,7 @@ Defined in: [packages/common/src/context/contexts/executions/init.context.ts:28]
 get libraries(): LibraryManager;
 ```
 
-Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/executions/base.context.ts#L17)
+Defined in: [packages/common/src/context/contexts/executions/base.context.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/executions/base.context.ts#L17)
 
 ###### Returns
 
@@ -2140,7 +2140,7 @@ BaseContext.libraries
 
 ### LibraryContext
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L7)
+Defined in: [packages/common/src/context/contexts/library.context.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L7)
 
 #### Constructors
 
@@ -2162,7 +2162,7 @@ new LibraryContext(): LibraryContext;
 protected _status: LibraryStatusEnum = LibraryStatusEnum.UNLOADED;
 ```
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L8)
+Defined in: [packages/common/src/context/contexts/library.context.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L8)
 
 #### Accessors
 
@@ -2174,7 +2174,7 @@ Defined in: [packages/common/src/context/contexts/library.context.ts:8](https://
 get status(): LibraryStatusEnum;
 ```
 
-Defined in: [packages/common/src/context/contexts/library.context.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/context/contexts/library.context.ts#L10)
+Defined in: [packages/common/src/context/contexts/library.context.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/context/contexts/library.context.ts#L10)
 
 ###### Returns
 
@@ -2184,7 +2184,7 @@ Defined in: [packages/common/src/context/contexts/library.context.ts:10](https:/
 
 ### LibraryHandle
 
-Defined in: [packages/common/src/library/manager/handle/library.handle.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/handle/library.handle.ts#L4)
+Defined in: [packages/common/src/library/manager/handle/library.handle.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/handle/library.handle.ts#L4)
 
 #### Type Parameters
 
@@ -2203,7 +2203,7 @@ new LibraryHandle<T>(
 defaultContext): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/handle/library.handle.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/handle/library.handle.ts#L9)
+Defined in: [packages/common/src/library/manager/handle/library.handle.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/handle/library.handle.ts#L9)
 
 ###### Parameters
 
@@ -2233,7 +2233,7 @@ Defined in: [packages/common/src/library/manager/handle/library.handle.ts:9](htt
 get context(): LibraryContext;
 ```
 
-Defined in: [packages/common/src/library/manager/handle/library.handle.ts:23](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/handle/library.handle.ts#L23)
+Defined in: [packages/common/src/library/manager/handle/library.handle.ts:23](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/handle/library.handle.ts#L23)
 
 ###### Returns
 
@@ -2247,7 +2247,7 @@ Defined in: [packages/common/src/library/manager/handle/library.handle.ts:23](ht
 get library(): T;
 ```
 
-Defined in: [packages/common/src/library/manager/handle/library.handle.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/handle/library.handle.ts#L19)
+Defined in: [packages/common/src/library/manager/handle/library.handle.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/handle/library.handle.ts#L19)
 
 ###### Returns
 
@@ -2261,7 +2261,7 @@ Defined in: [packages/common/src/library/manager/handle/library.handle.ts:19](ht
 get symbol(): symbol;
 ```
 
-Defined in: [packages/common/src/library/manager/handle/library.handle.ts:15](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/handle/library.handle.ts#L15)
+Defined in: [packages/common/src/library/manager/handle/library.handle.ts:15](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/handle/library.handle.ts#L15)
 
 ###### Returns
 
@@ -2271,7 +2271,7 @@ Defined in: [packages/common/src/library/manager/handle/library.handle.ts:15](ht
 
 ### LibraryManager
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L38)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L38)
 
 #### Extends
 
@@ -2285,7 +2285,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:38]
 new LibraryManager(): LibraryManager;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:39](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L39)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:39](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L39)
 
 ###### Returns
 
@@ -2305,7 +2305,7 @@ BaseLibraryManager.constructor
 protected _libraries: LibraryHandle<ILibrary>[] = [];
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L6)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L6)
 
 ###### Inherited from
 
@@ -2321,7 +2321,7 @@ BaseLibraryManager._libraries
 protected _get<T>(index, sym?): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L24)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L24)
 
 ###### Type Parameters
 
@@ -2359,7 +2359,7 @@ protected _set(
    context): void;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L30)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L30)
 
 ###### Parameters
 
@@ -2395,7 +2395,7 @@ BaseLibraryManager._set
 protected _setIndex(sym, index): void;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L34)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L34)
 
 ###### Parameters
 
@@ -2423,7 +2423,7 @@ BaseLibraryManager._setIndex
 get<T>(sym): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L12)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L12)
 
 ###### Type Parameters
 
@@ -2457,7 +2457,7 @@ BaseLibraryManager.get
 getAssetManager<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:65](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L65)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:65](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L65)
 
 ###### Type Parameters
 
@@ -2475,7 +2475,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:65]
 getComponentSystem<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:47](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L47)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:47](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L47)
 
 ###### Type Parameters
 
@@ -2493,7 +2493,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:47]
 getGraphics<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:53](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L53)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:53](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L53)
 
 ###### Type Parameters
 
@@ -2511,7 +2511,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:53]
 getInput<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:61](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L61)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:61](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L61)
 
 ###### Type Parameters
 
@@ -2529,7 +2529,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:61]
 getMusic<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:75](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L75)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:75](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L75)
 
 ###### Type Parameters
 
@@ -2547,7 +2547,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:75]
 getNetwork<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L57)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:57](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L57)
 
 ###### Type Parameters
 
@@ -2565,7 +2565,7 @@ Defined in: [packages/common/src/library/manager/managers/library.manager.ts:57]
 getSound<T>(): LibraryHandle<T>;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/library.manager.ts:71](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/library.manager.ts#L71)
+Defined in: [packages/common/src/library/manager/managers/library.manager.ts:71](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/library.manager.ts#L71)
 
 ###### Type Parameters
 
@@ -2586,7 +2586,7 @@ protected setNewLibrary(
    context): void;
 ```
 
-Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/manager/managers/base-library.manager.ts#L18)
+Defined in: [packages/common/src/library/manager/managers/base-library.manager.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/manager/managers/base-library.manager.ts#L18)
 
 ###### Parameters
 
@@ -2616,7 +2616,7 @@ BaseLibraryManager.setNewLibrary
 
 ### NfConfigException
 
-Defined in: [packages/common/src/exception/exceptions/config.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/config.exception.ts#L3)
+Defined in: [packages/common/src/exception/exceptions/config.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/config.exception.ts#L3)
 
 #### Extends
 
@@ -2630,7 +2630,7 @@ Defined in: [packages/common/src/exception/exceptions/config.exception.ts:3](htt
 new NfConfigException(message, library?): NfConfigException;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/config.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/config.exception.ts#L8)
+Defined in: [packages/common/src/exception/exceptions/config.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/config.exception.ts#L8)
 
 ###### Parameters
 
@@ -2744,7 +2744,7 @@ NfException.stackTraceLimit
 get code(): number;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/config.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/config.exception.ts#L4)
+Defined in: [packages/common/src/exception/exceptions/config.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/config.exception.ts#L4)
 
 ###### Returns
 
@@ -2892,7 +2892,7 @@ NfException.prepareStackTrace
 
 ### NfFetchException
 
-Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/fetch.exception.ts#L3)
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/fetch.exception.ts#L3)
 
 #### Extends
 
@@ -2906,7 +2906,7 @@ Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:3](http
 new NfFetchException(code, text): NfFetchException;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/fetch.exception.ts#L10)
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/fetch.exception.ts#L10)
 
 ###### Parameters
 
@@ -3020,7 +3020,7 @@ NfException.stackTraceLimit
 get code(): number;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/fetch.exception.ts#L6)
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/fetch.exception.ts#L6)
 
 ###### Returns
 
@@ -3168,7 +3168,7 @@ NfException.prepareStackTrace
 
 ### NfFile
 
-Defined in: [packages/common/src/common/file.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L3)
+Defined in: [packages/common/src/common/file.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L3)
 
 #### Constructors
 
@@ -3178,7 +3178,7 @@ Defined in: [packages/common/src/common/file.ts:3](https://github.com/NanoForge-
 new NfFile(path): NfFile;
 ```
 
-Defined in: [packages/common/src/common/file.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L6)
+Defined in: [packages/common/src/common/file.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L6)
 
 ###### Parameters
 
@@ -3200,7 +3200,7 @@ Defined in: [packages/common/src/common/file.ts:6](https://github.com/NanoForge-
 get path(): string;
 ```
 
-Defined in: [packages/common/src/common/file.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L10)
+Defined in: [packages/common/src/common/file.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L10)
 
 ###### Returns
 
@@ -3214,7 +3214,7 @@ Defined in: [packages/common/src/common/file.ts:10](https://github.com/NanoForge
 arrayBuffer(): Promise<ArrayBuffer>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L14)
+Defined in: [packages/common/src/common/file.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L14)
 
 ###### Returns
 
@@ -3226,7 +3226,7 @@ Defined in: [packages/common/src/common/file.ts:14](https://github.com/NanoForge
 blob(): Promise<Blob>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L19)
+Defined in: [packages/common/src/common/file.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L19)
 
 ###### Returns
 
@@ -3238,7 +3238,7 @@ Defined in: [packages/common/src/common/file.ts:19](https://github.com/NanoForge
 bytes(): Promise<Uint8Array<ArrayBuffer>>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L24)
+Defined in: [packages/common/src/common/file.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L24)
 
 ###### Returns
 
@@ -3250,7 +3250,7 @@ Defined in: [packages/common/src/common/file.ts:24](https://github.com/NanoForge
 formData(): Promise<FormData>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:29](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L29)
+Defined in: [packages/common/src/common/file.ts:29](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L29)
 
 ###### Returns
 
@@ -3262,7 +3262,7 @@ Defined in: [packages/common/src/common/file.ts:29](https://github.com/NanoForge
 json(): Promise<any>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L34)
+Defined in: [packages/common/src/common/file.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L34)
 
 ###### Returns
 
@@ -3274,7 +3274,7 @@ Defined in: [packages/common/src/common/file.ts:34](https://github.com/NanoForge
 text(): Promise<string>;
 ```
 
-Defined in: [packages/common/src/common/file.ts:39](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/common/file.ts#L39)
+Defined in: [packages/common/src/common/file.ts:39](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/common/file.ts#L39)
 
 ###### Returns
 
@@ -3284,7 +3284,7 @@ Defined in: [packages/common/src/common/file.ts:39](https://github.com/NanoForge
 
 ### NfNotFound
 
-Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-found.exception.ts#L3)
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-found.exception.ts#L3)
 
 #### Extends
 
@@ -3298,7 +3298,7 @@ Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:3](
 new NfNotFound(item, type?): NfNotFound;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-found.exception.ts#L8)
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-found.exception.ts#L8)
 
 ###### Parameters
 
@@ -3412,7 +3412,7 @@ NfException.stackTraceLimit
 get code(): number;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-found.exception.ts#L4)
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-found.exception.ts#L4)
 
 ###### Returns
 
@@ -3560,7 +3560,7 @@ NfException.prepareStackTrace
 
 ### NfNotInitializedException
 
-Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-initialized.exception.ts#L3)
+Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-initialized.exception.ts#L3)
 
 #### Extends
 
@@ -3574,7 +3574,7 @@ Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.
 new NfNotInitializedException(item, type?): NfNotInitializedException;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-initialized.exception.ts#L8)
+Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-initialized.exception.ts#L8)
 
 ###### Parameters
 
@@ -3688,7 +3688,7 @@ NfException.stackTraceLimit
 get code(): number;
 ```
 
-Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/exception/exceptions/not-initialized.exception.ts#L4)
+Defined in: [packages/common/src/exception/exceptions/not-initialized.exception.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/exception/exceptions/not-initialized.exception.ts#L4)
 
 ###### Returns
 
@@ -3836,7 +3836,7 @@ NfException.prepareStackTrace
 
 ### IAssetManagerLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts#L4)
 
 #### Extends
 
@@ -3852,7 +3852,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manag
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -3870,7 +3870,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -3888,7 +3888,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -3910,7 +3910,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -3932,7 +3932,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 getAsset(path): NfFile;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/asset-manager.library.type.ts#L5)
 
 ###### Parameters
 
@@ -3948,7 +3948,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/asset-manag
 
 ### IComponentSystemLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/component-system.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/component-system.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/component-system.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/component-system.library.type.ts#L4)
 
 #### Extends
 
@@ -3964,7 +3964,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/component-s
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -3982,7 +3982,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4000,7 +4000,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4022,7 +4022,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4044,7 +4044,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 __run(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
 
 ###### Parameters
 
@@ -4064,7 +4064,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.libra
 
 ### IConfigRegistry
 
-Defined in: [packages/common/src/library/config/interfaces/config-registry.type.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/config/interfaces/config-registry.type.ts#L1)
+Defined in: [packages/common/src/library/config/interfaces/config-registry.type.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/config/interfaces/config-registry.type.ts#L1)
 
 #### Methods
 
@@ -4074,7 +4074,7 @@ Defined in: [packages/common/src/library/config/interfaces/config-registry.type.
 registerConfig<T>(config): Promise<T>;
 ```
 
-Defined in: [packages/common/src/library/config/interfaces/config-registry.type.ts:2](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/config/interfaces/config-registry.type.ts#L2)
+Defined in: [packages/common/src/library/config/interfaces/config-registry.type.ts:2](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/config/interfaces/config-registry.type.ts#L2)
 
 ###### Type Parameters
 
@@ -4096,7 +4096,7 @@ Defined in: [packages/common/src/library/config/interfaces/config-registry.type.
 
 ### IExposedLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/exposed.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/exposed.library.type.ts#L3)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/exposed.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/exposed.library.type.ts#L3)
 
 #### Extends
 
@@ -4122,7 +4122,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/exposed.libr
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4140,7 +4140,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4158,7 +4158,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4180,7 +4180,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4200,7 +4200,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 
 ### IGraphicsLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/graphics.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/graphics.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/graphics.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/graphics.library.type.ts#L4)
 
 #### Extends
 
@@ -4216,7 +4216,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/graphics.li
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4234,7 +4234,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4252,7 +4252,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4274,7 +4274,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4296,7 +4296,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 __run(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
 
 ###### Parameters
 
@@ -4316,7 +4316,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.libra
 
 ### IInputLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/input.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/input.library.type.ts#L3)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/input.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/input.library.type.ts#L3)
 
 #### Extends
 
@@ -4332,7 +4332,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/input.libra
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4350,7 +4350,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4368,7 +4368,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4390,7 +4390,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4410,7 +4410,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 
 ### ILibrary
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L4)
 
 #### Extended by
 
@@ -4428,7 +4428,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:4](https://gi
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4442,7 +4442,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4456,7 +4456,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4474,7 +4474,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4490,7 +4490,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 
 ### IMusicLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/music.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/music.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/music.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/music.library.type.ts#L4)
 
 #### Extends
 
@@ -4506,7 +4506,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/music.libra
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4524,7 +4524,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4542,7 +4542,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4564,7 +4564,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4586,7 +4586,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 mute(): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
 
 mutes or unmutes the sound.
 
@@ -4602,7 +4602,7 @@ mutes or unmutes the sound.
 
 ### IMutableLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L3)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L3)
 
 #### Extends
 
@@ -4623,7 +4623,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.libr
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4641,7 +4641,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4659,7 +4659,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4681,7 +4681,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4703,7 +4703,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 mute(): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
 
 mutes or unmutes the sound.
 
@@ -4715,7 +4715,7 @@ mutes or unmutes the sound.
 
 ### INetworkLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/network.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/network.library.type.ts#L3)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/network.library.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/network.library.type.ts#L3)
 
 #### Extends
 
@@ -4731,7 +4731,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/network.lib
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4749,7 +4749,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4767,7 +4767,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4789,7 +4789,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4809,7 +4809,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 
 ### IRunClientOptions
 
-Defined in: [packages/common/src/options/types/options.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L3)
+Defined in: [packages/common/src/options/types/options.type.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L3)
 
 #### Properties
 
@@ -4819,7 +4819,7 @@ Defined in: [packages/common/src/options/types/options.type.ts:3](https://github
 canvas: HTMLCanvasElement;
 ```
 
-Defined in: [packages/common/src/options/types/options.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L4)
+Defined in: [packages/common/src/options/types/options.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L4)
 
 ##### files
 
@@ -4827,13 +4827,13 @@ Defined in: [packages/common/src/options/types/options.type.ts:4](https://github
 files: Map<string, string>;
 ```
 
-Defined in: [packages/common/src/options/types/options.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L5)
+Defined in: [packages/common/src/options/types/options.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L5)
 
 ***
 
 ### IRunnerLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L4)
 
 #### Extends
 
@@ -4854,7 +4854,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.libra
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -4872,7 +4872,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -4890,7 +4890,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -4912,7 +4912,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -4934,7 +4934,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 __run(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/runner.library.type.ts#L5)
 
 ###### Parameters
 
@@ -4950,7 +4950,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/bases/runner.libra
 
 ### IRunServerOptions
 
-Defined in: [packages/common/src/options/types/options.type.ts:8](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L8)
+Defined in: [packages/common/src/options/types/options.type.ts:8](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L8)
 
 #### Properties
 
@@ -4960,13 +4960,13 @@ Defined in: [packages/common/src/options/types/options.type.ts:8](https://github
 files: Map<string, string>;
 ```
 
-Defined in: [packages/common/src/options/types/options.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L9)
+Defined in: [packages/common/src/options/types/options.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L9)
 
 ***
 
 ### ISoundLibrary
 
-Defined in: [packages/common/src/library/libraries/interfaces/finals/sound.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/finals/sound.library.type.ts#L4)
+Defined in: [packages/common/src/library/libraries/interfaces/finals/sound.library.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/finals/sound.library.type.ts#L4)
 
 #### Extends
 
@@ -4982,7 +4982,7 @@ Defined in: [packages/common/src/library/libraries/interfaces/finals/sound.libra
 get __name(): string;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L5)
+Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L5)
 
 ###### Returns
 
@@ -5000,7 +5000,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:5](https://gi
 get __relationship(): RelationshipHandler;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L7)
 
 ###### Returns
 
@@ -5018,7 +5018,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:7](https://gi
 __clear(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L11)
+Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L11)
 
 ###### Parameters
 
@@ -5040,7 +5040,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:11](https://g
 __init(context): Promise<void>;
 ```
 
-Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/library.type.ts#L9)
+Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/library.type.ts#L9)
 
 ###### Parameters
 
@@ -5062,7 +5062,7 @@ Defined in: [packages/common/src/library/libraries/library.type.ts:9](https://gi
 mute(): void;
 ```
 
-Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
+Defined in: [packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/interfaces/bases/mutable.library.type.ts#L7)
 
 mutes or unmutes the sound.
 
@@ -5084,7 +5084,7 @@ type IRunOptions =
   | IRunServerOptions;
 ```
 
-Defined in: [packages/common/src/options/types/options.type.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/options/types/options.type.ts#L1)
+Defined in: [packages/common/src/options/types/options.type.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/options/types/options.type.ts#L1)
 
 ## Variables
 
@@ -5094,7 +5094,7 @@ Defined in: [packages/common/src/options/types/options.type.ts:1](https://github
 const ASSET_MANAGER_LIBRARY: typeof ASSET_MANAGER_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:6](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L6)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:6](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L6)
 
 ***
 
@@ -5104,7 +5104,7 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const COMPONENT_SYSTEM_LIBRARY: typeof COMPONENT_SYSTEM_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:1](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L1)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:1](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L1)
 
 ***
 
@@ -5114,7 +5114,7 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const GRAPHICS_LIBRARY: typeof GRAPHICS_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:2](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L2)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:2](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L2)
 
 ***
 
@@ -5124,7 +5124,7 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const INPUT_LIBRARY: typeof INPUT_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:7](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L7)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:7](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L7)
 
 ***
 
@@ -5134,7 +5134,7 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const MUSIC_LIBRARY: typeof MUSIC_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L5)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L5)
 
 ***
 
@@ -5144,7 +5144,7 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const NETWORK_LIBRARY: typeof NETWORK_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L3)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L3)
 
 ***
 
@@ -5154,4 +5154,4 @@ Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts
 const SOUND_LIBRARY: typeof SOUND_LIBRARY;
 ```
 
-Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:4](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/common/src/library/libraries/consts/library-label.const.ts#L4)
+Defined in: [packages/common/src/library/libraries/consts/library-label.const.ts:4](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/common/src/library/libraries/consts/library-label.const.ts#L4)

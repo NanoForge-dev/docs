@@ -4,7 +4,7 @@
 
 ### NanoforgeClient
 
-Defined in: [nanoforge-client.ts:9](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-client.ts#L9)
+Defined in: [nanoforge-client.ts:9](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-client.ts#L9)
 
 #### Extends
 
@@ -18,7 +18,7 @@ Defined in: [nanoforge-client.ts:9](https://github.com/NanoForge-dev/Engine/blob
 protected applicationConfig: ApplicationConfig;
 ```
 
-Defined in: [nanoforge-application.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L16)
+Defined in: [nanoforge-application.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L16)
 
 ###### Inherited from
 
@@ -34,7 +34,7 @@ NanoforgeApplication.applicationConfig
 init(options): Promise<void>;
 ```
 
-Defined in: [nanoforge-application.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L46)
+Defined in: [nanoforge-application.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L46)
 
 ###### Parameters
 
@@ -58,7 +58,7 @@ NanoforgeApplication.init
 run(): Promise<void>;
 ```
 
-Defined in: [nanoforge-application.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L54)
+Defined in: [nanoforge-application.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L54)
 
 ###### Returns
 
@@ -76,7 +76,7 @@ NanoforgeApplication.run
 use(sym, library): void;
 ```
 
-Defined in: [nanoforge-application.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L30)
+Defined in: [nanoforge-application.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L30)
 
 ###### Parameters
 
@@ -104,7 +104,7 @@ NanoforgeApplication.use
 useAssetManager(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:42](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L42)
+Defined in: [nanoforge-application.ts:42](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L42)
 
 ###### Parameters
 
@@ -128,7 +128,7 @@ NanoforgeApplication.useAssetManager
 useComponentSystem(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L34)
+Defined in: [nanoforge-application.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L34)
 
 ###### Parameters
 
@@ -152,7 +152,7 @@ NanoforgeApplication.useComponentSystem
 useGraphics(library): void;
 ```
 
-Defined in: [nanoforge-client.ts:10](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-client.ts#L10)
+Defined in: [nanoforge-client.ts:10](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-client.ts#L10)
 
 ###### Parameters
 
@@ -170,7 +170,7 @@ Defined in: [nanoforge-client.ts:10](https://github.com/NanoForge-dev/Engine/blo
 useInput(library): void;
 ```
 
-Defined in: [nanoforge-client.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-client.ts#L14)
+Defined in: [nanoforge-client.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-client.ts#L14)
 
 ###### Parameters
 
@@ -188,7 +188,7 @@ Defined in: [nanoforge-client.ts:14](https://github.com/NanoForge-dev/Engine/blo
 useNetwork(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L38)
+Defined in: [nanoforge-application.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L38)
 
 ###### Parameters
 
@@ -212,7 +212,7 @@ NanoforgeApplication.useNetwork
 useSound(library): void;
 ```
 
-Defined in: [nanoforge-client.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-client.ts#L18)
+Defined in: [nanoforge-client.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-client.ts#L18)
 
 ###### Parameters
 
@@ -228,7 +228,7 @@ Defined in: [nanoforge-client.ts:18](https://github.com/NanoForge-dev/Engine/blo
 
 ### NanoforgeServer
 
-Defined in: [nanoforge-server.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-server.ts#L3)
+Defined in: [nanoforge-server.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-server.ts#L3)
 
 #### Extends
 
@@ -242,7 +242,7 @@ Defined in: [nanoforge-server.ts:3](https://github.com/NanoForge-dev/Engine/blob
 protected applicationConfig: ApplicationConfig;
 ```
 
-Defined in: [nanoforge-application.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L16)
+Defined in: [nanoforge-application.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L16)
 
 ###### Inherited from
 
@@ -258,7 +258,7 @@ NanoforgeApplication.applicationConfig
 init(options): Promise<void>;
 ```
 
-Defined in: [nanoforge-application.ts:46](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L46)
+Defined in: [nanoforge-application.ts:46](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L46)
 
 ###### Parameters
 
@@ -282,7 +282,7 @@ NanoforgeApplication.init
 run(): Promise<void>;
 ```
 
-Defined in: [nanoforge-application.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L54)
+Defined in: [nanoforge-application.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L54)
 
 ###### Returns
 
@@ -300,7 +300,7 @@ NanoforgeApplication.run
 use(sym, library): void;
 ```
 
-Defined in: [nanoforge-application.ts:30](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L30)
+Defined in: [nanoforge-application.ts:30](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L30)
 
 ###### Parameters
 
@@ -328,7 +328,7 @@ NanoforgeApplication.use
 useAssetManager(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:42](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L42)
+Defined in: [nanoforge-application.ts:42](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L42)
 
 ###### Parameters
 
@@ -352,7 +352,7 @@ NanoforgeApplication.useAssetManager
 useComponentSystem(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:34](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L34)
+Defined in: [nanoforge-application.ts:34](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L34)
 
 ###### Parameters
 
@@ -376,7 +376,7 @@ NanoforgeApplication.useComponentSystem
 useNetwork(library): void;
 ```
 
-Defined in: [nanoforge-application.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-application.ts#L38)
+Defined in: [nanoforge-application.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-application.ts#L38)
 
 ###### Parameters
 
@@ -402,4 +402,4 @@ NanoforgeApplication.useNetwork
 const NanoforgeFactory: NanoforgeFactoryStatic;
 ```
 
-Defined in: [nanoforge-factory.ts:15](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/core/src/application/nanoforge-factory.ts#L15)
+Defined in: [nanoforge-factory.ts:15](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/core/src/application/nanoforge-factory.ts#L15)

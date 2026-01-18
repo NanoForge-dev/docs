@@ -4,7 +4,7 @@
 
 ### `abstract` AbstractECSLibrary
 
-Defined in: [src/ecs-library.abstract.ts:18](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L18)
+Defined in: [src/ecs-library.abstract.ts:18](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L18)
 
 Abstract class representing an ECS (Entity Component System) library.
 Extends the BaseComponentSystemLibrary to provide ECS-specific functionality.
@@ -24,7 +24,7 @@ Manages a registry of systems and ensures proper initialization before use.
 protected new AbstractECSLibrary(): AbstractECSLibrary;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:24](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L24)
+Defined in: [src/ecs-library.abstract.ts:24](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L24)
 
 ###### Returns
 
@@ -44,7 +44,7 @@ BaseComponentSystemLibrary.constructor
 protected optional _registry: Registry;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:20](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L20)
+Defined in: [src/ecs-library.abstract.ts:20](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L20)
 
 ##### module?
 
@@ -52,7 +52,7 @@ Defined in: [src/ecs-library.abstract.ts:20](https://github.com/NanoForge-dev/En
 protected optional module: MainModule;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:19](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L19)
+Defined in: [src/ecs-library.abstract.ts:19](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L19)
 
 ##### path
 
@@ -60,7 +60,7 @@ Defined in: [src/ecs-library.abstract.ts:19](https://github.com/NanoForge-dev/En
 protected path: string;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:22](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L22)
+Defined in: [src/ecs-library.abstract.ts:22](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L22)
 
 #### Accessors
 
@@ -72,7 +72,7 @@ Defined in: [src/ecs-library.abstract.ts:22](https://github.com/NanoForge-dev/En
 get abstract __name(): string;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:31](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L31)
+Defined in: [src/ecs-library.abstract.ts:31](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L31)
 
 ###### Returns
 
@@ -86,7 +86,7 @@ Defined in: [src/ecs-library.abstract.ts:31](https://github.com/NanoForge-dev/En
 get registry(): Registry;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:48](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L48)
+Defined in: [src/ecs-library.abstract.ts:48](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L48)
 
 Gets the registry.
 
@@ -108,7 +108,7 @@ The registry.
 __run(ctx): Promise<void>;
 ```
 
-Defined in: [src/ecs-library.abstract.ts:38](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/ecs-library.abstract.ts#L38)
+Defined in: [src/ecs-library.abstract.ts:38](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/ecs-library.abstract.ts#L38)
 
 Runs the ECS systems using the provided context.
 
@@ -130,7 +130,7 @@ A promise that resolves when the systems have been run.
 
 ### Registry
 
-Defined in: [lib/libecs.d.ts:47](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L47)
+Defined in: [lib/libecs.d.ts:47](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L47)
 
 #### Extends
 
@@ -144,7 +144,7 @@ Defined in: [lib/libecs.d.ts:47](https://github.com/NanoForge-dev/Engine/blob/33
 dispose: void;
 ```
 
-Defined in: [lib/libecs.d.ts:16](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L16)
+Defined in: [lib/libecs.d.ts:16](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L16)
 
 ###### Returns
 
@@ -162,7 +162,7 @@ ClassHandle.[dispose]
 addComponent(_0, _1): any;
 ```
 
-Defined in: [lib/libecs.d.ts:63](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L63)
+Defined in: [lib/libecs.d.ts:63](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L63)
 
 ###### Parameters
 
@@ -184,7 +184,7 @@ Defined in: [lib/libecs.d.ts:63](https://github.com/NanoForge-dev/Engine/blob/33
 addSystem(_0): void;
 ```
 
-Defined in: [lib/libecs.d.ts:56](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L56)
+Defined in: [lib/libecs.d.ts:56](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L56)
 
 ###### Parameters
 
@@ -202,7 +202,7 @@ Defined in: [lib/libecs.d.ts:56](https://github.com/NanoForge-dev/Engine/blob/33
 clearEntities(): void;
 ```
 
-Defined in: [lib/libecs.d.ts:54](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L54)
+Defined in: [lib/libecs.d.ts:54](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L54)
 
 ###### Returns
 
@@ -214,7 +214,7 @@ Defined in: [lib/libecs.d.ts:54](https://github.com/NanoForge-dev/Engine/blob/33
 clearSystems(): void;
 ```
 
-Defined in: [lib/libecs.d.ts:57](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L57)
+Defined in: [lib/libecs.d.ts:57](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L57)
 
 ###### Returns
 
@@ -226,7 +226,7 @@ Defined in: [lib/libecs.d.ts:57](https://github.com/NanoForge-dev/Engine/blob/33
 clone(): this;
 ```
 
-Defined in: [lib/libecs.d.ts:17](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L17)
+Defined in: [lib/libecs.d.ts:17](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L17)
 
 ###### Returns
 
@@ -244,7 +244,7 @@ ClassHandle.clone
 delete(): void;
 ```
 
-Defined in: [lib/libecs.d.ts:12](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L12)
+Defined in: [lib/libecs.d.ts:12](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L12)
 
 ###### Returns
 
@@ -262,7 +262,7 @@ ClassHandle.delete
 deleteLater(): this;
 ```
 
-Defined in: [lib/libecs.d.ts:13](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L13)
+Defined in: [lib/libecs.d.ts:13](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L13)
 
 ###### Returns
 
@@ -280,7 +280,7 @@ ClassHandle.deleteLater
 entityFromIndex(_0): Entity;
 ```
 
-Defined in: [lib/libecs.d.ts:58](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L58)
+Defined in: [lib/libecs.d.ts:58](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L58)
 
 ###### Parameters
 
@@ -298,7 +298,7 @@ Defined in: [lib/libecs.d.ts:58](https://github.com/NanoForge-dev/Engine/blob/33
 getComponents(_0): SparseArray;
 ```
 
-Defined in: [lib/libecs.d.ts:50](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L50)
+Defined in: [lib/libecs.d.ts:50](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L50)
 
 ###### Parameters
 
@@ -316,7 +316,7 @@ Defined in: [lib/libecs.d.ts:50](https://github.com/NanoForge-dev/Engine/blob/33
 getComponentsConst(_0): SparseArray;
 ```
 
-Defined in: [lib/libecs.d.ts:49](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L49)
+Defined in: [lib/libecs.d.ts:49](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L49)
 
 ###### Parameters
 
@@ -334,7 +334,7 @@ Defined in: [lib/libecs.d.ts:49](https://github.com/NanoForge-dev/Engine/blob/33
 getEntityComponent(_0, _1): any;
 ```
 
-Defined in: [lib/libecs.d.ts:62](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L62)
+Defined in: [lib/libecs.d.ts:62](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L62)
 
 ###### Parameters
 
@@ -356,7 +356,7 @@ Defined in: [lib/libecs.d.ts:62](https://github.com/NanoForge-dev/Engine/blob/33
 getEntityComponentConst(_0, _1): any;
 ```
 
-Defined in: [lib/libecs.d.ts:61](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L61)
+Defined in: [lib/libecs.d.ts:61](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L61)
 
 ###### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [lib/libecs.d.ts:61](https://github.com/NanoForge-dev/Engine/blob/33
 getZipper(_0): any[];
 ```
 
-Defined in: [lib/libecs.d.ts:52](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L52)
+Defined in: [lib/libecs.d.ts:52](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L52)
 
 ###### Parameters
 
@@ -396,7 +396,7 @@ Defined in: [lib/libecs.d.ts:52](https://github.com/NanoForge-dev/Engine/blob/33
 isAliasOf(other): boolean;
 ```
 
-Defined in: [lib/libecs.d.ts:11](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L11)
+Defined in: [lib/libecs.d.ts:11](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L11)
 
 ###### Parameters
 
@@ -420,7 +420,7 @@ ClassHandle.isAliasOf
 isDeleted(): boolean;
 ```
 
-Defined in: [lib/libecs.d.ts:14](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L14)
+Defined in: [lib/libecs.d.ts:14](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L14)
 
 ###### Returns
 
@@ -438,7 +438,7 @@ ClassHandle.isDeleted
 killEntity(_0): void;
 ```
 
-Defined in: [lib/libecs.d.ts:53](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L53)
+Defined in: [lib/libecs.d.ts:53](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L53)
 
 ###### Parameters
 
@@ -456,7 +456,7 @@ Defined in: [lib/libecs.d.ts:53](https://github.com/NanoForge-dev/Engine/blob/33
 maxEntities(): number;
 ```
 
-Defined in: [lib/libecs.d.ts:60](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L60)
+Defined in: [lib/libecs.d.ts:60](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L60)
 
 ###### Returns
 
@@ -468,7 +468,7 @@ Defined in: [lib/libecs.d.ts:60](https://github.com/NanoForge-dev/Engine/blob/33
 registerComponent(_0): SparseArray;
 ```
 
-Defined in: [lib/libecs.d.ts:48](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L48)
+Defined in: [lib/libecs.d.ts:48](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L48)
 
 ###### Parameters
 
@@ -486,7 +486,7 @@ Defined in: [lib/libecs.d.ts:48](https://github.com/NanoForge-dev/Engine/blob/33
 removeComponent(_0, _1): void;
 ```
 
-Defined in: [lib/libecs.d.ts:55](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L55)
+Defined in: [lib/libecs.d.ts:55](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L55)
 
 ###### Parameters
 
@@ -508,7 +508,7 @@ Defined in: [lib/libecs.d.ts:55](https://github.com/NanoForge-dev/Engine/blob/33
 removeSystem(_0): void;
 ```
 
-Defined in: [lib/libecs.d.ts:59](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L59)
+Defined in: [lib/libecs.d.ts:59](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L59)
 
 ###### Parameters
 
@@ -526,7 +526,7 @@ Defined in: [lib/libecs.d.ts:59](https://github.com/NanoForge-dev/Engine/blob/33
 runSystems(_0): void;
 ```
 
-Defined in: [lib/libecs.d.ts:64](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L64)
+Defined in: [lib/libecs.d.ts:64](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L64)
 
 ###### Parameters
 
@@ -544,7 +544,7 @@ Defined in: [lib/libecs.d.ts:64](https://github.com/NanoForge-dev/Engine/blob/33
 spawnEntity(): Entity;
 ```
 
-Defined in: [lib/libecs.d.ts:51](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L51)
+Defined in: [lib/libecs.d.ts:51](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L51)
 
 ###### Returns
 
@@ -558,7 +558,7 @@ Defined in: [lib/libecs.d.ts:51](https://github.com/NanoForge-dev/Engine/blob/33
 type Component = object;
 ```
 
-Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L3)
+Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L3)
 
 #### Indexable
 
@@ -574,7 +574,7 @@ Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f
 name: string;
 ```
 
-Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L3)
+Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L3)
 
 ***
 
@@ -584,7 +584,7 @@ Defined in: [lib/libecs.d.ts:3](https://github.com/NanoForge-dev/Engine/blob/33f
 type EditorComponentManifest = object;
 ```
 
-Defined in: [src/editor-manifest.type.ts:100](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L100)
+Defined in: [src/editor-manifest.type.ts:100](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L100)
 
 Manifest for a component to be used in the NanoForge Editor
 
@@ -596,7 +596,7 @@ Manifest for a component to be used in the NanoForge Editor
 optional description: string;
 ```
 
-Defined in: [src/editor-manifest.type.ts:109](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L109)
+Defined in: [src/editor-manifest.type.ts:109](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L109)
 
 Description of the component
 
@@ -606,7 +606,7 @@ Description of the component
 name: string;
 ```
 
-Defined in: [src/editor-manifest.type.ts:104](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L104)
+Defined in: [src/editor-manifest.type.ts:104](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L104)
 
 Displayed name of the component
 
@@ -616,7 +616,7 @@ Displayed name of the component
 params: Record<string, ECSElement>;
 ```
 
-Defined in: [src/editor-manifest.type.ts:114](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L114)
+Defined in: [src/editor-manifest.type.ts:114](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L114)
 
 Parameters of the component
 
@@ -628,7 +628,7 @@ Parameters of the component
 type EditorSystemManifest = object;
 ```
 
-Defined in: [src/editor-manifest.type.ts:120](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L120)
+Defined in: [src/editor-manifest.type.ts:120](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L120)
 
 Manifest for a system to be used in the NanoForge Editor
 
@@ -640,7 +640,7 @@ Manifest for a system to be used in the NanoForge Editor
 dependencies: string[];
 ```
 
-Defined in: [src/editor-manifest.type.ts:134](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L134)
+Defined in: [src/editor-manifest.type.ts:134](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L134)
 
 Component names needed by the system
 
@@ -650,7 +650,7 @@ Component names needed by the system
 optional description: string;
 ```
 
-Defined in: [src/editor-manifest.type.ts:129](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L129)
+Defined in: [src/editor-manifest.type.ts:129](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L129)
 
 Description of the system
 
@@ -660,7 +660,7 @@ Description of the system
 name: string;
 ```
 
-Defined in: [src/editor-manifest.type.ts:124](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/src/editor-manifest.type.ts#L124)
+Defined in: [src/editor-manifest.type.ts:124](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/src/editor-manifest.type.ts#L124)
 
 Displayed name of the system
 
@@ -672,7 +672,7 @@ Displayed name of the system
 type System = (registry, ctx) => void;
 ```
 
-Defined in: [lib/libecs.d.ts:5](https://github.com/NanoForge-dev/Engine/blob/33f373db14dfd95dd6b0a1b04b8cbf8660079d3b/packages/ecs-lib/lib/libecs.d.ts#L5)
+Defined in: [lib/libecs.d.ts:5](https://github.com/NanoForge-dev/Engine/blob/fa908e7e268fa1770be58fc62a0257f3760480b2/packages/ecs-lib/lib/libecs.d.ts#L5)
 
 #### Parameters
 
