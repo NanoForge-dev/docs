@@ -9,4 +9,6 @@ RUN bash ./build.sh output
 
 FROM nginx:alpine as runner
 
+COPY default.conf /etc/nginx/conf.d/default.conf
+
 COPY --from=builder /app/output /usr/share/nginx/html
