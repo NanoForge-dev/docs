@@ -5,5 +5,6 @@ Nanoforge Documentation
 
   cli/index.rst
   engine/index.rst
+  schematics/index.rst
 
 this is a basic documentation project
