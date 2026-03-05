@@ -1,0 +1,14 @@
+replicaCount: 1
+name: nanoforge-docs
+image:
+  repository: "ghcr.io/nanoforge-dev/docs"
+  tag: "main"
+imagePullSecret: "nanoforge-docker-token"
+routes:
+  - port: 443
+    match: "Host(`master.nanoforge.external.crabznetwork.com`) && PathPrefix(`/docs`)"
+    middlewares:
+      - "strip-prefix"
+    ssl:
+      secretMountPath: "/etc/nginx/ssl"
+      secretName: "tls-certificates"
