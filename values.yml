@@ -6,9 +6,7 @@ image:
 imagePullSecret: "nanoforge-docker-token"
 routes:
   - port: 443
-    match: "Host(`master.nanoforge.external.crabznetwork.com`) && PathPrefix(`/docs`)"
-    middlewares:
-      - "strip-prefix"
+    match: "Host(`docs.nanoforge.eu`)"
     ssl:
       secretMountPath: "/etc/nginx/ssl"
       secretName: "tls-certificates"
