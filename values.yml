@@ -5,8 +5,5 @@ image:
   tag: "main"
 imagePullSecret: "nanoforge-docker-token"
 routes:
-  - port: 443
+  - port: 80
     match: "Host(`docs.nanoforge.eu`)"
-    ssl:
-      secretMountPath: "/etc/nginx/ssl"
-      secretName: "tls-certificates"
