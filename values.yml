@@ -2,7 +2,7 @@ replicaCount: 1
 name: nanoforge-docs
 image:
   repository: ghcr.io/nanoforge-dev/docs
-  tag: sha256:6a2a58b74268274f54a28673763e83eba0db994afd71df351f6cf0417f3a91b3
+  tag: sha256:2f904730038b7bcc8b7035ff9bf0d9dcdd7982b71a435fe768ac2b65ac63c3d2
 imagePullSecret: nanoforge-docker-token
 routes:
 - port: 80
