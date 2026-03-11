@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths-ignore:
-      - "values.yml"
   workflow_dispatch:
 
 env:
@@ -32,6 +30,7 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v7
@@ -41,6 +40,14 @@ jobs:
           tags: |
             ${{ env.REGISTRY }}/nanoforge-dev/docs:latest
             ${{ env.REGISTRY }}/nanoforge-dev/docs:${{ github.sha }}
+
+      - name: checkout cloud
+        uses: actions/checkout@v5
+        with:
+          repository: nanoforge-dev/cloud-iac
+          token: ${{ secrets.TOKEN }}
+          path: cloud-tmp
+
       - name: install yq and setup git
         run: |
           pip install yq
@@ -50,10 +57,11 @@ jobs:
       - name: Update tag in values.yaml
         run: |
 
-          python -m yq -Y --indentless --in-place '.image.tag = "${{ github.sha }}"' values.yml
+          cd cloud-tmp
+          python -m yq -Y --indentless --in-place '.image.tag = "${{ github.sha }}"' kubernetes/nanoforge/docs-override.yml
 
-          git add values.yml
-          git commit -m "Update image tag to ${{ github.sha }}"
+          git add kubernetes/nanoforge/docs-override.yml
+          git commit -m "Update docs image tag to ${{ github.sha }}"
           git push origin main
 
       - name: Generate artifact attestation
