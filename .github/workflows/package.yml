@@ -51,14 +51,17 @@ jobs:
 
           git config --global user.name "github-actions[bot]"
           git config --global user.email "username@users.noreply.github.com"
+      - name: fix tag format
+        id: tag
+        run: |
+          echo "sha=$(echo "${{ steps.push.outputs.digest }}" | sed 's/sha256:/sha256-/g')" >> $GITHUB_OUTPUT
       - name: Update tag in values.yaml
         run: |
 
-          export sha=$(echo "${{ steps.push.outputs.digest }}" | sed 's/sha256:/sha256-/g')
-          python -m yq -Y --indentless --in-place '.image.tag = "$sha"' values.yml
+          python -m yq -Y --indentless --in-place '.image.tag = "${{ steps.tag.outputs.sha }}"' values.yml
 
           git add values.yml
-          git commit -m "Update image tag to ${{ steps.push.outputs.digest }}"
+          git commit -m "Update image tag to ${{ steps.tag.outputs.sha }}"
           git push origin main
 
       - name: Generate artifact attestation
