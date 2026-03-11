@@ -27,41 +27,33 @@ jobs:
           token: ${{ secrets.TOKEN }}
 
       - name: Log in to the Container registry
-        uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
+        uses: docker/login-action@v4
         with:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Extract metadata (tags, labels) for Docker
-        id: meta
-        uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
-        with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
       - name: Build and push Docker image
         id: push
-        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+        uses: docker/build-push-action@v7
         with:
           context: .
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: |
+            ${{ env.REGISTRY }}/nanoforge-dev/docs:latest
+            ${{ env.REGISTRY }}/nanoforge-dev/docs:${{ github.sha }}
       - name: install yq and setup git
         run: |
           pip install yq
 
           git config --global user.name "github-actions[bot]"
           git config --global user.email "username@users.noreply.github.com"
-      - name: fix tag format
-        id: tag
-        run: |
-          echo "sha=$(echo "${{ steps.push.outputs.digest }}" | sed 's/sha256:/sha256-/g')" >> $GITHUB_OUTPUT
       - name: Update tag in values.yaml
         run: |
 
-          python -m yq -Y --indentless --in-place '.image.tag = "${{ steps.tag.outputs.sha }}"' values.yml
+          python -m yq -Y --indentless --in-place '.image.tag = "${{ github.sha }}"' values.yml
 
           git add values.yml
-          git commit -m "Update image tag to ${{ steps.tag.outputs.sha }}"
+          git commit -m "Update image tag to ${{ github.sha }}"
           git push origin main
 
       - name: Generate artifact attestation
