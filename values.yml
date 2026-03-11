@@ -1,9 +1,9 @@
 replicaCount: 1
 name: nanoforge-docs
 image:
-  repository: "ghcr.io/nanoforge-dev/docs"
-  tag: "main"
-imagePullSecret: "nanoforge-docker-token"
+  repository: ghcr.io/nanoforge-dev/docs
+  tag: sha256:7c45e4bcc7ba3913c12aca1d0c4556b3c9a4a001460a93795d109f5fbadfda04
+imagePullSecret: nanoforge-docker-token
 routes:
   - port: 80
-    match: "Host(`docs.nanoforge.eu`)"
+    match: Host(`docs.nanoforge.eu`)
