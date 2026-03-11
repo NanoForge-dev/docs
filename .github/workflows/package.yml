@@ -5,7 +5,7 @@ on:
     branches:
       - main
     paths-ignore:
-      - "values.yaml"
+      - "values.yml"
   workflow_dispatch:
 
 env:
@@ -54,7 +54,8 @@ jobs:
       - name: Update tag in values.yaml
         run: |
 
-          python -m yq -Y --indentless --in-place '.image.tag = "${{ steps.push.outputs.digest }}"' values.yml
+          export sha=$(echo "${{ steps.push.outputs.digest }}" | sed 's/sha256:/sha256-/g')
+          python -m yq -Y --indentless --in-place '.image.tag = "$sha"' values.yml
 
           git add values.yml
           git commit -m "Update image tag to ${{ steps.push.outputs.digest }}"
