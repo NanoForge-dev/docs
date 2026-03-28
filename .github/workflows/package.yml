@@ -58,9 +58,9 @@ jobs:
         run: |
 
           cd cloud-tmp
-          python -m yq -Y --indentless --in-place '.image.tag = "${{ github.sha }}"' kubernetes/nanoforge/docs-override.yml
+          python -m yq -Y --indentless --in-place '.image.tag = "${{ github.sha }}"' kubernetes/nanoforge/docs-override.yaml
 
-          git add kubernetes/nanoforge/docs-override.yml
+          git add kubernetes/nanoforge/docs-override.yaml
           git commit -m "Update docs image tag to ${{ github.sha }}"
           git push origin main
 
