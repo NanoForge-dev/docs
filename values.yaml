@@ -7,5 +7,5 @@ imagePullSecret: nanoforge-docker-token
 routes:
   - port: 80
     match: Host(`docs.nanoforge.eu`)
-    middlewares:
-      - name: "404"
+    # middlewares:
+      # - name: "404"
