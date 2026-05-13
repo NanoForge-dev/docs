@@ -1,0 +1,28 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "almond",
+  "name": "NanoForge",
+  "colors": {
+    "primary": "#4923b6",
+    "light": "#b794f6",
+    "dark": "#7c3aed"
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "groups": [
+              {
+                "group": "CLI",
+                "pages": ["docs/cli/index", "docs/cli/usage"]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+packages:
+  - .
+allowBuilds:
+  bun: true
+  keytar: true
+  puppeteer: true
+  sharp: true
+
+catalog:
+  '@commitlint/cli': ^20.5.0
+  '@commitlint/config-conventional': ^20.5.0
+  '@favware/cliff-jumper': ^6.0.0
+  '@nanoforge-dev/actions': ^1.2.3
+  bun: ^1.3.11
+  extract-zip: ^2.0.1
+  husky: ^9.1.7
+  lint-staged: ^16.4.0
+  mint: ^4.2.502
+  prettier: ^3.8.1

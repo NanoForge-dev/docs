@@ -1,14 +1,26 @@
-FROM python:3.9 as builder
+FROM node:24-slim AS base
+
+ENV PNPM_HOME="/pnpm"
+ENV CI="true"
+ENV PATH="$PNPM_HOME:$PATH"
+
+RUN npm install -g pnpm
+
+COPY pnpm-workspace.yaml /app/pnpm-workspace.yaml
+COPY pnpm-lock.yaml /app/pnpm-lock.yaml
+COPY package.json /app/package.json
 
 WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
 
-RUN bash ./build.sh output
+FROM base AS prod
 
-FROM nginx:alpine as runner
+RUN pnpm install --frozen-lockfile
+COPY . /app
+RUN pnpm run build
 
-COPY default.conf /etc/nginx/conf.d/default.conf
+FROM oven/bun:1.3 AS final
 
-COPY --from=builder /app/output /usr/share/nginx/html
+WORKDIR /app
+COPY --from=prod /app/dist /app/dist
+
+CMD [ "bun", "run", "./dist/serve.js" ]

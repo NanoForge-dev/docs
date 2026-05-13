@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@nanoforge-dev/docs",
+  "version": "0.0.0",
+  "description": "NanoForge Docs",
+  "keywords": [
+    "nanoforge",
+    "game",
+    "docs"
+  ],
+  "homepage": "https://github.com/NanoForge-dev/docs#readme",
+  "bugs": "https://github.com/NanoForge-dev/docs/issues",
+  "license": "LICENSE",
+  "contributors": [
+    "Bill <timothe.jacquot@epitech.eu>",
+    "Exelo <exelo.corp@gmail.com>",
+    "Fexkoser <martin.fillon@epitech.eu>",
+    "Tchips <leo.outmizguine@epitech.eu>"
+  ],
+  "directories": {
+    "lib": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NanoForge-dev/docs.git"
+  },
+  "funding": "https://github.com/NanoForge-dev/docs?sponsor",
+  "scripts": {
+    "build": "mint export --output .temp/export.zip && extract-zip .temp/export.zip $PWD/dist && rm -rf .temp",
+    "dev": "mint dev --port 3001",
+    "start": "bun run ./dist/serve.js",
+    "a11y": "mint a11y",
+    "lint": "prettier --check .",
+    "format": "prettier --write .",
+    "changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml -r . --include-path '.'",
+    "release": "cliff-jumper",
+    "prepare": "sh -c 'if [ \"$CI\" != \"true\" ]; then husky; fi'"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "catalog:",
+    "@commitlint/config-conventional": "catalog:",
+    "@favware/cliff-jumper": "catalog:",
+    "@nanoforge-dev/actions": "catalog:",
+    "bun": "catalog:",
+    "extract-zip": "catalog:",
+    "husky": "catalog:",
+    "lint-staged": "catalog:",
+    "mint": "catalog:",
+    "prettier": "catalog:"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": "24"
+  },
+  "private": true,
+  "lint-staged": {
+    "**": [
+      "prettier --ignore-unknown --write"
+    ],
+    "src/**/*.ts": [
+      "eslint --fix"
+    ]
+  }
+}
