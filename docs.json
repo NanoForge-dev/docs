@@ -32,6 +32,21 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Guides",
+            "groups": [
+              {
+                "group": "Schematics",
+                "pages": [
+                  "guides/schematics/index",
+                  "guides/schematics/contributing",
+                  "guides/schematics/creating-schematics",
+                  "guides/schematics/testing",
+                  "guides/schematics/getting-started"
+                ]
+              }
+            ]
           }
         ]
       }
