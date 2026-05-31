@@ -1,0 +1,55 @@
+---
+title: "TCPServer class"
+icon: "box"
+description: "TCPServer Reliable ordered send/receive of packets to multiple TCP clients"
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# TCPServer
+
+## Summary
+
+TCPServer Reliable ordered send/receive of packets to multiple TCP clients 
+## Signature
+
+```typescript
+declare class TCPServer 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+*No properties defined.*
+
+## Methods
+
+### getConnectedClients
+
+Return a snapshot array of numeric client IDs currently connected.
+
+### getReceivedPackets
+
+Parse and return complete packets received from each client. Each packet is a buffer.
+
+### listen
+
+Start the WebSocket server and begin accepting clients.
+
+### sendToClient
+
+Send a payload to the client identified by .
+
+### sendToEverybody
+
+Send a payload to every connected client.
+
+## Events
+
+*No events defined.*
