@@ -34,20 +34,19 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: prepare snippets
-        run: |
-          mkdir -p snippets
-          mv docs/engine/api/snippets snippets/
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
 
       - name: Build and push Docker image
         id: push
         uses: docker/build-push-action@v7
         with:
-          context: .
           push: true
           tags: |
             ${{ env.REGISTRY }}/nanoforge-dev/docs:latest
             ${{ env.REGISTRY }}/nanoforge-dev/docs:${{ github.sha }}
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
 
       - name: checkout cloud
         uses: actions/checkout@v5

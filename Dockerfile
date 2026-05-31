@@ -16,5 +16,6 @@ FROM base AS prod
 
 RUN pnpm install --frozen-lockfile
 COPY . /app
+RUN mv docs/engine/api/snippets snippets/
 
 CMD ["pnpm", "run", "prod" ]
