@@ -28,6 +28,7 @@
   "scripts": {
     "build": "mint export --output .temp/export.zip && extract-zip .temp/export.zip $PWD/dist && rm -rf .temp",
     "dev": "mint dev --port 3001",
+    "prod": "mint dev --port 3000 --no-open",
     "start": "bun run ./dist/serve.js",
     "a11y": "mint a11y",
     "lint": "prettier --check .",

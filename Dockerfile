@@ -17,4 +17,4 @@ FROM base AS prod
 RUN pnpm install --frozen-lockfile
 COPY . /app
 
-CMD ["mint", "dev", "--port", "3000" ]
+CMD ["pnpm", "run", "prod" ]
