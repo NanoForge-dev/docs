@@ -15,7 +15,7 @@
   window.TSDOCS_CONFIG = {
     basePath: "/core-editor",
     packageName: "core-editor",
-    generatedAt: "2026-05-31T09:41:44.351Z"
+    generatedAt: "2026-05-31T10:05:11.590Z"
   };
 
   // Helper function to generate absolute path for an API reference

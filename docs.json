@@ -17,7 +17,10 @@
             "groups": [
               {
                 "group": "CLI",
-                "pages": ["docs/cli/index", "docs/cli/usage"]
+                "pages": [
+                  "docs/cli/index",
+                  "docs/cli/usage"
+                ]
               },
               {
                 "group": "Schematics",
