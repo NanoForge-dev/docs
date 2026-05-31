@@ -16,11 +16,5 @@ FROM base AS prod
 
 RUN pnpm install --frozen-lockfile
 COPY . /app
-RUN pnpm run build
 
-FROM oven/bun:1.3 AS final
-
-WORKDIR /app
-COPY --from=prod /app/dist /app/dist
-
-CMD [ "bun", "run", "./dist/serve.js" ]
+CMD ["mint", "dev", "--port", "3000" ]
