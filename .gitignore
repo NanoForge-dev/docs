@@ -2,4 +2,4 @@ gh-pages
 Doxyfile
 node_modules
 snippets/*
-!docs/engine/api/snippets/*
+.idea/
