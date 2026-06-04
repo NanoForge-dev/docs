@@ -1,0 +1,51 @@
+---
+title: "TCPClient class"
+icon: "box"
+description: "TCPClient Reliable ordered send/receive of packets to a TCP server"
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# TCPClient
+
+## Summary
+
+TCPClient Reliable ordered send/receive of packets to a TCP server 
+## Signature
+
+```typescript
+declare class TCPClient 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+*No properties defined.*
+
+## Methods
+
+### connect
+
+Initiate a WebSocket connection to the server (e.g. ).
+
+### getReceivedPackets
+
+Return an array of complete packets that were reassembled from received chunks.
+
+### isConnected
+
+Return when the underlying WebSocket is open.
+
+### sendData
+
+Send a payload to the server.
+
+## Events
+
+*No events defined.*

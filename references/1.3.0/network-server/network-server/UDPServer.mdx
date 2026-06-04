@@ -1,0 +1,55 @@
+---
+title: "UDPServer class"
+icon: "box"
+description: "UDPServer Fast but less reliable unordered send/receive to multiple UDP clients"
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# UDPServer
+
+## Summary
+
+UDPServer Fast but less reliable unordered send/receive to multiple UDP clients 
+## Signature
+
+```typescript
+declare class UDPServer 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+*No properties defined.*
+
+## Methods
+
+### getConnectedClients
+
+Return a snapshot array of client IDs with active data channels.
+
+### getReceivedPackets
+
+Reassemble buffered chunks and return a map of clientId = complete packets. Partial packets are retained internally for the next call so callers may repeatedly poll this method to consume newly arrived data.
+
+### listen
+
+Start the signaling WebSocket and accept incoming client offers (SDP/ICE).
+
+### sendToClient
+
+Send a packet to a single client via the unreliable data channel. The packet will be framed with the server's configured magic terminator bytes before being sent.
+
+### sendToEverybody
+
+Broadcast a packet to all connected clients over the unreliable data channels. The server will frame the provided data with the configured magic terminator.
+
+## Events
+
+*No events defined.*
