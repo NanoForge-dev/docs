@@ -3,7 +3,9 @@
   "theme": "almond",
   "name": "NanoForge",
   "custom": {
-    "css": ["custom.css"]
+    "css": [
+      "custom.css"
+    ]
   },
   "colors": {
     "primary": "#4923b6",
@@ -11,6 +13,37 @@
     "dark": "#7c3aed"
   },
   "navigation": {
-    "pages": []
+    "languages": [
+      {
+        "language": "en",
+        "tabs": [
+          {
+            "tab": "Documentation",
+            "dropdowns": [
+              {
+                "dropdown": "Cli",
+                "groups": [
+                  {
+                    "group": "Getting-Started",
+                    "pages": [
+                      "docs/cli/getting-started/index",
+                      "docs/cli/getting-started/usage"
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Guides",
+            "dropdowns": []
+          },
+          {
+            "tab": "References",
+            "versions": []
+          }
+        ]
+      }
+    ]
   }
 }
