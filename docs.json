@@ -55,8 +55,38 @@
                 "dropdown": "CLI",
                 "groups": [
                   {
+                    "group": "Commands",
+                    "pages": [
+                      "docs/cli/commands/1-overview",
+                      {
+                        "group": "Commands",
+                        "pages": [
+                          "docs/cli/commands/2-commands/1-new",
+                          "docs/cli/commands/2-commands/2-dev",
+                          "docs/cli/commands/2-commands/3-build",
+                          "docs/cli/commands/2-commands/4-start",
+                          "docs/cli/commands/2-commands/5-generate",
+                          "docs/cli/commands/2-commands/6-create",
+                          "docs/cli/commands/2-commands/7-install",
+                          "docs/cli/commands/2-commands/8-editor",
+                          "docs/cli/commands/2-commands/9-registry"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "group": "Configuration",
+                    "pages": [
+                      "docs/cli/configuration/1-configuration-file",
+                      "docs/cli/configuration/2-environment-variables"
+                    ]
+                  },
+                  {
                     "group": "Getting-Started",
                     "pages": [
+                      "docs/cli/getting-started/1-introduction",
+                      "docs/cli/getting-started/2-installation",
+                      "docs/cli/getting-started/3-quickstart",
                       "docs/cli/getting-started/index",
                       "docs/cli/getting-started/usage"
                     ]
@@ -67,7 +97,24 @@
           },
           {
             "tab": "Guides",
-            "dropdowns": []
+            "dropdowns": [
+              {
+                "dropdown": "CLI",
+                "groups": [
+                  {
+                    "group": "CLI",
+                    "pages": [
+                      "guides/cli/cli/1-overview",
+                      "guides/cli/cli/2-create-a-project",
+                      "guides/cli/cli/3-develop-locally",
+                      "guides/cli/cli/4-build-and-deploy",
+                      "guides/cli/cli/5-components-and-systems",
+                      "guides/cli/cli/6-publish-a-package"
+                    ]
+                  }
+                ]
+              }
+            ]
           },
           {
             "tab": "References",
