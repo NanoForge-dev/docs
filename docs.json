@@ -90,6 +90,24 @@
                       "docs/cli/getting-started/index",
                       "docs/cli/getting-started/usage"
                     ]
+                  },
+                  {
+                    "group": "Schematics",
+                    "pages": [
+                      "docs/cli/schematics/1-overview",
+                      {
+                        "group": "Schematics",
+                        "pages": [
+                          "docs/cli/schematics/2-schematics/1-application",
+                          "docs/cli/schematics/2-schematics/2-configuration",
+                          "docs/cli/schematics/2-schematics/3-part-base",
+                          "docs/cli/schematics/2-schematics/4-part-main",
+                          "docs/cli/schematics/2-schematics/5-docker",
+                          "docs/cli/schematics/2-schematics/6-component",
+                          "docs/cli/schematics/2-schematics/7-system"
+                        ]
+                      }
+                    ]
                   }
                 ]
               }
