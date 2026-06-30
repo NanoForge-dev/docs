@@ -143,6 +143,7 @@
                   {
                     "dropdown": "Asset-Manager",
                     "pages": [
+                      "references/1.3.0/asset-manager/index",
                       {
                         "group": "Asset-Manager",
                         "pages": [
@@ -152,18 +153,18 @@
                               "references/1.3.0/asset-manager/asset-manager/AssetManagerLibrary/__init",
                               "references/1.3.0/asset-manager/asset-manager/AssetManagerLibrary/__name",
                               "references/1.3.0/asset-manager/asset-manager/AssetManagerLibrary/getAsset"
-                            ]
-                          },
-                          "references/1.3.0/asset-manager/asset-manager/AssetManagerLibrary"
-                        ]
-                      },
-                      "references/1.3.0/asset-manager/asset-manager",
-                      "references/1.3.0/asset-manager/index"
+                            ],
+                            "root": "references/1.3.0/asset-manager/asset-manager/AssetManagerLibrary"
+                          }
+                        ],
+                        "root": "references/1.3.0/asset-manager/asset-manager"
+                      }
                     ]
                   },
                   {
                     "dropdown": "Common",
                     "pages": [
+                      "references/1.3.0/common/index",
                       {
                         "group": "Common",
                         "pages": [
@@ -175,48 +176,48 @@
                               "references/1.3.0/common/common/ApplicationContext/isRunning",
                               "references/1.3.0/common/common/ApplicationContext/muteSoundLibraries",
                               "references/1.3.0/common/common/ApplicationContext/setIsRunning"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/ApplicationContext"
                           },
-                          "references/1.3.0/common/common/ApplicationContext",
                           "references/1.3.0/common/common/ASSET_MANAGER_LIBRARY",
                           {
                             "group": "BaseAssetManagerLibrary",
                             "pages": [
                               "references/1.3.0/common/common/BaseAssetManagerLibrary/__init",
                               "references/1.3.0/common/common/BaseAssetManagerLibrary/getAsset"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseAssetManagerLibrary"
                           },
-                          "references/1.3.0/common/common/BaseAssetManagerLibrary",
                           {
                             "group": "BaseComponentSystemLibrary",
                             "pages": [
                               "references/1.3.0/common/common/BaseComponentSystemLibrary/__run"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseComponentSystemLibrary"
                           },
-                          "references/1.3.0/common/common/BaseComponentSystemLibrary",
                           {
                             "group": "BaseGraphicsLibrary",
                             "pages": [
                               "references/1.3.0/common/common/BaseGraphicsLibrary/__run"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseGraphicsLibrary"
                           },
-                          "references/1.3.0/common/common/BaseGraphicsLibrary",
                           {
                             "group": "BaseInputLibrary",
                             "pages": [
                               "references/1.3.0/common/common/BaseInputLibrary/__run"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseInputLibrary"
                           },
-                          "references/1.3.0/common/common/BaseInputLibrary",
                           {
                             "group": "BaseMusicLibrary",
                             "pages": [
                               "references/1.3.0/common/common/BaseMusicLibrary/__init",
                               "references/1.3.0/common/common/BaseMusicLibrary/mute",
                               "references/1.3.0/common/common/BaseMusicLibrary/play"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseMusicLibrary"
                           },
-                          "references/1.3.0/common/common/BaseMusicLibrary",
                           "references/1.3.0/common/common/BaseNetworkLibrary",
                           {
                             "group": "BaseSoundLibrary",
@@ -224,9 +225,9 @@
                               "references/1.3.0/common/common/BaseSoundLibrary/__init",
                               "references/1.3.0/common/common/BaseSoundLibrary/mute",
                               "references/1.3.0/common/common/BaseSoundLibrary/play"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/BaseSoundLibrary"
                           },
-                          "references/1.3.0/common/common/BaseSoundLibrary",
                           "references/1.3.0/common/common/ClearContext",
                           {
                             "group": "ClientLibraryManager",
@@ -240,9 +241,9 @@
                               "references/1.3.0/common/common/ClientLibraryManager/getMusic",
                               "references/1.3.0/common/common/ClientLibraryManager/getNetwork",
                               "references/1.3.0/common/common/ClientLibraryManager/getSound"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/ClientLibraryManager"
                           },
-                          "references/1.3.0/common/common/ClientLibraryManager",
                           "references/1.3.0/common/common/COMPONENT_SYSTEM_LIBRARY",
                           {
                             "group": "Context",
@@ -250,9 +251,9 @@
                               "references/1.3.0/common/common/Context/app",
                               "references/1.3.0/common/common/Context/constructor",
                               "references/1.3.0/common/common/Context/libs"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/Context"
                           },
-                          "references/1.3.0/common/common/Context",
                           "references/1.3.0/common/common/DefaultLibrariesEnum",
                           "references/1.3.0/common/common/ExecutionContext",
                           "references/1.3.0/common/common/GRAPHICS_LIBRARY",
@@ -260,17 +261,17 @@
                             "group": "IAssetManagerLibrary",
                             "pages": [
                               "references/1.3.0/common/common/IAssetManagerLibrary/getAsset"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IAssetManagerLibrary"
                           },
-                          "references/1.3.0/common/common/IAssetManagerLibrary",
                           "references/1.3.0/common/common/IComponentSystemLibrary",
                           {
                             "group": "IConfigRegistry",
                             "pages": [
                               "references/1.3.0/common/common/IConfigRegistry/registerConfig"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IConfigRegistry"
                           },
-                          "references/1.3.0/common/common/IConfigRegistry",
                           "references/1.3.0/common/common/IExposedLibrary",
                           "references/1.3.0/common/common/IGraphicsLibrary",
                           "references/1.3.0/common/common/IInputLibrary",
@@ -281,17 +282,17 @@
                               "references/1.3.0/common/common/ILibrary/__init",
                               "references/1.3.0/common/common/ILibrary/__name",
                               "references/1.3.0/common/common/ILibrary/__relationship"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/ILibrary"
                           },
-                          "references/1.3.0/common/common/ILibrary",
                           "references/1.3.0/common/common/IMusicLibrary",
                           {
                             "group": "IMutableLibrary",
                             "pages": [
                               "references/1.3.0/common/common/IMutableLibrary/mute"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IMutableLibrary"
                           },
-                          "references/1.3.0/common/common/IMutableLibrary",
                           "references/1.3.0/common/common/INetworkLibrary",
                           {
                             "group": "InitContext",
@@ -301,9 +302,9 @@
                               "references/1.3.0/common/common/InitContext/container",
                               "references/1.3.0/common/common/InitContext/env",
                               "references/1.3.0/common/common/InitContext/files"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/InitContext"
                           },
-                          "references/1.3.0/common/common/InitContext",
                           "references/1.3.0/common/common/INPUT_LIBRARY",
                           {
                             "group": "IRunClientOptions",
@@ -311,34 +312,34 @@
                               "references/1.3.0/common/common/IRunClientOptions/container",
                               "references/1.3.0/common/common/IRunClientOptions/env",
                               "references/1.3.0/common/common/IRunClientOptions/files"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IRunClientOptions"
                           },
-                          "references/1.3.0/common/common/IRunClientOptions",
                           {
                             "group": "IRunnerLibrary",
                             "pages": [
                               "references/1.3.0/common/common/IRunnerLibrary/__run"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IRunnerLibrary"
                           },
-                          "references/1.3.0/common/common/IRunnerLibrary",
                           "references/1.3.0/common/common/IRunOptions",
                           {
                             "group": "IRunServerOptions",
                             "pages": [
                               "references/1.3.0/common/common/IRunServerOptions/env",
                               "references/1.3.0/common/common/IRunServerOptions/files"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/IRunServerOptions"
                           },
-                          "references/1.3.0/common/common/IRunServerOptions",
                           "references/1.3.0/common/common/ISoundLibrary",
                           {
                             "group": "LibraryContext",
                             "pages": [
                               "references/1.3.0/common/common/LibraryContext/_status",
                               "references/1.3.0/common/common/LibraryContext/status"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/LibraryContext"
                           },
-                          "references/1.3.0/common/common/LibraryContext",
                           {
                             "group": "LibraryHandle",
                             "pages": [
@@ -346,9 +347,9 @@
                               "references/1.3.0/common/common/LibraryHandle/context",
                               "references/1.3.0/common/common/LibraryHandle/library",
                               "references/1.3.0/common/common/LibraryHandle/symbol"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/LibraryHandle"
                           },
-                          "references/1.3.0/common/common/LibraryHandle",
                           {
                             "group": "LibraryManager",
                             "pages": [
@@ -360,9 +361,9 @@
                               "references/1.3.0/common/common/LibraryManager/getMusic",
                               "references/1.3.0/common/common/LibraryManager/getNetwork",
                               "references/1.3.0/common/common/LibraryManager/getSound"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/LibraryManager"
                           },
-                          "references/1.3.0/common/common/LibraryManager",
                           "references/1.3.0/common/common/LibraryStatusEnum",
                           "references/1.3.0/common/common/MUSIC_LIBRARY",
                           "references/1.3.0/common/common/NETWORK_LIBRARY",
@@ -371,17 +372,17 @@
                             "pages": [
                               "references/1.3.0/common/common/NfConfigException/code",
                               "references/1.3.0/common/common/NfConfigException/constructor"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/NfConfigException"
                           },
-                          "references/1.3.0/common/common/NfConfigException",
                           {
                             "group": "NfFetchException",
                             "pages": [
                               "references/1.3.0/common/common/NfFetchException/code",
                               "references/1.3.0/common/common/NfFetchException/constructor"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/NfFetchException"
                           },
-                          "references/1.3.0/common/common/NfFetchException",
                           {
                             "group": "NfFile",
                             "pages": [
@@ -393,50 +394,50 @@
                               "references/1.3.0/common/common/NfFile/json",
                               "references/1.3.0/common/common/NfFile/path",
                               "references/1.3.0/common/common/NfFile/text"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/NfFile"
                           },
-                          "references/1.3.0/common/common/NfFile",
                           {
                             "group": "NfNotFound",
                             "pages": [
                               "references/1.3.0/common/common/NfNotFound/code",
                               "references/1.3.0/common/common/NfNotFound/constructor"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/NfNotFound"
                           },
-                          "references/1.3.0/common/common/NfNotFound",
                           {
                             "group": "NfNotInitializedException",
                             "pages": [
                               "references/1.3.0/common/common/NfNotInitializedException/code",
                               "references/1.3.0/common/common/NfNotInitializedException/constructor"
-                            ]
+                            ],
+                            "root": "references/1.3.0/common/common/NfNotInitializedException"
                           },
-                          "references/1.3.0/common/common/NfNotInitializedException",
                           "references/1.3.0/common/common/SOUND_LIBRARY"
-                        ]
-                      },
-                      "references/1.3.0/common/common",
-                      "references/1.3.0/common/index"
+                        ],
+                        "root": "references/1.3.0/common/common"
+                      }
                     ]
                   },
                   {
                     "dropdown": "Config",
                     "pages": [
+                      "references/1.3.0/config/index",
                       {
                         "group": "Config",
                         "pages": [
                           "references/1.3.0/config/config/Default",
                           "references/1.3.0/config/config/IsIpOrFQDN",
                           "references/1.3.0/config/config/TransformToBoolean"
-                        ]
-                      },
-                      "references/1.3.0/config/config",
-                      "references/1.3.0/config/index"
+                        ],
+                        "root": "references/1.3.0/config/config"
+                      }
                     ]
                   },
                   {
                     "dropdown": "Core",
                     "pages": [
+                      "references/1.3.0/core/index",
                       {
                         "group": "Core",
                         "pages": [
@@ -446,20 +447,20 @@
                               "references/1.3.0/core/core/NanoforgeClient/useGraphics",
                               "references/1.3.0/core/core/NanoforgeClient/useInput",
                               "references/1.3.0/core/core/NanoforgeClient/useSound"
-                            ]
+                            ],
+                            "root": "references/1.3.0/core/core/NanoforgeClient"
                           },
-                          "references/1.3.0/core/core/NanoforgeClient",
                           "references/1.3.0/core/core/NanoforgeFactory",
                           "references/1.3.0/core/core/NanoforgeServer"
-                        ]
-                      },
-                      "references/1.3.0/core/core",
-                      "references/1.3.0/core/index"
+                        ],
+                        "root": "references/1.3.0/core/core"
+                      }
                     ]
                   },
                   {
                     "dropdown": "Core-Editor",
                     "pages": [
+                      "references/1.3.0/core-editor/index",
                       {
                         "group": "Core-Editor",
                         "pages": [
@@ -469,20 +470,20 @@
                               "references/1.3.0/core-editor/core-editor/NanoforgeClient/useGraphics",
                               "references/1.3.0/core-editor/core-editor/NanoforgeClient/useInput",
                               "references/1.3.0/core-editor/core-editor/NanoforgeClient/useSound"
-                            ]
+                            ],
+                            "root": "references/1.3.0/core-editor/core-editor/NanoforgeClient"
                           },
-                          "references/1.3.0/core-editor/core-editor/NanoforgeClient",
                           "references/1.3.0/core-editor/core-editor/NanoforgeFactory",
                           "references/1.3.0/core-editor/core-editor/NanoforgeServer"
-                        ]
-                      },
-                      "references/1.3.0/core-editor/core-editor",
-                      "references/1.3.0/core-editor/index"
+                        ],
+                        "root": "references/1.3.0/core-editor/core-editor"
+                      }
                     ]
                   },
                   {
                     "dropdown": "ECS-Client",
                     "pages": [
+                      "references/1.3.0/ecs-client/index",
                       {
                         "group": "ECS-Client",
                         "pages": [
@@ -492,18 +493,18 @@
                               "references/1.3.0/ecs-client/ecs-client/ECSClientLibrary/__init",
                               "references/1.3.0/ecs-client/ecs-client/ECSClientLibrary/__name",
                               "references/1.3.0/ecs-client/ecs-client/ECSClientLibrary/constructor"
-                            ]
-                          },
-                          "references/1.3.0/ecs-client/ecs-client/ECSClientLibrary"
-                        ]
-                      },
-                      "references/1.3.0/ecs-client/ecs-client",
-                      "references/1.3.0/ecs-client/index"
+                            ],
+                            "root": "references/1.3.0/ecs-client/ecs-client/ECSClientLibrary"
+                          }
+                        ],
+                        "root": "references/1.3.0/ecs-client/ecs-client"
+                      }
                     ]
                   },
                   {
                     "dropdown": "ECS-Lib",
                     "pages": [
+                      "references/1.3.0/ecs-lib/index",
                       {
                         "group": "ECS-Lib",
                         "pages": [
@@ -517,9 +518,9 @@
                               "references/1.3.0/ecs-lib/ecs-lib/AbstractECSLibrary/module",
                               "references/1.3.0/ecs-lib/ecs-lib/AbstractECSLibrary/path",
                               "references/1.3.0/ecs-lib/ecs-lib/AbstractECSLibrary/registry"
-                            ]
+                            ],
+                            "root": "references/1.3.0/ecs-lib/ecs-lib/AbstractECSLibrary"
                           },
-                          "references/1.3.0/ecs-lib/ecs-lib/AbstractECSLibrary",
                           "references/1.3.0/ecs-lib/ecs-lib/Component",
                           "references/1.3.0/ecs-lib/ecs-lib/EditorComponentManifest",
                           "references/1.3.0/ecs-lib/ecs-lib/EditorSystemManifest",
@@ -527,9 +528,9 @@
                             "group": "Entity",
                             "pages": [
                               "references/1.3.0/ecs-lib/ecs-lib/Entity/getId"
-                            ]
+                            ],
+                            "root": "references/1.3.0/ecs-lib/ecs-lib/Entity"
                           },
-                          "references/1.3.0/ecs-lib/ecs-lib/Entity",
                           {
                             "group": "Registry",
                             "pages": [
@@ -550,9 +551,9 @@
                               "references/1.3.0/ecs-lib/ecs-lib/Registry/removeSystem",
                               "references/1.3.0/ecs-lib/ecs-lib/Registry/runSystems",
                               "references/1.3.0/ecs-lib/ecs-lib/Registry/spawnEntity"
-                            ]
+                            ],
+                            "root": "references/1.3.0/ecs-lib/ecs-lib/Registry"
                           },
-                          "references/1.3.0/ecs-lib/ecs-lib/Registry",
                           {
                             "group": "SparseArray",
                             "pages": [
@@ -569,19 +570,19 @@
                               "references/1.3.0/ecs-lib/ecs-lib/SparseArray/setByCopy",
                               "references/1.3.0/ecs-lib/ecs-lib/SparseArray/setByMove",
                               "references/1.3.0/ecs-lib/ecs-lib/SparseArray/size"
-                            ]
+                            ],
+                            "root": "references/1.3.0/ecs-lib/ecs-lib/SparseArray"
                           },
-                          "references/1.3.0/ecs-lib/ecs-lib/SparseArray",
                           "references/1.3.0/ecs-lib/ecs-lib/System"
-                        ]
-                      },
-                      "references/1.3.0/ecs-lib/ecs-lib",
-                      "references/1.3.0/ecs-lib/index"
+                        ],
+                        "root": "references/1.3.0/ecs-lib/ecs-lib"
+                      }
                     ]
                   },
                   {
                     "dropdown": "ECS-Server",
                     "pages": [
+                      "references/1.3.0/ecs-server/index",
                       {
                         "group": "ECS-Server",
                         "pages": [
@@ -591,19 +592,19 @@
                               "references/1.3.0/ecs-server/ecs-server/ECSServerLibrary/__init",
                               "references/1.3.0/ecs-server/ecs-server/ECSServerLibrary/__name",
                               "references/1.3.0/ecs-server/ecs-server/ECSServerLibrary/constructor"
-                            ]
+                            ],
+                            "root": "references/1.3.0/ecs-server/ecs-server/ECSServerLibrary"
                           },
-                          "references/1.3.0/ecs-server/ecs-server/ECSServerLibrary",
                           "references/1.3.0/ecs-server/ecs-server/Module"
-                        ]
-                      },
-                      "references/1.3.0/ecs-server/ecs-server",
-                      "references/1.3.0/ecs-server/index"
+                        ],
+                        "root": "references/1.3.0/ecs-server/ecs-server"
+                      }
                     ]
                   },
                   {
                     "dropdown": "Graphics-2d",
                     "pages": [
+                      "references/1.3.0/graphics-2d/index",
                       {
                         "group": "Graphics-2d",
                         "pages": [
@@ -653,9 +654,9 @@
                               "references/1.3.0/graphics-2d/graphics-2d/Graphics2DLibrary/__run",
                               "references/1.3.0/graphics-2d/graphics-2d/Graphics2DLibrary/baseLayer",
                               "references/1.3.0/graphics-2d/graphics-2d/Graphics2DLibrary/stage"
-                            ]
+                            ],
+                            "root": "references/1.3.0/graphics-2d/graphics-2d/Graphics2DLibrary"
                           },
-                          "references/1.3.0/graphics-2d/graphics-2d/Graphics2DLibrary",
                           "references/1.3.0/graphics-2d/graphics-2d/Group",
                           "references/1.3.0/graphics-2d/graphics-2d/GroupConfig",
                           "references/1.3.0/graphics-2d/graphics-2d/hitOnDragEnabled",
@@ -716,10 +717,9 @@
                           "references/1.3.0/graphics-2d/graphics-2d/version",
                           "references/1.3.0/graphics-2d/graphics-2d/Wedge",
                           "references/1.3.0/graphics-2d/graphics-2d/WedgeConfig"
-                        ]
-                      },
-                      "references/1.3.0/graphics-2d/graphics-2d",
-                      "references/1.3.0/graphics-2d/index"
+                        ],
+                        "root": "references/1.3.0/graphics-2d/graphics-2d"
+                      }
                     ]
                   },
                   {
@@ -744,12 +744,12 @@
                               "references/1.3.0/input/input/InputLibrary/getWheelState",
                               "references/1.3.0/input/input/InputLibrary/isDragging",
                               "references/1.3.0/input/input/InputLibrary/isKeyPressed"
-                            ]
-                          },
-                          "references/1.3.0/input/input/InputLibrary"
-                        ]
-                      },
-                      "references/1.3.0/input/input"
+                            ],
+                            "root": "references/1.3.0/input/input/InputLibrary"
+                          }
+                        ],
+                        "root": "references/1.3.0/input/input"
+                      }
                     ]
                   },
                   {
@@ -767,12 +767,12 @@
                               "references/1.3.0/music/music/MusicLibrary/load",
                               "references/1.3.0/music/music/MusicLibrary/mute",
                               "references/1.3.0/music/music/MusicLibrary/play"
-                            ]
-                          },
-                          "references/1.3.0/music/music/MusicLibrary"
-                        ]
-                      },
-                      "references/1.3.0/music/music"
+                            ],
+                            "root": "references/1.3.0/music/music/MusicLibrary"
+                          }
+                        ],
+                        "root": "references/1.3.0/music/music"
+                      }
                     ]
                   },
                   {
@@ -789,9 +789,9 @@
                               "references/1.3.0/network-client/network-client/NetworkClientLibrary/__name",
                               "references/1.3.0/network-client/network-client/NetworkClientLibrary/tcp",
                               "references/1.3.0/network-client/network-client/NetworkClientLibrary/udp"
-                            ]
+                            ],
+                            "root": "references/1.3.0/network-client/network-client/NetworkClientLibrary"
                           },
-                          "references/1.3.0/network-client/network-client/NetworkClientLibrary",
                           {
                             "group": "TCPClient",
                             "pages": [
@@ -800,9 +800,9 @@
                               "references/1.3.0/network-client/network-client/TCPClient/getReceivedPackets",
                               "references/1.3.0/network-client/network-client/TCPClient/isConnected",
                               "references/1.3.0/network-client/network-client/TCPClient/sendData"
-                            ]
+                            ],
+                            "root": "references/1.3.0/network-client/network-client/TCPClient"
                           },
-                          "references/1.3.0/network-client/network-client/TCPClient",
                           {
                             "group": "UDPClient",
                             "pages": [
@@ -811,12 +811,12 @@
                               "references/1.3.0/network-client/network-client/UDPClient/getReceivedPackets",
                               "references/1.3.0/network-client/network-client/UDPClient/isConnected",
                               "references/1.3.0/network-client/network-client/UDPClient/sendData"
-                            ]
-                          },
-                          "references/1.3.0/network-client/network-client/UDPClient"
-                        ]
-                      },
-                      "references/1.3.0/network-client/network-client"
+                            ],
+                            "root": "references/1.3.0/network-client/network-client/UDPClient"
+                          }
+                        ],
+                        "root": "references/1.3.0/network-client/network-client"
+                      }
                     ]
                   },
                   {
@@ -833,9 +833,9 @@
                               "references/1.3.0/network-server/network-server/NetworkServerLibrary/__name",
                               "references/1.3.0/network-server/network-server/NetworkServerLibrary/tcp",
                               "references/1.3.0/network-server/network-server/NetworkServerLibrary/udp"
-                            ]
+                            ],
+                            "root": "references/1.3.0/network-server/network-server/NetworkServerLibrary"
                           },
-                          "references/1.3.0/network-server/network-server/NetworkServerLibrary",
                           {
                             "group": "TCPServer",
                             "pages": [
@@ -845,9 +845,9 @@
                               "references/1.3.0/network-server/network-server/TCPServer/listen",
                               "references/1.3.0/network-server/network-server/TCPServer/sendToClient",
                               "references/1.3.0/network-server/network-server/TCPServer/sendToEverybody"
-                            ]
+                            ],
+                            "root": "references/1.3.0/network-server/network-server/TCPServer"
                           },
-                          "references/1.3.0/network-server/network-server/TCPServer",
                           {
                             "group": "UDPServer",
                             "pages": [
@@ -857,12 +857,12 @@
                               "references/1.3.0/network-server/network-server/UDPServer/listen",
                               "references/1.3.0/network-server/network-server/UDPServer/sendToClient",
                               "references/1.3.0/network-server/network-server/UDPServer/sendToEverybody"
-                            ]
-                          },
-                          "references/1.3.0/network-server/network-server/UDPServer"
-                        ]
-                      },
-                      "references/1.3.0/network-server/network-server"
+                            ],
+                            "root": "references/1.3.0/network-server/network-server/UDPServer"
+                          }
+                        ],
+                        "root": "references/1.3.0/network-server/network-server"
+                      }
                     ]
                   },
                   {
@@ -880,12 +880,12 @@
                               "references/1.3.0/sound/sound/SoundLibrary/load",
                               "references/1.3.0/sound/sound/SoundLibrary/mute",
                               "references/1.3.0/sound/sound/SoundLibrary/play"
-                            ]
-                          },
-                          "references/1.3.0/sound/sound/SoundLibrary"
-                        ]
-                      },
-                      "references/1.3.0/sound/sound"
+                            ],
+                            "root": "references/1.3.0/sound/sound/SoundLibrary"
+                          }
+                        ],
+                        "root": "references/1.3.0/sound/sound"
+                      }
                     ]
                   }
                 ]
