@@ -1,0 +1,71 @@
+---
+title: "NfFile class"
+icon: "box"
+description: "Represents a file asset that has been registered with the engine."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NfFile
+
+## Summary
+
+Represents a file asset that has been registered with the engine.  
+## Signature
+
+```typescript
+declare class NfFile 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### path
+**Modifiers**: readonly
+**Type**:`get path(): string;`
+
+Internal URL path used to fetch the file.
+
+## Methods
+
+### arrayBuffer
+
+Fetch the file and return its content as an .
+
+### blob
+
+Fetch the file and return its content as a .
+
+### bytes
+
+Fetch the file and return its content as a .
+
+### formData
+
+Fetch the file and return its content as .
+
+### json
+
+Fetch the file, parse it as JSON, and return the result.
+
+### text
+
+Fetch the file and return its content as a UTF-8 string.
+
+## Remarks
+
+  Instances are returned by `AssetManagerLibrary.getAsset`. Each method lazily fetches the file from the engine&#39;s virtual file system and returns the content in the requested format.  All read methods throw `NfFetchException` when the underlying `fetch` returns a non-OK response.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

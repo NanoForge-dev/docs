@@ -1,0 +1,35 @@
+---
+title: "BaseSoundLibrary class"
+icon: "box"
+description: "Abstract base class for sound libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# BaseSoundLibrary
+
+## Summary
+
+Abstract base class for sound libraries.  
+## Signature
+
+```typescript
+declare abstract class BaseSoundLibrary extends Library implements ISoundLibrary 
+```
+
+## Methods
+
+### mute
+**Modifiers**: abstract
+
+Toggle the muted state of all loaded sound effects.
+
+### play
+**Modifiers**: abstract
+
+Play a previously loaded sound effect.
+
+## Remarks
+
+  Extend this class to implement a custom sound library and register it with `NanoforgeClient.useSound`. The built-in implementation is `SoundLibrary`.

@@ -1,0 +1,49 @@
+---
+title: "LibraryHandle class"
+icon: "box"
+description: "An opaque handle returned by LibraryManager accessors."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# LibraryHandle
+
+## Summary
+
+An opaque handle returned by `LibraryManager` accessors.  
+## Signature
+
+```typescript
+declare class LibraryHandle<T extends ILibrary = ILibrary> 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### context
+**Modifiers**: readonly
+**Type**:<RefLink target="common.LibraryContext">`get context(): LibraryContext;`</RefLink>
+
+Current lifecycle context tracking the library's status.
+
+### library
+**Modifiers**: readonly
+**Type**:`get library(): T;`
+
+The underlying library instance.
+
+### symbol
+**Modifiers**: readonly
+**Type**:`get symbol(): symbol;`
+
+The registration symbol used to look up this library.
+
+## Remarks
+
+  Bundles the library instance together with its registration symbol and lifecycle context. Prefer using the strongly-typed accessor methods on `LibraryManager` or `ClientLibraryManager` rather than constructing handles directly.

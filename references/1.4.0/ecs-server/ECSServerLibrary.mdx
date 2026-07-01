@@ -1,0 +1,29 @@
+---
+title: "ECSServerLibrary class"
+icon: "box"
+description: "Server-side ECS library backed by the compiled WASM module."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ECSServerLibrary
+
+## Summary
+
+Server-side ECS library backed by the compiled WASM module.  
+## Signature
+
+```typescript
+declare class ECSServerLibrary extends AbstractECSLibrary 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Remarks
+
+  Loads `libecs.wasm` from the asset manager and initialises the entity registry. Register with the application:  Access the registry in game code:

@@ -1,0 +1,37 @@
+---
+title: "NfFetchException class"
+icon: "box"
+description: "Thrown when an HTTP fetch performed internally by the engine fails."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NfFetchException
+
+## Summary
+
+Thrown when an HTTP fetch performed internally by the engine fails.  
+## Signature
+
+```typescript
+declare class NfFetchException extends NfException 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### code
+**Modifiers**: readonly
+**Type**:`get code(): number;`
+
+The HTTP status code returned by the failed request (e.g. , ).
+
+## Remarks
+
+  Raised by `NfFile` methods (e.g. `arrayBuffer`, `text`) when the underlying `fetch` call returns a non-OK HTTP response.

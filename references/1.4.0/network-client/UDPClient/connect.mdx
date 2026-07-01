@@ -1,0 +1,33 @@
+---
+title: "connect"
+icon: "function"
+description: "Open the WebSocket signaling channel, create an RTCPeerConnection, and complete the SDP/ICE handshake with the server."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# connect
+
+## Summary
+
+Open the WebSocket signaling channel, create an RTCPeerConnection, and complete the SDP/ICE handshake with the server.  
+## Signature
+
+```typescript
+connect(): Promise<void>;
+```
+
+## Parameters
+
+*No parameters.*
+
+## Returns
+
+**Type**:`Promise<void>`
+
+Open the WebSocket signaling channel, create an RTCPeerConnection, and complete the SDP/ICE handshake with the server.
+
+## Remarks
+
+  Resolves once the offer has been dispatched. The data channel may become open shortly after — check `isConnected`.

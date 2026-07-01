@@ -1,0 +1,23 @@
+---
+title: "BaseGraphicsLibrary class"
+icon: "box"
+description: "Abstract base class for graphics libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# BaseGraphicsLibrary
+
+## Summary
+
+Abstract base class for graphics libraries.  
+## Signature
+
+```typescript
+declare abstract class BaseGraphicsLibrary extends Library implements IGraphicsLibrary 
+```
+
+## Remarks
+
+  Extend this class to implement a custom rendering backend and register it with `NanoforgeClient.useGraphics`. The built-in implementation is `Graphics2DLibrary`.

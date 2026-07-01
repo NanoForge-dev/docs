@@ -1,0 +1,23 @@
+---
+title: "ILibrary interface"
+icon: "plug"
+description: "Core interface that every NanoForge library must satisfy."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ILibrary
+
+## Summary
+
+Core interface that every NanoForge library must satisfy.  
+## Signature
+
+```typescript
+interface ILibrary 
+```
+
+## Remarks
+
+  Implement this interface (or extend an abstract base such as `BaseAssetManagerLibrary`) to create a custom library and register it with the engine via `NanoforgeApplication.use`.

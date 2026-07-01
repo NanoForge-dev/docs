@@ -1,0 +1,33 @@
+---
+title: "AssetManagerLibrary class"
+icon: "box"
+description: "Built-in asset-manager library."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# AssetManagerLibrary
+
+## Summary
+
+Built-in asset-manager library.  
+## Signature
+
+```typescript
+declare class AssetManagerLibrary extends BaseAssetManagerLibrary 
+```
+
+## Methods
+
+### getAsset
+
+Retrieve a registered file asset by its virtual path.
+
+### getAsset
+
+
+
+## Remarks
+
+  Stores the file map injected by the NanoForge loader (`nf start`) and exposes assets via `getAsset`. Register it with the application before calling `init`:  File paths are normalised on lookup: leading slashes are collapsed to a single `/`, duplicate slashes are removed, and trailing slashes are stripped.

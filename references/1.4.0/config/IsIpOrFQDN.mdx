@@ -1,0 +1,45 @@
+---
+title: "IsIpOrFQDN function"
+icon: "function"
+description: "Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (FQDN)."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IsIpOrFQDN
+
+## Summary
+
+Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (FQDN).  
+## Signature
+
+```typescript
+IsIpOrFQDN: (validationOptions?: ValidationOptions) => (object: object, propertyName: string) => void
+```
+
+## Parameters
+
+### validationOptions
+**Type**:`ValidationOptions`
+**Optional**: Yes
+
+Optional class-validator validation options.
+
+## Returns
+
+**Type**:`(object: object, propertyName: string) => void`
+
+Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (FQDN).
+
+## Remarks
+
+  Built on top of `class-validator`&#39;s `isIP` and `isFQDN` helpers. Use on config properties that represent server hostnames or addresses.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

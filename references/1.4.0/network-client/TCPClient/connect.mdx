@@ -1,0 +1,33 @@
+---
+title: "connect"
+icon: "function"
+description: "Initiate a WebSocket connection to the server."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# connect
+
+## Summary
+
+Initiate a WebSocket connection to the server.  
+## Signature
+
+```typescript
+connect(): Promise<void>;
+```
+
+## Parameters
+
+*No parameters.*
+
+## Returns
+
+**Type**:`Promise<void>`
+
+Initiate a WebSocket connection to the server.
+
+## Remarks
+
+  Connects to `ws[s]://<ip>:<port>`. Resolves as soon as the connection attempt is dispatched (the socket may not be fully open yet — check `isConnected`).

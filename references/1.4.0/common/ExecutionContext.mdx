@@ -1,0 +1,23 @@
+---
+title: "ExecutionContext class"
+icon: "box"
+description: "Context passed to a library's run hook on every game-loop tick."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ExecutionContext
+
+## Summary
+
+Context passed to a library&#39;s `__run` hook on every game-loop tick.  
+## Signature
+
+```typescript
+declare class ExecutionContext extends BaseContext 
+```
+
+## Remarks
+
+  Use the inherited `application` and `libraries` accessors to read the current delta time and interact with other libraries during the frame update.

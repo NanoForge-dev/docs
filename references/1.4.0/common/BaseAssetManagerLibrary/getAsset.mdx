@@ -1,0 +1,32 @@
+---
+title: "getAsset"
+icon: "function"
+description: "Retrieve a file asset by its virtual path."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# getAsset
+
+## Summary
+
+Retrieve a file asset by its virtual path.  
+## Signature
+
+```typescript
+abstract getAsset(path: string): NfFile;
+```
+
+## Parameters
+
+### path
+**Type**:`string`
+
+Virtual path as registered in the engine's file map (e.g. "/textures/hero.png").
+
+## Returns
+
+**Type**:<RefLink target="common.NfFile">`NfFile`</RefLink>
+
+Retrieve a file asset by its virtual path.

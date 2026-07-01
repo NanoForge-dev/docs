@@ -1,0 +1,59 @@
+---
+title: "InputLibrary class"
+icon: "box"
+description: "Built-in input library."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# InputLibrary
+
+## Summary
+
+Built-in input library.  
+## Signature
+
+```typescript
+declare class InputLibrary extends BaseInputLibrary 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Methods
+
+### getDragState
+
+Return the current drag state.
+
+### getMousePosition
+
+Return the current mouse cursor position.
+
+### getMouseState
+
+Return the full mouse state snapshot for the current frame.
+
+### getPressedKeys
+
+Return a list of all keys and mouse buttons that are currently pressed.
+
+### getWheelState
+
+Return the scroll-wheel state accumulated during the current frame.
+
+### isDragging
+
+Return whether a drag operation is in progress.
+
+### isKeyPressed
+
+Return whether a key or mouse button is currently held down.
+
+## Remarks
+
+  Listens to browser `keydown`, `keyup`, `mousedown`, `mouseup`, `mousemove`, and `wheel` events and exposes a per-frame snapshot of the current input state. Must be registered after the graphics library because it uses `runAfter: [GRAPHICS_LIBRARY]`.  Register with the application:  Access in a system&#39;s `__run` hook:
