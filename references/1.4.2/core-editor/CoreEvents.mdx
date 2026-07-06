@@ -1,0 +1,23 @@
+---
+title: "CoreEvents enum"
+icon: "list"
+description: "Events that the NanoForge editor can emit to the running engine."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# CoreEvents
+
+## Summary
+
+Events that the NanoForge editor can emit to the running engine. 
+
+## Members
+| Member | Description |
+| ------ | ----------- |
+| `HARD_RELOAD` | Reload all entities component params |
+| `HOT_RELOAD` | Reload only changed entity components params (live-patch) |
+| `PAUSE_GAME` | Don't execute the run function until UNPAUSE_GAME |
+| `STOP_GAME` | End main loop and clear |
+| `UNPAUSE_GAME` | resume executing the run function |

@@ -1,0 +1,41 @@
+---
+title: "TransformToBoolean function"
+icon: "function"
+description: "Property decorator that transforms the string environment variable value \"true\" or \"false\" into a native boolean."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# TransformToBoolean
+
+## Summary
+
+Property decorator that transforms the string environment variable value `"true"` or `"false"` into a native `boolean`.  
+## Signature
+
+```typescript
+TransformToBoolean: () => PropertyDecorator
+```
+
+## Parameters
+
+*No parameters.*
+
+## Returns
+
+**Type**:`PropertyDecorator`
+
+Property decorator that transforms the string environment variable value or into a native .
+
+## Remarks
+
+  Returns `undefined` for any value that is neither `"true"` nor `"false"`. Pair with `@IsBoolean()` and `@Default(false)` for a fully validated and defaulted boolean config property.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

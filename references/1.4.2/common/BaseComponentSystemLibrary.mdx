@@ -1,0 +1,23 @@
+---
+title: "BaseComponentSystemLibrary class"
+icon: "box"
+description: "Abstract base class for component-system (ECS) libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# BaseComponentSystemLibrary
+
+## Summary
+
+Abstract base class for component-system (ECS) libraries.  
+## Signature
+
+```typescript
+declare abstract class BaseComponentSystemLibrary extends Library implements IComponentSystemLibrary 
+```
+
+## Remarks
+
+  Extend this class (or the higher-level `AbstractECSLibrary`) to implement a custom ECS back-end and register it with `NanoforgeApplication.useComponentSystem`. The built-in implementations are `ECSClientLibrary` and `ECSServerLibrary`.

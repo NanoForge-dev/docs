@@ -1,0 +1,35 @@
+---
+title: "BaseMusicLibrary class"
+icon: "box"
+description: "Abstract base class for music libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# BaseMusicLibrary
+
+## Summary
+
+Abstract base class for music libraries.  
+## Signature
+
+```typescript
+declare abstract class BaseMusicLibrary extends Library implements IMusicLibrary 
+```
+
+## Methods
+
+### mute
+**Modifiers**: abstract
+
+Toggle the muted state of all loaded music tracks.
+
+### play
+**Modifiers**: abstract
+
+Stop the currently playing track (if any) and start playing the requested one.
+
+## Remarks
+
+  Extend this class to implement a custom music library and register it with `NanoforgeApplication.use` using the `MUSIC_LIBRARY` symbol. The built-in implementation is `MusicLibrary`.

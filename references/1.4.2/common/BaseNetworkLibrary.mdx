@@ -1,0 +1,23 @@
+---
+title: "BaseNetworkLibrary class"
+icon: "box"
+description: "Abstract base class for network libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# BaseNetworkLibrary
+
+## Summary
+
+Abstract base class for network libraries.  
+## Signature
+
+```typescript
+declare abstract class BaseNetworkLibrary extends Library implements INetworkLibrary 
+```
+
+## Remarks
+
+  Extend this class to implement a custom network library and register it with `NanoforgeApplication.useNetwork`. The built-in implementations are `NetworkClientLibrary` and `NetworkServerLibrary`.

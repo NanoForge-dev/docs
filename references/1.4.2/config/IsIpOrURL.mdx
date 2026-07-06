@@ -1,0 +1,57 @@
+---
+title: "IsIpOrURL function"
+icon: "function"
+description: "Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (URL)."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IsIpOrURL
+
+## Summary
+
+Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (URL).  
+## Signature
+
+```typescript
+IsIpOrURL: (validationOptions?: ValidationOptions, isIPOptions?: Parameters<typeof isIP>[1], isURLOptions?: Parameters<typeof isURL>[1]) => (object: object, propertyName: string) => void
+```
+
+## Parameters
+
+### validationOptions
+**Type**:`ValidationOptions`
+**Optional**: Yes
+
+Optional class-validator validation options.
+
+### isIPOptions
+**Type**:`Parameters<typeof isIP>[1]`
+**Optional**: Yes
+
+Optional options for validation.
+
+### isURLOptions
+**Type**:`Parameters<typeof isURL>[1]`
+**Optional**: Yes
+
+Optional options for validation.
+
+## Returns
+
+**Type**:`(object: object, propertyName: string) => void`
+
+Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (URL).
+
+## Remarks
+
+  Built on top of `class-validator`&#39;s `isIP` and `isURL` helpers. Use on config properties that represent server hostnames or addresses.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

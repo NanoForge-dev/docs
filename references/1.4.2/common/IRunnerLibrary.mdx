@@ -1,0 +1,23 @@
+---
+title: "IRunnerLibrary interface"
+icon: "plug"
+description: "Interface for libraries that participate in the per-frame game loop."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IRunnerLibrary
+
+## Summary
+
+Interface for libraries that participate in the per-frame game loop.  
+## Signature
+
+```typescript
+interface IRunnerLibrary extends ILibrary 
+```
+
+## Remarks
+
+  The engine calls `__run` on every tick for all registered runner libraries in the order determined by their `ILibraryOptions.runBefore` / `ILibraryOptions.runAfter` relationships.

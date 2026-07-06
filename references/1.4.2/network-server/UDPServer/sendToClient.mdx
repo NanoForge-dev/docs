@@ -1,0 +1,37 @@
+---
+title: "sendToClient"
+icon: "function"
+description: "Send a packet to a single client via the unreliable data channel. The packet will be framed with the server's configured magic terminator bytes before being sent."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# sendToClient
+
+## Summary
+
+Send a packet to a single client via the unreliable data channel. The packet will be framed with the server&#39;s configured magic terminator bytes before being sent.  
+## Signature
+
+```typescript
+sendToClient(clientId: number, data: Uint8Array): void;
+```
+
+## Parameters
+
+### clientId
+**Type**:`number`
+
+Numeric client identifier returned by listen() events
+
+### data
+**Type**:`Uint8Array`
+
+Raw packet bytes (Uint8Array) to send
+
+## Returns
+
+**Type**:`void`
+
+Send a packet to a single client via the unreliable data channel. The packet will be framed with the server's configured magic terminator bytes before being sent.

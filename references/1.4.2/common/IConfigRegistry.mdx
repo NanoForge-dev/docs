@@ -1,0 +1,31 @@
+---
+title: "IConfigRegistry interface"
+icon: "plug"
+description: "Resolves and validates typed configuration objects from the runtime environment."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IConfigRegistry
+
+## Summary
+
+Resolves and validates typed configuration objects from the runtime environment.  
+## Signature
+
+```typescript
+interface IConfigRegistry 
+```
+
+## Remarks
+
+  An instance is available in `InitContext.config`. Configuration classes must be decorated with `class-transformer` (`@Expose`, `@Default`) and `class-validator` (`@IsPort`, `@IsIpOrURL`, etc.) decorators from `@nanoforge-dev/config`.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

@@ -1,0 +1,23 @@
+---
+title: "IExposedLibrary interface"
+icon: "plug"
+description: "Marker interface for libraries that are directly accessible to game code via the ClientLibraryManager."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IExposedLibrary
+
+## Summary
+
+Marker interface for libraries that are directly accessible to game code via the `ClientLibraryManager`.  
+## Signature
+
+```typescript
+interface IExposedLibrary extends ILibrary 
+```
+
+## Remarks
+
+  All built-in typed library interfaces (e.g. `IAssetManagerLibrary`, `ISoundLibrary`) extend this interface.

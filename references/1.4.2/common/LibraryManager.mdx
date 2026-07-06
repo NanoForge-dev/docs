@@ -1,0 +1,67 @@
+---
+title: "LibraryManager class"
+icon: "box"
+description: "Central registry for all libraries registered with a NanoForge application."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# LibraryManager
+
+## Summary
+
+Central registry for all libraries registered with a NanoForge application.  
+## Signature
+
+```typescript
+declare class LibraryManager extends BaseLibraryManager 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Methods
+
+### getAssetManager
+
+Retrieve the registered asset-manager library.
+
+### getComponentSystem
+
+Retrieve the registered component-system (ECS) library.
+
+### getGraphics
+
+Retrieve the registered graphics library.
+
+### getInput
+
+Retrieve the registered input library.
+
+### getMusic
+
+Retrieve the registered music library.
+
+### getNetwork
+
+Retrieve the registered network library.
+
+### getSound
+
+Retrieve the registered sound library.
+
+## Remarks
+
+  An instance is available inside every lifecycle context via `BaseContext.libraries`. Use the typed accessor methods to retrieve any built-in library, or call `BaseLibraryManager.get` with a custom symbol for user-defined libraries.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

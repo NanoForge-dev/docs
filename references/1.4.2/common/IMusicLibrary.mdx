@@ -1,0 +1,23 @@
+---
+title: "IMusicLibrary interface"
+icon: "plug"
+description: "Interface for music libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IMusicLibrary
+
+## Summary
+
+Interface for music libraries.  
+## Signature
+
+```typescript
+interface IMusicLibrary extends IExposedLibrary, IMutableLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseMusicLibrary` and its concrete subclass `MusicLibrary`. Access an instance via `ctx.libraries.getMusic().library`.

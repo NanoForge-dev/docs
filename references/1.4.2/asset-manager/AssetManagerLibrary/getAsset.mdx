@@ -1,0 +1,36 @@
+---
+title: "getAsset"
+icon: "function"
+description: "Retrieve a registered file asset by its virtual path."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# getAsset
+
+## Summary
+
+Retrieve a registered file asset by its virtual path.  
+## Signature
+
+```typescript
+getAsset(path: string): NfFile;
+```
+
+## Parameters
+
+### path
+**Type**:`string`
+
+Virtual path of the asset (e.g. "/textures/hero.png").
+
+## Returns
+
+**Type**:`NfFile`
+
+Retrieve a registered file asset by its virtual path.
+
+## Remarks
+
+  The path is normalised before lookup: leading and duplicate slashes are collapsed and trailing slashes are removed.

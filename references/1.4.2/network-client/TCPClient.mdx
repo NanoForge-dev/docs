@@ -1,0 +1,47 @@
+---
+title: "TCPClient class"
+icon: "box"
+description: "Reliable, ordered WebSocket-based client connection to a NanoForge TCP server."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# TCPClient
+
+## Summary
+
+Reliable, ordered WebSocket-based client connection to a NanoForge TCP server.  
+## Signature
+
+```typescript
+declare class TCPClient 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Methods
+
+### connect
+
+Initiate a WebSocket connection to the server.
+
+### getReceivedPackets
+
+Parse and return all complete packets received since the last call.
+
+### isConnected
+
+Return when the underlying WebSocket is open.
+
+### sendData
+
+Send a payload to the server.
+
+## Remarks
+
+  Packets are framed with a configurable magic delimiter so that partial WebSocket frames can be reassembled. The connection is established by calling `connect` and status can be queried with `isConnected`.  Typical usage is through `NetworkClientLibrary` which instantiates and connects this class automatically during `__init`.

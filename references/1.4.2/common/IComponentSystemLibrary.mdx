@@ -1,0 +1,23 @@
+---
+title: "IComponentSystemLibrary interface"
+icon: "plug"
+description: "Interface for component-system (ECS) libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IComponentSystemLibrary
+
+## Summary
+
+Interface for component-system (ECS) libraries.  
+## Signature
+
+```typescript
+interface IComponentSystemLibrary extends IExposedLibrary, IRunnerLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseComponentSystemLibrary` and the higher-level `AbstractECSLibrary`, with concrete subclasses `ECSClientLibrary` and `ECSServerLibrary`. Access an instance via `ctx.libraries.getComponentSystem().library`.

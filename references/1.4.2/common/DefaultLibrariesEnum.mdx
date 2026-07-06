@@ -1,0 +1,29 @@
+---
+title: "DefaultLibrariesEnum enum"
+icon: "list"
+description: "Numeric index keys for the built-in library slots."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# DefaultLibrariesEnum
+
+## Summary
+
+Numeric index keys for the built-in library slots.  
+
+## Members
+| Member | Description |
+| ------ | ----------- |
+| `ASSET_MANAGER` |  |
+| `COMPONENT_SYSTEM` |  |
+| `GRAPHICS` |  |
+| `INPUT` |  |
+| `MUSIC` |  |
+| `NETWORK` |  |
+| `SOUND` |  |
+
+## Remarks
+
+  Used internally by `LibraryManager` to keep O(1) access to the well-known library positions. Game code should not reference these values directly — use the typed accessor methods on `LibraryManager` instead.

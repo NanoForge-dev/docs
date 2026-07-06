@@ -1,0 +1,32 @@
+---
+title: "play"
+icon: "function"
+description: "Stop the currently playing track (if any) and start playing the requested one."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# play
+
+## Summary
+
+Stop the currently playing track (if any) and start playing the requested one.  
+## Signature
+
+```typescript
+abstract play(sound: string): void;
+```
+
+## Parameters
+
+### sound
+**Type**:`string`
+
+Key that identifies the music track (as passed to load).
+
+## Returns
+
+**Type**:`void`
+
+Stop the currently playing track (if any) and start playing the requested one.

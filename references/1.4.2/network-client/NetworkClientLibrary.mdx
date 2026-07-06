@@ -1,0 +1,35 @@
+---
+title: "NetworkClientLibrary class"
+icon: "box"
+description: "Built-in network library for client-side applications."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NetworkClientLibrary
+
+## Summary
+
+Built-in network library for client-side applications.  
+## Signature
+
+```typescript
+declare class NetworkClientLibrary extends BaseNetworkLibrary 
+```
+
+## Properties
+
+### tcp
+**Type**:<RefLink target="network-client.TCPClient">`tcp: TCPClient;`</RefLink>
+
+Reliable, ordered WebSocket-based connection to the server.
+
+### udp
+**Type**:<RefLink target="network-client.UDPClient">`udp: UDPClient;`</RefLink>
+
+Unreliable, unordered WebRTC data-channel connection to the server.
+
+## Remarks
+
+  Reads network configuration from the environment via `ClientConfigNetwork` and automatically connects to the server over TCP (WebSocket), UDP (WebRTC data channel), or both. Register with:  Configuration (via environment variables): - `SERVER_ADDRESS` — hostname or IP of the server (required). - `SERVER_TCP_PORT` — WebSocket port for TCP (optional). - `SERVER_UDP_PORT` — signaling port for UDP/WebRTC (optional). - `MAGIC_VALUE` — packet framing delimiter (default: `"PACKET_END"`). - `WSS` — set to `"true"` to use `wss://` / `https://` (default: `false`).  After `init`, access the connections via `tcp` and `udp`.

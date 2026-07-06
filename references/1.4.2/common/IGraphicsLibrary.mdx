@@ -1,0 +1,23 @@
+---
+title: "IGraphicsLibrary interface"
+icon: "plug"
+description: "Interface for graphics libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IGraphicsLibrary
+
+## Summary
+
+Interface for graphics libraries.  
+## Signature
+
+```typescript
+interface IGraphicsLibrary extends IExposedLibrary, IRunnerLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseGraphicsLibrary` and its concrete subclass `Graphics2DLibrary`. Access an instance via `ctx.libraries.getGraphics().library`.
