@@ -1,0 +1,37 @@
+---
+title: "ApplicationContext class"
+icon: "box"
+description: "Holds runtime state that is shared across all libraries during the game loop."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ApplicationContext
+
+## Summary
+
+Holds runtime state that is shared across all libraries during the game loop.  
+## Signature
+
+```typescript
+declare abstract class ApplicationContext 
+```
+
+## Properties
+
+### delta
+**Modifiers**: readonly
+**Type**:`get delta(): number;`
+
+Elapsed time in milliseconds since the last frame.
+
+### isRunning
+**Modifiers**: readonly
+**Type**:`get isRunning(): boolean;`
+
+Whether the engine game loop is currently executing.
+
+## Remarks
+
+  An instance of this class is available to every library via `BaseContext.application`. Libraries may read `isRunning` and `delta` to make frame-rate-independent decisions.

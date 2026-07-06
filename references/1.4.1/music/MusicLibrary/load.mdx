@@ -1,0 +1,41 @@
+---
+title: "load"
+icon: "function"
+description: "Register a music track under a unique key."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# load
+
+## Summary
+
+Register a music track under a unique key.  
+## Signature
+
+```typescript
+load(music: string, file: string): void;
+```
+
+## Parameters
+
+### music
+**Type**:`string`
+
+Unique key used to reference this track (e.g. "theme").
+
+### file
+**Type**:`string`
+
+URL or path to the audio file.
+
+## Returns
+
+**Type**:`void`
+
+Register a music track under a unique key.
+
+## Remarks
+
+  Creates an `HTMLAudioElement` from the provided URL. The track respects the current muted state at load time.

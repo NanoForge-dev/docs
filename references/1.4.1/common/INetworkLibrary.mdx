@@ -1,0 +1,23 @@
+---
+title: "INetworkLibrary interface"
+icon: "plug"
+description: "Interface for network libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# INetworkLibrary
+
+## Summary
+
+Interface for network libraries.  
+## Signature
+
+```typescript
+interface INetworkLibrary extends IExposedLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseNetworkLibrary` and its concrete subclasses `NetworkClientLibrary` and `NetworkServerLibrary`. Access an instance via `ctx.libraries.getNetwork().library`.

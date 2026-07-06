@@ -1,0 +1,30 @@
+---
+title: "DD variable"
+icon: "variable"
+description: "DD API documentation"
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# DD
+## Signature
+
+```typescript
+DD: {
+  readonly isDragging: boolean;
+  justDragged: boolean;
+  readonly node: import("konva/lib/Node").Node<import("konva/lib/Node").NodeConfig> | undefined;
+  _dragElements: Map<number, {
+    node: import("konva/lib/Node").Node;
+    startPointerPos: import("konva/lib/types").Vector2d;
+    offset: import("konva/lib/types").Vector2d;
+    pointerId?: number;
+    startEvent?: any;
+    dragStatus: "ready" | "dragging" | "stopped";
+  }>;
+  _drag(evt: any): void;
+  _endDragBefore(evt?: any): void;
+  _endDragAfter(evt: any): void;
+}
+```

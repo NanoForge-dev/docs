@@ -1,0 +1,23 @@
+---
+title: "IInputLibrary interface"
+icon: "plug"
+description: "Interface for input libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IInputLibrary
+
+## Summary
+
+Interface for input libraries.  
+## Signature
+
+```typescript
+interface IInputLibrary extends IExposedLibrary, IRunnerLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseInputLibrary` and its concrete subclass `InputLibrary`. Access an instance via `ctx.libraries.getInput().library`.

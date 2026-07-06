@@ -1,0 +1,63 @@
+---
+title: "ClientLibraryManager class"
+icon: "box"
+description: "Convenience wrapper around LibraryManager that unwraps LibraryHandle values and returns the library instance directly."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ClientLibraryManager
+
+## Summary
+
+Convenience wrapper around `LibraryManager` that unwraps `LibraryHandle` values and returns the library instance directly.  
+## Signature
+
+```typescript
+declare class ClientLibraryManager 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Methods
+
+### get
+
+Retrieve a library registered under a custom symbol.
+
+### getAssetManager
+
+Retrieve the registered asset-manager library instance.
+
+### getComponentSystem
+
+Retrieve the registered component-system (ECS) library instance.
+
+### getGraphics
+
+Retrieve the registered graphics library instance.
+
+### getInput
+
+Retrieve the registered input library instance.
+
+### getMusic
+
+Retrieve the registered music library instance.
+
+### getNetwork
+
+Retrieve the registered network library instance.
+
+### getSound
+
+Retrieve the registered sound library instance.
+
+## Remarks
+
+  Typically accessed inside a library&#39;s lifecycle hooks through the execution context&#39;s `libraries` property after being constructed with a concrete `LibraryManager`.

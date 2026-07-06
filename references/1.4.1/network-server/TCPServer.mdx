@@ -1,0 +1,51 @@
+---
+title: "TCPServer class"
+icon: "box"
+description: "Reliable, ordered WebSocket-based server that manages multiple TCP clients."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# TCPServer
+
+## Summary
+
+Reliable, ordered WebSocket-based server that manages multiple TCP clients.  
+## Signature
+
+```typescript
+declare class TCPServer 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Methods
+
+### getConnectedClients
+
+Return a snapshot array of numeric client IDs currently connected.
+
+### getReceivedPackets
+
+Parse and return complete packets received from each client. Each packet is a buffer.
+
+### listen
+
+Start the WebSocket server and begin accepting clients.
+
+### sendToClient
+
+Send a payload to the client identified by .
+
+### sendToEverybody
+
+Send a payload to every connected client.
+
+## Remarks
+
+  Each client that connects is assigned a numeric ID. Use `getConnectedClients` to enumerate active clients, `sendToClient` / `sendToEverybody` to push data, and `getReceivedPackets` to consume incoming packets per frame.  Typical usage is through `NetworkServerLibrary` which instantiates and starts this class automatically during `__init`.

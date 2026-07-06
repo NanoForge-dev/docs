@@ -1,0 +1,36 @@
+---
+title: "sendData"
+icon: "function"
+description: "Send a payload to the server."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# sendData
+
+## Summary
+
+Send a payload to the server.  
+## Signature
+
+```typescript
+sendData(data: Uint8Array): void;
+```
+
+## Parameters
+
+### data
+**Type**:`Uint8Array`
+
+Raw payload bytes.
+
+## Returns
+
+**Type**:`void`
+
+Send a payload to the server.
+
+## Remarks
+
+  The payload is wrapped in a magic framing packet before being sent.

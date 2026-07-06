@@ -1,0 +1,66 @@
+---
+title: "AbstractECSLibrary class"
+icon: "box"
+description: "Abstract base class for WASM-backed ECS (Entity Component System) libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# AbstractECSLibrary
+
+## Summary
+
+Abstract base class for WASM-backed ECS (Entity Component System) libraries.  
+## Signature
+
+```typescript
+declare abstract class AbstractECSLibrary extends BaseComponentSystemLibrary 
+```
+
+## Constructors
+
+### constructor
+**Modifiers**: protected
+
+Constructs a new instance of the class
+
+## Properties
+
+### _registry
+**Modifiers**: protected
+**Type**:<RefLink target="ecs-lib.Registry">`protected _registry?: Registry;`</RefLink>
+**Optional**: Yes
+
+
+
+### module
+**Modifiers**: protected
+**Type**:`protected module?: MainModule;`
+**Optional**: Yes
+
+
+
+### path
+**Modifiers**: protected
+**Type**:`protected path: string;`
+
+
+
+### registry
+**Modifiers**: readonly
+**Type**:<RefLink target="ecs-lib.Registry">`get registry(): Registry;`</RefLink>
+
+The WASM-backed entity/component registry.
+
+## Remarks
+
+  Loads a compiled `libecs.wasm` binary via the asset manager and initialises a `Registry` from the resulting module. Concrete subclasses only need to set `this.path` (the asset path to the `.wasm` file) and call `super()` — see `ECSClientLibrary` and `ECSServerLibrary`.  Requires the `ASSET_MANAGER_LIBRARY` dependency and runs after `GRAPHICS_LIBRARY`.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

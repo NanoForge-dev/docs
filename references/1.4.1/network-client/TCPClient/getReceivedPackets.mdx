@@ -1,0 +1,33 @@
+---
+title: "getReceivedPackets"
+icon: "function"
+description: "Parse and return all complete packets received since the last call."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# getReceivedPackets
+
+## Summary
+
+Parse and return all complete packets received since the last call.  
+## Signature
+
+```typescript
+getReceivedPackets(): Uint8Array[];
+```
+
+## Parameters
+
+*No parameters.*
+
+## Returns
+
+**Type**:`Uint8Array[]`
+
+Parse and return all complete packets received since the last call.
+
+## Remarks
+
+  Partial packets are retained internally and combined with future chunks until they are complete. Call this method once per frame.

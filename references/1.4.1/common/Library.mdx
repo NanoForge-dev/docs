@@ -1,0 +1,45 @@
+---
+title: "Library class"
+icon: "box"
+description: "Base class for all NanoForge libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# Library
+
+## Summary
+
+Base class for all NanoForge libraries.  
+## Signature
+
+```typescript
+declare abstract class Library implements ILibrary 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### _relationship
+**Modifiers**: protected
+**Type**:`protected _relationship: RelationshipHandler;`
+
+
+
+## Remarks
+
+  Extend this class (or one of its typed subclasses such as `BaseAssetManagerLibrary`, `BaseSoundLibrary`, etc.) to create a custom library. At minimum you must implement the `ILibrary.__name` getter and register the library with the engine before calling `NanoforgeApplication.init`.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

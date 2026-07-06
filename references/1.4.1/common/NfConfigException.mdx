@@ -1,0 +1,37 @@
+---
+title: "NfConfigException class"
+icon: "box"
+description: "Thrown when a library configuration is invalid or incomplete."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NfConfigException
+
+## Summary
+
+Thrown when a library configuration is invalid or incomplete.  
+## Signature
+
+```typescript
+declare class NfConfigException extends NfException 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### code
+**Modifiers**: readonly
+**Type**:`get code(): number;`
+
+Always .
+
+## Remarks
+
+  Typically raised during `__init` when required environment variables are missing or fail validation. For example, `NetworkClientLibrary` throws this when neither `SERVER_TCP_PORT` nor `SERVER_UDP_PORT` is provided.

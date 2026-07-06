@@ -1,0 +1,23 @@
+---
+title: "IAssetManagerLibrary interface"
+icon: "plug"
+description: "Interface for asset-manager libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# IAssetManagerLibrary
+
+## Summary
+
+Interface for asset-manager libraries.  
+## Signature
+
+```typescript
+interface IAssetManagerLibrary extends IExposedLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseAssetManagerLibrary` and its concrete subclass `AssetManagerLibrary`. Access an instance via `ctx.libraries.getAssetManager().library`.

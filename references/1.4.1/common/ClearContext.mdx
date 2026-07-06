@@ -1,0 +1,23 @@
+---
+title: "ClearContext class"
+icon: "box"
+description: "Context passed to a library's clear lifecycle hook during application shutdown."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ClearContext
+
+## Summary
+
+Context passed to a library&#39;s `__clear` lifecycle hook during application shutdown.  
+## Signature
+
+```typescript
+declare class ClearContext extends BaseContext 
+```
+
+## Remarks
+
+  Use the inherited `application` and `libraries` accessors to access shared state and other libraries while tearing down resources.

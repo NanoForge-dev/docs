@@ -1,0 +1,44 @@
+---
+title: "Default function"
+icon: "function"
+description: "Property decorator that supplies a fallback value when the environment variable is undefined or null."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# Default
+
+## Summary
+
+Property decorator that supplies a fallback value when the environment variable is `undefined` or `null`.  
+## Signature
+
+```typescript
+declare function Default(defaultValue: unknown): PropertyDecorator;
+```
+
+## Parameters
+
+### defaultValue
+**Type**:`unknown`
+
+The value to use when the property is absent.
+
+## Returns
+
+**Type**:`PropertyDecorator`
+
+Property decorator that supplies a fallback value when the environment variable is or .
+
+## Remarks
+
+  Pairs with `class-transformer`&#39;s `@Expose` and `class-validator` decorators. The default is deep-cloned via `JSON.parse(JSON.stringify(…))` so objects are not shared between instances.  
+
+## Examples
+
+### Example 1
+
+```typescript
+
+```

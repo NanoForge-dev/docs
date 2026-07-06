@@ -1,0 +1,55 @@
+---
+title: "InitContext class"
+icon: "box"
+description: "Context object passed to every library's init lifecycle hook."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# InitContext
+
+## Summary
+
+Context object passed to every library&#39;s `__init` lifecycle hook.  
+## Signature
+
+```typescript
+declare class InitContext extends BaseContext 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### config
+**Modifiers**: readonly
+**Type**:<RefLink target="common.IConfigRegistry">`get config(): IConfigRegistry;`</RefLink>
+
+Registry that resolves class-validator/class-transformer decorated configuration classes from the runtime environment.
+
+### container
+**Modifiers**: readonly
+**Type**:<RefLink target="common.IRunClientOptions">`get container(): IRunClientOptions["container"] | undefined;`</RefLink>
+
+The that should host the game canvas.
+
+### env
+**Modifiers**: readonly
+**Type**:`get env(): Record<string, string | undefined>;`
+
+Key/value map of environment variables made available at runtime.
+
+### files
+**Modifiers**: readonly
+**Type**:<RefLink target="common.IRunOptions">`get files(): IRunOptions["files"];`</RefLink>
+
+Map of virtual file paths to their URL strings, pre-loaded by the engine bundler.
+
+## Remarks
+
+  Provides libraries with all the information they need during start-up: the canvas container, pre-loaded asset files, environment variables, and a config registry for loading structured configuration classes.  Access it in a library&#39;s `__init` override:

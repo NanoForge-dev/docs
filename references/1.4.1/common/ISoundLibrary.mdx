@@ -1,0 +1,23 @@
+---
+title: "ISoundLibrary interface"
+icon: "plug"
+description: "Interface for sound-effect libraries."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# ISoundLibrary
+
+## Summary
+
+Interface for sound-effect libraries.  
+## Signature
+
+```typescript
+interface ISoundLibrary extends IExposedLibrary, IMutableLibrary 
+```
+
+## Remarks
+
+  Implemented by `BaseSoundLibrary` and its concrete subclass `SoundLibrary`. Access an instance via `ctx.libraries.getSound().library`.

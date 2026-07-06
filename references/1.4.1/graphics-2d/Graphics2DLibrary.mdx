@@ -1,0 +1,37 @@
+---
+title: "Graphics2DLibrary class"
+icon: "box"
+description: "Built-in 2D graphics library powered by \\Konva\\."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# Graphics2DLibrary
+
+## Summary
+
+Built-in 2D graphics library powered by [Konva](https://konvajs.org/).  
+## Signature
+
+```typescript
+declare class Graphics2DLibrary extends BaseGraphicsLibrary 
+```
+
+## Properties
+
+### baseLayer
+**Modifiers**: readonly
+**Type**:<RefLink target="graphics-2d.Layer">`get baseLayer(): Layer;`</RefLink>
+
+The default Konva automatically added to the stage.
+
+### stage
+**Modifiers**: readonly
+**Type**:<RefLink target="graphics-2d.Stage">`get stage(): Stage;`</RefLink>
+
+The Konva that covers the container element.
+
+## Remarks
+
+  Creates a full-window Konva `Stage` and a default `Layer` during initialisation. Game code interacts with the stage and layer directly to add shapes, images, and animations. Register with the application:  Access in game code:

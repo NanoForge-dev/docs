@@ -1,0 +1,35 @@
+---
+title: "NetworkServerLibrary class"
+icon: "box"
+description: "Built-in network library for server-side applications."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NetworkServerLibrary
+
+## Summary
+
+Built-in network library for server-side applications.  
+## Signature
+
+```typescript
+declare class NetworkServerLibrary extends BaseNetworkLibrary 
+```
+
+## Properties
+
+### tcp
+**Type**:<RefLink target="network-server.TCPServer">`tcp: TCPServer;`</RefLink>
+
+Reliable, ordered WebSocket-based server for connected clients.
+
+### udp
+**Type**:<RefLink target="network-server.UDPServer">`udp: UDPServer;`</RefLink>
+
+Unreliable, unordered WebRTC data-channel server for connected clients.
+
+## Remarks
+
+  Reads network configuration from the environment via `ServerConfigNetwork` and starts TCP (WebSocket) and/or UDP (WebRTC) servers. Register with:  Configuration (via environment variables): - `LISTENING_INTERFACE` — bind address (default: `"0.0.0.0"`). - `LISTENING_TCP_PORT` — WebSocket listen port for TCP (optional). - `LISTENING_UDP_PORT` — signaling listen port for UDP (optional). - `MAGIC_VALUE` — packet framing delimiter (default: `"PACKET_END"`). - `WSS_CERT` / `WSS_KEY` — paths to TLS certificate and key files for WSS (optional).  After `init`, access the servers via `tcp` and `udp`.

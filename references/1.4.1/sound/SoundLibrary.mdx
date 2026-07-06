@@ -1,0 +1,37 @@
+---
+title: "SoundLibrary class"
+icon: "box"
+description: "Built-in sound-effect library."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# SoundLibrary
+
+## Summary
+
+Built-in sound-effect library.  
+## Signature
+
+```typescript
+declare class SoundLibrary extends BaseSoundLibrary 
+```
+
+## Methods
+
+### load
+
+Register a sound effect under a unique key.
+
+### mute
+
+Toggle the muted state of all loaded sound effects.
+
+### play
+
+Play a previously loaded sound effect.
+
+## Remarks
+
+  Manages a collection of named `HTMLAudioElement` instances. Load sounds with `load` and trigger playback with `play`. Register with the application:  Access in game code:

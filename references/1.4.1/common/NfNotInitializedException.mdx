@@ -1,0 +1,37 @@
+---
+title: "NfNotInitializedException class"
+icon: "box"
+description: "Thrown when a method is called on a library or engine component before it has been initialised via init."
+---
+
+import { PageLink } from '/snippets/tsdocs/PageLink.jsx';
+import { RefLink } from '/snippets/tsdocs/RefLink.jsx';
+
+# NfNotInitializedException
+
+## Summary
+
+Thrown when a method is called on a library or engine component before it has been initialised via `__init`.  
+## Signature
+
+```typescript
+declare class NfNotInitializedException extends NfException 
+```
+
+## Constructors
+
+### constructor
+
+Constructs a new instance of the class
+
+## Properties
+
+### code
+**Modifiers**: readonly
+**Type**:`get code(): number;`
+
+Always .
+
+## Remarks
+
+  This exception is raised automatically by the helper method `Library.throwNotInitializedError()`. Ensure that `NanoforgeApplication.init` has resolved before interacting with any library.
