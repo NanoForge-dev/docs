@@ -94,6 +94,15 @@
                     ]
                   },
                   {
+                    "group": "Loader",
+                    "pages": [
+                      "docs/cli/loader/1-overview",
+                      "docs/cli/loader/2-client",
+                      "docs/cli/loader/3-website",
+                      "docs/cli/loader/4-server"
+                    ]
+                  },
+                  {
                     "group": "Schematics",
                     "pages": [
                       "docs/cli/schematics/1-overview",
