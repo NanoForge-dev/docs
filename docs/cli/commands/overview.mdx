@@ -1,0 +1,49 @@
+---
+title: Commands
+description: Overview of every NanoForge CLI command
+---
+
+## Using the CLI
+
+Every command follows the same shape:
+
+```bash
+nf [command] [options]
+```
+
+Most commands accept `-d, --directory <directory>` to set the working directory and
+`-c, --config <config>` to point at a specific configuration file. Run any command with `--help` to
+see its full option list:
+
+```bash
+nf <command> --help
+```
+
+## Available commands
+
+<CardGroup cols={2}>
+  <Card title="new" href="/docs/cli/commands/new">
+    Scaffold a brand new NanoForge project.
+  </Card>
+  <Card title="dev" href="/docs/cli/commands/dev">
+    Run your project in development mode with watching.
+  </Card>
+  <Card title="build" href="/docs/cli/commands/build">
+    Compile your client and server for production.
+  </Card>
+  <Card title="start" href="/docs/cli/commands/start">
+    Serve a built project, optionally over HTTPS.
+  </Card>
+  <Card title="create" href="/docs/cli/commands/create">
+    Create a single component or system.
+  </Card>
+  <Card title="install / add" href="/docs/cli/commands/install">
+    Add components, systems, or libraries from the registry.
+  </Card>
+  <Card title="editor" href="/docs/cli/commands/editor">
+    Launch the NanoForge visual editor.
+  </Card>
+  <Card title="registry" href="/docs/cli/commands/registry">
+    Authenticate, publish, and unpublish packages.
+  </Card>
+</CardGroup>
