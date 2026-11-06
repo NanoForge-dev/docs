@@ -3,9 +3,7 @@
   "theme": "almond",
   "name": "NanoForge",
   "custom": {
-    "css": [
-      "custom.css"
-    ]
+    "css": ["custom.css"]
   },
   "colors": {
     "primary": "#4923b6",
@@ -20,9 +18,7 @@
           {
             "dropdown": "Overview",
             "icon": "house",
-            "pages": [
-              "index"
-            ]
+            "pages": ["index"]
           },
           {
             "dropdown": "Engine",
@@ -258,6 +254,18 @@
     {
       "source": "/references/1.4.2/:slug*",
       "destination": "/index"
+    },
+    {
+      "source": "/docs/engine/getting-started/1-index",
+      "destination": "/docs/engine/getting-started/index"
+    },
+    {
+      "source": "/docs/engine/getting-started/how_to_use",
+      "destination": "/docs/engine/getting-started/how-to-use"
+    },
+    {
+      "source": "/docs/engine/registry/writing_web_assembly",
+      "destination": "/docs/engine/registry/writing-web-assembly"
     }
   ]
 }
