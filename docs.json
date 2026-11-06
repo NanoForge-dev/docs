@@ -241,19 +241,19 @@
     },
     {
       "source": "/references/1.3.0/:slug*",
-      "destination": "/index"
+      "destination": "/"
     },
     {
       "source": "/references/1.4.0/:slug*",
-      "destination": "/index"
+      "destination": "/"
     },
     {
       "source": "/references/1.4.1/:slug*",
-      "destination": "/index"
+      "destination": "/"
     },
     {
       "source": "/references/1.4.2/:slug*",
-      "destination": "/index"
+      "destination": "/"
     },
     {
       "source": "/docs/engine/getting-started/1-index",
@@ -266,6 +266,10 @@
     {
       "source": "/docs/engine/registry/writing_web_assembly",
       "destination": "/docs/engine/registry/writing-web-assembly"
+    },
+    {
+      "source": "/docs/cli/getting-started",
+      "destination": "/docs/cli/getting-started/introduction"
     }
   ]
 }
