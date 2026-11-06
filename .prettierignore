@@ -2,3 +2,6 @@
 docs/
 guides/
 references/
+pnpm-lock.yaml
+# Written by pnpm.
+pnpm-workspace.yaml
