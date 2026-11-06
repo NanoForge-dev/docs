@@ -1,0 +1,47 @@
+---
+title: 'Systems'
+icon: 'cog'
+description: 'Create systems, choose which ones an app runs and in which order'
+---
+
+Systems hold the logic of the game. A system is a function the engine calls at every tick, with the entities that have the components it asks for.
+
+```ts
+/**
+ * Moves entities by their velocity.
+ * @system
+ */
+export const move = (registry: Registry, ctx: Context) => {
+  // …
+};
+```
+
+An app runs the systems its `main.ts` adds, in that order:
+
+```ts
+registry.addSystem(move);
+registry.addSystem(draw);
+```
+
+## The Systems panel
+
+The **Systems** panel lists the systems the selected app runs, **in run order**, with the components each one reads.
+
+| To               | Do                                                                                                                     |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| Add a system     | **Add system**, then choose one the app can use. Its import is added.                                                  |
+| Change the order | Drag a system up or down, or `Alt+Up` / `Alt+Down` (right-click › Run earlier, Run later): the `addSystem` lines move. |
+| Remove           | **Remove from app** on its row (_Remove from scene_ while a [scene](/docs/editor/editor/scenes) is edited). The system's file stays.       |
+| See its code     | _Open in code_                                                                                                         |
+
+## Create a system
+
+In the **Components** panel, **New › New system in app**, then a name. The file is created in the app's systems folder and opens in the code editor. Add it to the app from the Systems panel, or with **Add to app** in the Components panel (**Add to scene** while a [scene](/docs/editor/editor/scenes) is edited).
+
+Systems can live in a shared library or come from a package, like [components](/docs/editor/editor/components#share-between-client-and-server).
+
+## While the game plays
+
+Each running system has a switch: turn one off to see the game without it. This changes the running game only, and is reset when the game stops.
+
+The **Profiler** shows the time each system takes: see [Play the game](/docs/editor/editor/play#inspect-the-running-game).
