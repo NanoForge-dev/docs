@@ -4,80 +4,204 @@ icon: "book"
 description: "API reference for the server networking package"
 ---
 
-# network-server API
+## ClientId
 
-## TCPServer
+`string`: an opaque, random identifier (UUID) of a client session. A client
+connected over both TCP and UDP has the same `ClientId` on both servers.
 
-### listen()
+## Methods
 
-Start the WebSocket server and begin accepting clients.
+`NetworkServerLibrary` is exposed on `ctx.network`. Its methods take an optional
+`{ channel }` to pick one of the four [channels](/docs/engine/network/packet-framing):
+`Channel.ReliableOrdered`, `Channel.ReliableUnordered`,
+`Channel.UnreliableOrdered` or `Channel.UnreliableUnordered`.
 
-Returns: `void`
+Reliable channels need `LISTENING_TCP_PORT` and unreliable ones
+`LISTENING_UDP_PORT`. Using a channel whose port is not configured throws.
 
-### getConnectedClients()
+```ts
+import { Channel } from "@nanoforge-dev/network/server";
 
-Return a snapshot array of numeric client IDs currently connected.
+ctx.network.sendToAll({ type: "start" }); // Channel.ReliableOrdered
+ctx.network.sendToAll({ x: 1, y: 2 }, { channel: Channel.UnreliableUnordered });
 
-Returns: `number[]`
+ctx.network.getReceivedPackets().forEach((packets, clientId) => {
+  const messages = packets.map((packet) => packet.json()); // every channel
+});
+```
 
-### sendToEverybody(data)
+### sendToAll(data, options?)
 
-Send a payload to every connected client.
+Send a payload to every client reachable on the channel.
 
-Parameter `data`: `Uint8Array` raw payload bytes.
+Parameter `data`: [`NetworkPayload`](#networkpayload), bytes, a string or any
+JSON value.
 
-Returns: `void`
+Option `channel`: `Channel` to send on. `Channel.ReliableOrdered` by default.
 
-### sendToClient(clientId, data)
-
-Send a payload to the client identified by `clientId`.
-
-Parameter `clientId`: `number` numeric client identifier.
-
-Parameter `data`: `Uint8Array` payload bytes.
-
-Returns: `void`
-
-### getReceivedPackets()
-
-Parse and return complete packets received from each client. Each packet is a `Uint8Array` buffer.
-
-Returns: `Map<number, Uint8Array[]>`
-
-## UDPServer
-
-### listen()
-
-Start the signaling WebSocket and accept incoming client offers.
+Throws a `TypeError` when `data` cannot be encoded as JSON (`undefined`, a
+function).
 
 Returns: `void`
 
-### getConnectedClients()
+### sendToClient(clientId, data, options?)
 
-Return a snapshot array of client IDs with active data channels.
+Send a payload to one client. Logs an error when the client is not reachable on
+the channel.
 
-Returns: `number[]`
+Parameter `clientId`: `ClientId` client identifier.
 
-### sendToEverybody(data)
+Parameter `data`: [`NetworkPayload`](#networkpayload), bytes, a string or any
+JSON value.
 
-Send a payload to every connected data channel.
-
-Parameter `data`: `Uint8Array` raw payload bytes.
-
-Returns: `void`
-
-### sendToClient(clientId, data)
-
-Send a payload to a single client data channel.
-
-Parameter `clientId`: `number`
-
-Parameter `data`: `Uint8Array`
+Option `channel`: `Channel` to send on. `Channel.ReliableOrdered` by default.
 
 Returns: `void`
 
-### getReceivedPackets()
+### getReceivedPackets(options?)
 
-Parse incoming channel chunks and return a map of complete packets per client.
+Return the packets each client sent since the last call. Call it once per
+frame: packets left unread for a whole tick are dropped. Typed packets never
+show up here.
 
-Returns: `Map<number, Uint8Array[]>`
+Option `channel`: `Channel` to read from. Without it, the packets of every
+configured channel are merged per client, reliable channels first.
+
+Returns: `Map<ClientId, NetworkData[]>`, see [NetworkData](#networkdata)
+
+### getConnectedClients(options?)
+
+Return a snapshot array of the clients reachable on the channel: clients with an
+open WebSocket for reliable channels, clients with the channel's data channel for
+unreliable ones.
+
+Option `channel`: `Channel` to check. Without it, clients reachable on any
+configured channel.
+
+Returns: `ClientId[]`
+
+### getClientInfo(clientId)
+
+Return what is known about a client session. See [ClientInfo](#clientinfo).
+
+Parameter `clientId`: `ClientId`
+
+Returns: `ClientInfo | undefined` (`undefined` once the client is gone)
+
+## packets (`ctx.network.packets`)
+
+Typed packets, declared with `definePacket` (see the
+[network-client API](/docs/engine/network/network-client-api)). Packets of a type
+are routed to its listeners and to `read`, never to `getReceivedPackets`.
+
+### on(packet, listener)
+
+Call `listener(data, { clientId, channel, ctx })` for every packet of this type,
+each tick before the ECS systems (not while paused). Packets are dispatched in
+the order they arrived, reliable channels first. A listener that throws, or
+returns a rejected promise, is logged and does not stop the others.
+
+Returns: `() => void`, a function that removes the listener.
+
+### read(packet)
+
+Return the packets of this type received this tick, as
+`{ data, clientId, channel }[]`. Meant for ECS systems, which run after the
+packets are dispatched.
+
+Returns: `{ data: T; clientId: ClientId; channel: Channel }[]`
+
+### sendToAll(packet, data?, options?)
+
+Send a packet to every client reachable on the channel. `data` must match the
+definition's payload type and is encoded as JSON. Leave it out for a packet
+without payload: `sendToAll(Start)`.
+
+Option `channel`: `Channel` to send on. The definition's channel by default.
+
+Throws a `TypeError` when `data` cannot be encoded as JSON.
+
+### sendToClient(clientId, packet, data?, options?)
+
+Send a packet to one client, like `sendToAll`.
+
+## NetworkPayload
+
+What `sendToAll` and `sendToClient` accept. Their payload carries no format
+tag: the receiver reads a packet the way it was sent.
+
+| Value                                              | Encoded as            | Read back with                |
+| -------------------------------------------------- | --------------------- | ----------------------------- |
+| `Uint8Array`, `ArrayBuffer`, any `ArrayBufferView` | The bytes as they are | `bytes()` or `arrayBuffer()`  |
+| `string`                                           | UTF-8 text            | `text()`                      |
+| `NetworkData`                                      | Its bytes, unchanged  | What the original sender used |
+| Any other value (object, array, number, …)         | `JSON.stringify` text | `json()`                      |
+
+Passing a received `NetworkData` relays a client's packet as it is.
+
+## NetworkData
+
+One received packet. Its methods are synchronous and return a new value on
+every call.
+
+| Method          | Returns                                                                    |
+| --------------- | -------------------------------------------------------------------------- |
+| `bytes()`       | `Uint8Array`: the payload bytes.                                           |
+| `arrayBuffer()` | `ArrayBuffer`: the payload bytes.                                          |
+| `text()`        | `string`: the payload decoded as UTF-8.                                    |
+| `json<T>()`     | `T`: the payload parsed as JSON. Throws a `SyntaxError` if it is not JSON. |
+
+## clients (`ctx.network.clients`)
+
+Client sessions shared by the TCP and UDP servers. Also available as
+`NetworkServerLibrary.clients`.
+
+### get(clientId)
+
+Returns: `ClientInfo | undefined`
+
+### list()
+
+Return every connected client session.
+
+Returns: `ClientInfo[]`
+
+### onConnect(listener)
+
+Call `listener(info)` when a new client session starts, i.e. when its first
+transport is up. With TCP and UDP, it fires on TCP open, before UDP is linked:
+`sendToClient(info.id)` on an unreliable channel may still report an unknown
+client at that point. With UDP only, it fires when the signaling socket opens,
+before the data channels exist, so it may also report an unknown client.
+
+Returns: `() => void` that removes the listener.
+
+### onDisconnect(listener)
+
+Call `listener(info)` when a client session ends, i.e. when its last transport
+closes.
+
+Returns: `() => void` that removes the listener.
+
+## ClientInfo
+
+| Field         | Type                                             | Description                                       |
+| ------------- | ------------------------------------------------ | ------------------------------------------------- |
+| `id`          | `ClientId`                                       | Session identifier.                               |
+| `connectedAt` | `number`                                         | Timestamp (ms) of the first transport connection. |
+| `transports`  | `{ tcp?: ConnectionInfo; udp?: ConnectionInfo }` | Transports currently attached (live object).      |
+
+## ConnectionInfo
+
+| Field         | Type                     | Description                                                 |
+| ------------- | ------------------------ | ----------------------------------------------------------- |
+| `transport`   | `"tcp" \| "udp"`         | Transport of this connection.                               |
+| `address`     | `string`                 | Remote address.                                             |
+| `port`        | `number`                 | Remote port.                                                |
+| `family`      | `string`                 | `"IPv4"` or `"IPv6"`.                                       |
+| `userAgent`   | `string \| undefined`    | `User-Agent` header of the upgrade request.                 |
+| `origin`      | `string \| undefined`    | `Origin` header of the upgrade request.                     |
+| `params`      | `Record<string, string>` | Query parameters of the upgrade request, without the token. |
+| `connectedAt` | `number`                 | Timestamp (ms) of the upgrade request.                      |
+
+`Cookie` and `Authorization` headers are never recorded.

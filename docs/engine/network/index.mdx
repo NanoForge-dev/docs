@@ -4,20 +4,19 @@ icon: "book"
 description: "Overview of the engine networking docs"
 ---
 
-# Network Overview
-
-This page describes the engine's networking libraries: `network-server` and `network-client`. Together they provide a small, pragmatic networking layer used by the example `pong-network` game.
+This page describes the engine's networking libraries: `network-server` and `network-client`. Together they provide a small, pragmatic networking layer used by the example `pong-network` game. The same apps can also run without a game server, hosted by one of the players.
 
 ## Goals
 
 - Keep the protocol minimal and predictable for multiplayer games.
-- Use well-understood transports: TCP for reliable control messages and UDP for low-latency, best-effort state updates.
-- Provide clear validation hooks such as magic values and versioning so malformed packets are ignored early.
+- Let each packet pick its delivery guarantees through four channels: reliable or unreliable, ordered or unordered.
+- Use well-understood transports: TCP for the reliable channels and UDP (WebRTC) for low-latency, best-effort ones.
 
 ## Related Pages
 
-- [Network Client](network-client)
-- [Network Server](network-server)
-- [Packet Framing](packet-framing)
-- [Network Server API](network-server-api)
-- [Network Client API](network-client-api)
+- [Network Client](/docs/engine/network/network-client)
+- [Network Server](/docs/engine/network/network-server)
+- [Packet Channels](/docs/engine/network/packet-framing)
+- [Network Server API](/docs/engine/network/network-server-api)
+- [Network Client API](/docs/engine/network/network-client-api)
+- [Peer-to-peer Networking](/docs/engine/network/network-peer)

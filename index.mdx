@@ -1,0 +1,29 @@
+---
+title: "NanoForge"
+description: "Build browser games with the NanoForge engine, CLI and editor"
+---
+
+NanoForge is a game engine for the web browser, built around an ECS (entities, components, systems), with a CLI to create, run and ship games and a visual editor.
+
+## Start here
+
+<CardGroup cols={2}>
+  <Card title="Engine" icon="gears" href="/docs/engine/getting-started/index">
+    The engine packages and modules: core, ECS, graphics, input, network, sound.
+  </Card>
+  <Card title="CLI" icon="terminal" href="/docs/cli/getting-started/introduction">
+    Install `nf`, create a project, develop locally, build and deploy.
+  </Card>
+  <Card title="Editor" icon="pen-ruler" href="/docs/editor/getting-started/introduction">
+    Edit scenes, entities, components and systems visually, and write plugins.
+  </Card>
+  <Card title="Guides" icon="book-open" href="/guides/cli/overview">
+    Task-oriented walkthroughs for common workflows.
+  </Card>
+</CardGroup>
+
+## How this site is made
+
+Each page belongs to the repository of the product it documents (`engine`, `cli`, `loader`, `editor`), in its `docs/docs` folder. Every release of that repository copies its pages here, and the API reference is generated from the engine's TSDoc comments.
+
+Found a mistake? Open an issue or a pull request in the repository of that product.

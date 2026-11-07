@@ -4,60 +4,150 @@ icon: "book"
 description: "API reference for the client networking package"
 ---
 
-# network-client API
+`NetworkClientLibrary` is exposed on `ctx.network`. Its methods take an optional
+`{ channel }` to pick one of the four [channels](/docs/engine/network/packet-framing):
+`Channel.ReliableOrdered`, `Channel.ReliableUnordered`,
+`Channel.UnreliableOrdered` or `Channel.UnreliableUnordered`.
 
-## TCPClient
+Reliable channels need `SERVER_TCP_PORT` and unreliable ones `SERVER_UDP_PORT`.
+Using a channel whose port is not configured throws.
 
-### connect()
+The client connects during `__init`, so its channels are open once the game runs.
+TCP connects first, then UDP with the TCP session token, so both share one client
+id. `__init` rejects when a transport fails, or when its channels are not open
+within 10 seconds.
 
-Initiate a WebSocket connection to the server, for example `ws://<ip>:<port>`.
+```ts
+import { Channel } from "@nanoforge-dev/network/client";
 
-Returns: `Promise<void>`
+ctx.network.sendData({ type: "join" }); // Channel.ReliableOrdered
+ctx.network.sendData({ x: 1, y: 2 }, { channel: Channel.UnreliableOrdered });
 
-### isConnected()
+const messages = ctx.network.getReceivedPackets().map((packet) => packet.json()); // every channel
+```
 
-Return `true` when the underlying WebSocket is open.
-
-Returns: `boolean`
-
-### sendData(data)
+## sendData(data, options?)
 
 Send a payload to the server.
 
-Parameter `data`: `Uint8Array` raw payload bytes.
+Parameter `data`: [`NetworkPayload`](#networkpayload), bytes, a string or any
+JSON value.
+
+Option `channel`: `Channel` to send on. `Channel.ReliableOrdered` by default.
+
+Throws a `TypeError` when `data` cannot be encoded as JSON (`undefined`, a
+function).
 
 Returns: `void`
 
-### getReceivedPackets()
+## getReceivedPackets(options?)
 
-Return an array of complete packets that were reassembled from received chunks.
+Return the packets received since the last call. Call it once per frame:
+packets left unread for a whole tick are dropped. Typed packets never show up
+here.
 
-Returns: `Uint8Array[]`
+Option `channel`: `Channel` to read from. Without it, the packets of every
+configured channel are returned, reliable channels first.
 
-## UDPClient
+Returns: [`NetworkData[]`](#networkdata)
 
-### connect()
+## packets
 
-Open a WebSocket for signaling, create an `RTCPeerConnection`, and initiate an SDP offer.
+Typed packets, declared with `definePacket` (see below).
+Packets of a type are routed to its listeners and to `read`, never to
+`getReceivedPackets`.
 
-Returns: `Promise<void>`
+### packets.on(packet, listener)
 
-### isConnected()
+Call `listener(data, { channel, ctx })` for every packet of this type, each tick
+before the ECS systems (not while paused). Packets are dispatched in the order
+they arrived, reliable channels first. A listener that throws, or returns a
+rejected promise, is logged and does not stop the others.
 
-Return `true` when the `RTCDataChannel` is open.
+Returns: `() => void`, a function that removes the listener.
+
+### packets.read(packet)
+
+Return the packets of this type received this tick, as `{ data, channel }[]`.
+Meant for ECS systems, which run after the packets are dispatched.
+
+Returns: `{ data: T; channel: Channel }[]`
+
+### packets.send(packet, data?, options?)
+
+Send a packet to the server. `data` must match the definition's payload type and
+is encoded as JSON. Leave it out for a packet without payload, declared without
+a type: `send(Play)`.
+
+Option `channel`: `Channel` to send on. The definition's channel by default.
+
+Throws a `TypeError` when `data` cannot be encoded as JSON.
+
+Returns: `void`
+
+## definePacket(name, options?)
+
+Declare a packet type, in a file both apps import. Also exported by
+`@nanoforge-dev/network` itself, for that shared file.
+
+Parameter `name`: `string`, 1 to 255 UTF-8 bytes, unique in the game. It is
+written in front of every packet of this type.
+
+Option `channel`: `Channel` used when `send` gets no `channel`.
+`Channel.ReliableOrdered` by default.
+
+Option `validate`: `(data: unknown) => data is T`, run on every received payload
+before listeners and `read`. Packets that fail it are dropped with a warning.
+
+Throws when the name is empty or too long, and later, in `packets.on` or `read`,
+when another definition of the same name has another channel or `validate`.
+
+Returns: `PacketDefinition<T>`. Without a type, `T` is `void`: the packet
+carries no payload.
+
+```ts
+export const Move = definePacket<{ id: number; x: number; y: number }>("move", {
+  channel: Channel.UnreliableOrdered,
+});
+```
+
+## isConnected(options?)
+
+Return `true` when packets can be sent and received.
+
+Option `channel`: `Channel` to check. Without it, every configured channel must
+be connected.
 
 Returns: `boolean`
 
-### sendData(data)
+## clientId
 
-Send a payload on the data channel.
+Client id assigned by the server, shared by TCP and UDP. `undefined` until
+the server has welcomed the client. It is only kept in memory: a page
+reload gets a new id.
 
-Parameter `data`: `Uint8Array` raw payload bytes.
+Type: `string | undefined`
 
-Returns: `void`
+## NetworkPayload
 
-### getReceivedPackets()
+What `sendData` accepts. Its payload carries no format tag: the receiver reads
+a packet the way it was sent.
 
-Return an array of complete packets reassembled from received data-channel chunks.
+| Value                                              | Encoded as            | Read back with                |
+| -------------------------------------------------- | --------------------- | ----------------------------- |
+| `Uint8Array`, `ArrayBuffer`, any `ArrayBufferView` | The bytes as they are | `bytes()` or `arrayBuffer()`  |
+| `string`                                           | UTF-8 text            | `text()`                      |
+| `NetworkData`                                      | Its bytes, unchanged  | What the original sender used |
+| Any other value (object, array, number, …)         | `JSON.stringify` text | `json()`                      |
 
-Returns: `Uint8Array[]`
+## NetworkData
+
+One received packet. Its methods are synchronous and return a new value on
+every call.
+
+| Method          | Returns                                                                    |
+| --------------- | -------------------------------------------------------------------------- |
+| `bytes()`       | `Uint8Array`: the payload bytes.                                           |
+| `arrayBuffer()` | `ArrayBuffer`: the payload bytes.                                          |
+| `text()`        | `string`: the payload decoded as UTF-8.                                    |
+| `json<T>()`     | `T`: the payload parsed as JSON. Throws a `SyntaxError` if it is not JSON. |

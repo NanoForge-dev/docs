@@ -1,0 +1,45 @@
+[
+  {
+    "group": "Getting started",
+    "icon": "rocket",
+    "pages": [
+      "docs/cli/getting-started/introduction",
+      "docs/cli/getting-started/installation",
+      "docs/cli/getting-started/quickstart"
+    ]
+  },
+  {
+    "group": "Commands",
+    "icon": "terminal",
+    "pages": [
+      "docs/cli/commands/overview",
+      "docs/cli/commands/new",
+      "docs/cli/commands/dev",
+      "docs/cli/commands/build",
+      "docs/cli/commands/start",
+      "docs/cli/commands/create",
+      "docs/cli/commands/install",
+      "docs/cli/commands/editor",
+      "docs/cli/commands/registry"
+    ]
+  },
+  {
+    "group": "Configuration",
+    "icon": "sliders",
+    "pages": [
+      "docs/cli/configuration/configuration-file",
+      "docs/cli/configuration/environment-variables"
+    ]
+  },
+  {
+    "group": "Schematics",
+    "icon": "shapes",
+    "pages": [
+      "docs/cli/schematics/overview",
+      "docs/cli/schematics/workspace",
+      "docs/cli/schematics/project",
+      "docs/cli/schematics/component",
+      "docs/cli/schematics/system"
+    ]
+  }
+]

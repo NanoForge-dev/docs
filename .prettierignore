@@ -1,0 +1,7 @@
+# Owned by the source repositories, written by the docs-sync action at their releases.
+docs/
+guides/
+references/
+pnpm-lock.yaml
+# Written by pnpm.
+pnpm-workspace.yaml

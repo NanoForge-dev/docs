@@ -1,0 +1,46 @@
+[
+  {
+    "group": "Getting started",
+    "icon": "rocket",
+    "pages": [
+      "docs/editor/getting-started/introduction",
+      "docs/editor/getting-started/create-your-first-project"
+    ]
+  },
+  {
+    "group": "Using the editor",
+    "icon": "pen-ruler",
+    "pages": [
+      "docs/editor/editor/overview",
+      "docs/editor/editor/adapt-a-project",
+      "docs/editor/editor/layout",
+      "docs/editor/editor/files",
+      "docs/editor/editor/code-editor",
+      "docs/editor/editor/entities",
+      "docs/editor/editor/components",
+      "docs/editor/editor/systems",
+      "docs/editor/editor/scenes",
+      "docs/editor/editor/play",
+      "docs/editor/editor/settings",
+      "docs/editor/editor/git",
+      "docs/editor/editor/plugins-and-packages"
+    ]
+  },
+  {
+    "group": "Plugins",
+    "icon": "puzzle-piece",
+    "pages": [
+      "docs/editor/plugins/overview",
+      "docs/editor/plugins/create-your-first-plugin",
+      "docs/editor/plugins/manifest",
+      "docs/editor/plugins/sdk",
+      "docs/editor/plugins/extension-points",
+      "docs/editor/plugins/widgets-and-styles",
+      "docs/editor/plugins/themes",
+      "docs/editor/plugins/settings",
+      "docs/editor/plugins/history",
+      "docs/editor/plugins/code-and-codegen",
+      "docs/editor/plugins/engine-libs"
+    ]
+  }
+]

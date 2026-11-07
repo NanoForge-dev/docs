@@ -31,6 +31,8 @@
     "prod": "mint dev --port 3000 --no-open",
     "start": "bun run ./dist/serve.js",
     "a11y": "mint a11y",
+    "validate": "mint validate",
+    "broken-links": "mint broken-links",
     "lint": "prettier --check .",
     "format": "prettier --write .",
     "changelog": "git cliff --prepend ./CHANGELOG.md -u -c ./cliff.toml -r . --include-path '.'",

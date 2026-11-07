@@ -1,0 +1,47 @@
+# Checks the site on every pull request and after every docs-sync push to main (the synced folders arrive without a PR).
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - main
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: Validate the site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@v6
+        with:
+          node-version-file: .nvmrc
+
+      - name: Install dependencies
+        run: |
+          npm install -g "$(node -p 'require("./package.json").packageManager')"
+          pnpm install --frozen-lockfile
+
+      - name: Lint
+        run: pnpm run lint
+
+      # docs.json $refs, missing pages, invalid MDX and imports
+      - name: Validate the build
+        run: pnpm run validate
+
+      - name: Check the links
+        run: pnpm run broken-links
+
+      - name: Check accessibility
+        run: pnpm run a11y

@@ -1,0 +1,60 @@
+[
+  {
+    "group": "Getting started",
+    "pages": [
+      "docs/engine/getting-started/index",
+      "docs/engine/getting-started/how-to-use",
+      "docs/engine/getting-started/documentation"
+    ]
+  },
+  {
+    "group": "Registry",
+    "pages": [
+      "docs/engine/registry/index",
+      "docs/engine/registry/writing-web-assembly"
+    ]
+  },
+  {
+    "group": "Network",
+    "pages": [
+      "docs/engine/network/index",
+      "docs/engine/network/network-client",
+      "docs/engine/network/network-server",
+      "docs/engine/network/network-peer",
+      "docs/engine/network/packet-framing",
+      "docs/engine/network/network-client-api",
+      "docs/engine/network/network-server-api"
+    ]
+  },
+  {
+    "group": "Graphics 3D",
+    "pages": [
+      "docs/engine/graphics-3d/index",
+      "docs/engine/graphics-3d/advanced",
+      "docs/engine/graphics-3d/performance"
+    ]
+  },
+  {
+    "group": "Editor",
+    "pages": [
+      "docs/engine/editor/protocol"
+    ]
+  },
+  {
+    "group": "Design notes",
+    "pages": [
+      "docs/engine/graphics-3d/editor-proposal",
+      {
+        "group": "3D graphics library benchmark",
+        "pages": [
+          "docs/engine/lib-graphic-3d/index",
+          "docs/engine/lib-graphic-3d/three-js",
+          "docs/engine/lib-graphic-3d/babylon-js",
+          "docs/engine/lib-graphic-3d/playcanvas",
+          "docs/engine/lib-graphic-3d/luma-gl",
+          "docs/engine/lib-graphic-3d/poc"
+        ]
+      }
+    ]
+  }
+]
