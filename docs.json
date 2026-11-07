@@ -270,6 +270,14 @@
     {
       "source": "/docs/cli/getting-started",
       "destination": "/docs/cli/getting-started/introduction"
+    },
+    {
+      "source": "/docs/engine/lib-graphic-3d/:slug*",
+      "destination": "/docs/engine/graphics-3d/index"
+    },
+    {
+      "source": "/docs/engine/graphics-3d/editor-proposal",
+      "destination": "/docs/engine/graphics-3d/index"
     }
   ]
 }
