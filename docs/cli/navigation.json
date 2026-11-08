@@ -39,7 +39,8 @@
       "docs/cli/schematics/workspace",
       "docs/cli/schematics/project",
       "docs/cli/schematics/component",
-      "docs/cli/schematics/system"
+      "docs/cli/schematics/system",
+      "docs/cli/schematics/plugin"
     ]
   }
 ]

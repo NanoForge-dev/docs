@@ -1,44 +1,86 @@
 ---
 title: install / add
-description: Add components, systems, or libraries to your project
+description: Install packages from the NanoForge registry, or npm libraries
 ---
 
-## Overview
+## What it does
 
-`nf install` (aliased as `nf add`) pulls components, systems, or libraries from the NanoForge
-registry into your project. By default it installs components and systems for the client; use
-`--lib` for libraries and `--server` to target the server.
+`nf install` (or its alias `nf add`) adds packages to your project.
+
+- **Registry packages** (the default) are named `@scope/name`. For each name, `nf` picks the
+  newest version that fits the range (`^<newest>` when you give none), then the registry packages
+  it depends on, one version of each per project. It downloads each archive, checks its sha256 and
+  its manifest, and writes it read only to `nf_modules/@scope/name` in the `-d` folder.
+- **Without a name**, `nf install` installs what the lock (`nanoforge.packages.lock.json`) lists
+  and `nf_modules` lacks, and removes what the lock no longer lists: run it after a clone or a
+  teammate's change. A package only listed in `nanoforge.packages.json` (added by hand) is not
+  installed: name it.
+- **Libraries** (`--lib`) are npm packages. `nf` adds them as dev dependencies with your project's
+  package manager, found from its lock file (npm when there is none). On Windows, an argument holding `"`, `%`, `!` or a line break is refused
+  with an error.
+
+Reading the registry needs no account. Plugins (packages of type `plugin`) are for the editor:
+`nf install` refuses them.
+
+## Where files go
+
+| File                           | What                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------ |
+| `nanoforge.packages.json`      | The packages you asked for, with their ranges: `{ "packages": { "@acme/kit": "^1.2.0" } }`. Commit it. |
+| `nanoforge.packages.lock.json` | The exact version and sha256 of every installed package, dependencies included. Commit it.             |
+| `nf_modules/@scope/name/`      | The package's files, as published. Don't edit them, and don't commit the folder.                       |
+| `tsconfig.json`                | A `paths` entry per package: `"@acme/kit/*": ["./nf_modules/@acme/kit/*"]`.                            |
+
+The `paths` entry lets TypeScript resolve a package's files as `@acme/kit/<path>`, for instance
+`@acme/kit/src/player/velocity`. Projects made by `nf new` ignore `nf_modules` in their
+`.gitignore`.
+
+A package's `npmDependencies` and `libDependencies` are not installed: add them with
+`nf install --lib`.
 
 ## Usage
 
 ```bash
-nf install [names...]
+nf install [names...] [options]
+nf add [names...] [options]
 ```
 
 ## Options
 
-| Option                        | Description                                                        |
-| ----------------------------- | ------------------------------------------------------------------ |
-| `[names...]`                  | Names of the components/systems/libraries to install.              |
-| `-d, --directory <directory>` | Working directory of the command.                                  |
-| `-l, --lib`                   | Install a library instead of a component/system. Default: `false`. |
-| `-s, --server`                | Install on the server instead of the client. Default: `false`.     |
+| Option                        | Type     | Default                       | Description                                                                        |
+| ----------------------------- | -------- | ----------------------------- | ---------------------------------------------------------------------------------- |
+| `[names...]`                  | string[] | the lock (asked with `--lib`) | Registry packages, `@scope/name` or `@scope/name@<range>`; npm names with `--lib`. |
+| `-d, --directory <directory>` | path     | `.`                           | Project folder.                                                                    |
+| `-l, --lib`                   | boolean  | `false`                       | Install npm libraries with the package manager instead of registry packages.       |
+
+The `--server` option is gone: registry packages go to `nf_modules`, for the client and the server.
 
 ## Examples
 
-**Install a component for the client:**
+Install a package, and a precise range of another:
 
 ```bash
-nf install my-org/health-bar
+nf install @acme/kit @acme/physics@~1.4.0
 ```
 
-**Install a library on the server:**
+Install what the lock lists, after a clone:
 
 ```bash
-nf add my-org/physics --lib --server
+nf install
 ```
 
-<Note>
-  Installing from a private scope may require authentication. See the [registry
-  commands](/docs/cli/commands/registry) to log in first.
-</Note>
+Add an npm library:
+
+```bash
+nf add --lib lodash-es
+```
+
+## Common errors
+
+- **`@scope/name was not found`.** The package doesn't exist on the registry. Check its name.
+- **`No version of @scope/name fits <range> (asked by …)`.** No published version matches the
+  ranges asked by your project and by the packages that need it.
+- **`<name> is not a valid package name`.** Registry names are `@scope/name`, in lowercase. For an
+  npm package, add `--lib`.
+- **`@scope/name is a plugin, not a package`.** Install editor plugins from the editor.
+- **`The registry cannot be reached`.** Check your network connection.
