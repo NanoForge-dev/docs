@@ -43,7 +43,6 @@
     "@commitlint/cli": "catalog:",
     "@commitlint/config-conventional": "catalog:",
     "@favware/cliff-jumper": "catalog:",
-    "@nanoforge-dev/actions": "catalog:",
     "bun": "catalog:",
     "extract-zip": "catalog:",
     "husky": "catalog:",
