@@ -1,0 +1,246 @@
+---
+title: "ControllerContextApi"
+description: "Public surface of ControllerLibrary, exposed on Context.controller."
+---
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L10)
+
+Public surface of `ControllerLibrary`, exposed on `Context.controller`.
+
+## Methods
+
+### getAxis()
+
+> **getAxis**(`axis`, `index?`): `number`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L18)
+
+#### Parameters
+
+##### axis
+
+[`ControllerAxis`](/references/engine/3.0.0/input/controller/enumerations/ControllerAxis)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`number`
+
+***
+
+### getButtonValue()
+
+> **getButtonValue**(`button`, `index?`): `number`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L17)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`number`
+
+***
+
+### getController()
+
+> **getController**(`index?`): [`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState) \| `undefined`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L12)
+
+#### Parameters
+
+##### index?
+
+`number`
+
+#### Returns
+
+[`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState) \| `undefined`
+
+***
+
+### getControllers()
+
+> **getControllers**(): [`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState)[]
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L11)
+
+#### Returns
+
+[`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState)[]
+
+***
+
+### getStick()
+
+> **getStick**(`stick`, `index?`): [`StickPosition`](/references/engine/3.0.0/input/controller/type-aliases/StickPosition)
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L19)
+
+#### Parameters
+
+##### stick
+
+[`ControllerStick`](/references/engine/3.0.0/input/controller/type-aliases/ControllerStick)
+
+##### index?
+
+`number`
+
+#### Returns
+
+[`StickPosition`](/references/engine/3.0.0/input/controller/type-aliases/StickPosition)
+
+***
+
+### isButtonJustPressed()
+
+> **isButtonJustPressed**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L15)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isButtonJustReleased()
+
+> **isButtonJustReleased**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L16)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isButtonPressed()
+
+> **isButtonPressed**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L14)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isConnected()
+
+> **isConnected**(`index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L13)
+
+#### Parameters
+
+##### index?
+
+`number`
+
+#### Returns
+
+`boolean`
+
+***
+
+### onConnect()
+
+> **onConnect**(`listener`): () => `void`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L21)
+
+#### Parameters
+
+##### listener
+
+[`ControllerListener`](/references/engine/3.0.0/input/controller/type-aliases/ControllerListener)
+
+#### Returns
+
+() => `void`
+
+***
+
+### onDisconnect()
+
+> **onDisconnect**(`listener`): () => `void`
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L22)
+
+#### Parameters
+
+##### listener
+
+[`ControllerListener`](/references/engine/3.0.0/input/controller/type-aliases/ControllerListener)
+
+#### Returns
+
+() => `void`
+
+***
+
+### vibrate()
+
+> **vibrate**(`effect`, `index?`): `Promise`\<`boolean`\>
+
+Defined in: [modules/input/src/controller/controller-context.type.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller-context.type.ts#L20)
+
+#### Parameters
+
+##### effect
+
+[`ControllerVibration`](/references/engine/3.0.0/input/controller/type-aliases/ControllerVibration)
+
+##### index?
+
+`number`
+
+#### Returns
+
+`Promise`\<`boolean`\>

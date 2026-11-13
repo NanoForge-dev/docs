@@ -1,0 +1,78 @@
+---
+title: "EditorBridgeEvent"
+description: "Engine → editor events, on RunOptions.editor.toEditor."
+---
+
+Defined in: [modules/editor/src/protocol.ts:47](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L47)
+
+Engine → editor events, on `RunOptions.editor.toEditor`.
+
+## Enumeration Members
+
+### FrameStats
+
+> **FrameStats**: `"frame-stats"`
+
+Defined in: [modules/editor/src/protocol.ts:53](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L53)
+
+Sampled tick timings, when requested. Payload: [EditorFrameStats](/references/engine/3.0.0/editor-lib/interfaces/EditorFrameStats).
+
+***
+
+### Hello
+
+> **Hello**: `"hello"`
+
+Defined in: [modules/editor/src/protocol.ts:49](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L49)
+
+Emitted once the app is initialized. Payload: [EditorHello](/references/engine/3.0.0/editor-lib/interfaces/EditorHello).
+
+***
+
+### Log
+
+> **Log**: `"log"`
+
+Defined in: [modules/editor/src/protocol.ts:55](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L55)
+
+Console output of the game, when requested. Payload: [EditorLog](/references/engine/3.0.0/editor-lib/interfaces/EditorLog).
+
+***
+
+### NetworkStats
+
+> **NetworkStats**: `"network-stats"`
+
+Defined in: [modules/editor/src/protocol.ts:59](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L59)
+
+Network totals per second, when traces are requested. Payload: [EditorNetworkStats](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkStats).
+
+***
+
+### NetworkTrace
+
+> **NetworkTrace**: `"network-trace"`
+
+Defined in: [modules/editor/src/protocol.ts:57](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L57)
+
+Network packets, when requested (network library). Payload: [EditorNetworkTrace](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTrace).
+
+***
+
+### State
+
+> **State**: `"state"`
+
+Defined in: [modules/editor/src/protocol.ts:51](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L51)
+
+Emitted on every run state change. Payload: [EditorRunState](/references/engine/3.0.0/editor-lib/type-aliases/EditorRunState).
+
+***
+
+### Viewport
+
+> **Viewport**: `"viewport"`
+
+Defined in: [modules/editor/src/protocol.ts:61](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L61)
+
+The game's viewport, when requested (clients). Payload: [EditorViewport](/references/engine/3.0.0/editor-lib/type-aliases/EditorViewport).

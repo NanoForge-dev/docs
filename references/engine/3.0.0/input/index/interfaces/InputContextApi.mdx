@@ -1,0 +1,112 @@
+---
+title: "InputContextApi"
+description: "Public surface of InputLibrary, exposed on Context.input."
+---
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:5](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L5)
+
+Public surface of `InputLibrary`, exposed on `Context.input`.
+
+## Methods
+
+### getDragState()
+
+> **getDragState**(): [`DragState`](/references/engine/3.0.0/input/index/type-aliases/DragState)
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L11)
+
+#### Returns
+
+[`DragState`](/references/engine/3.0.0/input/index/type-aliases/DragState)
+
+***
+
+### getMousePosition()
+
+> **getMousePosition**(): `object`
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L8)
+
+#### Returns
+
+`object`
+
+##### x
+
+> **x**: `number`
+
+##### y
+
+> **y**: `number`
+
+***
+
+### getMouseState()
+
+> **getMouseState**(): [`MouseState`](/references/engine/3.0.0/input/index/type-aliases/MouseState)
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L9)
+
+#### Returns
+
+[`MouseState`](/references/engine/3.0.0/input/index/type-aliases/MouseState)
+
+***
+
+### getPressedKeys()
+
+> **getPressedKeys**(): [`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)[]
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L7)
+
+#### Returns
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)[]
+
+***
+
+### getWheelState()
+
+> **getWheelState**(): [`WheelState`](/references/engine/3.0.0/input/index/type-aliases/WheelState)
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L12)
+
+#### Returns
+
+[`WheelState`](/references/engine/3.0.0/input/index/type-aliases/WheelState)
+
+***
+
+### isDragging()
+
+> **isDragging**(`button?`): `boolean`
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L10)
+
+#### Parameters
+
+##### button?
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)
+
+#### Returns
+
+`boolean`
+
+***
+
+### isKeyPressed()
+
+> **isKeyPressed**(`key`): `boolean` \| `undefined`
+
+Defined in: [modules/input/src/keyboard-mouse/input-context.type.ts:6](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input-context.type.ts#L6)
+
+#### Parameters
+
+##### key
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)
+
+#### Returns
+
+`boolean` \| `undefined`

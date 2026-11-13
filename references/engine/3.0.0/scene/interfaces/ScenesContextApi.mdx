@@ -1,0 +1,141 @@
+---
+title: "ScenesContextApi"
+description: "Public surface of SceneLibrary, exposed on Context.scenes."
+---
+
+Defined in: [modules/scene/src/scenes-context.type.ts:7](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L7)
+
+Public surface of `SceneLibrary`, exposed on `Context.scenes`.
+
+## Properties
+
+### current
+
+> `readonly` **current**: [`Scene`](/references/engine/3.0.0/scene/classes/Scene)\<`never`\> \| `undefined`
+
+Defined in: [modules/scene/src/scenes-context.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L9)
+
+The scene loaded deepest, if any.
+
+***
+
+### loaded
+
+> `readonly` **loaded**: readonly [`Scene`](/references/engine/3.0.0/scene/classes/Scene)\<`never`\>[]
+
+Defined in: [modules/scene/src/scenes-context.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L11)
+
+The loaded scenes, root first.
+
+***
+
+### vars
+
+> `readonly` **vars**: [`SceneVarsApi`](/references/engine/3.0.0/scene/interfaces/SceneVarsApi)
+
+Defined in: [modules/scene/src/scenes-context.type.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L13)
+
+Vars shared by scenes and systems.
+
+## Methods
+
+### isLoaded()
+
+> **isLoaded**(`scene`): `boolean`
+
+Defined in: [modules/scene/src/scenes-context.type.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L44)
+
+Whether a scene of this class is loaded.
+
+#### Parameters
+
+##### scene
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)
+
+#### Returns
+
+`boolean`
+
+***
+
+### load()
+
+> **load**\<`TParams`\>(`ctx`, `scene`, `options?`): `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scenes-context.type.ts:30](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L30)
+
+Moves to a scene: unloads the loaded scenes up to the deepest one it
+shares with `scene`'s parents, then loads its missing parents and the
+scene itself.
+
+#### Type Parameters
+
+##### TParams
+
+`TParams`
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+Handed to the `load` and `unload` of the scenes.
+
+##### scene
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`TParams`\>
+
+The scene to move to.
+
+##### options?
+
+[`LoadOptions`](/references/engine/3.0.0/scene/interfaces/LoadOptions)\<`TParams`\>
+
+Its params, and the parent to load it under.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+A promise resolved once the change is made.
+
+#### Remarks
+
+The change is queued and made when no system runs (see `SceneLibrary`).
+A scene already loaded is not loaded again: the scenes under it are
+unloaded.
+
+#### Throws
+
+`NfSceneCycleException` (through the promise) When a scene ends up among its own parents.
+
+***
+
+### unload()
+
+> **unload**(`ctx`, `scene`): `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scenes-context.type.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scenes-context.type.ts#L42)
+
+Unloads a scene and the scenes loaded under it: a move to its parent.
+Nothing happens when it is not loaded.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+Handed to the `unload` of the scenes.
+
+##### scene
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+A promise resolved once the change is made.

@@ -1,0 +1,242 @@
+---
+title: "EcsLibrary"
+description: "Server-side ECS library — loads the Node-targeted compiled WASM module."
+---
+
+Defined in: [modules/ecs/src/server/index.ts:6](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/server/index.ts#L6)
+
+Server-side ECS library — loads the Node-targeted compiled WASM module.
+
+## Extends
+
+- `EcsLibrary`
+
+## Constructors
+
+### Constructor
+
+> **new EcsLibrary**(): `EcsLibrary`
+
+Defined in: [modules/ecs/src/server/index.ts:7](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/server/index.ts#L7)
+
+#### Returns
+
+`EcsLibrary`
+
+#### Overrides
+
+`BaseEcsLibrary.constructor`
+
+## Properties
+
+### key
+
+> `readonly` **key**: `"ecs"`
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:36](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L36)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+#### Inherited from
+
+`BaseEcsLibrary.key`
+
+## Accessors
+
+### registry
+
+#### Get Signature
+
+> **get** **registry**(): [`Registry`](/references/engine/3.0.0/ecs/index/interfaces/Registry)
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L78)
+
+##### Returns
+
+[`Registry`](/references/engine/3.0.0/ecs/index/interfaces/Registry)
+
+#### Inherited from
+
+`BaseEcsLibrary.registry`
+
+***
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): `LibraryRelationships`
+
+Defined in: packages/common/dist/index.d.ts:512
+
+**`Internal`**
+
+##### Returns
+
+`LibraryRelationships`
+
+#### Inherited from
+
+`BaseEcsLibrary.relationships`
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: packages/common/dist/index.d.ts:525
+
+Called once after the tick loop stops.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`BaseEcsLibrary.__clear`
+
+***
+
+### \_\_editorInit()
+
+> **\_\_editorInit**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:60](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L60)
+
+Listens to the editor's commands (`hot-reload`, live mode).
+
+#### Parameters
+
+##### ctx
+
+[`EditorInitContext`](/references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`BaseEcsLibrary.__editorInit`
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L70)
+
+Live mode: runs every tick, paused ones too, so the editor sees the world while paused.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`BaseEcsLibrary.__events`
+
+***
+
+### \_\_init()
+
+> **\_\_init**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:47](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L47)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Parameters
+
+##### ctx
+
+`InitContext`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`BaseEcsLibrary.__init`
+
+***
+
+### \_\_run()
+
+> **\_\_run**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L74)
+
+Called every tick, in run order, while the tick loop is active and not paused.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`BaseEcsLibrary.__run`
+
+***
+
+### expose()
+
+> **expose**(): [`EcsContextApi`](/references/engine/3.0.0/ecs/index/interfaces/EcsContextApi)
+
+Defined in: [modules/ecs/src/shared/ecs-library.ts:83](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/ecs-library.ts#L83)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+[`EcsContextApi`](/references/engine/3.0.0/ecs/index/interfaces/EcsContextApi)
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+#### Inherited from
+
+`BaseEcsLibrary.expose`
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: packages/common/dist/index.d.ts:536
+
+#### Returns
+
+`never`
+
+#### Inherited from
+
+`BaseEcsLibrary.throwNotInitializedError`

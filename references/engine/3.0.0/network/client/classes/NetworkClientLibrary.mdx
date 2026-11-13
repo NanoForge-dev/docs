@@ -1,0 +1,413 @@
+---
+title: "NetworkClientLibrary"
+description: "Built-in network library for client-side applications."
+---
+
+Defined in: [modules/network/src/client/client.network.library.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L52)
+
+Built-in network library for client-side applications.
+
+## Remarks
+
+Reads network configuration from the environment via `ClientConfigNetwork`
+and opens the connections during `__init`, so the channels are open before
+the game runs: TCP (WebSocket) carries the reliable channels and UDP (WebRTC
+data channels) the unreliable ones.  TCP connects first; once welcomed, UDP
+presents the session token so both transports share one client id.
+
+Configuration (via environment variables):
+- `SERVER_ADDRESS` — hostname or IP of the server (required).
+- `SERVER_TCP_PORT` — WebSocket port for TCP (optional).
+- `SERVER_UDP_PORT` — signaling port for UDP/WebRTC (optional).
+- `WSS` — set to `"true"` to use `wss://` / `https://` (default: `false`).
+- `ICE_SERVERS` — STUN/TURN servers for the UDP transport, comma-separated or a JSON array (default: `[]`).
+- `NETWORK_MODE` — `p2p` (set by `nf` from `network: "p2p"`): without `?room=` in
+  the page URL, this player hosts the game, running the server app in this
+  tab; with it, the player joins that room's host over WebRTC.  The signaling
+  server is reached at `SERVER_ADDRESS` and `SERVER_TCP_PORT`.
+
+## Example
+
+```ts
+ctx.network.sendData({ type: "join" }); // Channel.ReliableOrdered
+ctx.network.sendData({ x: 1, y: 2 }, { channel: Channel.UnreliableOrdered });
+const messages = ctx.network.getReceivedPackets().map((packet) => packet.json()); // every channel
+ctx.network.packets.send(Input, { key: "up" }); // typed packet, see `definePacket`
+```
+
+## Extends
+
+- `Library`
+
+## Implements
+
+- [`EditorAwareLibrary`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary)
+
+## Constructors
+
+### Constructor
+
+> **new NetworkClientLibrary**(): `NetworkClientLibrary`
+
+Defined in: [modules/network/src/client/client.network.library.ts:80](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L80)
+
+#### Returns
+
+`NetworkClientLibrary`
+
+#### Overrides
+
+`Library.constructor`
+
+## Properties
+
+### key
+
+> `readonly` **key**: `"network"`
+
+Defined in: [modules/network/src/client/client.network.library.ts:53](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L53)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+#### Overrides
+
+`Library.key`
+
+## Accessors
+
+### clientId
+
+#### Get Signature
+
+> **get** **clientId**(): `string` \| `undefined`
+
+Defined in: [modules/network/src/client/client.network.library.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L64)
+
+Client id assigned by the server, `undefined` until transport is welcomed.
+
+##### Returns
+
+`string` \| `undefined`
+
+***
+
+### inviteLink
+
+#### Get Signature
+
+> **get** **inviteLink**(): `string` \| `undefined`
+
+Defined in: [modules/network/src/client/client.network.library.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L74)
+
+See `NetworkClientContextApi.inviteLink`.
+
+##### Returns
+
+`string` \| `undefined`
+
+***
+
+### packets
+
+#### Get Signature
+
+> **get** **packets**(): [`ClientPacketsApi`](/references/engine/3.0.0/network/client/interfaces/ClientPacketsApi)
+
+Defined in: [modules/network/src/client/client.network.library.ts:86](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L86)
+
+Typed packets: per-type listeners, `read` and `send`.
+
+##### Returns
+
+[`ClientPacketsApi`](/references/engine/3.0.0/network/client/interfaces/ClientPacketsApi)
+
+***
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): `LibraryRelationships`
+
+Defined in: packages/common/dist/index.d.ts:512
+
+**`Internal`**
+
+##### Returns
+
+`LibraryRelationships`
+
+#### Inherited from
+
+`Library.relationships`
+
+***
+
+### roomCode
+
+#### Get Signature
+
+> **get** **roomCode**(): `string` \| `undefined`
+
+Defined in: [modules/network/src/client/client.network.library.ts:69](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L69)
+
+See `NetworkClientContextApi.roomCode`.
+
+##### Returns
+
+`string` \| `undefined`
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: packages/common/dist/index.d.ts:525
+
+Called once after the tick loop stops.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`Library.__clear`
+
+***
+
+### \_\_editorInit()
+
+> **\_\_editorInit**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/network/src/client/client.network.library.ts:172](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L172)
+
+Traces packets for the editor (`network-trace`, `network-stats`) while
+its `welcome` asks for it.
+
+#### Parameters
+
+##### ctx
+
+[`EditorInitContext`](/references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Implementation of
+
+[`EditorAwareLibrary`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary).[`__editorInit`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary#__editorinit)
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/network/src/client/client.network.library.ts:181](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L181)
+
+Sends the totals of the packets traced for the editor (also while paused).
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__events`
+
+***
+
+### \_\_init()
+
+> **\_\_init**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/network/src/client/client.network.library.ts:90](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L90)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Parameters
+
+##### ctx
+
+`InitContext`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__init`
+
+***
+
+### \_\_run()
+
+> **\_\_run**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/network/src/client/client.network.library.ts:186](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L186)
+
+Calls the listeners of the typed packets received since the last tick.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__run`
+
+***
+
+### expose()
+
+> **expose**(): [`NetworkClientContextApi`](/references/engine/3.0.0/network/client/interfaces/NetworkClientContextApi)
+
+Defined in: [modules/network/src/client/client.network.library.ts:190](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L190)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+[`NetworkClientContextApi`](/references/engine/3.0.0/network/client/interfaces/NetworkClientContextApi)
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+#### Overrides
+
+`Library.expose`
+
+***
+
+### getReceivedPackets()
+
+> **getReceivedPackets**(`options?`): [`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]
+
+Defined in: [modules/network/src/client/client.network.library.ts:154](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L154)
+
+Return the packets received since the last call.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+`channel` to read from, every channel by default.
+
+#### Returns
+
+[`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]
+
+Array of packets, each read with `bytes()`, `text()`, `json()`…
+
+#### Remarks
+
+Call this method once per frame: packets left unread for a whole tick are
+dropped, and typed packets never show up here.  Without a `channel`, the
+packets of every configured channel are returned, reliable channels first.
+
+#### Throws
+
+When the channel's port was not configured.
+
+***
+
+### isConnected()
+
+> **isConnected**(`options?`): `boolean`
+
+Defined in: [modules/network/src/client/client.network.library.ts:164](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L164)
+
+Return `true` when packets can be sent and received.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+`channel` to check, every configured channel by default.
+
+#### Returns
+
+`boolean`
+
+#### Throws
+
+When the channel's port was not configured.
+
+***
+
+### sendData()
+
+> **sendData**(`data`, `options?`): `void`
+
+Defined in: [modules/network/src/client/client.network.library.ts:138](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/client.network.library.ts#L138)
+
+Send a payload to the server.
+
+#### Parameters
+
+##### data
+
+[`NetworkPayload`](/references/engine/3.0.0/network/client/type-aliases/NetworkPayload)
+
+Bytes, a string, or any value `JSON.stringify` can encode.
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+`channel` to send on, `Channel.ReliableOrdered` by default.
+
+#### Returns
+
+`void`
+
+#### Throws
+
+When the channel's port was not configured
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: packages/common/dist/index.d.ts:536
+
+#### Returns
+
+`never`
+
+#### Inherited from
+
+`Library.throwNotInitializedError`

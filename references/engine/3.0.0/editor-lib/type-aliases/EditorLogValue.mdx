@@ -1,0 +1,129 @@
+---
+title: "EditorLogValue"
+description: "A logged value as a JSON tree: a snapshot limited in depth and size, which an editor can show expanded."
+---
+
+> **EditorLogValue** = `string` \| `number` \| `boolean` \| `null` \| \{ `type`: `"undefined"`; \} \| \{ `text`: `string`; `type`: `"number"`; \} \| \{ `text`: `string`; `type`: `"bigint"` \| `"symbol"` \| `"function"` \| `"date"`; \} \| \{ `message`: `string`; `name`: `string`; `stack?`: `string`; `type`: `"error"`; \} \| \{ `entries`: readonly (readonly \[`string`, `EditorLogValue`\])[]; `more?`: `number`; `name?`: `string`; `type`: `"object"`; \} \| \{ `items`: readonly `EditorLogValue`[]; `length`: `number`; `more?`: `number`; `name?`: `string`; `type`: `"array"`; \} \| \{ `entries`: readonly (readonly \[`EditorLogValue`, `EditorLogValue`\])[]; `more?`: `number`; `size`: `number`; `type`: `"map"`; \} \| \{ `type`: `"circular"`; \} \| \{ `text`: `string`; `type`: `"cut"`; \}
+
+Defined in: [modules/editor/src/protocol.ts:143](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L143)
+
+A logged value as a JSON tree: a snapshot limited in depth and size, which
+an editor can show expanded.
+
+## Union Members
+
+`string`
+
+***
+
+`number`
+
+***
+
+`boolean`
+
+***
+
+`null`
+
+***
+
+### Type Literal
+
+\{ `type`: `"undefined"`; \}
+
+***
+
+### Type Literal
+
+\{ `text`: `string`; `type`: `"number"`; \}
+
+Numbers JSON cannot carry: `NaN`, `Infinity`, `-Infinity`, `-0`.
+
+***
+
+### Type Literal
+
+\{ `text`: `string`; `type`: `"bigint"` \| `"symbol"` \| `"function"` \| `"date"`; \}
+
+***
+
+### Type Literal
+
+\{ `message`: `string`; `name`: `string`; `stack?`: `string`; `type`: `"error"`; \}
+
+***
+
+### Type Literal
+
+\{ `entries`: readonly (readonly \[`string`, `EditorLogValue`\])[]; `more?`: `number`; `name?`: `string`; `type`: `"object"`; \}
+
+#### entries
+
+> `readonly` **entries**: readonly (readonly \[`string`, `EditorLogValue`\])[]
+
+#### more?
+
+> `readonly` `optional` **more?**: `number`
+
+Entries left out.
+
+#### name?
+
+> `readonly` `optional` **name?**: `string`
+
+Constructor name, for instances of classes.
+
+#### type
+
+> `readonly` **type**: `"object"`
+
+***
+
+### Type Literal
+
+\{ `items`: readonly `EditorLogValue`[]; `length`: `number`; `more?`: `number`; `name?`: `string`; `type`: `"array"`; \}
+
+#### items
+
+> `readonly` **items**: readonly `EditorLogValue`[]
+
+#### length
+
+> `readonly` **length**: `number`
+
+#### more?
+
+> `readonly` `optional` **more?**: `number`
+
+#### name?
+
+> `readonly` `optional` **name?**: `string`
+
+`Set`, `Float32Array`… for array-likes that are not arrays.
+
+#### type
+
+> `readonly` **type**: `"array"`
+
+***
+
+### Type Literal
+
+\{ `entries`: readonly (readonly \[`EditorLogValue`, `EditorLogValue`\])[]; `more?`: `number`; `size`: `number`; `type`: `"map"`; \}
+
+***
+
+### Type Literal
+
+\{ `type`: `"circular"`; \}
+
+A value already shown higher in the tree.
+
+***
+
+### Type Literal
+
+\{ `text`: `string`; `type`: `"cut"`; \}
+
+A value deeper than the limit: only its summary is kept.

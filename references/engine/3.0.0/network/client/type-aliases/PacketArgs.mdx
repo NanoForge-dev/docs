@@ -1,0 +1,20 @@
+---
+title: "PacketArgs"
+description: "Arguments of the typed send methods after the definition: the payload, which can be left out when it accepts undefined (a packet without payload is void), then the options."
+---
+
+> **PacketArgs**\<`T`\> = `undefined` *extends* `T` ? \[`data?`: `T`, `options?`: [`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)\] : \[`data`: `T`, `options?`: [`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)\]
+
+Defined in: [modules/network/src/shared/packet.ts:107](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L107)
+
+Arguments of the typed send methods after the definition: the payload, which
+can be left out when it accepts `undefined` (a packet without payload is
+`void`), then the options.
+
+## Type Parameters
+
+### T
+
+`T`
+
+Payload type of the packet.

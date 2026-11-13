@@ -1,0 +1,84 @@
+---
+title: "Context"
+description: "The context object handed to every library's __run/__clear hooks and to game code."
+---
+
+Defined in: packages/common/dist/index.d.ts:303
+
+The context object handed to every library's `__run`/`__clear` hooks and
+to game code.
+
+## Remarks
+
+`app`, `vars` and `assets` are always present (core-provided); `viewport`
+is core-provided on the client only. Every other
+key is contributed by a registered `Library` via its `expose()` method.
+Library packages add their own key by augmenting this interface:
+
+```ts
+declare module "@nanoforge-dev/common" {
+  interface Context {
+    ecs: EcsContextApi;
+  }
+}
+```
+
+## Properties
+
+### app
+
+> `readonly` **app**: `AppContext`
+
+Defined in: packages/common/dist/index.d.ts:304
+
+***
+
+### assets
+
+> `readonly` **assets**: `AssetContext`
+
+Defined in: packages/common/dist/index.d.ts:306
+
+***
+
+### ecs
+
+> **ecs**: [`EcsContextApi`](/references/engine/3.0.0/ecs/index/interfaces/EcsContextApi)
+
+Defined in: [modules/ecs/src/shared/context-augmentation.ts:5](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/context-augmentation.ts#L5)
+
+***
+
+### editor?
+
+> `readonly` `optional` **editor?**: [`EditorContextApi`](/references/engine/3.0.0/editor-lib/interfaces/EditorContextApi)
+
+Defined in: modules/editor/dist/index.d.ts:291
+
+Editor bridge, when `EditorLibrary` is registered and an editor started the app.
+
+***
+
+### scenes
+
+> **scenes**: `ScenesContextApi`
+
+Defined in: modules/scene/dist/index.d.ts:239
+
+***
+
+### vars
+
+> `readonly` **vars**: `VarsContext`
+
+Defined in: packages/common/dist/index.d.ts:305
+
+***
+
+### viewport?
+
+> `readonly` `optional` **viewport?**: `ViewportContext`
+
+Defined in: packages/common/dist/index.d.ts:308
+
+Screen/game viewport. Client-only (core-provided); `undefined` on the server.

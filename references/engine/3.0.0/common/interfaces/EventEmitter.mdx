@@ -1,0 +1,128 @@
+---
+title: "EventEmitter"
+description: "A generic, queued event emitter."
+---
+
+Defined in: [packages/common/src/common/event-emitter.type.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/event-emitter.type.ts#L14)
+
+A generic, queued event emitter.
+
+## Remarks
+
+"Queued" means `emit` doesn't invoke listeners synchronously — it enqueues
+the event, and `runEvents()` drains the queue, invoking listeners once per
+call. This lets an event arriving mid-tick (e.g. from a WebSocket handler)
+be applied at a controlled point instead of interrupting whatever else is
+running.
+
+## Type Parameters
+
+### Events
+
+`Events` *extends* `string` = `string`
+
+Union of event name literals.
+
+### EventsMap
+
+`EventsMap` *extends* `Record`\<`Events`, `any`[]\> = `Record`\<`Events`, `unknown`[]\>
+
+Maps each event name to its listener argument tuple.
+
+## Methods
+
+### emit()
+
+> **emit**\<`K`\>(`event`, ...`args`): `void`
+
+Defined in: [packages/common/src/common/event-emitter.type.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/event-emitter.type.ts#L20)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### args
+
+...`EventsMap`\[`K`\]
+
+#### Returns
+
+`void`
+
+***
+
+### off()
+
+> **off**\<`K`\>(`event`, `listener`): `void`
+
+Defined in: [packages/common/src/common/event-emitter.type.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/event-emitter.type.ts#L19)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### listener
+
+(...`args`) => `void`
+
+#### Returns
+
+`void`
+
+***
+
+### on()
+
+> **on**\<`K`\>(`event`, `listener`): `void`
+
+Defined in: [packages/common/src/common/event-emitter.type.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/event-emitter.type.ts#L18)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### listener
+
+(...`args`) => `void`
+
+#### Returns
+
+`void`
+
+***
+
+### runEvents()
+
+> **runEvents**(): `void`
+
+Defined in: [packages/common/src/common/event-emitter.type.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/event-emitter.type.ts#L22)
+
+Drains the queue, synchronously invoking listeners for each queued event.
+
+#### Returns
+
+`void`

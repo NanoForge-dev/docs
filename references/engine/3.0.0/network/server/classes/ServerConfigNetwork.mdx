@@ -1,0 +1,197 @@
+---
+title: "ServerConfigNetwork"
+description: "Environment-variable configuration for NetworkServerLibrary."
+---
+
+Defined in: [modules/network/src/server/config.server.network.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L11)
+
+Environment-variable configuration for `NetworkServerLibrary`.
+
+## Remarks
+
+Resolved via `registerEnv(ServerConfigNetwork, ctx.env)` during `__init`.
+
+## Extends
+
+- [`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig)
+
+## Constructors
+
+### Constructor
+
+> **new ServerConfigNetwork**(): `ServerConfigNetwork`
+
+#### Returns
+
+`ServerConfigNetwork`
+
+#### Inherited from
+
+`NetworkConfig.constructor`
+
+## Properties
+
+### ADVERTISE\_IP?
+
+> `optional` **ADVERTISE\_IP?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:92](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L92)
+
+Public address to advertise in host ICE candidates.
+
+#### Remarks
+
+Set this when the address the server sees on its own interfaces is not
+the one clients must send to — a Kubernetes pod IP, a container bridge
+address, or a LAN address behind a port forward. Only `typ host`
+candidates are rewritten; addresses discovered through STUN are already
+public and are left untouched.
+
+***
+
+### ICE\_PORT?
+
+> `optional` **ICE\_PORT?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:77](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L77)
+
+Fixed UDP port for the WebRTC transport.
+
+#### Remarks
+
+Without it every peer gets a random port, which cannot be expressed as a
+firewall rule, a port forward or a Kubernetes `containerPort`. Setting it
+enables ICE UDP multiplexing, so every client shares this one port.
+
+***
+
+### ICE\_SERVERS
+
+> **ICE\_SERVERS**: `RTCIceServer`[]
+
+Defined in: [modules/network/src/shared/config.network.ts:67](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L67)
+
+STUN and TURN servers used while gathering ICE candidates.
+
+#### Remarks
+
+Used by both the client and the server peer connection. A STUN entry lets
+a peer behind a NAT discover its own public address, and a TURN entry
+relays traffic when no direct path exists — typically a client on a
+network that blocks UDP.
+
+Accepts a comma-separated list of `stun:`/`turn:` URLs, or a JSON array of
+`RTCIceServer` objects. Use the JSON form for TURN: credentials must be
+given as separate `username`/`credential` fields, since they cannot be
+embedded in the URL. Invalid values are rejected at startup rather than
+failing on the first client connection.
+
+#### Default
+
+```ts
+[]
+```
+
+#### Example
+
+```sh
+ICE_SERVERS=stun:stun.example.com:3478,stun:stun2.example.com:3478
+ICE_SERVERS='[{"urls":"turn:turn.example.com:3478","username":"u","credential":"p"}]'
+```
+
+#### Inherited from
+
+[`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig).[`ICE_SERVERS`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig#ice_servers)
+
+***
+
+### LISTENING\_INTERFACE
+
+> **LISTENING\_INTERFACE**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L42)
+
+Network interface address the server binds to.
+
+#### Default
+
+```ts
+"0.0.0.0"
+```
+
+***
+
+### LISTENING\_TCP\_PORT?
+
+> `optional` **LISTENING\_TCP\_PORT?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L21)
+
+Port on which the TCP WebSocket server listens.
+
+#### Remarks
+
+Either this or `LISTENING_UDP_PORT` (or both) must be set.
+
+***
+
+### LISTENING\_UDP\_PORT?
+
+> `optional` **LISTENING\_UDP\_PORT?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:32](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L32)
+
+Port on which the UDP (WebRTC signaling) WebSocket server listens.
+
+#### Remarks
+
+Either this or `LISTENING_TCP_PORT` (or both) must be set.
+
+***
+
+### NETWORK\_MODE
+
+> **NETWORK\_MODE**: `"dedicated"` \| `"p2p"`
+
+Defined in: [modules/network/src/shared/config.network.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L78)
+
+`p2p` when the game's `nanoforge.config.ts` sets `network: "p2p"`: the
+server app runs in the host player's browser. Set by the `nf` CLI.
+
+#### Default
+
+```ts
+"dedicated"
+```
+
+#### Inherited from
+
+[`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig).[`NETWORK_MODE`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig#network_mode)
+
+***
+
+### WSS\_CERT?
+
+> `optional` **WSS\_CERT?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:53](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L53)
+
+Path to the TLS certificate file for WSS support.
+
+#### Remarks
+
+Must be set together with `WSS_KEY`.
+
+***
+
+### WSS\_KEY?
+
+> `optional` **WSS\_KEY?**: `string`
+
+Defined in: [modules/network/src/server/config.server.network.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/config.server.network.ts#L64)
+
+Path to the TLS private key file for WSS support.
+
+#### Remarks
+
+Must be set together with `WSS_CERT`.

@@ -1,0 +1,31 @@
+---
+title: "EditorGraphicsCamera"
+description: "Payload of the graphics-camera event: the matrices of the active camera, column-major."
+---
+
+Defined in: [modules/graphics-3d/src/editor-augmentation.ts:2](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/editor-augmentation.ts#L2)
+
+Payload of the `graphics-camera` event: the matrices of the active camera, column-major.
+
+## Properties
+
+### projection
+
+> **projection**: `number`[]
+
+Defined in: [modules/graphics-3d/src/editor-augmentation.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/editor-augmentation.ts#L11)
+
+Camera → clip matrix. It includes the viewport's crop, so its normalized
+device coordinates span the canvas, which is drawn `visibleWidth` ×
+`visibleHeight` CSS px at (`contentLeft`, `contentTop`) of the container
+(see the `viewport` event).
+
+***
+
+### view
+
+> **view**: `number`[]
+
+Defined in: [modules/graphics-3d/src/editor-augmentation.ts:4](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/editor-augmentation.ts#L4)
+
+World → camera matrix (inverse of the camera's world matrix).

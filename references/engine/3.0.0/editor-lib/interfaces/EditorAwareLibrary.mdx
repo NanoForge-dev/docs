@@ -1,0 +1,44 @@
+---
+title: "EditorAwareLibrary"
+description: "A library with one-time editor wiring."
+---
+
+Defined in: [modules/editor/src/protocol.ts:285](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L285)
+
+A library with one-time editor wiring.
+
+## Remarks
+
+`EditorLibrary` calls `__editorInit` on every registered library that has
+it, once, in run order, when the editor's `welcome` arrives — so
+`ctx.editor.welcome` is set. It is never called when no editor started
+the app. Listen to the editor's commands and install editor-only behavior
+here instead of checking `ctx.editor` on every tick.
+
+## Example
+
+```ts
+class SoundLibrary extends Library implements EditorAwareLibrary {
+  async __editorInit(ctx: EditorInitContext) {
+    ctx.editor.on("mute", (muted) => this.setMuted(muted));
+  }
+}
+```
+
+## Methods
+
+### \_\_editorInit()
+
+> **\_\_editorInit**(`ctx`): `void` \| `Promise`\<`void`\>
+
+Defined in: [modules/editor/src/protocol.ts:286](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L286)
+
+#### Parameters
+
+##### ctx
+
+[`EditorInitContext`](/references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext)
+
+#### Returns
+
+`void` \| `Promise`\<`void`\>

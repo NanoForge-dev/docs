@@ -1,0 +1,145 @@
+---
+title: "ViewportContext"
+description: "Engine-owned viewport, available on the client as Context.viewport and InitContext.viewport."
+---
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:94](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L94)
+
+Engine-owned viewport, available on the client as `Context.viewport` and
+`InitContext.viewport`.
+
+## Remarks
+
+Tracks window/container size changes and maps between screen (client)
+coordinates and game coordinates. Renderers subscribe with `onChange` to
+resize/scale their output; pointer libraries use `screenToGame`.
+
+## Properties
+
+### state
+
+> `readonly` **state**: [`ViewportState`](/references/engine/3.0.0/common/interfaces/ViewportState)
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:96](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L96)
+
+Current viewport snapshot.
+
+## Methods
+
+### gameToScreen()
+
+> **gameToScreen**(`x`, `y`): `object`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:100](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L100)
+
+Converts game coordinates to a `clientX/Y` position.
+
+#### Parameters
+
+##### x
+
+`number`
+
+##### y
+
+`number`
+
+#### Returns
+
+`object`
+
+##### x
+
+> **x**: `number`
+
+##### y
+
+> **y**: `number`
+
+***
+
+### onChange()
+
+> **onChange**(`listener`): () => `void`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:106](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L106)
+
+Subscribes to viewport changes.
+
+#### Parameters
+
+##### listener
+
+(`state`) => `void`
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+***
+
+### refresh()
+
+> **refresh**(): `void`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:110](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L110)
+
+Forces an immediate recompute.
+
+#### Returns
+
+`void`
+
+***
+
+### screenToGame()
+
+> **screenToGame**(`clientX`, `clientY`): `object`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:98](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L98)
+
+Converts a `MouseEvent.clientX/Y` position to game coordinates.
+
+#### Parameters
+
+##### clientX
+
+`number`
+
+##### clientY
+
+`number`
+
+#### Returns
+
+`object`
+
+##### x
+
+> **x**: `number`
+
+##### y
+
+> **y**: `number`
+
+***
+
+### setOptions()
+
+> **setOptions**(`options`): `void`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:108](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L108)
+
+Merges new options (e.g. a different `fit`) and recomputes the viewport.
+
+#### Parameters
+
+##### options
+
+[`ViewportOptions`](/references/engine/3.0.0/common/interfaces/ViewportOptions)
+
+#### Returns
+
+`void`

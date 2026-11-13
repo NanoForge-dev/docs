@@ -1,0 +1,35 @@
+---
+title: "IsIpOrURL"
+description: "Property decorator that validates whether the value is a valid IPv4/IPv6 address or a fully qualified domain name (URL)."
+---
+
+> **IsIpOrURL**(`validationOptions?`, `isIPOptions?`, `isURLOptions?`): `PropertyDecorator`
+
+Defined in: [packages/env/src/decorators/is-ip-or-url.decorator.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/env/src/decorators/is-ip-or-url.decorator.ts#L11)
+
+Property decorator that validates whether the value is a valid IPv4/IPv6
+address or a fully qualified domain name (URL).
+
+## Parameters
+
+### validationOptions?
+
+`ValidationOptions`
+
+Optional class-validator validation options.
+
+### isIPOptions?
+
+`IsIpVersion`
+
+Optional options for `isIP` validation.
+
+### isURLOptions?
+
+`IsURLOptions`
+
+Optional options for `isURL` validation.
+
+## Returns
+
+`PropertyDecorator`

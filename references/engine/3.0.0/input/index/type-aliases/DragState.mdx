@@ -1,0 +1,95 @@
+---
+title: "DragState"
+description: "Snapshot of the current drag operation."
+---
+
+> **DragState** = `object`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:36](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L36)
+
+Snapshot of the current drag operation.
+
+## Remarks
+
+Returned by `InputLibrary.getDragState`.  A drag becomes active on
+`mousedown` and inactive on `mouseup`. Positions are in game coordinates.
+
+## Properties
+
+### active
+
+> **active**: `boolean`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:38](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L38)
+
+`true` when a drag is in progress.
+
+***
+
+### button?
+
+> `optional` **button?**: [`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L40)
+
+The mouse button that initiated the drag, or `undefined` when inactive.
+
+***
+
+### deltaX
+
+> **deltaX**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:50](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L50)
+
+Total horizontal distance dragged from the start position.
+
+***
+
+### deltaY
+
+> **deltaY**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L52)
+
+Total vertical distance dragged from the start position.
+
+***
+
+### startX
+
+> **startX**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L42)
+
+Horizontal cursor position when the drag started.
+
+***
+
+### startY
+
+> **startY**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L44)
+
+Vertical cursor position when the drag started.
+
+***
+
+### x
+
+> **x**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:46](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L46)
+
+Current horizontal cursor position during the drag.
+
+***
+
+### y
+
+> **y**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:48](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L48)
+
+Current vertical cursor position during the drag.

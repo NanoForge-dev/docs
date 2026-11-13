@@ -1,0 +1,219 @@
+---
+title: "@nanoforge-dev/graphics-2d"
+---
+
+<div align="center">
+    <br />
+    <p>
+        <a href="https://github.com/NanoForge-dev"><img src="https://raw.githubusercontent.com/NanoForge-dev/Engine/main/.github/logo.png" width="546" alt="NanoForge" /></a>
+    </p>
+    <br />
+    <p>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/graphics-2d"><img src="https://img.shields.io/npm/v/@nanoforge-dev/graphics-2d.svg?maxAge=3600" alt="npm version" /></a>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/graphics-2d"><img src="https://img.shields.io/npm/dt/@nanoforge-dev/graphics-2d.svg?maxAge=3600" alt="npm downloads" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml"><img src="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml/badge.svg" alt="Tests status" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/commits/main/modules/graphics-2d"><img src="https://img.shields.io/github/last-commit/NanoForge-dev/Engine.svg?logo=github&logoColor=ffffff&path=modules%2Fgraphics-2d" alt="Last commit" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/graphs/contributors"><img src="https://img.shields.io/github/contributors/NanoForge-dev/Engine.svg?maxAge=3600&logo=github&logoColor=fff&color=00c7be" alt="Contributors" /></a>
+    </p>
+</div>
+
+## About
+
+`@nanoforge-dev/graphics-2d` is NanoForge's built-in 2D rendering library, powered by [Konva][konva]. It creates a full-container `Stage` and a default `Layer` and exposes them on `Context.graphics`. Client-only.
+
+## Installation
+
+**Node.js 26 or newer is required.**
+
+```sh
+npm install @nanoforge-dev/graphics-2d
+yarn add @nanoforge-dev/graphics-2d
+pnpm add @nanoforge-dev/graphics-2d
+bun add @nanoforge-dev/graphics-2d
+```
+
+## Example usage
+
+Register `Graphics2DLibrary` on your client app:
+
+```ts
+import { Graphics2DLibrary } from "@nanoforge-dev/graphics-2d";
+
+app.use(new Graphics2DLibrary());
+```
+
+Draw shapes directly on `Context.graphics.stage`/`.baseLayer`:
+
+```ts
+import { Circle } from "@nanoforge-dev/graphics-2d";
+
+public override async __run(ctx: Context): Promise<void> {
+  const circle = new Circle({ x: 100, y: 100, radius: 40, fill: "red" });
+  ctx.graphics.baseLayer.add(circle);
+}
+```
+
+## Links
+
+- [GitHub][source]
+- [npm][npm]
+
+## Contributing
+
+Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
+[documentation][documentation].  
+See [the contribution guide][contributing] if you'd like to submit a PR.
+
+## Help
+
+If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle nudge in the right direction, please don't hesitate to ask questions in [discussions][discussions].
+
+[documentation]: https://github.com/NanoForge-dev/Engine
+[discussions]: https://github.com/NanoForge-dev/Engine/discussions
+[source]: https://github.com/NanoForge-dev/Engine/tree/main/modules/graphics-2d
+[npm]: https://www.npmjs.com/package/@nanoforge-dev/graphics-2d
+[contributing]: https://github.com/NanoForge-dev/Engine/blob/main/.github/CONTRIBUTING.md
+[konva]: https://konvajs.org/
+
+## Classes
+
+- [Graphics2DLibrary](/references/engine/3.0.0/graphics-2d/classes/Graphics2DLibrary)
+
+## Interfaces
+
+- [GraphicsContextApi](/references/engine/3.0.0/graphics-2d/interfaces/GraphicsContextApi)
+
+## Type Aliases
+
+- [Animation](/references/engine/3.0.0/graphics-2d/type-aliases/Animation)
+- [Arc](/references/engine/3.0.0/graphics-2d/type-aliases/Arc)
+- [ArcConfig](/references/engine/3.0.0/graphics-2d/type-aliases/ArcConfig)
+- [Arrow](/references/engine/3.0.0/graphics-2d/type-aliases/Arrow)
+- [ArrowConfig](/references/engine/3.0.0/graphics-2d/type-aliases/ArrowConfig)
+- [Canvas](/references/engine/3.0.0/graphics-2d/type-aliases/Canvas)
+- [Circle](/references/engine/3.0.0/graphics-2d/type-aliases/Circle)
+- [CircleConfig](/references/engine/3.0.0/graphics-2d/type-aliases/CircleConfig)
+- [Container](/references/engine/3.0.0/graphics-2d/type-aliases/Container)
+- [ContainerConfig](/references/engine/3.0.0/graphics-2d/type-aliases/ContainerConfig)
+- [Context](/references/engine/3.0.0/graphics-2d/type-aliases/Context)
+- [DD](/references/engine/3.0.0/graphics-2d/type-aliases/DD)
+- [Easings](/references/engine/3.0.0/graphics-2d/type-aliases/Easings)
+- [Ellipse](/references/engine/3.0.0/graphics-2d/type-aliases/Ellipse)
+- [EllipseConfig](/references/engine/3.0.0/graphics-2d/type-aliases/EllipseConfig)
+- [FastLayer](/references/engine/3.0.0/graphics-2d/type-aliases/FastLayer)
+- [Filters](/references/engine/3.0.0/graphics-2d/type-aliases/Filters)
+- [Group](/references/engine/3.0.0/graphics-2d/type-aliases/Group)
+- [GroupConfig](/references/engine/3.0.0/graphics-2d/type-aliases/GroupConfig)
+- [Image](/references/engine/3.0.0/graphics-2d/type-aliases/Image)
+- [ImageConfig](/references/engine/3.0.0/graphics-2d/type-aliases/ImageConfig)
+- [KonvaEventListener](/references/engine/3.0.0/graphics-2d/type-aliases/KonvaEventListener)
+- [KonvaEventObject](/references/engine/3.0.0/graphics-2d/type-aliases/KonvaEventObject)
+- [KonvaPointerEvent](/references/engine/3.0.0/graphics-2d/type-aliases/KonvaPointerEvent)
+- [Label](/references/engine/3.0.0/graphics-2d/type-aliases/Label)
+- [LabelConfig](/references/engine/3.0.0/graphics-2d/type-aliases/LabelConfig)
+- [Layer](/references/engine/3.0.0/graphics-2d/type-aliases/Layer)
+- [LayerConfig](/references/engine/3.0.0/graphics-2d/type-aliases/LayerConfig)
+- [Line](/references/engine/3.0.0/graphics-2d/type-aliases/Line)
+- [LineConfig](/references/engine/3.0.0/graphics-2d/type-aliases/LineConfig)
+- [Node](/references/engine/3.0.0/graphics-2d/type-aliases/Node)
+- [NodeConfig](/references/engine/3.0.0/graphics-2d/type-aliases/NodeConfig)
+- [Path](/references/engine/3.0.0/graphics-2d/type-aliases/Path)
+- [PathConfig](/references/engine/3.0.0/graphics-2d/type-aliases/PathConfig)
+- [Rect](/references/engine/3.0.0/graphics-2d/type-aliases/Rect)
+- [RectConfig](/references/engine/3.0.0/graphics-2d/type-aliases/RectConfig)
+- [RegularPolygon](/references/engine/3.0.0/graphics-2d/type-aliases/RegularPolygon)
+- [RegularPolygonConfig](/references/engine/3.0.0/graphics-2d/type-aliases/RegularPolygonConfig)
+- [Ring](/references/engine/3.0.0/graphics-2d/type-aliases/Ring)
+- [RingConfig](/references/engine/3.0.0/graphics-2d/type-aliases/RingConfig)
+- [Shape](/references/engine/3.0.0/graphics-2d/type-aliases/Shape)
+- [ShapeConfig](/references/engine/3.0.0/graphics-2d/type-aliases/ShapeConfig)
+- [Sprite](/references/engine/3.0.0/graphics-2d/type-aliases/Sprite)
+- [SpriteConfig](/references/engine/3.0.0/graphics-2d/type-aliases/SpriteConfig)
+- [Stage](/references/engine/3.0.0/graphics-2d/type-aliases/Stage)
+- [StageConfig](/references/engine/3.0.0/graphics-2d/type-aliases/StageConfig)
+- [Star](/references/engine/3.0.0/graphics-2d/type-aliases/Star)
+- [StarConfig](/references/engine/3.0.0/graphics-2d/type-aliases/StarConfig)
+- [Tag](/references/engine/3.0.0/graphics-2d/type-aliases/Tag)
+- [TagConfig](/references/engine/3.0.0/graphics-2d/type-aliases/TagConfig)
+- [Text](/references/engine/3.0.0/graphics-2d/type-aliases/Text)
+- [TextConfig](/references/engine/3.0.0/graphics-2d/type-aliases/TextConfig)
+- [TextPath](/references/engine/3.0.0/graphics-2d/type-aliases/TextPath)
+- [TextPathConfig](/references/engine/3.0.0/graphics-2d/type-aliases/TextPathConfig)
+- [Transform](/references/engine/3.0.0/graphics-2d/type-aliases/Transform)
+- [Transformer](/references/engine/3.0.0/graphics-2d/type-aliases/Transformer)
+- [TransformerConfig](/references/engine/3.0.0/graphics-2d/type-aliases/TransformerConfig)
+- [Tween](/references/engine/3.0.0/graphics-2d/type-aliases/Tween)
+- [TweenConfig](/references/engine/3.0.0/graphics-2d/type-aliases/TweenConfig)
+- [Util](/references/engine/3.0.0/graphics-2d/type-aliases/Util)
+- [Vector2d](/references/engine/3.0.0/graphics-2d/type-aliases/Vector2d)
+- [Wedge](/references/engine/3.0.0/graphics-2d/type-aliases/Wedge)
+- [WedgeConfig](/references/engine/3.0.0/graphics-2d/type-aliases/WedgeConfig)
+
+## Variables
+
+- [\_global](/references/engine/3.0.0/graphics-2d/variables/global)
+- [\_injectGlobal](/references/engine/3.0.0/graphics-2d/variables/injectGlobal)
+- [\_mouseInDblClickWindow](/references/engine/3.0.0/graphics-2d/variables/mouseInDblClickWindow)
+- [\_mouseListenClick](/references/engine/3.0.0/graphics-2d/variables/mouseListenClick)
+- [\_pointerInDblClickWindow](/references/engine/3.0.0/graphics-2d/variables/pointerInDblClickWindow)
+- [\_pointerListenClick](/references/engine/3.0.0/graphics-2d/variables/pointerListenClick)
+- [\_renderBackend](/references/engine/3.0.0/graphics-2d/variables/renderBackend)
+- [\_touchInDblClickWindow](/references/engine/3.0.0/graphics-2d/variables/touchInDblClickWindow)
+- [\_touchListenClick](/references/engine/3.0.0/graphics-2d/variables/touchListenClick)
+- [angleDeg](/references/engine/3.0.0/graphics-2d/variables/angleDeg)
+- [Animation](/references/engine/3.0.0/graphics-2d/variables/Animation)
+- [Arc](/references/engine/3.0.0/graphics-2d/variables/Arc)
+- [Arrow](/references/engine/3.0.0/graphics-2d/variables/Arrow)
+- [autoDrawEnabled](/references/engine/3.0.0/graphics-2d/variables/autoDrawEnabled)
+- [Canvas](/references/engine/3.0.0/graphics-2d/variables/Canvas)
+- [capturePointerEventsEnabled](/references/engine/3.0.0/graphics-2d/variables/capturePointerEventsEnabled)
+- [Circle](/references/engine/3.0.0/graphics-2d/variables/Circle)
+- [Container](/references/engine/3.0.0/graphics-2d/variables/Container)
+- [Context](/references/engine/3.0.0/graphics-2d/variables/Context)
+- [dblClickWindow](/references/engine/3.0.0/graphics-2d/variables/dblClickWindow)
+- [DD](/references/engine/3.0.0/graphics-2d/variables/DD)
+- [document](/references/engine/3.0.0/graphics-2d/variables/document)
+- [dragButtons](/references/engine/3.0.0/graphics-2d/variables/dragButtons)
+- [dragDistance](/references/engine/3.0.0/graphics-2d/variables/dragDistance)
+- [Easings](/references/engine/3.0.0/graphics-2d/variables/Easings)
+- [Ellipse](/references/engine/3.0.0/graphics-2d/variables/Ellipse)
+- [enableTrace](/references/engine/3.0.0/graphics-2d/variables/enableTrace)
+- [FastLayer](/references/engine/3.0.0/graphics-2d/variables/FastLayer)
+- [Filters](/references/engine/3.0.0/graphics-2d/variables/Filters)
+- [getAngle](/references/engine/3.0.0/graphics-2d/variables/getAngle)
+- [Group](/references/engine/3.0.0/graphics-2d/variables/Group)
+- [hitOnDragEnabled](/references/engine/3.0.0/graphics-2d/variables/hitOnDragEnabled)
+- [Image](/references/engine/3.0.0/graphics-2d/variables/Image)
+- [isBrowser](/references/engine/3.0.0/graphics-2d/variables/isBrowser)
+- [isDragging](/references/engine/3.0.0/graphics-2d/variables/isDragging)
+- [isDragReady](/references/engine/3.0.0/graphics-2d/variables/isDragReady)
+- [isTransforming](/references/engine/3.0.0/graphics-2d/variables/isTransforming)
+- [isUnminified](/references/engine/3.0.0/graphics-2d/variables/isUnminified)
+- [Label](/references/engine/3.0.0/graphics-2d/variables/Label)
+- [Layer](/references/engine/3.0.0/graphics-2d/variables/Layer)
+- [legacyTextRendering](/references/engine/3.0.0/graphics-2d/variables/legacyTextRendering)
+- [Line](/references/engine/3.0.0/graphics-2d/variables/Line)
+- [Node](/references/engine/3.0.0/graphics-2d/variables/Node)
+- [Path](/references/engine/3.0.0/graphics-2d/variables/Path)
+- [pixelRatio](/references/engine/3.0.0/graphics-2d/variables/pixelRatio)
+- [pointerEventsEnabled](/references/engine/3.0.0/graphics-2d/variables/pointerEventsEnabled)
+- [Rect](/references/engine/3.0.0/graphics-2d/variables/Rect)
+- [RegularPolygon](/references/engine/3.0.0/graphics-2d/variables/RegularPolygon)
+- [releaseCanvasOnDestroy](/references/engine/3.0.0/graphics-2d/variables/releaseCanvasOnDestroy)
+- [Ring](/references/engine/3.0.0/graphics-2d/variables/Ring)
+- [Shape](/references/engine/3.0.0/graphics-2d/variables/Shape)
+- [shapes](/references/engine/3.0.0/graphics-2d/variables/shapes)
+- [showWarnings](/references/engine/3.0.0/graphics-2d/variables/showWarnings)
+- [Sprite](/references/engine/3.0.0/graphics-2d/variables/Sprite)
+- [Stage](/references/engine/3.0.0/graphics-2d/variables/Stage)
+- [stages](/references/engine/3.0.0/graphics-2d/variables/stages)
+- [Star](/references/engine/3.0.0/graphics-2d/variables/Star)
+- [Tag](/references/engine/3.0.0/graphics-2d/variables/Tag)
+- [Text](/references/engine/3.0.0/graphics-2d/variables/Text)
+- [TextPath](/references/engine/3.0.0/graphics-2d/variables/TextPath)
+- [Transform](/references/engine/3.0.0/graphics-2d/variables/Transform)
+- [Transformer](/references/engine/3.0.0/graphics-2d/variables/Transformer)
+- [Tween](/references/engine/3.0.0/graphics-2d/variables/Tween)
+- [Util](/references/engine/3.0.0/graphics-2d/variables/Util)
+- [version](/references/engine/3.0.0/graphics-2d/variables/version)
+- [Wedge](/references/engine/3.0.0/graphics-2d/variables/Wedge)

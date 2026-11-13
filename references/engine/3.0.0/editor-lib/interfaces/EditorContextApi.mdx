@@ -1,0 +1,151 @@
+---
+title: "EditorContextApi"
+description: "Context.editor: set by EditorLibrary whenever the app was started by an editor (RunOptions.editor), undefined otherwise."
+---
+
+Defined in: [modules/editor/src/protocol.ts:248](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L248)
+
+`Context.editor`: set by `EditorLibrary` whenever the app was started by
+an editor (`RunOptions.editor`), `undefined` otherwise.
+
+## Remarks
+
+Deliberately asymmetric: libraries emit events to the editor and listen
+to its commands, never the reverse, so no library can impersonate the
+editor or eavesdrop on what others send.
+
+## Properties
+
+### welcome
+
+> `readonly` **welcome**: [`EditorWelcome`](/references/engine/3.0.0/editor-lib/interfaces/EditorWelcome) \| `undefined`
+
+Defined in: [modules/editor/src/protocol.ts:250](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L250)
+
+The editor's `welcome`, once received (features it asked for).
+
+## Methods
+
+### emit()
+
+#### Call Signature
+
+> **emit**\<`K`\>(`event`, ...`args`): `void`
+
+Defined in: [modules/editor/src/protocol.ts:252](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L252)
+
+Sends an event to the editor.
+
+##### Type Parameters
+
+###### K
+
+`K` *extends* `"state"` \| `"viewport"` \| `"hello"` \| `"frame-stats"` \| `"log"` \| `"network-trace"` \| `"network-stats"`
+
+##### Parameters
+
+###### event
+
+`K`
+
+###### args
+
+...[`EditorEventMap`](/references/engine/3.0.0/editor-lib/interfaces/EditorEventMap)\[`K`\]
+
+##### Returns
+
+`void`
+
+#### Call Signature
+
+> **emit**(`event`, ...`args`): `void`
+
+Defined in: [modules/editor/src/protocol.ts:253](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L253)
+
+##### Parameters
+
+###### event
+
+`string`
+
+###### args
+
+...`unknown`[]
+
+##### Returns
+
+`void`
+
+***
+
+### off()
+
+> **off**(`event`, `listener`): `void`
+
+Defined in: [modules/editor/src/protocol.ts:260](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L260)
+
+#### Parameters
+
+##### event
+
+`string`
+
+##### listener
+
+(...`args`) => `void`
+
+#### Returns
+
+`void`
+
+***
+
+### on()
+
+#### Call Signature
+
+> **on**\<`K`\>(`event`, `listener`): `void`
+
+Defined in: [modules/editor/src/protocol.ts:255](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L255)
+
+Listens to a command of the editor.
+
+##### Type Parameters
+
+###### K
+
+`K` *extends* `"pause"` \| `"stop"` \| `"mute"` \| `"resume"` \| `"welcome"` \| `"step"`
+
+##### Parameters
+
+###### event
+
+`K`
+
+###### listener
+
+(...`args`) => `void`
+
+##### Returns
+
+`void`
+
+#### Call Signature
+
+> **on**(`event`, `listener`): `void`
+
+Defined in: [modules/editor/src/protocol.ts:259](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L259)
+
+##### Parameters
+
+###### event
+
+`string`
+
+###### listener
+
+(...`args`) => `void`
+
+##### Returns
+
+`void`

@@ -1,0 +1,22 @@
+---
+title: "NanoforgeFactory"
+description: "Singleton factory for creating NanoForge client and server applications."
+---
+
+> `const` **NanoforgeFactory**: `NanoforgeFactoryStatic`
+
+Defined in: [nanoforge-factory.ts:61](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-factory.ts#L61)
+
+Singleton factory for creating NanoForge client and server applications.
+
+## Remarks
+
+Use `NanoforgeFactory.createClient` or
+`NanoforgeFactory.createServer` to obtain a new application instance,
+then attach libraries and call `init` / `run`.
+
+## Example
+
+```ts
+const client = NanoforgeFactory.createClient();
+```

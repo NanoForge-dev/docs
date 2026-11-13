@@ -1,0 +1,58 @@
+---
+title: "Context"
+description: "The context object handed to every library's __run/__clear hooks and to game code."
+---
+
+Defined in: [packages/common/src/context/context.type.ts:104](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L104)
+
+The context object handed to every library's `__run`/`__clear` hooks and
+to game code.
+
+## Remarks
+
+`app`, `vars` and `assets` are always present (core-provided); `viewport`
+is core-provided on the client only. Every other
+key is contributed by a registered `Library` via its `expose()` method.
+Library packages add their own key by augmenting this interface:
+
+```ts
+declare module "@nanoforge-dev/common" {
+  interface Context {
+    ecs: EcsContextApi;
+  }
+}
+```
+
+## Properties
+
+### app
+
+> `readonly` **app**: [`AppContext`](/references/engine/3.0.0/common/interfaces/AppContext)
+
+Defined in: [packages/common/src/context/context.type.ts:105](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L105)
+
+***
+
+### assets
+
+> `readonly` **assets**: [`AssetContext`](/references/engine/3.0.0/common/interfaces/AssetContext)
+
+Defined in: [packages/common/src/context/context.type.ts:107](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L107)
+
+***
+
+### vars
+
+> `readonly` **vars**: [`VarsContext`](/references/engine/3.0.0/common/interfaces/VarsContext)
+
+Defined in: [packages/common/src/context/context.type.ts:106](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L106)
+
+***
+
+### viewport?
+
+> `readonly` `optional` **viewport?**: [`ViewportContext`](/references/engine/3.0.0/common/interfaces/ViewportContext)
+
+Defined in: [packages/common/src/context/context.type.ts:109](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L109)
+
+Screen/game viewport. Client-only (core-provided); `undefined` on the server.

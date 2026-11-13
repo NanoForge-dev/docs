@@ -1,0 +1,68 @@
+---
+title: "EditorFeatures"
+description: "Optional engine features the editor turns on in its welcome."
+---
+
+Defined in: [modules/editor/src/protocol.ts:71](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L71)
+
+Optional engine features the editor turns on in its `welcome`.
+
+## Properties
+
+### frameStats?
+
+> `optional` **frameStats?**: `object`
+
+Defined in: [modules/editor/src/protocol.ts:73](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L73)
+
+Emit `frame-stats` every `intervalMs`.
+
+#### intervalMs
+
+> **intervalMs**: `number`
+
+***
+
+### logs?
+
+> `optional` **logs?**: `boolean` \| \{ `values?`: `boolean`; \}
+
+Defined in: [modules/editor/src/protocol.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L78)
+
+Forward the game's console output as `log` events. With `values`, each
+event also carries the logged values and where the game logged them.
+
+***
+
+### networkTrace?
+
+> `optional` **networkTrace?**: `object`
+
+Defined in: [modules/editor/src/protocol.ts:84](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L84)
+
+Emit `network-trace` events: a `sampleRate` share of packets, at most
+`maxPerSecond`, each with the first `maxBytes` bytes of its payload; and
+`network-stats` totals every second.
+
+#### maxBytes?
+
+> `optional` **maxBytes?**: `number`
+
+#### maxPerSecond?
+
+> `optional` **maxPerSecond?**: `number`
+
+#### sampleRate?
+
+> `optional` **sampleRate?**: `number`
+
+***
+
+### viewport?
+
+> `optional` **viewport?**: `boolean`
+
+Defined in: [modules/editor/src/protocol.ts:89](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L89)
+
+Emit `viewport` events: the game's viewport when the editor asks for it,
+then on every change. Clients only (a server has no viewport).

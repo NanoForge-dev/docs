@@ -1,0 +1,38 @@
+---
+title: "SceneEditorCommands"
+description: "Arguments of the scene commands the editor sends while playing."
+---
+
+Defined in: [modules/scene/src/editor-scenes.ts:27](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/editor-scenes.ts#L27)
+
+Arguments of the scene commands the editor sends while playing.
+
+## Properties
+
+### scenes-load
+
+> **scenes-load**: \[`string`, [`EditorValue`](/references/engine/3.0.0/scene/type-aliases/EditorValue)?, `string`?\]
+
+Defined in: [modules/scene/src/editor-scenes.ts:29](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/editor-scenes.ts#L29)
+
+Loads a scene: its id, its params, and the parent to load it under (an id or `"current"`).
+
+***
+
+### scenes-set-var
+
+> **scenes-set-var**: \[`string`, [`EditorValue`](/references/engine/3.0.0/scene/type-aliases/EditorValue)\]
+
+Defined in: [modules/scene/src/editor-scenes.ts:33](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/editor-scenes.ts#L33)
+
+Sets a var (makes it when missing): key, JSON value.
+
+***
+
+### scenes-unload
+
+> **scenes-unload**: \[`string`\]
+
+Defined in: [modules/scene/src/editor-scenes.ts:31](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/editor-scenes.ts#L31)
+
+Unloads a loaded scene and the scenes under it.

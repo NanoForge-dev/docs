@@ -1,0 +1,193 @@
+---
+title: "NanoforgeClient"
+description: "Client-side NanoForge application."
+---
+
+Defined in: [nanoforge-client.ts:28](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-client.ts#L28)
+
+Client-side NanoForge application.
+
+## Remarks
+
+Extends `NanoforgeApplication` with client-specific library slots for
+graphics, input, and sound, and owns the `viewport` (design resolution,
+fit mode and window-resize tracking) exposed on `Context.viewport`.
+Create an instance via `NanoforgeFactory.createClient`.
+
+## Example
+
+```ts
+const client = NanoforgeFactory.createClient({
+  viewport: { width: 1920, height: 1080, fit: "contain" },
+});
+client.use(new Graphics2DLibrary());
+client.use(new InputLibrary());
+client.use(new SoundLibrary());
+await client.init(`container, files, env `);
+client.run();
+```
+
+## Extends
+
+- `NanoforgeApplication`
+
+## Properties
+
+### viewport?
+
+> `protected` `optional` **viewport?**: `InternalViewportState`
+
+Defined in: [nanoforge-application.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L44)
+
+Client-only viewport, created by `NanoforgeClient.init` before `initialize`.
+
+#### Inherited from
+
+`NanoforgeApplication.viewport`
+
+## Methods
+
+### init()
+
+> **init**(`options`): `Promise`\<`void`\>
+
+Defined in: [nanoforge-client.ts:51](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-client.ts#L51)
+
+Initialise all registered libraries in dependency order and prepare the
+engine for the game loop.
+
+#### Parameters
+
+##### options
+
+`ClientRunOptions`
+
+Run options providing the canvas container, files map, and
+  environment variables.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Must be called before `run`.  Resolves once every library's `__init`
+hook has completed.
+
+***
+
+### initialize()
+
+> `protected` **initialize**(`options`): `Promise`\<`void`\>
+
+Defined in: [nanoforge-application.ts:138](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L138)
+
+#### Parameters
+
+##### options
+
+`RunOptions` \| `ClientRunOptions`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`NanoforgeApplication.initialize`
+
+***
+
+### run()
+
+> **run**(): `Promise`\<`void`\>
+
+Defined in: [nanoforge-application.ts:77](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L77)
+
+Start the game loop.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Must be called after `init` has resolved.
+
+#### Throws
+
+`NfNotInitializedException` When called before `init`.
+
+#### Inherited from
+
+`NanoforgeApplication.run`
+
+***
+
+### schedule()
+
+> `protected` **schedule**(`tick`, `delayMs`): `void`
+
+Defined in: [nanoforge-application.ts:133](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L133)
+
+Call `tick` once `delayMs` elapsed: the next tick of the game loop.
+
+#### Parameters
+
+##### tick
+
+() => `void`
+
+Next tick of the game loop.
+
+##### delayMs
+
+`number`
+
+Delay before it, in milliseconds.
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`NanoforgeApplication.schedule`
+
+***
+
+### use()
+
+> **use**\<`L`\>(`library`): `void`
+
+Defined in: [nanoforge-application.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L64)
+
+Registers a library. Single argument — the library owns its own
+context key (see `defineLibraryKey`).
+
+#### Type Parameters
+
+##### L
+
+`L` *extends* `Library`
+
+#### Parameters
+
+##### library
+
+`L`
+
+Library instance to register.
+
+#### Returns
+
+`void`
+
+#### Throws
+
+NfDuplicateLibraryException If the key is already
+registered or reserved (`"app"`, `"vars"`, `"assets"`).
+
+#### Inherited from
+
+`NanoforgeApplication.use`

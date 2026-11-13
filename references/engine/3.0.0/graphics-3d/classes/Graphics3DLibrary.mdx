@@ -1,0 +1,386 @@
+---
+title: "Graphics3DLibrary"
+description: "Built-in 3D graphics library powered by [Three.js](https://threejs.org/)."
+---
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L56)
+
+Built-in 3D graphics library powered by [Three.js](https://threejs.org/).
+
+## Remarks
+
+Creates a `WebGPURenderer` (WebGL2 fallback) on a canvas added to the
+container, a `Scene` and a default `PerspectiveCamera`. It renders once per
+tick, after the ECS systems, and never on its own: a paused game keeps its
+last image. The canvas follows every viewport change like graphics-2d's
+stage: the design resolution is the camera's full frame, letterboxed or
+cropped according to the viewport's fit. Client-only — `__init` throws if
+`InitContext.container` is missing.
+
+## Extends
+
+- `Library`
+
+## Implements
+
+- [`EditorAwareLibrary`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary)
+
+## Constructors
+
+### Constructor
+
+> **new Graphics3DLibrary**(`_options?`): `Graphics3DLibrary`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:75](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L75)
+
+#### Parameters
+
+##### \_options?
+
+[`Graphics3DOptions`](/references/engine/3.0.0/graphics-3d/interfaces/Graphics3DOptions) = `{}`
+
+#### Returns
+
+`Graphics3DLibrary`
+
+#### Overrides
+
+`Library.constructor`
+
+## Properties
+
+### key
+
+> `readonly` **key**: `"graphics"`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:57](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L57)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+#### Overrides
+
+`Library.key`
+
+## Accessors
+
+### backend
+
+#### Get Signature
+
+> **get** **backend**(): [`Graphics3DBackend`](/references/engine/3.0.0/graphics-3d/type-aliases/Graphics3DBackend)
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:217](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L217)
+
+##### Returns
+
+[`Graphics3DBackend`](/references/engine/3.0.0/graphics-3d/type-aliases/Graphics3DBackend)
+
+***
+
+### camera
+
+#### Get Signature
+
+> **get** **camera**(): `Camera`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:197](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L197)
+
+##### Returns
+
+`Camera`
+
+#### Set Signature
+
+> **set** **camera**(`camera`): `void`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:202](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L202)
+
+##### Parameters
+
+###### camera
+
+`Camera`
+
+##### Returns
+
+`void`
+
+***
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): `LibraryRelationships`
+
+Defined in: packages/common/dist/index.d.ts:512
+
+**`Internal`**
+
+##### Returns
+
+`LibraryRelationships`
+
+#### Inherited from
+
+`Library.relationships`
+
+***
+
+### render
+
+#### Get Signature
+
+> **get** **render**(): () => `void`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:209](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L209)
+
+The render step in use now, so a custom render can wrap it without calling itself.
+
+##### Returns
+
+() => `void`
+
+#### Set Signature
+
+> **set** **render**(`render`): `void`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:213](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L213)
+
+##### Parameters
+
+###### render
+
+(() => `void`) \| `undefined`
+
+##### Returns
+
+`void`
+
+***
+
+### renderer
+
+#### Get Signature
+
+> **get** **renderer**(): `WebGPURenderer`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:187](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L187)
+
+##### Returns
+
+`WebGPURenderer`
+
+***
+
+### scene
+
+#### Get Signature
+
+> **get** **scene**(): `Scene`
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:192](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L192)
+
+##### Returns
+
+`Scene`
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(): `Promise`\<`void`\>
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:170](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L170)
+
+Called once after the tick loop stops.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__clear`
+
+***
+
+### \_\_editorInit()
+
+> **\_\_editorInit**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:122](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L122)
+
+Listens to the editor's `graphics-capture` command and keeps the editor for `graphics-camera`.
+
+#### Parameters
+
+##### ctx
+
+[`EditorInitContext`](/references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Implementation of
+
+[`EditorAwareLibrary`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary).[`__editorInit`](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary#__editorinit)
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:135](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L135)
+
+Emits `graphics-camera` while the editor asks for it, paused ticks included.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__events`
+
+***
+
+### \_\_init()
+
+> **\_\_init**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:79](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L79)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Parameters
+
+##### ctx
+
+`InitContext`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__init`
+
+***
+
+### \_\_run()
+
+> **\_\_run**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:158](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L158)
+
+Called every tick, in run order, while the tick loop is active and not paused.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__run`
+
+***
+
+### expose()
+
+> **expose**(): [`Graphics3DContextApi`](/references/engine/3.0.0/graphics-3d/interfaces/Graphics3DContextApi)
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:246](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L246)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+[`Graphics3DContextApi`](/references/engine/3.0.0/graphics-3d/interfaces/Graphics3DContextApi)
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+#### Overrides
+
+`Library.expose`
+
+***
+
+### raycast()
+
+> **raycast**(`clientX`, `clientY`, `objects?`): `Intersection`\<`Object3D`\<`Object3DEventMap`\>\>[]
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:223](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L223)
+
+#### Parameters
+
+##### clientX
+
+`number`
+
+##### clientY
+
+`number`
+
+##### objects?
+
+`Object3D`\<`Object3DEventMap`\>[] = `...`
+
+#### Returns
+
+`Intersection`\<`Object3D`\<`Object3DEventMap`\>\>[]
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: packages/common/dist/index.d.ts:536
+
+#### Returns
+
+`never`
+
+#### Inherited from
+
+`Library.throwNotInitializedError`
+
+***
+
+### worldToScreen()
+
+> **worldToScreen**(`point`): [`ScreenPoint`](/references/engine/3.0.0/graphics-3d/interfaces/ScreenPoint)
+
+Defined in: [modules/graphics-3d/src/graphics-3d.library.ts:237](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-3d.library.ts#L237)
+
+#### Parameters
+
+##### point
+
+`Vector3`
+
+#### Returns
+
+[`ScreenPoint`](/references/engine/3.0.0/graphics-3d/interfaces/ScreenPoint)

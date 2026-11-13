@@ -1,0 +1,50 @@
+---
+title: "definePacket"
+description: "Declare a packet type."
+---
+
+> **definePacket**\<`T`\>(`name`, `options?`): [`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+Defined in: [modules/network/src/shared/packet.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L72)
+
+Declare a packet type.
+
+## Type Parameters
+
+### T
+
+`T` = `void`
+
+## Parameters
+
+### name
+
+`string`
+
+Name identifying the type on the wire, unique in the game.
+
+### options?
+
+[`PacketOptions`](/references/engine/3.0.0/network/index/type-aliases/PacketOptions)\<`T`\> = `{}`
+
+Default `channel` and payload `validate` check.
+
+## Returns
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+The packet definition, used by `packets.on`, `read` and `send`.
+
+## Example
+
+```ts
+// protocol.ts, imported by the client and the server
+export const Move = definePacket<{ id: number; x: number; y: number }>("move", {
+  channel: Channel.UnreliableOrdered,
+});
+export const Play = definePacket("play"); // no payload: `send(Play)`
+```
+
+## Throws
+
+When the name is empty or longer than 255 UTF-8 bytes.

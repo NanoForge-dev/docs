@@ -1,0 +1,122 @@
+---
+title: "ClientPacketsApi"
+description: "Typed packets of the client, exposed as ctx.network.packets."
+---
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L18)
+
+Typed packets of the client, exposed as `ctx.network.packets`.
+
+## Example
+
+```ts
+network.packets.on(Move, (move, { ctx }) => applyMove(ctx.ecs.registry, move));
+for (const { data } of ctx.network.packets.read(Move)) applyMove(registry, data);
+ctx.network.packets.send(Input, { key: "up" });
+```
+
+## Methods
+
+### on()
+
+> **on**\<`T`\>(`packet`, `listener`): () => `void`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:27](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L27)
+
+Be notified of every packet of a type, each tick before the ECS systems
+(not while paused).
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+##### listener
+
+[`PacketListener`](/references/engine/3.0.0/network/client/type-aliases/PacketListener)\<`NoInfer`\<`T`\>, [`ClientPacketInfo`](/references/engine/3.0.0/network/client/type-aliases/ClientPacketInfo)\>
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+#### Throws
+
+When another definition with the same name has another channel or
+`validate`.
+
+***
+
+### read()
+
+> **read**\<`T`\>(`packet`): ([`ClientPacketInfo`](/references/engine/3.0.0/network/client/type-aliases/ClientPacketInfo) & `object`)[]
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:37](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L37)
+
+Return the packets of a type received this tick, for an ECS system.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+#### Returns
+
+([`ClientPacketInfo`](/references/engine/3.0.0/network/client/type-aliases/ClientPacketInfo) & `object`)[]
+
+#### Throws
+
+When another definition with the same name has another channel or
+`validate`.
+
+***
+
+### send()
+
+> **send**\<`T`\>(`packet`, ...`args`): `void`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:46](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L46)
+
+Send a packet to the server, on the definition's channel unless another
+`channel` is given.  `data` is left out for a packet without payload:
+`send(Play)`.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+##### args
+
+...[`PacketArgs`](/references/engine/3.0.0/network/client/type-aliases/PacketArgs)\<`NoInfer`\<`T`\>\>
+
+#### Returns
+
+`void`
+
+#### Throws
+
+When the channel's port was not configured, or `data` cannot be
+encoded as JSON.

@@ -1,0 +1,147 @@
+---
+title: "QueuedEventEmitter"
+description: "Default EventEmitter implementation. Construct one for each direction of an editor bridge (toEditor/fromEditor) and hand both to RunOptions.editor."
+---
+
+Defined in: [modules/editor/src/event-emitter.ts:7](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/event-emitter.ts#L7)
+
+Default `EventEmitter` implementation. Construct one for each direction of
+an editor bridge (`toEditor`/`fromEditor`) and hand both to `RunOptions.editor`.
+
+## Type Parameters
+
+### Events
+
+`Events` *extends* `string` = `string`
+
+### EventsMap
+
+`EventsMap` *extends* `Record`\<`Events`, `unknown`[]\> = `Record`\<`Events`, `unknown`[]\>
+
+## Implements
+
+- [`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter)\<`Events`, `EventsMap`\>
+
+## Constructors
+
+### Constructor
+
+> **new QueuedEventEmitter**\<`Events`, `EventsMap`\>(): `QueuedEventEmitter`\<`Events`, `EventsMap`\>
+
+#### Returns
+
+`QueuedEventEmitter`\<`Events`, `EventsMap`\>
+
+## Methods
+
+### emit()
+
+> **emit**\<`K`\>(`event`, ...`args`): `void`
+
+Defined in: [modules/editor/src/event-emitter.ts:31](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/event-emitter.ts#L31)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### args
+
+...`EventsMap`\[`K`\]
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter).[`emit`](/references/engine/3.0.0/common/interfaces/EventEmitter#emit)
+
+***
+
+### off()
+
+> **off**\<`K`\>(`event`, `listener`): `void`
+
+Defined in: [modules/editor/src/event-emitter.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/event-emitter.ts#L20)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### listener
+
+(...`args`) => `void`
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter).[`off`](/references/engine/3.0.0/common/interfaces/EventEmitter#off)
+
+***
+
+### on()
+
+> **on**\<`K`\>(`event`, `listener`): `void`
+
+Defined in: [modules/editor/src/event-emitter.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/event-emitter.ts#L14)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### event
+
+`K`
+
+##### listener
+
+(...`args`) => `void`
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter).[`on`](/references/engine/3.0.0/common/interfaces/EventEmitter#on)
+
+***
+
+### runEvents()
+
+> **runEvents**(): `void`
+
+Defined in: [modules/editor/src/event-emitter.ts:35](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/event-emitter.ts#L35)
+
+Drains the queue, synchronously invoking listeners for each queued event.
+
+#### Returns
+
+`void`
+
+#### Implementation of
+
+[`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter).[`runEvents`](/references/engine/3.0.0/common/interfaces/EventEmitter#runevents)

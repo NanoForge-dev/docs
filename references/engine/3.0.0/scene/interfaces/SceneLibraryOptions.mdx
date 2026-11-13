@@ -1,0 +1,46 @@
+---
+title: "SceneLibraryOptions"
+description: "Options of SceneLibrary."
+---
+
+Defined in: [modules/scene/src/scene.library.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.library.ts#L16)
+
+Options of `SceneLibrary`.
+
+## Type Parameters
+
+### TParams
+
+`TParams` = `unknown`
+
+## Properties
+
+### initial?
+
+> `optional` **initial?**: [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`TParams`\>
+
+Defined in: [modules/scene/src/scene.library.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.library.ts#L18)
+
+The scene loaded at the start of the first tick.
+
+***
+
+### params?
+
+> `optional` **params?**: `TParams`
+
+Defined in: [modules/scene/src/scene.library.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.library.ts#L20)
+
+Params of the initial scene.
+
+***
+
+### scenes?
+
+> `optional` **scenes?**: `Readonly`\<`Record`\<`string`, [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\>\>\>
+
+Defined in: [modules/scene/src/scene.library.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.library.ts#L26)
+
+Every scene class of the game, by id: `{ Menu, Level1 }`. The ids name the scenes for the
+editor (and survive a bundler renaming a class), and let it load any of them while the game
+runs. A scene missing from it is known by its class name.

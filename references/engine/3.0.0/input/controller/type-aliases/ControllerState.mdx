@@ -1,0 +1,65 @@
+---
+title: "ControllerState"
+description: "Snapshot of a connected controller for the current frame."
+---
+
+> **ControllerState** = `object`
+
+Defined in: [modules/input/src/controller/controller.types.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L16)
+
+Snapshot of a connected controller for the current frame.
+
+## Remarks
+
+Returned by `ControllerLibrary.getControllers` and `ControllerLibrary.getController`.
+`axes` are the raw values reported by the browser, without deadzone.
+
+## Properties
+
+### axes
+
+> **axes**: `number`[]
+
+Defined in: [modules/input/src/controller/controller.types.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L26)
+
+Raw axis values between `-1` and `1`, indexed like `Gamepad.axes`.
+
+***
+
+### buttons
+
+> **buttons**: [`ControllerButtonState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerButtonState)[]
+
+Defined in: [modules/input/src/controller/controller.types.ts:24](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L24)
+
+Button states, indexed like `Gamepad.buttons`.
+
+***
+
+### id
+
+> **id**: `string`
+
+Defined in: [modules/input/src/controller/controller.types.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L20)
+
+Browser-provided identifier of the device.
+
+***
+
+### index
+
+> **index**: `number`
+
+Defined in: [modules/input/src/controller/controller.types.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L18)
+
+Slot of the controller, as given by `Gamepad.index`.
+
+***
+
+### mapping
+
+> **mapping**: `GamepadMappingType`
+
+Defined in: [modules/input/src/controller/controller.types.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L22)
+
+`"standard"` when `ControllerButton`/`ControllerAxis` apply, `""` otherwise.

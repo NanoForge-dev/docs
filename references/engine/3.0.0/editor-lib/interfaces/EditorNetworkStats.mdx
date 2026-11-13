@@ -1,0 +1,70 @@
+---
+title: "EditorNetworkStats"
+description: "Totals of every packet over a window, traced or not."
+---
+
+Defined in: [modules/editor/src/protocol.ts:206](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L206)
+
+Totals of every packet over a window, traced or not.
+
+## Properties
+
+### tcp
+
+> **tcp**: `object`
+
+Defined in: [modules/editor/src/protocol.ts:211](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L211)
+
+#### in
+
+> **in**: [`EditorNetworkTotals`](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals)
+
+#### out
+
+> **out**: [`EditorNetworkTotals`](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals)
+
+***
+
+### time
+
+> **time**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:210](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L210)
+
+End of the window, ms since epoch.
+
+***
+
+### udp
+
+> **udp**: `object`
+
+Defined in: [modules/editor/src/protocol.ts:212](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L212)
+
+#### in
+
+> **in**: [`EditorNetworkTotals`](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals)
+
+#### out
+
+> **out**: [`EditorNetworkTotals`](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals)
+
+***
+
+### untraced
+
+> **untraced**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:214](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L214)
+
+Packets left out of the `network-trace` events (sampling, rate limit).
+
+***
+
+### windowMs
+
+> **windowMs**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:208](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L208)
+
+Length of the window (ms).

@@ -1,0 +1,134 @@
+---
+title: "NfException"
+description: "Base class for all NanoForge engine exceptions."
+---
+
+Defined in: [packages/common/src/exception/abstracts/exception.abstract.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/abstracts/exception.abstract.ts#L8)
+
+Base class for all NanoForge engine exceptions.
+
+## Remarks
+
+All errors thrown by the engine extend this class so that game code can
+differentiate engine errors from unrelated runtime errors.
+
+## Extends
+
+- `Error`
+
+## Extended by
+
+- [`NfDuplicateLibraryException`](/references/engine/3.0.0/common/classes/NfDuplicateLibraryException)
+- [`NfFetchException`](/references/engine/3.0.0/common/classes/NfFetchException)
+- [`NfNotFound`](/references/engine/3.0.0/common/classes/NfNotFound)
+- [`NfNotInitializedException`](/references/engine/3.0.0/common/classes/NfNotInitializedException)
+
+## Constructors
+
+### Constructor
+
+> `protected` **new NfException**(`message?`): `NfException`
+
+Defined in: [packages/common/src/exception/abstracts/exception.abstract.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/abstracts/exception.abstract.ts#L14)
+
+#### Parameters
+
+##### message?
+
+`string`
+
+#### Returns
+
+`NfException`
+
+#### Overrides
+
+`Error.constructor`
+
+## Properties
+
+### cause?
+
+> `optional` **cause?**: `unknown`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es2022.error.d.ts:24
+
+#### Inherited from
+
+`Error.cause`
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1075
+
+#### Inherited from
+
+`Error.message`
+
+***
+
+### name
+
+> **name**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1074
+
+#### Inherited from
+
+`Error.name`
+
+***
+
+### stack?
+
+> `optional` **stack?**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1076
+
+#### Inherited from
+
+`Error.stack`
+
+## Accessors
+
+### code
+
+#### Get Signature
+
+> **get** `abstract` **code**(): `number`
+
+Defined in: [packages/common/src/exception/abstracts/exception.abstract.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/abstracts/exception.abstract.ts#L12)
+
+HTTP-style numeric code identifying the error category.
+
+##### Returns
+
+`number`
+
+## Methods
+
+### isError()
+
+> `static` **isError**(`error`): `error is Error`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.esnext.error.d.ts:21
+
+Indicates whether the argument provided is a built-in Error instance or not.
+
+#### Parameters
+
+##### error
+
+`unknown`
+
+#### Returns
+
+`error is Error`
+
+#### Inherited from
+
+`Error.isError`

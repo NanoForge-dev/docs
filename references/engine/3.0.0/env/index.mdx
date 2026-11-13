@@ -1,0 +1,251 @@
+---
+title: "@nanoforge-dev/env"
+---
+
+<div align="center">
+    <br />
+    <p>
+        <a href="https://github.com/NanoForge-dev"><img src="https://raw.githubusercontent.com/NanoForge-dev/Engine/main/.github/logo.png" width="546" alt="NanoForge" /></a>
+    </p>
+    <br />
+    <p>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/env"><img src="https://img.shields.io/npm/v/@nanoforge-dev/env.svg?maxAge=3600" alt="npm version" /></a>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/env"><img src="https://img.shields.io/npm/dt/@nanoforge-dev/env.svg?maxAge=3600" alt="npm downloads" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml"><img src="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml/badge.svg" alt="Tests status" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/commits/main/packages/env"><img src="https://img.shields.io/github/last-commit/NanoForge-dev/Engine.svg?logo=github&logoColor=ffffff&path=packages%2Fenv" alt="Last commit" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/graphs/contributors"><img src="https://img.shields.io/github/contributors/NanoForge-dev/Engine.svg?maxAge=3600&logo=github&logoColor=fff&color=00c7be" alt="Contributors" /></a>
+    </p>
+</div>
+
+## About
+
+`@nanoforge-dev/env` is a wrapper around [class-validator][class-validator] and [class-transformer][class-transformer] used to validate and transform raw environment values (`InitContext.env`, `process.env`, …) into typed, decorated configuration classes.
+
+## Installation
+
+**Node.js 26 or newer is required.**
+
+```sh
+npm install @nanoforge-dev/env
+yarn add @nanoforge-dev/env
+pnpm add @nanoforge-dev/env
+bun add @nanoforge-dev/env
+```
+
+## Warning
+
+This library is intended for use by other NanoForge libraries and application code that reads environment configuration — it is not a library that consumers of `@nanoforge-dev/core` need to install standalone unless they are declaring their own environment-backed config classes.
+
+## Example usage
+
+Declare a configuration class decorated with `@nanoforge-dev/env`'s decorators:
+
+```ts
+import {
+  Default,
+  Expose,
+  IsBoolean,
+  IsByteLength,
+  IsIpOrURL,
+  IsOptional,
+  IsPort,
+  TransformToBoolean,
+} from "@nanoforge-dev/env";
+
+export class ClientConfigNetwork {
+  // Optional port, but must be a valid port string when present.
+  @Expose()
+  @IsOptional()
+  @IsPort()
+  SERVER_TCP_PORT?: string;
+
+  // Required — must be a valid IP address or URL.
+  @Expose()
+  @IsIpOrURL(undefined, undefined, { protocols: ["ws", "wss", "http", "https"] })
+  SERVER_ADDRESS!: string;
+
+  // Falls back to "PACKET_END" when absent.
+  @Expose()
+  @Default("PACKET_END")
+  @IsByteLength(2, 64)
+  MAGIC_VALUE!: string;
+
+  // "true"/"false" string values are transformed into a native boolean.
+  @Expose()
+  @TransformToBoolean()
+  @IsBoolean()
+  @Default(false)
+  WSS!: boolean;
+}
+```
+
+Then validate and populate an instance from a raw environment object with `registerEnv`:
+
+```ts
+import { registerEnv } from "@nanoforge-dev/env";
+
+import { ClientConfigNetwork } from "./config.client.network";
+
+export class NetworkClientLibrary extends Library {
+  public override async __init(ctx: InitContext): Promise<void> {
+    const config = await registerEnv(ClientConfigNetwork, ctx.env);
+
+    // `config` is a fully validated, defaulted ClientConfigNetwork instance.
+  }
+}
+```
+
+`registerEnv` throws `NfEnvValidationException` when the given environment doesn't satisfy the class's decorators.
+
+All of [class-validator][class-validator]'s decorators (`IsString`, `IsPort`, `IsOptional`, …) and `class-transformer`'s `@Expose`/`@Transform` are re-exported directly from this package, alongside `@nanoforge-dev/env`'s own additions:
+
+- `@Default(value)` — supplies a fallback when the property is `undefined`/`null`.
+- `@IsIpOrURL(...)` — validates an IPv4/IPv6 address or a fully qualified domain name.
+- `@TransformToBoolean()` — transforms the string `"true"`/`"false"` into a native boolean.
+
+## Links
+
+- [GitHub][source]
+- [npm][npm]
+
+## Contributing
+
+Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
+[documentation][documentation].  
+See [the contribution guide][contributing] if you'd like to submit a PR.
+
+## Help
+
+If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle nudge in the right direction, please don't hesitate to ask questions in [discussions][discussions].
+
+[documentation]: https://github.com/NanoForge-dev/Engine
+[discussions]: https://github.com/NanoForge-dev/Engine/discussions
+[source]: https://github.com/NanoForge-dev/Engine/tree/main/packages/env
+[npm]: https://www.npmjs.com/package/@nanoforge-dev/env
+[contributing]: https://github.com/NanoForge-dev/Engine/blob/main/.github/CONTRIBUTING.md
+[class-validator]: https://github.com/typestack/class-validator
+[class-transformer]: https://github.com/typestack/class-transformer
+
+## Classes
+
+- [NfEnvValidationException](/references/engine/3.0.0/env/classes/NfEnvValidationException)
+
+## Functions
+
+- [Allow](/references/engine/3.0.0/env/functions/Allow)
+- [ArrayContains](/references/engine/3.0.0/env/functions/ArrayContains)
+- [ArrayMaxSize](/references/engine/3.0.0/env/functions/ArrayMaxSize)
+- [ArrayMinSize](/references/engine/3.0.0/env/functions/ArrayMinSize)
+- [ArrayNotContains](/references/engine/3.0.0/env/functions/ArrayNotContains)
+- [ArrayNotEmpty](/references/engine/3.0.0/env/functions/ArrayNotEmpty)
+- [ArrayUnique](/references/engine/3.0.0/env/functions/ArrayUnique)
+- [Contains](/references/engine/3.0.0/env/functions/Contains)
+- [Default](/references/engine/3.0.0/env/functions/Default)
+- [Equals](/references/engine/3.0.0/env/functions/Equals)
+- [Expose](/references/engine/3.0.0/env/functions/Expose)
+- [IsAlpha](/references/engine/3.0.0/env/functions/IsAlpha)
+- [IsAlphanumeric](/references/engine/3.0.0/env/functions/IsAlphanumeric)
+- [IsArray](/references/engine/3.0.0/env/functions/IsArray)
+- [IsAscii](/references/engine/3.0.0/env/functions/IsAscii)
+- [IsBase32](/references/engine/3.0.0/env/functions/IsBase32)
+- [IsBase58](/references/engine/3.0.0/env/functions/IsBase58)
+- [IsBase64](/references/engine/3.0.0/env/functions/IsBase64)
+- [IsBIC](/references/engine/3.0.0/env/functions/IsBIC)
+- [IsBoolean](/references/engine/3.0.0/env/functions/IsBoolean)
+- [IsBooleanString](/references/engine/3.0.0/env/functions/IsBooleanString)
+- [IsBtcAddress](/references/engine/3.0.0/env/functions/IsBtcAddress)
+- [IsByteLength](/references/engine/3.0.0/env/functions/IsByteLength)
+- [IsCreditCard](/references/engine/3.0.0/env/functions/IsCreditCard)
+- [IsCurrency](/references/engine/3.0.0/env/functions/IsCurrency)
+- [IsDataURI](/references/engine/3.0.0/env/functions/IsDataURI)
+- [IsDate](/references/engine/3.0.0/env/functions/IsDate)
+- [IsDateString](/references/engine/3.0.0/env/functions/IsDateString)
+- [IsDecimal](/references/engine/3.0.0/env/functions/IsDecimal)
+- [IsDefined](/references/engine/3.0.0/env/functions/IsDefined)
+- [IsDivisibleBy](/references/engine/3.0.0/env/functions/IsDivisibleBy)
+- [IsEAN](/references/engine/3.0.0/env/functions/IsEAN)
+- [IsEmail](/references/engine/3.0.0/env/functions/IsEmail)
+- [IsEmpty](/references/engine/3.0.0/env/functions/IsEmpty)
+- [IsEnum](/references/engine/3.0.0/env/functions/IsEnum)
+- [IsEthereumAddress](/references/engine/3.0.0/env/functions/IsEthereumAddress)
+- [IsFirebasePushId](/references/engine/3.0.0/env/functions/IsFirebasePushId)
+- [IsFQDN](/references/engine/3.0.0/env/functions/IsFQDN)
+- [IsFullWidth](/references/engine/3.0.0/env/functions/IsFullWidth)
+- [IsHalfWidth](/references/engine/3.0.0/env/functions/IsHalfWidth)
+- [IsHash](/references/engine/3.0.0/env/functions/IsHash)
+- [IsHexadecimal](/references/engine/3.0.0/env/functions/IsHexadecimal)
+- [IsHexColor](/references/engine/3.0.0/env/functions/IsHexColor)
+- [IsHSL](/references/engine/3.0.0/env/functions/IsHSL)
+- [IsIBAN](/references/engine/3.0.0/env/functions/IsIBAN)
+- [IsIdentityCard](/references/engine/3.0.0/env/functions/IsIdentityCard)
+- [IsIn](/references/engine/3.0.0/env/functions/IsIn)
+- [IsInstance](/references/engine/3.0.0/env/functions/IsInstance)
+- [IsInt](/references/engine/3.0.0/env/functions/IsInt)
+- [IsIP](/references/engine/3.0.0/env/functions/IsIP)
+- [IsIpOrURL](/references/engine/3.0.0/env/functions/IsIpOrURL)
+- [IsISBN](/references/engine/3.0.0/env/functions/IsISBN)
+- [IsISIN](/references/engine/3.0.0/env/functions/IsISIN)
+- [IsISO31661Alpha2](/references/engine/3.0.0/env/functions/IsISO31661Alpha2)
+- [IsISO31661Alpha3](/references/engine/3.0.0/env/functions/IsISO31661Alpha3)
+- [IsISO4217CurrencyCode](/references/engine/3.0.0/env/functions/IsISO4217CurrencyCode)
+- [IsISO8601](/references/engine/3.0.0/env/functions/IsISO8601)
+- [IsISRC](/references/engine/3.0.0/env/functions/IsISRC)
+- [IsISSN](/references/engine/3.0.0/env/functions/IsISSN)
+- [IsJSON](/references/engine/3.0.0/env/functions/IsJSON)
+- [IsJWT](/references/engine/3.0.0/env/functions/IsJWT)
+- [IsLatitude](/references/engine/3.0.0/env/functions/IsLatitude)
+- [IsLatLong](/references/engine/3.0.0/env/functions/IsLatLong)
+- [IsLocale](/references/engine/3.0.0/env/functions/IsLocale)
+- [IsLongitude](/references/engine/3.0.0/env/functions/IsLongitude)
+- [IsLowercase](/references/engine/3.0.0/env/functions/IsLowercase)
+- [IsMACAddress](/references/engine/3.0.0/env/functions/IsMACAddress)
+- [IsMagnetURI](/references/engine/3.0.0/env/functions/IsMagnetURI)
+- [IsMilitaryTime](/references/engine/3.0.0/env/functions/IsMilitaryTime)
+- [IsMimeType](/references/engine/3.0.0/env/functions/IsMimeType)
+- [IsMobilePhone](/references/engine/3.0.0/env/functions/IsMobilePhone)
+- [IsMongoId](/references/engine/3.0.0/env/functions/IsMongoId)
+- [IsMultibyte](/references/engine/3.0.0/env/functions/IsMultibyte)
+- [IsNegative](/references/engine/3.0.0/env/functions/IsNegative)
+- [IsNotEmpty](/references/engine/3.0.0/env/functions/IsNotEmpty)
+- [IsNotEmptyObject](/references/engine/3.0.0/env/functions/IsNotEmptyObject)
+- [IsNotIn](/references/engine/3.0.0/env/functions/IsNotIn)
+- [IsNumber](/references/engine/3.0.0/env/functions/IsNumber)
+- [IsNumberString](/references/engine/3.0.0/env/functions/IsNumberString)
+- [IsObject](/references/engine/3.0.0/env/functions/IsObject)
+- [IsOctal](/references/engine/3.0.0/env/functions/IsOctal)
+- [IsOptional](/references/engine/3.0.0/env/functions/IsOptional)
+- [IsPassportNumber](/references/engine/3.0.0/env/functions/IsPassportNumber)
+- [IsPhoneNumber](/references/engine/3.0.0/env/functions/IsPhoneNumber)
+- [IsPort](/references/engine/3.0.0/env/functions/IsPort)
+- [IsPositive](/references/engine/3.0.0/env/functions/IsPositive)
+- [IsPostalCode](/references/engine/3.0.0/env/functions/IsPostalCode)
+- [IsRFC3339](/references/engine/3.0.0/env/functions/IsRFC3339)
+- [IsRgbColor](/references/engine/3.0.0/env/functions/IsRgbColor)
+- [IsSemVer](/references/engine/3.0.0/env/functions/IsSemVer)
+- [IsString](/references/engine/3.0.0/env/functions/IsString)
+- [IsStrongPassword](/references/engine/3.0.0/env/functions/IsStrongPassword)
+- [IsSurrogatePair](/references/engine/3.0.0/env/functions/IsSurrogatePair)
+- [IsTaxId](/references/engine/3.0.0/env/functions/IsTaxId)
+- [IsTimeZone](/references/engine/3.0.0/env/functions/IsTimeZone)
+- [IsUppercase](/references/engine/3.0.0/env/functions/IsUppercase)
+- [IsUrl](/references/engine/3.0.0/env/functions/IsUrl)
+- [IsUUID](/references/engine/3.0.0/env/functions/IsUUID)
+- [IsVariableWidth](/references/engine/3.0.0/env/functions/IsVariableWidth)
+- [Length](/references/engine/3.0.0/env/functions/Length)
+- [Matches](/references/engine/3.0.0/env/functions/Matches)
+- [Max](/references/engine/3.0.0/env/functions/Max)
+- [MaxDate](/references/engine/3.0.0/env/functions/MaxDate)
+- [MaxLength](/references/engine/3.0.0/env/functions/MaxLength)
+- [Min](/references/engine/3.0.0/env/functions/Min)
+- [MinDate](/references/engine/3.0.0/env/functions/MinDate)
+- [MinLength](/references/engine/3.0.0/env/functions/MinLength)
+- [NotContains](/references/engine/3.0.0/env/functions/NotContains)
+- [NotEquals](/references/engine/3.0.0/env/functions/NotEquals)
+- [registerEnv](/references/engine/3.0.0/env/functions/registerEnv)
+- [Transform](/references/engine/3.0.0/env/functions/Transform)
+- [TransformToBoolean](/references/engine/3.0.0/env/functions/TransformToBoolean)
+- [Validate](/references/engine/3.0.0/env/functions/Validate)
+- [ValidateBy](/references/engine/3.0.0/env/functions/ValidateBy)
+- [ValidateIf](/references/engine/3.0.0/env/functions/ValidateIf)
+- [ValidateNested](/references/engine/3.0.0/env/functions/ValidateNested)
+- [ValidatePromise](/references/engine/3.0.0/env/functions/ValidatePromise)

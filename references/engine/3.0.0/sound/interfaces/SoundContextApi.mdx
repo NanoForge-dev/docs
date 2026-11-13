@@ -1,0 +1,66 @@
+---
+title: "SoundContextApi"
+description: "Public surface of SoundLibrary, exposed on Context.sound."
+---
+
+Defined in: [modules/sound/src/sound-context.type.ts:2](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/sound/src/sound-context.type.ts#L2)
+
+Public surface of `SoundLibrary`, exposed on `Context.sound`.
+
+## Methods
+
+### load()
+
+> **load**(`key`, `file`): `void`
+
+Defined in: [modules/sound/src/sound-context.type.ts:4](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/sound/src/sound-context.type.ts#L4)
+
+Registers a sound effect under a unique key, loaded from `file`.
+
+#### Parameters
+
+##### key
+
+`string`
+
+##### file
+
+`string`
+
+#### Returns
+
+`void`
+
+***
+
+### mute()
+
+> **mute**(): `void`
+
+Defined in: [modules/sound/src/sound-context.type.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/sound/src/sound-context.type.ts#L8)
+
+Toggles the muted state of every loaded sound effect.
+
+#### Returns
+
+`void`
+
+***
+
+### play()
+
+> **play**(`key`): `void`
+
+Defined in: [modules/sound/src/sound-context.type.ts:6](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/sound/src/sound-context.type.ts#L6)
+
+Plays a previously loaded sound effect. Multiple sounds may overlap.
+
+#### Parameters
+
+##### key
+
+`string`
+
+#### Returns
+
+`void`

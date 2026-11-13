@@ -1,0 +1,138 @@
+---
+title: "Graphics3DContextApi"
+description: "Public surface of Graphics3DLibrary, exposed on Context.graphics."
+---
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L13)
+
+Public surface of `Graphics3DLibrary`, exposed on `Context.graphics`.
+
+## Properties
+
+### backend
+
+> `readonly` **backend**: [`Graphics3DBackend`](/references/engine/3.0.0/graphics-3d/type-aliases/Graphics3DBackend)
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:32](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L32)
+
+Which backend runs.
+
+***
+
+### camera
+
+> **camera**: `Camera`
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L22)
+
+The camera the scene is rendered with. A default `PerspectiveCamera` at
+`(0, 0, 5)` looking at the origin; assign another camera to switch.
+
+***
+
+### renderer
+
+> `readonly` **renderer**: `WebGPURenderer`
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L15)
+
+The Three.js renderer. Rendered by the library every tick; never call `setAnimationLoop`.
+
+***
+
+### scene
+
+> `readonly` **scene**: `Scene`
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L17)
+
+The scene rendered every tick — add objects here to show them.
+
+## Accessors
+
+### render
+
+#### Get Signature
+
+> **get** **render**(): () => `void`
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:29](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L29)
+
+Draws one frame. The library calls it once per tick, after the systems,
+and for editor screenshots. By default it renders `scene` through
+`camera`. Assign your own function to render a post-processing pipeline
+instead. Assign `undefined` to go back to the default. Reset on restart.
+
+##### Returns
+
+() => `void`
+
+#### Set Signature
+
+> **set** **render**(`render`): `void`
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:30](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L30)
+
+##### Parameters
+
+###### render
+
+(() => `void`) \| `undefined`
+
+##### Returns
+
+`void`
+
+## Methods
+
+### raycast()
+
+> **raycast**(`clientX`, `clientY`, `objects?`): `Intersection`\<`Object3D`\<`Object3DEventMap`\>\>[]
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L40)
+
+Objects under a point of the page, nearest first.
+
+#### Parameters
+
+##### clientX
+
+`number`
+
+Page x, in CSS px (`PointerEvent.clientX`).
+
+##### clientY
+
+`number`
+
+Page y, in CSS px (`PointerEvent.clientY`).
+
+##### objects?
+
+`Object3D`\<`Object3DEventMap`\>[]
+
+Objects to test, with their children. Defaults to the whole scene.
+
+#### Returns
+
+`Intersection`\<`Object3D`\<`Object3DEventMap`\>\>[]
+
+***
+
+### worldToScreen()
+
+> **worldToScreen**(`point`): [`ScreenPoint`](/references/engine/3.0.0/graphics-3d/interfaces/ScreenPoint)
+
+Defined in: [modules/graphics-3d/src/graphics-context.type.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-3d/src/graphics-context.type.ts#L42)
+
+Where a world point is drawn in the page, in CSS px.
+
+#### Parameters
+
+##### point
+
+`Vector3`
+
+#### Returns
+
+[`ScreenPoint`](/references/engine/3.0.0/graphics-3d/interfaces/ScreenPoint)

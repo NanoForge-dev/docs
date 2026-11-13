@@ -1,0 +1,89 @@
+---
+title: "DD"
+---
+
+> `const` **DD**: `object` = `Konva.DD`
+
+Defined in: [modules/graphics-2d/src/exports/konva.ts:32](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/graphics-2d/src/exports/konva.ts#L32)
+
+## Type Declaration
+
+### \_dragElements
+
+> **\_dragElements**: `Map`\<`number`, \{ `dragStatus`: `"stopped"` \| `"ready"` \| `"dragging"`; `node`: `Node`\<`NodeConfig`\>; `offset`: `Vector2d`; `pointerId?`: `number`; `startEvent?`: `any`; `startPointerPos`: `Vector2d`; \}\>
+
+### isDragging
+
+> `readonly` **isDragging**: `boolean`
+
+### justDragged
+
+> **justDragged**: `boolean`
+
+### node
+
+> `readonly` **node**: `Node`\<`NodeConfig`\> \| `undefined`
+
+### \_drag()
+
+> **\_drag**(`evt`, `win?`): `void`
+
+#### Parameters
+
+##### evt
+
+`any`
+
+##### win?
+
+`Window`
+
+#### Returns
+
+`void`
+
+### \_endDragAfter()
+
+> **\_endDragAfter**(`evt`): `void`
+
+#### Parameters
+
+##### evt
+
+`any`
+
+#### Returns
+
+`void`
+
+### \_endDragBefore()
+
+> **\_endDragBefore**(`evt?`, `win?`): `void`
+
+#### Parameters
+
+##### evt?
+
+`any`
+
+##### win?
+
+`Window`
+
+#### Returns
+
+`void`
+
+### \_listenToWindow()
+
+> **\_listenToWindow**(`win`): `void`
+
+#### Parameters
+
+##### win
+
+`Window`
+
+#### Returns
+
+`void`

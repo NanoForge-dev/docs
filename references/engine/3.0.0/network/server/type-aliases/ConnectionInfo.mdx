@@ -1,0 +1,88 @@
+---
+title: "ConnectionInfo"
+description: "What the server knows about one transport connection of a client."
+---
+
+> **ConnectionInfo** = `object`
+
+Defined in: [modules/network/src/server/client-registry.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L13)
+
+What the server knows about one transport connection of a client.
+
+## Properties
+
+### address
+
+> **address**: `string`
+
+Defined in: [modules/network/src/server/client-registry.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L16)
+
+Remote address, as resolved by Bun.
+
+***
+
+### connectedAt
+
+> **connectedAt**: `number`
+
+Defined in: [modules/network/src/server/client-registry.ts:28](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L28)
+
+Timestamp (ms since epoch) of the upgrade request.
+
+***
+
+### family
+
+> **family**: `string`
+
+Defined in: [modules/network/src/server/client-registry.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L20)
+
+Address family (`"IPv4"` or `"IPv6"`).
+
+***
+
+### origin?
+
+> `optional` **origin?**: `string`
+
+Defined in: [modules/network/src/server/client-registry.ts:24](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L24)
+
+`Origin` header of the upgrade request.
+
+***
+
+### params
+
+> **params**: `Record`\<`string`, `string`\>
+
+Defined in: [modules/network/src/server/client-registry.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L26)
+
+Query parameters of the upgrade request, without the session token.
+
+***
+
+### port
+
+> **port**: `number`
+
+Defined in: [modules/network/src/server/client-registry.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L18)
+
+Remote port.
+
+***
+
+### transport
+
+> **transport**: [`Transport`](/references/engine/3.0.0/network/server/type-aliases/Transport)
+
+Defined in: [modules/network/src/server/client-registry.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L14)
+
+***
+
+### userAgent?
+
+> `optional` **userAgent?**: `string`
+
+Defined in: [modules/network/src/server/client-registry.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L22)
+
+`User-Agent` header of the upgrade request.

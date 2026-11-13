@@ -1,0 +1,97 @@
+---
+title: "ClientsApi"
+description: "Game-facing view of the connected clients, exposed as ctx.network.clients."
+---
+
+Defined in: [modules/network/src/server/client-registry.ts:53](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L53)
+
+Game-facing view of the connected clients, exposed as `ctx.network.clients`.
+
+## Remarks
+
+A client connected over TCP and UDP is a single session with a single
+[ClientId](/references/engine/3.0.0/network/server/type-aliases/ClientId). A page reload opens a brand-new session.
+
+## Methods
+
+### get()
+
+> **get**(`id`): [`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo) \| `undefined`
+
+Defined in: [modules/network/src/server/client-registry.ts:60](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L60)
+
+Look up a client session.
+
+#### Parameters
+
+##### id
+
+`string`
+
+Client identifier.
+
+#### Returns
+
+[`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo) \| `undefined`
+
+The live session info, or `undefined` if the client is gone.
+
+***
+
+### list()
+
+> **list**(): [`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo)[]
+
+Defined in: [modules/network/src/server/client-registry.ts:63](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L63)
+
+Return every connected client session.
+
+#### Returns
+
+[`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo)[]
+
+***
+
+### onConnect()
+
+> **onConnect**(`listener`): () => `void`
+
+Defined in: [modules/network/src/server/client-registry.ts:71](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L71)
+
+Be notified when a new client session starts, i.e. when its first
+transport is up. With TCP and UDP, this fires before UDP is linked.
+
+#### Parameters
+
+##### listener
+
+[`ClientListener`](/references/engine/3.0.0/network/server/type-aliases/ClientListener)
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+***
+
+### onDisconnect()
+
+> **onDisconnect**(`listener`): () => `void`
+
+Defined in: [modules/network/src/server/client-registry.ts:79](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L79)
+
+Be notified when a client session ends, i.e. when its last transport
+closes.
+
+#### Parameters
+
+##### listener
+
+[`ClientListener`](/references/engine/3.0.0/network/server/type-aliases/ClientListener)
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`

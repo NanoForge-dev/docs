@@ -1,0 +1,178 @@
+---
+title: "AppContext"
+description: "Read-only application state plus the actions available to affect it."
+---
+
+Defined in: [packages/common/src/context/context.type.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L13)
+
+Read-only application state plus the actions available to affect it.
+
+## Remarks
+
+`AppContext` deliberately exposes no setters — mutation only happens
+internally, inside `@nanoforge-dev/core`. Game code and libraries can read
+state and call actions, but can never reach into and directly overwrite
+engine-owned state.
+
+## Properties
+
+### delta
+
+> `readonly` **delta**: `number`
+
+Defined in: [packages/common/src/context/context.type.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L19)
+
+Elapsed time in milliseconds since the last tick. Does not advance while paused.
+
+***
+
+### isPaused
+
+> `readonly` **isPaused**: `boolean`
+
+Defined in: [packages/common/src/context/context.type.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L17)
+
+Whether the tick loop is currently paused (no library's `__run` is called while paused).
+
+***
+
+### isRunning
+
+> `readonly` **isRunning**: `boolean`
+
+Defined in: [packages/common/src/context/context.type.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L15)
+
+Whether the engine's tick loop is currently running.
+
+***
+
+### libraries
+
+> `readonly` **libraries**: readonly `string`[]
+
+Defined in: [packages/common/src/context/context.type.ts:23](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L23)
+
+Keys of the registered libraries.
+
+***
+
+### tickRate
+
+> `readonly` **tickRate**: `number`
+
+Defined in: [packages/common/src/context/context.type.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L21)
+
+Configured ticks-per-second for the run loop.
+
+## Methods
+
+### callHook()
+
+> **callHook**(`name`, ...`args`): `Promise`\<`void`\>
+
+Defined in: [packages/common/src/context/context.type.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L44)
+
+Calls an optional hook on every library that has it, in run order, one
+after the other.
+
+#### Parameters
+
+##### name
+
+`string`
+
+Name of the method to call.
+
+##### args
+
+...`unknown`[]
+
+Arguments handed to it.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Lets a library define a lifecycle step of its own for the others (a
+method named like the built-in hooks, e.g. `__myLibraryReady`) without
+the engine knowing about it.
+
+***
+
+### observeTicks()
+
+> **observeTicks**(`observer`): () => `void`
+
+Defined in: [packages/common/src/context/context.type.ts:50](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L50)
+
+Observes the tick loop.
+
+#### Parameters
+
+##### observer
+
+[`TickObserver`](/references/engine/3.0.0/common/interfaces/TickObserver)
+
+#### Returns
+
+A function that stops observing.
+
+() => `void`
+
+***
+
+### requestPause()
+
+> **requestPause**(): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:27](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L27)
+
+Pauses the tick loop: every library's `__run` is skipped until resumed.
+
+#### Returns
+
+`void`
+
+***
+
+### requestResume()
+
+> **requestResume**(): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:29](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L29)
+
+Resumes a paused tick loop.
+
+#### Returns
+
+`void`
+
+***
+
+### requestStep()
+
+> **requestStep**(): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:31](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L31)
+
+Runs exactly one tick (`__run` of every library) while paused.
+
+#### Returns
+
+`void`
+
+***
+
+### requestStop()
+
+> **requestStop**(): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:25](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L25)
+
+Requests that the tick loop stop after the current tick.
+
+#### Returns
+
+`void`

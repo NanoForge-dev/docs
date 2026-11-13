@@ -1,0 +1,55 @@
+---
+title: "EditorFrameStats"
+---
+
+Defined in: [modules/editor/src/protocol.ts:116](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L116)
+
+## Properties
+
+### libraries
+
+> **libraries**: `Record`\<`string`, [`EditorTiming`](/references/engine/3.0.0/editor-lib/interfaces/EditorTiming)\>
+
+Defined in: [modules/editor/src/protocol.ts:126](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L126)
+
+Per library key: `__events` + `__run`.
+
+***
+
+### tick
+
+> **tick**: [`EditorTiming`](/references/engine/3.0.0/editor-lib/interfaces/EditorTiming)
+
+Defined in: [modules/editor/src/protocol.ts:124](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L124)
+
+Whole tick (events + run of every library).
+
+***
+
+### ticks
+
+> **ticks**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:120](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L120)
+
+Ticks run in the window (paused ticks included).
+
+***
+
+### tps
+
+> **tps**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:122](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L122)
+
+Ticks per second over the window.
+
+***
+
+### windowMs
+
+> **windowMs**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:118](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L118)
+
+Length of the sampling window (ms).

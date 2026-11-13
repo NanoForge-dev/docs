@@ -1,0 +1,70 @@
+---
+title: "VarsContext"
+description: "A typed, dev-editable key/value bag shared across all libraries and game code for the lifetime of a run."
+---
+
+Defined in: [packages/common/src/context/context.type.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L72)
+
+A typed, dev-editable key/value bag shared across all libraries and game
+code for the lifetime of a run.
+
+## Type Parameters
+
+### TVars
+
+`TVars` *extends* `Record`\<`string`, `unknown`\> = `Record`\<`string`, `unknown`\>
+
+Shape of the variables bag. Defaults to an untyped
+`Record<string, unknown>` when no shape is declared.
+
+## Methods
+
+### get()
+
+> **get**\<`K`\>(`key`): `TVars`\[`K`\]
+
+Defined in: [packages/common/src/context/context.type.ts:73](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L73)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string` \| `number` \| `symbol`
+
+#### Parameters
+
+##### key
+
+`K`
+
+#### Returns
+
+`TVars`\[`K`\]
+
+***
+
+### set()
+
+> **set**\<`K`\>(`key`, `value`): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L74)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string` \| `number` \| `symbol`
+
+#### Parameters
+
+##### key
+
+`K`
+
+##### value
+
+`TVars`\[`K`\]
+
+#### Returns
+
+`void`

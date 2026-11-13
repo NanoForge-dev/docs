@@ -1,0 +1,45 @@
+---
+title: "computeViewport"
+description: "Computes the viewport for a container size and a set of options."
+---
+
+> **computeViewport**(`containerWidth`, `containerHeight`, `options?`, `pixelRatio?`): [`ViewportState`](/references/engine/3.0.0/common/interfaces/ViewportState)
+
+Defined in: [packages/common/src/viewport/compute-viewport.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/compute-viewport.ts#L19)
+
+Computes the viewport for a container size and a set of options.
+
+## Parameters
+
+### containerWidth
+
+`number`
+
+Container width, in CSS px.
+
+### containerHeight
+
+`number`
+
+Container height, in CSS px.
+
+### options?
+
+[`ViewportOptions`](/references/engine/3.0.0/common/interfaces/ViewportOptions) = `{}`
+
+Design resolution and fit mode.
+
+### pixelRatio?
+
+`number` = `1`
+
+Current `window.devicePixelRatio`.
+
+## Returns
+
+[`ViewportState`](/references/engine/3.0.0/common/interfaces/ViewportState)
+
+## Remarks
+
+Pure function — no DOM access. Used by core's viewport state and
+reusable by any renderer that needs the same math.

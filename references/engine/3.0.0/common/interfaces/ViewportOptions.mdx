@@ -1,0 +1,77 @@
+---
+title: "ViewportOptions"
+description: "Viewport settings a client application is created with."
+---
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L17)
+
+Viewport settings a client application is created with.
+
+## Remarks
+
+When `width`/`height` are omitted, the design resolution is 1920x1080.
+
+## Properties
+
+### background?
+
+> `optional` **background?**: `string`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L42)
+
+CSS background of the container, visible behind the canvas and in the
+letterbox bars.
+
+#### Default
+
+```ts
+"black"
+```
+
+***
+
+### fit?
+
+> `optional` **fit?**: [`ViewportFit`](/references/engine/3.0.0/common/type-aliases/ViewportFit)
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:35](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L35)
+
+How the design resolution is fitted into the container.
+
+#### Default
+
+```ts
+"contain"
+```
+
+***
+
+### height?
+
+> `optional` **height?**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:29](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L29)
+
+Design (game-unit) height.
+
+#### Default
+
+```ts
+1080
+```
+
+***
+
+### width?
+
+> `optional` **width?**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:23](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L23)
+
+Design (game-unit) width.
+
+#### Default
+
+```ts
+1920
+```

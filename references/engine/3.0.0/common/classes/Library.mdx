@@ -1,0 +1,196 @@
+---
+title: "Library"
+description: "Base class for all NanoForge libraries."
+---
+
+Defined in: [packages/common/src/library/library.ts:30](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L30)
+
+Base class for all NanoForge libraries.
+
+## Remarks
+
+Extend this class to create a custom library, then register an instance
+with `app.use(new MyLibrary())`. A library owns its own context key (see
+`defineLibraryKey`), which is simultaneously its registry identity, its
+slot on `Context`, and the identifier used in `dependencies`/`runBefore`/
+`runAfter`.
+
+## Example
+
+```ts
+import { Library, defineLibraryKey, type InitContext } from "@nanoforge-dev/common";
+
+class MyLibrary extends Library {
+  readonly key = defineLibraryKey("my");
+
+  override async __init(ctx: InitContext) {
+    // one-time setup here
+  }
+}
+
+app.use(new MyLibrary());
+```
+
+## Constructors
+
+### Constructor
+
+> **new Library**(`relationships?`): `Library`
+
+Defined in: [packages/common/src/library/library.ts:43](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L43)
+
+#### Parameters
+
+##### relationships?
+
+`Partial`\<[`LibraryRelationships`](/references/engine/3.0.0/common/interfaces/LibraryRelationships)\>
+
+Optional ordering overrides, keyed by other
+libraries' `key`.
+
+#### Returns
+
+`Library`
+
+## Properties
+
+### key
+
+> `abstract` `readonly` **key**: `string`
+
+Defined in: [packages/common/src/library/library.ts:35](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L35)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+## Accessors
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): [`LibraryRelationships`](/references/engine/3.0.0/common/interfaces/LibraryRelationships)
+
+Defined in: [packages/common/src/library/library.ts:51](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L51)
+
+**`Internal`**
+
+##### Returns
+
+[`LibraryRelationships`](/references/engine/3.0.0/common/interfaces/LibraryRelationships)
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [packages/common/src/library/library.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L74)
+
+Called once after the tick loop stops.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/common/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [packages/common/src/library/library.ts:66](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L66)
+
+Called every tick, in run order, whether or not the tick loop is
+paused — unlike `__run`. Use this for event/message draining that must
+not be affected by pause (e.g. listening for the command that resumes
+the loop), not for gameplay simulation.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/common/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### \_\_init()
+
+> **\_\_init**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [packages/common/src/library/library.ts:57](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L57)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Parameters
+
+##### \_ctx
+
+[`InitContext`](/references/engine/3.0.0/common/interfaces/InitContext)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### \_\_run()
+
+> **\_\_run**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: [packages/common/src/library/library.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L70)
+
+Called every tick, in run order, while the tick loop is active and not paused.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/common/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+***
+
+### expose()
+
+> **expose**(): `unknown`
+
+Defined in: [packages/common/src/library/library.ts:85](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L85)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+`unknown`
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: [packages/common/src/library/library.ts:89](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/library.ts#L89)
+
+#### Returns
+
+`never`

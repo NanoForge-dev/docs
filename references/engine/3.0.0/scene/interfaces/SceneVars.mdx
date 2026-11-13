@@ -1,0 +1,21 @@
+---
+title: "SceneVars"
+description: "Types of the scene vars, by key."
+---
+
+Defined in: [modules/scene/src/scene-vars.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L18)
+
+Types of the scene vars, by key.
+
+## Remarks
+
+Empty by default: any key holds `unknown`. Games type their vars by
+augmenting it:
+
+```ts
+declare module "@nanoforge-dev/scene" {
+  interface SceneVars {
+    score: number;
+  }
+}
+```

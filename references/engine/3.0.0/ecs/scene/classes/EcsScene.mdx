@@ -1,0 +1,198 @@
+---
+title: "EcsScene"
+description: "A scene whose entities and systems are made in setup, and removed when it is unloaded."
+---
+
+Defined in: [modules/ecs/src/scene/ecs-scene.ts:41](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/scene/ecs-scene.ts#L41)
+
+A scene whose entities and systems are made in `setup`, and removed when it is unloaded.
+
+## Remarks
+
+Write `setup` like an app's `main`: `const x = registry.spawnEntity()`,
+`registry.addComponent(x, new C(...))`, `registry.addSystem(fn)`. The registry it gets is the
+app's, tracked: when the scene is unloaded, the systems added through it are removed, and the
+entities spawned through it are killed. A component with a `destroy()` method gets it called
+first (a component holding a graphics shape removes it from the screen).
+
+The editor edits `setup` the way it edits `main` (spawns written out, one per variable).
+
+## Example
+
+```ts
+export class Level1 extends EcsScene {
+  static override parent = Run;
+
+  override setup(registry: Registry, ctx: Context) {
+    const wall = registry.spawnEntity();
+    registry.addComponent(wall, new Position(40, 90));
+    registry.addSystem(levelFlow);
+  }
+}
+```
+
+## Extends
+
+- [`Scene`](/references/engine/3.0.0/scene/classes/Scene)\<`TParams`\>
+
+## Type Parameters
+
+### TParams
+
+`TParams` = `undefined`
+
+Shape of the params the scene expects.
+
+## Constructors
+
+### Constructor
+
+> **new EcsScene**\<`TParams`\>(): `EcsScene`\<`TParams`\>
+
+#### Returns
+
+`EcsScene`\<`TParams`\>
+
+#### Inherited from
+
+[`Scene`](/references/engine/3.0.0/scene/classes/Scene).[`constructor`](/references/engine/3.0.0/scene/classes/Scene#constructor)
+
+## Properties
+
+### parent?
+
+> `readonly` `static` `optional` **parent?**: [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\>
+
+Defined in: modules/scene/dist/index.d.ts:81
+
+The scene this one is loaded under, if any.
+
+#### Remarks
+
+`ctx.scenes.load(ctx, Scene, { parent })` loads a scene under another
+parent for that load (a pause menu shown on any scene).
+
+#### Inherited from
+
+[`Scene`](/references/engine/3.0.0/scene/classes/Scene).[`parent`](/references/engine/3.0.0/scene/classes/Scene#parent)
+
+## Methods
+
+### load()
+
+> **load**(`ctx`, `scene`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/scene/ecs-scene.ts:69](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/scene/ecs-scene.ts#L69)
+
+Called when the scene is loaded, after its parents.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load`.
+
+##### scene
+
+[`SceneLoadContext`](/references/engine/3.0.0/scene/interfaces/SceneLoadContext)\<`TParams`\>
+
+The params of the load.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+[`Scene`](/references/engine/3.0.0/scene/classes/Scene).[`load`](/references/engine/3.0.0/scene/classes/Scene#load)
+
+***
+
+### setup()
+
+> **setup**(`_registry`, `_ctx`, `_scene`): `void` \| `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/scene/ecs-scene.ts:53](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/scene/ecs-scene.ts#L53)
+
+Makes the scene's entities and systems.
+
+#### Parameters
+
+##### \_registry
+
+[`Registry`](/references/engine/3.0.0/ecs/index/interfaces/Registry)
+
+The app's registry, tracked for this scene.
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load`.
+
+##### \_scene
+
+[`SceneLoadContext`](/references/engine/3.0.0/scene/interfaces/SceneLoadContext)\<`TParams`\>
+
+The scene's id and params.
+
+#### Returns
+
+`void` \| `Promise`\<`void`\>
+
+***
+
+### teardown()
+
+> **teardown**(`_registry`, `_ctx`): `void` \| `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/scene/ecs-scene.ts:67](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/scene/ecs-scene.ts#L67)
+
+Called when the scene is unloaded, before its entities and systems are removed.
+
+#### Parameters
+
+##### \_registry
+
+[`Registry`](/references/engine/3.0.0/ecs/index/interfaces/Registry)
+
+The app's registry.
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load` or `ctx.scenes.unload`.
+
+#### Returns
+
+`void` \| `Promise`\<`void`\>
+
+***
+
+### unload()
+
+> **unload**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/ecs/src/scene/ecs-scene.ts:73](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/scene/ecs-scene.ts#L73)
+
+Called when the scene is unloaded, after the scenes loaded under it.
+The vars it owns are removed right after.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load` or `ctx.scenes.unload`.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+[`Scene`](/references/engine/3.0.0/scene/classes/Scene).[`unload`](/references/engine/3.0.0/scene/classes/Scene#unload)

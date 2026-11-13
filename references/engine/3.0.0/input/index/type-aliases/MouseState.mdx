@@ -1,0 +1,87 @@
+---
+title: "MouseState"
+description: "Snapshot of mouse cursor state for the current frame."
+---
+
+> **MouseState** = `object`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L12)
+
+Snapshot of mouse cursor state for the current frame.
+
+## Remarks
+
+Returned by `InputLibrary.getMouseState`.  `deltaX` / `deltaY` are
+reset to `0` at the beginning of each frame. Positions are in game
+coordinates (the viewport's design resolution); without a viewport they
+are CSS pixels relative to the container.
+
+## Properties
+
+### deltaX
+
+> **deltaX**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L22)
+
+Horizontal movement since the previous frame.
+
+***
+
+### deltaY
+
+> **deltaY**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:24](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L24)
+
+Vertical movement since the previous frame.
+
+***
+
+### focus
+
+> **focus**: `boolean`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L26)
+
+`true` while the cursor is inside the game window.
+
+***
+
+### prevX
+
+> **prevX**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L18)
+
+Horizontal cursor position from the previous frame.
+
+***
+
+### prevY
+
+> **prevY**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L20)
+
+Vertical cursor position from the previous frame.
+
+***
+
+### x
+
+> **x**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L14)
+
+Current horizontal cursor position, in game coordinates.
+
+***
+
+### y
+
+> **y**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L16)
+
+Current vertical cursor position, in game coordinates.

@@ -1,0 +1,50 @@
+---
+title: "ClientRunOptions"
+description: "Options a client application is started with."
+---
+
+Defined in: [packages/common/src/context/init-context.type.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/init-context.type.ts#L17)
+
+Options a client application is started with.
+
+## Extends
+
+- [`RunOptions`](/references/engine/3.0.0/common/interfaces/RunOptions)
+
+## Properties
+
+### container
+
+> **container**: `HTMLDivElement`
+
+Defined in: [packages/common/src/context/init-context.type.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/init-context.type.ts#L19)
+
+DOM element the client should render into.
+
+***
+
+### env
+
+> **env**: `Record`\<`string`, `string` \| `undefined`\>
+
+Defined in: [packages/common/src/context/init-context.type.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/init-context.type.ts#L11)
+
+Raw, unvalidated environment variables.
+
+#### Inherited from
+
+[`RunOptions`](/references/engine/3.0.0/common/interfaces/RunOptions).[`env`](/references/engine/3.0.0/common/interfaces/RunOptions#env)
+
+***
+
+### files
+
+> **files**: `Map`\<`string`, `string`\>
+
+Defined in: [packages/common/src/context/init-context.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/init-context.type.ts#L9)
+
+Virtual file system, injected by the NanoForge loader.
+
+#### Inherited from
+
+[`RunOptions`](/references/engine/3.0.0/common/interfaces/RunOptions).[`files`](/references/engine/3.0.0/common/interfaces/RunOptions#files)

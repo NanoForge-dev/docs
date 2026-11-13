@@ -1,0 +1,62 @@
+---
+title: "EcsEditorCommands"
+description: "Arguments of the ECS commands the editor sends while playing."
+---
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:58](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L58)
+
+Arguments of the ECS commands the editor sends while playing.
+
+## Properties
+
+### ecs-add-component
+
+> **ecs-add-component**: \[`number`, `string`, [`EditorValue`](/references/engine/3.0.0/ecs/client/type-aliases/EditorValue)[]\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:62](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L62)
+
+Adds a component of a class the game already used: entity id, class name, arguments.
+
+***
+
+### ecs-remove-component
+
+> **ecs-remove-component**: \[`number`, `string`\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:63](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L63)
+
+***
+
+### ecs-remove-entity
+
+> **ecs-remove-entity**: \[`number`\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:65](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L65)
+
+***
+
+### ecs-set-component
+
+> **ecs-set-component**: \[`number`, `string`, `string`, [`EditorValue`](/references/engine/3.0.0/ecs/client/type-aliases/EditorValue)\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:60](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L60)
+
+Sets one field of a component: entity id, component name, field, JSON value.
+
+***
+
+### ecs-set-system-enabled
+
+> **ecs-set-system-enabled**: \[`number`, `boolean`\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:67](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L67)
+
+Pauses a system (index in run order), or runs it again.
+
+***
+
+### ecs-spawn-entity
+
+> **ecs-spawn-entity**: \[\]
+
+Defined in: [modules/ecs/src/shared/editor-world.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/ecs/src/shared/editor-world.ts#L64)

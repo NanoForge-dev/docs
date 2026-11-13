@@ -1,0 +1,137 @@
+---
+title: "Scene"
+description: "Base class of every scene."
+---
+
+Defined in: [modules/scene/src/scene.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L74)
+
+Base class of every scene.
+
+## Remarks
+
+A scene is loaded and unloaded through `ctx.scenes`. Each load creates a
+new instance, dropped after its unload: keep what the scene creates
+(entities, systems…) in its fields, and remove it in `unload`.
+
+Scenes form a tree: a scene names the scene it is loaded under with a
+static `parent`. Loading a scene first loads its parents that are not
+loaded yet. Only one chain of scenes is loaded at a time, from a root
+scene to the current one.
+
+Document a scene for the editor like components and systems: a TSDoc
+comment with the `@scene` tag, `@side` (`client`, `server` or `shared`)
+and `@vars` (the vars it inits or reads). Its parent is read from
+`static parent`, its params from the type argument.
+
+## Example
+
+```ts
+/**
+ * First level: the player and the walls.
+ *
+ * @scene
+ * @side client
+ * @vars score
+ */
+export class Level1 extends Scene<{ seed: number }> {
+  static override parent = Game;
+  private _player?: Entity;
+
+  override load(ctx: Context, { params }: SceneLoadContext<{ seed: number }>) {
+    this._player = ctx.ecs.registry.spawnEntity();
+    ctx.scenes.vars.init("score", 0);
+  }
+
+  override unload(ctx: Context) {
+    ctx.ecs.registry.killEntity(this._player!);
+  }
+}
+```
+
+## Extended by
+
+- [`EcsScene`](/references/engine/3.0.0/ecs/scene/classes/EcsScene)
+
+## Type Parameters
+
+### TParams
+
+`TParams` = `undefined`
+
+Shape of the params the scene expects in `load`.
+
+## Constructors
+
+### Constructor
+
+> **new Scene**\<`TParams`\>(): `Scene`\<`TParams`\>
+
+#### Returns
+
+`Scene`\<`TParams`\>
+
+## Properties
+
+### parent?
+
+> `readonly` `static` `optional` **parent?**: [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\>
+
+Defined in: [modules/scene/src/scene.ts:82](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L82)
+
+The scene this one is loaded under, if any.
+
+#### Remarks
+
+`ctx.scenes.load(ctx, Scene, { parent })` loads a scene under another
+parent for that load (a pause menu shown on any scene).
+
+## Methods
+
+### load()
+
+> **load**(`_ctx`, `_scene`): `void` \| `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scene.ts:91](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L91)
+
+Called when the scene is loaded, after its parents.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load`.
+
+##### \_scene
+
+[`SceneLoadContext`](/references/engine/3.0.0/scene/interfaces/SceneLoadContext)\<`TParams`\>
+
+The params of the load.
+
+#### Returns
+
+`void` \| `Promise`\<`void`\>
+
+***
+
+### unload()
+
+> **unload**(`_ctx`): `void` \| `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scene.ts:100](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L100)
+
+Called when the scene is unloaded, after the scenes loaded under it.
+The vars it owns are removed right after.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+The context given to `ctx.scenes.load` or `ctx.scenes.unload`.
+
+#### Returns
+
+`void` \| `Promise`\<`void`\>

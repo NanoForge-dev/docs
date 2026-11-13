@@ -1,0 +1,41 @@
+---
+title: "UDPServerIceConfig"
+description: "ICE options for {@link UDPServer}, used to make the server reachable from behind a NAT on a predictable port."
+---
+
+> **UDPServerIceConfig** = `object`
+
+Defined in: [modules/network/src/server/udp.server.network.ts:41](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/udp.server.network.ts#L41)
+
+ICE options for UDPServer, used to make the server reachable from
+behind a NAT on a predictable port.
+
+## Properties
+
+### advertiseIp?
+
+> `optional` **advertiseIp?**: `string`
+
+Defined in: [modules/network/src/server/udp.server.network.ts:47](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/udp.server.network.ts#L47)
+
+Public address substituted into host candidates before they are sent.
+
+***
+
+### iceServers?
+
+> `optional` **iceServers?**: `RTCIceServer`[]
+
+Defined in: [modules/network/src/server/udp.server.network.ts:43](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/udp.server.network.ts#L43)
+
+STUN and TURN servers used while gathering candidates.
+
+***
+
+### port?
+
+> `optional` **port?**: `number`
+
+Defined in: [modules/network/src/server/udp.server.network.ts:45](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/udp.server.network.ts#L45)
+
+Fixed UDP port shared by every peer through ICE UDP multiplexing.

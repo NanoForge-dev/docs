@@ -1,0 +1,72 @@
+---
+title: "NetworkConfig"
+description: "Environment-variable configuration shared by the client and server network libraries."
+---
+
+Defined in: [modules/network/src/shared/config.network.ts:39](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L39)
+
+Environment-variable configuration shared by the client and server network
+libraries.
+
+## Remarks
+
+Settings both sides need to build their own peer connection (ICE servers)
+are inherited by `ClientConfigNetwork` and `ServerConfigNetwork`.
+
+## Extended by
+
+- [`ClientConfigNetwork`](/references/engine/3.0.0/network/client/classes/ClientConfigNetwork)
+- [`ServerConfigNetwork`](/references/engine/3.0.0/network/server/classes/ServerConfigNetwork)
+
+## Properties
+
+### ICE\_SERVERS
+
+> **ICE\_SERVERS**: `RTCIceServer`[]
+
+Defined in: [modules/network/src/shared/config.network.ts:67](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L67)
+
+STUN and TURN servers used while gathering ICE candidates.
+
+#### Remarks
+
+Used by both the client and the server peer connection. A STUN entry lets
+a peer behind a NAT discover its own public address, and a TURN entry
+relays traffic when no direct path exists — typically a client on a
+network that blocks UDP.
+
+Accepts a comma-separated list of `stun:`/`turn:` URLs, or a JSON array of
+`RTCIceServer` objects. Use the JSON form for TURN: credentials must be
+given as separate `username`/`credential` fields, since they cannot be
+embedded in the URL. Invalid values are rejected at startup rather than
+failing on the first client connection.
+
+#### Default
+
+```ts
+[]
+```
+
+#### Example
+
+```sh
+ICE_SERVERS=stun:stun.example.com:3478,stun:stun2.example.com:3478
+ICE_SERVERS='[{"urls":"turn:turn.example.com:3478","username":"u","credential":"p"}]'
+```
+
+***
+
+### NETWORK\_MODE
+
+> **NETWORK\_MODE**: `"dedicated"` \| `"p2p"`
+
+Defined in: [modules/network/src/shared/config.network.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L78)
+
+`p2p` when the game's `nanoforge.config.ts` sets `network: "p2p"`: the
+server app runs in the host player's browser. Set by the `nf` CLI.
+
+#### Default
+
+```ts
+"dedicated"
+```

@@ -1,0 +1,13 @@
+---
+title: "EDITOR_PROTOCOL_VERSION"
+description: "Version of the editor ↔ engine bridge protocol. Sent by the engine in the {@link EditorBridgeEvent.Hello} event and by the editor in the {@link EditorBridgeCommand.Welcome} command, so each side can detect a mismatch. See docs/editor-protocol.md."
+---
+
+> `const` **EDITOR\_PROTOCOL\_VERSION**: `1` = `1`
+
+Defined in: [modules/editor/src/protocol.ts:28](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L28)
+
+Version of the editor ↔ engine bridge protocol. Sent by the engine in the
+[EditorBridgeEvent.Hello](/references/engine/3.0.0/editor-lib/enumerations/EditorBridgeEvent#hello) event and by the editor in the
+[EditorBridgeCommand.Welcome](/references/engine/3.0.0/editor-lib/enumerations/EditorBridgeCommand#welcome) command, so each side can detect a
+mismatch. See `docs/editor-protocol.md`.

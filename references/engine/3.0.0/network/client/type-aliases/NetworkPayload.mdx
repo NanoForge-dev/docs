@@ -1,0 +1,19 @@
+---
+title: "NetworkPayload"
+description: "Anything the network methods can send."
+---
+
+> **NetworkPayload** = [`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData) \| `ArrayBuffer` \| `ArrayBufferView` \| `string` \| `number` \| `boolean` \| `null` \| `object`
+
+Defined in: [modules/network/src/shared/network-data.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L72)
+
+Anything the network methods can send.
+
+## Remarks
+
+- `NetworkData`: its bytes, so a received packet can be relayed.
+- `ArrayBuffer` or any `ArrayBufferView` (`Uint8Array`, `DataView`, …): the
+  bytes as they are.
+- `string`: its UTF-8 text, read back with `NetworkData.text`.
+- Any other value: its `JSON.stringify` text, read back with
+  `NetworkData.json`.

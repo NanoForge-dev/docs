@@ -1,0 +1,29 @@
+---
+title: "Default"
+description: "Property decorator that supplies a fallback value when the environment variable is undefined or null."
+---
+
+> **Default**(`defaultValue`): `PropertyDecorator`
+
+Defined in: [packages/env/src/decorators/default.decorator.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/env/src/decorators/default.decorator.ts#L15)
+
+Property decorator that supplies a fallback value when the environment
+variable is `undefined` or `null`.
+
+## Parameters
+
+### defaultValue
+
+`unknown`
+
+The value to use when the property is absent.
+
+## Returns
+
+`PropertyDecorator`
+
+## Remarks
+
+Pairs with `class-transformer`'s `@Expose` and `class-validator`
+decorators. The default is deep-cloned via `JSON.parse(JSON.stringify(…))`
+so objects are not shared between instances.

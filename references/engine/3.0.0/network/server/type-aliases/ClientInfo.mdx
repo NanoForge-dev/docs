@@ -1,0 +1,39 @@
+---
+title: "ClientInfo"
+description: "A client session, spanning every transport it is connected with."
+---
+
+> **ClientInfo** = `object`
+
+Defined in: [modules/network/src/server/client-registry.ts:32](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L32)
+
+A client session, spanning every transport it is connected with.
+
+## Properties
+
+### connectedAt
+
+> **connectedAt**: `number`
+
+Defined in: [modules/network/src/server/client-registry.ts:35](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L35)
+
+Timestamp (ms since epoch) of the first transport connection.
+
+***
+
+### id
+
+> **id**: [`ClientId`](/references/engine/3.0.0/network/server/type-aliases/ClientId)
+
+Defined in: [modules/network/src/server/client-registry.ts:33](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L33)
+
+***
+
+### transports
+
+> **transports**: `Partial`\<`Record`\<[`Transport`](/references/engine/3.0.0/network/server/type-aliases/Transport), [`ConnectionInfo`](/references/engine/3.0.0/network/server/type-aliases/ConnectionInfo)\>\>
+
+Defined in: [modules/network/src/server/client-registry.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/client-registry.ts#L40)
+
+Transports currently attached to the session. Live: an entry appears when
+a transport joins and disappears when it closes.

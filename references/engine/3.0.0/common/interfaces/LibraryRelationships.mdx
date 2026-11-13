@@ -1,0 +1,40 @@
+---
+title: "LibraryRelationships"
+description: "Ordering relationships between a library and other libraries, referenced by their key. In runBefore and runAfter, \"*\" stands for every other library."
+---
+
+Defined in: [packages/common/src/library/relationship.type.ts:6](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/relationship.type.ts#L6)
+
+Ordering relationships between a library and other libraries, referenced
+by their `key`. In `runBefore` and `runAfter`, `"*"` stands for every
+other library.
+
+## Properties
+
+### dependencies
+
+> **dependencies**: `string`[]
+
+Defined in: [packages/common/src/library/relationship.type.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/relationship.type.ts#L8)
+
+Keys of libraries that must be initialized before this one.
+
+***
+
+### runAfter
+
+> **runAfter**: `string`[]
+
+Defined in: [packages/common/src/library/relationship.type.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/relationship.type.ts#L12)
+
+Keys of libraries this one must run after, each tick.
+
+***
+
+### runBefore
+
+> **runBefore**: `string`[]
+
+Defined in: [packages/common/src/library/relationship.type.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/library/relationship.type.ts#L10)
+
+Keys of libraries this one must run before, each tick.

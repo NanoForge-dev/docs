@@ -1,0 +1,135 @@
+---
+title: "NfNotFound"
+description: "Thrown when a requested resource (asset, library-contributed context key, etc.) cannot be found."
+---
+
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:7](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/not-found.exception.ts#L7)
+
+Thrown when a requested resource (asset, library-contributed context key,
+etc.) cannot be found.
+
+## Extends
+
+- [`NfException`](/references/engine/3.0.0/common/classes/NfException)
+
+## Constructors
+
+### Constructor
+
+> **new NfNotFound**(`item`, `type?`): `NfNotFound`
+
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:16](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/not-found.exception.ts#L16)
+
+#### Parameters
+
+##### item
+
+`string`
+
+Name or path of the missing resource.
+
+##### type?
+
+`string`
+
+Optional category label (e.g. "Asset").
+
+#### Returns
+
+`NfNotFound`
+
+#### Overrides
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`constructor`](/references/engine/3.0.0/common/classes/NfException#constructor)
+
+## Properties
+
+### cause?
+
+> `optional` **cause?**: `unknown`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es2022.error.d.ts:24
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`cause`](/references/engine/3.0.0/common/classes/NfException#cause)
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1075
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`message`](/references/engine/3.0.0/common/classes/NfException#message)
+
+***
+
+### name
+
+> **name**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1074
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`name`](/references/engine/3.0.0/common/classes/NfException#name)
+
+***
+
+### stack?
+
+> `optional` **stack?**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1076
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`stack`](/references/engine/3.0.0/common/classes/NfException#stack)
+
+## Accessors
+
+### code
+
+#### Get Signature
+
+> **get** **code**(): `number`
+
+Defined in: [packages/common/src/exception/exceptions/not-found.exception.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/not-found.exception.ts#L8)
+
+HTTP-style numeric code identifying the error category.
+
+##### Returns
+
+`number`
+
+#### Overrides
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`code`](/references/engine/3.0.0/common/classes/NfException#code)
+
+## Methods
+
+### isError()
+
+> `static` **isError**(`error`): `error is Error`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.esnext.error.d.ts:21
+
+Indicates whether the argument provided is a built-in Error instance or not.
+
+#### Parameters
+
+##### error
+
+`unknown`
+
+#### Returns
+
+`error is Error`
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`isError`](/references/engine/3.0.0/common/classes/NfException#iserror)

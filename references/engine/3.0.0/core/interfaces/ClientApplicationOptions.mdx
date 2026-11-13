@@ -1,0 +1,49 @@
+---
+title: "ClientApplicationOptions"
+description: "Options accepted by NanoforgeFactory.createClient."
+---
+
+Defined in: [application-options.type.ts:23](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/application-options.type.ts#L23)
+
+Options accepted by `NanoforgeFactory.createClient`.
+
+## Extends
+
+- [`ApplicationOptions`](/references/engine/3.0.0/core/interfaces/ApplicationOptions)
+
+## Properties
+
+### tickRate
+
+> **tickRate**: `number`
+
+Defined in: [application-options.type.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/application-options.type.ts#L13)
+
+Target game-loop frequency in ticks per second.
+
+#### Default
+
+```ts
+60
+```
+
+#### Inherited from
+
+[`ApplicationOptions`](/references/engine/3.0.0/core/interfaces/ApplicationOptions).[`tickRate`](/references/engine/3.0.0/core/interfaces/ApplicationOptions#tickrate)
+
+***
+
+### viewport?
+
+> `optional` **viewport?**: `ViewportOptions`
+
+Defined in: [application-options.type.ts:33](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/application-options.type.ts#L33)
+
+Design resolution and fit mode of the game view. Game coordinates are
+expressed in this resolution and scaled to the actual window size.
+
+#### Example
+
+```ts
+NanoforgeFactory.createClient({ viewport: { width: 1920, height: 1080, fit: "contain" } });
+```

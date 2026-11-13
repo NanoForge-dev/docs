@@ -1,0 +1,145 @@
+---
+title: "ClientConfigNetwork"
+description: "Environment-variable configuration for NetworkClientLibrary."
+---
+
+Defined in: [modules/network/src/client/config.client.network.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/config.client.network.ts#L19)
+
+Environment-variable configuration for `NetworkClientLibrary`.
+
+## Remarks
+
+Resolved via `registerEnv(ClientConfigNetwork, ctx.env)` during `__init`.
+
+## Extends
+
+- [`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig)
+
+## Constructors
+
+### Constructor
+
+> **new ClientConfigNetwork**(): `ClientConfigNetwork`
+
+#### Returns
+
+`ClientConfigNetwork`
+
+#### Inherited from
+
+`NetworkConfig.constructor`
+
+## Properties
+
+### ICE\_SERVERS
+
+> **ICE\_SERVERS**: `RTCIceServer`[]
+
+Defined in: [modules/network/src/shared/config.network.ts:67](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L67)
+
+STUN and TURN servers used while gathering ICE candidates.
+
+#### Remarks
+
+Used by both the client and the server peer connection. A STUN entry lets
+a peer behind a NAT discover its own public address, and a TURN entry
+relays traffic when no direct path exists — typically a client on a
+network that blocks UDP.
+
+Accepts a comma-separated list of `stun:`/`turn:` URLs, or a JSON array of
+`RTCIceServer` objects. Use the JSON form for TURN: credentials must be
+given as separate `username`/`credential` fields, since they cannot be
+embedded in the URL. Invalid values are rejected at startup rather than
+failing on the first client connection.
+
+#### Default
+
+```ts
+[]
+```
+
+#### Example
+
+```sh
+ICE_SERVERS=stun:stun.example.com:3478,stun:stun2.example.com:3478
+ICE_SERVERS='[{"urls":"turn:turn.example.com:3478","username":"u","credential":"p"}]'
+```
+
+#### Inherited from
+
+[`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig).[`ICE_SERVERS`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig#ice_servers)
+
+***
+
+### NETWORK\_MODE
+
+> **NETWORK\_MODE**: `"dedicated"` \| `"p2p"`
+
+Defined in: [modules/network/src/shared/config.network.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/config.network.ts#L78)
+
+`p2p` when the game's `nanoforge.config.ts` sets `network: "p2p"`: the
+server app runs in the host player's browser. Set by the `nf` CLI.
+
+#### Default
+
+```ts
+"dedicated"
+```
+
+#### Inherited from
+
+[`NetworkConfig`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig).[`NETWORK_MODE`](/references/engine/3.0.0/network/index/interfaces/NetworkConfig#network_mode)
+
+***
+
+### SERVER\_ADDRESS
+
+> **SERVER\_ADDRESS**: `string`
+
+Defined in: [modules/network/src/client/config.client.network.ts:45](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/config.client.network.ts#L45)
+
+Hostname or IP address of the game server.
+
+***
+
+### SERVER\_TCP\_PORT?
+
+> `optional` **SERVER\_TCP\_PORT?**: `string`
+
+Defined in: [modules/network/src/client/config.client.network.ts:29](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/config.client.network.ts#L29)
+
+Port of the server's TCP WebSocket endpoint.
+
+#### Remarks
+
+Either this or `SERVER_UDP_PORT` (or both) must be set.
+
+***
+
+### SERVER\_UDP\_PORT?
+
+> `optional` **SERVER\_UDP\_PORT?**: `string`
+
+Defined in: [modules/network/src/client/config.client.network.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/config.client.network.ts#L40)
+
+Port of the server's UDP (WebRTC signaling) endpoint.
+
+#### Remarks
+
+Either this or `SERVER_TCP_PORT` (or both) must be set.
+
+***
+
+### WSS
+
+> **WSS**: `boolean`
+
+Defined in: [modules/network/src/client/config.client.network.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/config.client.network.ts#L56)
+
+Use secure WebSocket (`wss://`) connections.
+
+#### Default
+
+```ts
+false
+```

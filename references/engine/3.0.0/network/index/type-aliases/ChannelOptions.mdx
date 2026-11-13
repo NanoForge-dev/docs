@@ -1,0 +1,29 @@
+---
+title: "ChannelOptions"
+description: "Options of the network methods."
+---
+
+> **ChannelOptions** = `object`
+
+Defined in: [modules/network/src/shared/channels.ts:45](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L45)
+
+Options of the network methods.
+
+## Example
+
+```ts
+ctx.network.sendData(data, { channel: Channel.UnreliableOrdered });
+```
+
+## Properties
+
+### channel?
+
+> `optional` **channel?**: [`Channel`](/references/engine/3.0.0/network/index/enumerations/Channel)
+
+Defined in: [modules/network/src/shared/channels.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L52)
+
+Channel to send on or read from. Sending defaults to the packet
+definition's channel for typed packets and to `Channel.ReliableOrdered`
+otherwise; reading and connection checks cover every configured channel
+when omitted.

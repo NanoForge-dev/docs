@@ -1,0 +1,45 @@
+---
+title: "WheelState"
+description: "Snapshot of the scroll wheel state for the current frame."
+---
+
+> **WheelState** = `object`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:62](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L62)
+
+Snapshot of the scroll wheel state for the current frame.
+
+## Remarks
+
+Returned by `InputLibrary.getWheelState`.  All deltas accumulate
+within the frame and are reset to `0` at the start of the next frame.
+
+## Properties
+
+### deltaX
+
+> **deltaX**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L64)
+
+Accumulated horizontal scroll delta.
+
+***
+
+### deltaY
+
+> **deltaY**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:66](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L66)
+
+Accumulated vertical scroll delta.
+
+***
+
+### deltaZ
+
+> **deltaZ**: `number`
+
+Defined in: [modules/input/src/keyboard-mouse/mouse.types.ts:68](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/mouse.types.ts#L68)
+
+Accumulated depth (z-axis) scroll delta.

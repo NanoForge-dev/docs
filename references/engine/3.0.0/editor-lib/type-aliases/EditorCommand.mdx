@@ -1,0 +1,17 @@
+---
+title: "EditorCommand"
+description: "Reserved editor → engine command names, handled by EditorLibrary itself (pause/resume/step/stop) — no app-side wiring needed."
+---
+
+> **EditorCommand** = [`EditorBridgeCommand`](/references/engine/3.0.0/editor-lib/enumerations/EditorBridgeCommand)
+
+Defined in: [modules/editor/src/editor-command.enum.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/editor-command.enum.ts#L12)
+
+Reserved editor → engine command names, handled by `EditorLibrary` itself
+(pause/resume/step/stop) — no app-side wiring needed.
+
+## Example
+
+```ts
+fromEditor.emit(EditorCommand.Pause);
+```

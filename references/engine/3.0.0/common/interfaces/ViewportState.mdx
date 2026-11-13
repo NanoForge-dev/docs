@@ -1,0 +1,155 @@
+---
+title: "ViewportState"
+description: "Immutable snapshot of the viewport, recomputed whenever the window or container changes size."
+---
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:54](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L54)
+
+Immutable snapshot of the viewport, recomputed whenever the window or
+container changes size.
+
+## Remarks
+
+All `CSS px` values are relative to the container's top-left corner.
+A game point `(x, y)` is drawn at
+`(contentLeft + originX + x * scaleX, contentTop + originY + y * scaleY)`.
+
+## Properties
+
+### containerHeight
+
+> `readonly` **containerHeight**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:58](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L58)
+
+Container height, in CSS px.
+
+***
+
+### containerWidth
+
+> `readonly` **containerWidth**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L56)
+
+Container width, in CSS px.
+
+***
+
+### contentLeft
+
+> `readonly` **contentLeft**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:76](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L76)
+
+Horizontal letterbox offset of the drawn area inside the container, in CSS px (`contain`).
+
+***
+
+### contentTop
+
+> `readonly` **contentTop**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L78)
+
+Vertical letterbox offset of the drawn area inside the container, in CSS px (`contain`).
+
+***
+
+### designHeight
+
+> `readonly` **designHeight**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L64)
+
+Design height, in game units.
+
+***
+
+### designWidth
+
+> `readonly` **designWidth**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:62](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L62)
+
+Design width, in game units.
+
+***
+
+### fit
+
+> `readonly` **fit**: [`ViewportFit`](/references/engine/3.0.0/common/type-aliases/ViewportFit)
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:66](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L66)
+
+Effective fit mode.
+
+***
+
+### originX
+
+> `readonly` **originX**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:80](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L80)
+
+Horizontal crop offset (≤ 0) of the game origin inside the drawn area, in CSS px (`cover`).
+
+***
+
+### originY
+
+> `readonly` **originY**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:82](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L82)
+
+Vertical crop offset (≤ 0) of the game origin inside the drawn area, in CSS px (`cover`).
+
+***
+
+### pixelRatio
+
+> `readonly` **pixelRatio**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:60](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L60)
+
+`window.devicePixelRatio` at compute time.
+
+***
+
+### scaleX
+
+> `readonly` **scaleX**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:68](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L68)
+
+Horizontal game → CSS px scale.
+
+***
+
+### scaleY
+
+> `readonly` **scaleY**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L70)
+
+Vertical game → CSS px scale.
+
+***
+
+### visibleHeight
+
+> `readonly` **visibleHeight**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L74)
+
+Height of the drawn area (the canvas size), in CSS px.
+
+***
+
+### visibleWidth
+
+> `readonly` **visibleWidth**: `number`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L72)
+
+Width of the drawn area (the canvas size), in CSS px.

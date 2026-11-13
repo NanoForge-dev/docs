@@ -1,0 +1,54 @@
+---
+title: "Channel"
+description: "Delivery guarantees a packet can be sent with."
+---
+
+Defined in: [modules/network/src/shared/channels.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L9)
+
+Delivery guarantees a packet can be sent with.
+
+## Remarks
+
+Reliable channels are carried by the TCP WebSocket, unreliable channels by
+WebRTC data channels.  Over TCP, `ReliableUnordered` is delivered in order
+in practice: it only promises that nothing is lost.
+
+## Enumeration Members
+
+### ReliableOrdered
+
+> **ReliableOrdered**: `"reliable-ordered"`
+
+Defined in: [modules/network/src/shared/channels.ts:11](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L11)
+
+Never lost, delivered in send order.
+
+***
+
+### ReliableUnordered
+
+> **ReliableUnordered**: `"reliable-unordered"`
+
+Defined in: [modules/network/src/shared/channels.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L13)
+
+Never lost, no ordering promise.
+
+***
+
+### UnreliableOrdered
+
+> **UnreliableOrdered**: `"unreliable-ordered"`
+
+Defined in: [modules/network/src/shared/channels.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L15)
+
+May be lost; a packet older than the last one delivered is dropped.
+
+***
+
+### UnreliableUnordered
+
+> **UnreliableUnordered**: `"unreliable-unordered"`
+
+Defined in: [modules/network/src/shared/channels.ts:17](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/channels.ts#L17)
+
+May be lost or arrive in any order.

@@ -1,0 +1,21 @@
+---
+title: "TransformToBoolean"
+description: "Property decorator that transforms the string environment variable value \"true\" or \"false\" into a native boolean."
+---
+
+> **TransformToBoolean**(): `PropertyDecorator`
+
+Defined in: [packages/env/src/decorators/transform-to-boolean.decorator.ts:18](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/env/src/decorators/transform-to-boolean.decorator.ts#L18)
+
+Property decorator that transforms the string environment variable value
+`"true"` or `"false"` into a native `boolean`.
+
+## Returns
+
+`PropertyDecorator`
+
+## Remarks
+
+Returns `undefined` for any value that is neither `"true"` nor `"false"`.
+Pair with `@IsBoolean()` and `@Default(false)` for a fully validated and
+defaulted boolean property.

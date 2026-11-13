@@ -1,0 +1,427 @@
+---
+title: "Registry"
+---
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:47
+
+## Extends
+
+- `ClassHandle`
+
+## Methods
+
+### \[dispose\]()
+
+> **\[dispose\]**(): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:16
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`ClassHandle.[dispose]`
+
+***
+
+### addComponent()
+
+> **addComponent**(`_0`, `_1`): `any`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:64
+
+#### Parameters
+
+##### \_0
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+##### \_1
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+`any`
+
+***
+
+### addSystem()
+
+> **addSystem**(`_0`): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:57
+
+#### Parameters
+
+##### \_0
+
+[`System`](/references/engine/3.0.0/ecs/index/type-aliases/System)
+
+#### Returns
+
+`void`
+
+***
+
+### clearEntities()
+
+> **clearEntities**(): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:55
+
+#### Returns
+
+`void`
+
+***
+
+### clearSystems()
+
+> **clearSystems**(): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:58
+
+#### Returns
+
+`void`
+
+***
+
+### clone()
+
+> **clone**(): `this`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:17
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+`ClassHandle.clone`
+
+***
+
+### delete()
+
+> **delete**(): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:12
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`ClassHandle.delete`
+
+***
+
+### deleteLater()
+
+> **deleteLater**(): `this`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:13
+
+#### Returns
+
+`this`
+
+#### Inherited from
+
+`ClassHandle.deleteLater`
+
+***
+
+### entityFromIndex()
+
+> **entityFromIndex**(`_0`): [`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:59
+
+#### Parameters
+
+##### \_0
+
+`number`
+
+#### Returns
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+***
+
+### getComponents()
+
+> **getComponents**(`_0`): [`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:50
+
+#### Parameters
+
+##### \_0
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+[`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+***
+
+### getComponentsConst()
+
+> **getComponentsConst**(`_0`): [`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:49
+
+#### Parameters
+
+##### \_0
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+[`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+***
+
+### getEntityComponent()
+
+> **getEntityComponent**(`_0`, `_1`): `any`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:63
+
+#### Parameters
+
+##### \_0
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+##### \_1
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+`any`
+
+***
+
+### getEntityComponentConst()
+
+> **getEntityComponentConst**(`_0`, `_1`): `any`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:62
+
+#### Parameters
+
+##### \_0
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+##### \_1
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+`any`
+
+***
+
+### getIndexedZipper()
+
+> **getIndexedZipper**(`_0`): `any`[]
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:53
+
+#### Parameters
+
+##### \_0
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)[]
+
+#### Returns
+
+`any`[]
+
+***
+
+### getZipper()
+
+> **getZipper**(`_0`): `any`[]
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:52
+
+#### Parameters
+
+##### \_0
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)[]
+
+#### Returns
+
+`any`[]
+
+***
+
+### isAliasOf()
+
+> **isAliasOf**(`other`): `boolean`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:11
+
+#### Parameters
+
+##### other
+
+`ClassHandle`
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+`ClassHandle.isAliasOf`
+
+***
+
+### isDeleted()
+
+> **isDeleted**(): `boolean`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:14
+
+#### Returns
+
+`boolean`
+
+#### Inherited from
+
+`ClassHandle.isDeleted`
+
+***
+
+### killEntity()
+
+> **killEntity**(`_0`): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:54
+
+#### Parameters
+
+##### \_0
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+#### Returns
+
+`void`
+
+***
+
+### maxEntities()
+
+> **maxEntities**(): `number`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:61
+
+#### Returns
+
+`number`
+
+***
+
+### registerComponent()
+
+> **registerComponent**(`_0`): [`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:48
+
+#### Parameters
+
+##### \_0
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+[`SparseArray`](/references/engine/3.0.0/ecs/index/interfaces/SparseArray)
+
+***
+
+### removeComponent()
+
+> **removeComponent**(`_0`, `_1`): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:56
+
+#### Parameters
+
+##### \_0
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+##### \_1
+
+[`Component`](/references/engine/3.0.0/ecs/index/type-aliases/Component)
+
+#### Returns
+
+`void`
+
+***
+
+### removeSystem()
+
+> **removeSystem**(`_0`): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:60
+
+#### Parameters
+
+##### \_0
+
+`number`
+
+#### Returns
+
+`void`
+
+***
+
+### runSystems()
+
+> **runSystems**(`_0`): `void`
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:65
+
+#### Parameters
+
+##### \_0
+
+`any`
+
+#### Returns
+
+`void`
+
+***
+
+### spawnEntity()
+
+> **spawnEntity**(): [`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)
+
+Defined in: modules/ecs/lib/web/libecs.d.ts:51
+
+#### Returns
+
+[`Entity`](/references/engine/3.0.0/ecs/index/interfaces/Entity)

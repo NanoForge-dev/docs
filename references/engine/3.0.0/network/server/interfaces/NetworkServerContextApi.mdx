@@ -1,0 +1,150 @@
+---
+title: "NetworkServerContextApi"
+description: "Public surface of NetworkServerLibrary, exposed on Context.network."
+---
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L70)
+
+Public surface of `NetworkServerLibrary`, exposed on `Context.network`.
+
+## Remarks
+
+Every method takes an optional `{ channel }`.  Reliable channels need
+`LISTENING_TCP_PORT`, unreliable ones `LISTENING_UDP_PORT`; using a channel
+whose port is not configured throws.
+
+## Properties
+
+### clients
+
+> `readonly` **clients**: [`ClientsApi`](/references/engine/3.0.0/network/server/interfaces/ClientsApi)
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L74)
+
+Client sessions, shared by TCP and UDP: lookup and connect/disconnect callbacks.
+
+***
+
+### packets
+
+> `readonly` **packets**: [`ServerPacketsApi`](/references/engine/3.0.0/network/server/interfaces/ServerPacketsApi)
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L72)
+
+Typed packets: per-type listeners, `read` and sending.
+
+## Methods
+
+### getClientInfo()
+
+> **getClientInfo**(`clientId`): [`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo) \| `undefined`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:94](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L94)
+
+Return what is known about a client session, `undefined` once it is gone.
+
+#### Parameters
+
+##### clientId
+
+`string`
+
+#### Returns
+
+[`ClientInfo`](/references/engine/3.0.0/network/server/type-aliases/ClientInfo) \| `undefined`
+
+***
+
+### getConnectedClients()
+
+> **getConnectedClients**(`options?`): `string`[]
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:92](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L92)
+
+Return the clients reachable on `channel`, or on any configured channel.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`string`[]
+
+***
+
+### getReceivedPackets()
+
+> **getReceivedPackets**(`options?`): `Map`\<`string`, [`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]\>
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:90](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L90)
+
+Return the packets each client sent since the last call, from `channel` or
+from every configured channel.  Call it once per frame:
+packets left unread for a whole tick are dropped.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`Map`\<`string`, [`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]\>
+
+***
+
+### sendToAll()
+
+> **sendToAll**(`data`, `options?`): `void`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:79](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L79)
+
+Send bytes, a string or a JSON value to every client, on
+`Channel.ReliableOrdered` unless another `channel` is given.
+
+#### Parameters
+
+##### data
+
+[`NetworkPayload`](/references/engine/3.0.0/network/client/type-aliases/NetworkPayload)
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`void`
+
+***
+
+### sendToClient()
+
+> **sendToClient**(`clientId`, `data`, `options?`): `void`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:84](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L84)
+
+Send bytes, a string or a JSON value to one client, on
+`Channel.ReliableOrdered` unless another `channel` is given.
+
+#### Parameters
+
+##### clientId
+
+`string`
+
+##### data
+
+[`NetworkPayload`](/references/engine/3.0.0/network/client/type-aliases/NetworkPayload)
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`void`

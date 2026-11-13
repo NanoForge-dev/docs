@@ -1,0 +1,45 @@
+---
+title: "ButtonState"
+description: "State of a digital button for the current frame."
+---
+
+> **ButtonState** = `object`
+
+Defined in: [modules/input/src/shared/button-state.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/shared/button-state.ts#L8)
+
+State of a digital button for the current frame.
+
+## Remarks
+
+`justPressed` / `justReleased` are `true` only on the frame where the
+transition happened.
+
+## Properties
+
+### justPressed
+
+> **justPressed**: `boolean`
+
+Defined in: [modules/input/src/shared/button-state.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/shared/button-state.ts#L12)
+
+`true` on the frame the button went down.
+
+***
+
+### justReleased
+
+> **justReleased**: `boolean`
+
+Defined in: [modules/input/src/shared/button-state.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/shared/button-state.ts#L14)
+
+`true` on the frame the button went up.
+
+***
+
+### pressed
+
+> **pressed**: `boolean`
+
+Defined in: [modules/input/src/shared/button-state.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/shared/button-state.ts#L10)
+
+`true` while the button is held.

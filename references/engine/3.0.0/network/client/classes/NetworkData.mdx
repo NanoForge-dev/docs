@@ -1,0 +1,109 @@
+---
+title: "NetworkData"
+description: "Payload of one received packet."
+---
+
+Defined in: [modules/network/src/shared/network-data.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L20)
+
+Payload of one received packet.
+
+## Remarks
+
+Returned by `getReceivedPackets`.  Like `NfFile`, it lets you read the
+payload in the format you need, but every method is synchronous since the
+bytes are already in memory.  Packets carry no format tag: read a packet the
+way it was sent, `text()` for a string, `json()` for any other value.
+
+## Example
+
+```ts
+for (const packet of ctx.network.getReceivedPackets()) {
+  const message = packet.json<{ type: string }>();
+}
+```
+
+## Constructors
+
+### Constructor
+
+> **new NetworkData**(`bytes`): `NetworkData`
+
+Defined in: [modules/network/src/shared/network-data.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L26)
+
+#### Parameters
+
+##### bytes
+
+`Uint8Array`
+
+Raw payload bytes.
+
+#### Returns
+
+`NetworkData`
+
+## Methods
+
+### arrayBuffer()
+
+> **arrayBuffer**(): `ArrayBuffer`
+
+Defined in: [modules/network/src/shared/network-data.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L40)
+
+Return the payload as a new `ArrayBuffer`.
+
+#### Returns
+
+`ArrayBuffer`
+
+***
+
+### bytes()
+
+> **bytes**(): `Uint8Array`\<`ArrayBuffer`\>
+
+Defined in: [modules/network/src/shared/network-data.ts:33](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L33)
+
+Return the payload as a new `Uint8Array`.
+
+#### Returns
+
+`Uint8Array`\<`ArrayBuffer`\>
+
+***
+
+### json()
+
+> **json**\<`T`\>(): `T`
+
+Defined in: [modules/network/src/shared/network-data.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L56)
+
+Parse the payload as JSON and return the result.
+
+#### Type Parameters
+
+##### T
+
+`T` = `any`
+
+#### Returns
+
+`T`
+
+#### Throws
+
+`SyntaxError` When the payload is not valid JSON.
+
+***
+
+### text()
+
+> **text**(): `string`
+
+Defined in: [modules/network/src/shared/network-data.ts:47](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/network-data.ts#L47)
+
+Decode the payload as a UTF-8 string.
+
+#### Returns
+
+`string`

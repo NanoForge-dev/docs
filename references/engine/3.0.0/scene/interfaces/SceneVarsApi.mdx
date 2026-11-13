@@ -1,0 +1,168 @@
+---
+title: "SceneVarsApi"
+description: "Vars kept by the scene manager, read and changed by scenes and systems (ctx.scenes.vars)."
+---
+
+Defined in: [modules/scene/src/scene-vars.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L42)
+
+Vars kept by the scene manager, read and changed by scenes and systems
+(`ctx.scenes.vars`).
+
+## Remarks
+
+A var belongs to the scene that made it: the scene being loaded or
+unloaded when it was made, or else the current scene. It is removed when
+that scene is unloaded, unless made `persistent`. A var made while no
+scene is loaded belongs to none.
+
+## Methods
+
+### get()
+
+> **get**\<`K`\>(`key`): [`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\> \| `undefined`
+
+Defined in: [modules/scene/src/scene-vars.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L56)
+
+A var's value, or `undefined` when it does not exist.
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string` & `object`
+
+#### Parameters
+
+##### key
+
+`K`
+
+#### Returns
+
+[`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\> \| `undefined`
+
+***
+
+### has()
+
+> **has**(`key`): `boolean`
+
+Defined in: [modules/scene/src/scene-vars.ts:58](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L58)
+
+Whether the var exists.
+
+#### Parameters
+
+##### key
+
+`string` & `object`
+
+#### Returns
+
+`boolean`
+
+***
+
+### init()
+
+> **init**\<`K`\>(`key`, `value`, `options?`): [`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\>
+
+Defined in: [modules/scene/src/scene-vars.ts:48](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L48)
+
+Makes a var with this value, unless it already exists.
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string` & `object`
+
+#### Parameters
+
+##### key
+
+`K`
+
+##### value
+
+[`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\>
+
+##### options?
+
+[`SceneVarOptions`](/references/engine/3.0.0/scene/interfaces/SceneVarOptions)
+
+#### Returns
+
+[`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\>
+
+The var's value: `value`, or the existing one.
+
+***
+
+### keys()
+
+> **keys**(): `string`[]
+
+Defined in: [modules/scene/src/scene-vars.ts:66](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L66)
+
+Keys of every var.
+
+#### Returns
+
+`string`[]
+
+***
+
+### remove()
+
+> **remove**(`key`): `boolean`
+
+Defined in: [modules/scene/src/scene-vars.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L64)
+
+Removes a var.
+
+#### Parameters
+
+##### key
+
+`string` & `object`
+
+#### Returns
+
+`boolean`
+
+Whether it existed.
+
+***
+
+### set()
+
+> **set**\<`K`\>(`key`, `value`, `options?`): `void`
+
+Defined in: [modules/scene/src/scene-vars.ts:54](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-vars.ts#L54)
+
+Changes a var's value. Makes it like `init` when it does not exist yet.
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string` & `object`
+
+#### Parameters
+
+##### key
+
+`K`
+
+##### value
+
+[`SceneVarValue`](/references/engine/3.0.0/scene/type-aliases/SceneVarValue)\<`K`\>
+
+##### options?
+
+[`SceneVarOptions`](/references/engine/3.0.0/scene/interfaces/SceneVarOptions)
+
+#### Returns
+
+`void`

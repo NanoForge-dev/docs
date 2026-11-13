@@ -1,0 +1,139 @@
+---
+title: "@nanoforge-dev/editor-lib"
+---
+
+<div align="center">
+    <br />
+    <p>
+        <a href="https://github.com/NanoForge-dev"><img src="https://raw.githubusercontent.com/NanoForge-dev/Engine/main/.github/logo.png" width="546" alt="NanoForge" /></a>
+    </p>
+    <br />
+    <p>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/editor-lib"><img src="https://img.shields.io/npm/v/@nanoforge-dev/editor-lib.svg?maxAge=3600" alt="npm version" /></a>
+        <a href="https://www.npmjs.com/package/@nanoforge-dev/editor-lib"><img src="https://img.shields.io/npm/dt/@nanoforge-dev/editor-lib.svg?maxAge=3600" alt="npm downloads" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml"><img src="https://github.com/NanoForge-dev/Engine/actions/workflows/tests.yml/badge.svg" alt="Tests status" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/commits/main/packages/editor"><img src="https://img.shields.io/github/last-commit/NanoForge-dev/Engine.svg?logo=github&logoColor=ffffff&path=packages%2Feditor" alt="Last commit" /></a>
+        <a href="https://github.com/NanoForge-dev/Engine/graphs/contributors"><img src="https://img.shields.io/github/contributors/NanoForge-dev/Engine.svg?maxAge=3600&logo=github&logoColor=fff&color=00c7be" alt="Contributors" /></a>
+    </p>
+</div>
+
+## About
+
+`@nanoforge-dev/editor-lib` is the bridge between a running NanoForge application and an external editor host. `EditorLibrary` turns the raw `toEditor`/`fromEditor` event-emitter pair supplied via `RunOptions.editor` into the `Context.editor` facade every other library sees, and handles the pause/resume/step/stop commands, run state reports, frame stats and log forwarding: see the [editor protocol](https://github.com/NanoForge-dev/Engine/blob/main/docs/docs/editor/protocol.mdx).
+
+It also provides `QueuedEventEmitter`, the event emitter an editor host gives a game in `RunOptions.editor`.
+
+## Installation
+
+**Node.js 26 or newer is required.**
+
+```sh
+npm install @nanoforge-dev/editor-lib
+yarn add @nanoforge-dev/editor-lib
+pnpm add @nanoforge-dev/editor-lib
+bun add @nanoforge-dev/editor-lib
+```
+
+## Example usage
+
+Register `EditorLibrary` alongside your other libraries. It does nothing when no editor started the app:
+
+```ts
+import { EditorLibrary } from "@nanoforge-dev/editor-lib";
+
+app.use(new EditorLibrary());
+```
+
+The editor host constructs one `QueuedEventEmitter` per direction and hands both to `RunOptions.editor`:
+
+```ts
+import { QueuedEventEmitter } from "@nanoforge-dev/editor-lib";
+
+const toEditor = new QueuedEventEmitter(); // engine -> editor
+const fromEditor = new QueuedEventEmitter(); // editor -> engine
+
+await app.init({ ...options, editor: { toEditor, fromEditor } });
+fromEditor.emit("pause");
+```
+
+Libraries talk to the editor through `Context.editor`, `undefined` when no editor started the game:
+
+```ts
+public override async __run(ctx: Context): Promise<void> {
+  ctx.editor?.emit("component-moved", entityId, position);
+}
+```
+
+One-time editor wiring goes in `__editorInit`, which `EditorLibrary` calls once on every library that has it, when the editor's `welcome` arrives:
+
+```ts
+import type { EditorAwareLibrary, EditorInitContext } from "@nanoforge-dev/editor-lib";
+
+class MyLibrary extends Library implements EditorAwareLibrary {
+  public async __editorInit(ctx: EditorInitContext): Promise<void> {
+    ctx.editor.on("hot-reload", (entity, component) => this.apply(entity, component));
+  }
+}
+```
+
+## Links
+
+- [GitHub][source]
+- [npm][npm]
+
+## Contributing
+
+Before creating an issue, please ensure that it hasn't already been reported/suggested, and double-check the
+[documentation][documentation].  
+See [the contribution guide][contributing] if you'd like to submit a PR.
+
+## Help
+
+If you don't understand something in the documentation, you are experiencing problems, or you just need a gentle nudge in the right direction, please don't hesitate to ask questions in [discussions][discussions].
+
+[documentation]: https://github.com/NanoForge-dev/Engine
+[discussions]: https://github.com/NanoForge-dev/Engine/discussions
+[source]: https://github.com/NanoForge-dev/Engine/tree/main/packages/editor
+[npm]: https://www.npmjs.com/package/@nanoforge-dev/editor-lib
+[contributing]: https://github.com/NanoForge-dev/Engine/blob/main/.github/CONTRIBUTING.md
+
+## Enumerations
+
+- [EditorBridgeCommand](/references/engine/3.0.0/editor-lib/enumerations/EditorBridgeCommand)
+- [EditorBridgeEvent](/references/engine/3.0.0/editor-lib/enumerations/EditorBridgeEvent)
+
+## Classes
+
+- [EditorLibrary](/references/engine/3.0.0/editor-lib/classes/EditorLibrary)
+- [QueuedEventEmitter](/references/engine/3.0.0/editor-lib/classes/QueuedEventEmitter)
+
+## Interfaces
+
+- [EditorAwareLibrary](/references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary)
+- [EditorChannels](/references/engine/3.0.0/editor-lib/interfaces/EditorChannels)
+- [EditorCommandMap](/references/engine/3.0.0/editor-lib/interfaces/EditorCommandMap)
+- [EditorContextApi](/references/engine/3.0.0/editor-lib/interfaces/EditorContextApi)
+- [EditorEventMap](/references/engine/3.0.0/editor-lib/interfaces/EditorEventMap)
+- [EditorFeatures](/references/engine/3.0.0/editor-lib/interfaces/EditorFeatures)
+- [EditorFrameStats](/references/engine/3.0.0/editor-lib/interfaces/EditorFrameStats)
+- [EditorHello](/references/engine/3.0.0/editor-lib/interfaces/EditorHello)
+- [EditorLog](/references/engine/3.0.0/editor-lib/interfaces/EditorLog)
+- [EditorNetworkStats](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkStats)
+- [EditorNetworkTotals](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals)
+- [EditorNetworkTrace](/references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTrace)
+- [EditorTiming](/references/engine/3.0.0/editor-lib/interfaces/EditorTiming)
+- [EditorWelcome](/references/engine/3.0.0/editor-lib/interfaces/EditorWelcome)
+
+## Type Aliases
+
+- [EditorCommand](/references/engine/3.0.0/editor-lib/type-aliases/EditorCommand)
+- [EditorInitContext](/references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext)
+- [EditorLogValue](/references/engine/3.0.0/editor-lib/type-aliases/EditorLogValue)
+- [EditorRunState](/references/engine/3.0.0/editor-lib/type-aliases/EditorRunState)
+- [EditorViewport](/references/engine/3.0.0/editor-lib/type-aliases/EditorViewport)
+
+## Variables
+
+- [EDITOR\_INIT\_HOOK](/references/engine/3.0.0/editor-lib/variables/EDITOR_INIT_HOOK)
+- [EDITOR\_PROTOCOL\_VERSION](/references/engine/3.0.0/editor-lib/variables/EDITOR_PROTOCOL_VERSION)
+- [EditorCommand](/references/engine/3.0.0/editor-lib/variables/EditorCommand)

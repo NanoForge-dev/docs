@@ -1,0 +1,53 @@
+---
+title: "PacketOptions"
+description: "Options of definePacket."
+---
+
+> **PacketOptions**\<`T`\> = `object`
+
+Defined in: [modules/network/src/shared/packet.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L20)
+
+Options of `definePacket`.
+
+## Type Parameters
+
+### T
+
+`T`
+
+Payload type of the packet.
+
+## Properties
+
+### channel?
+
+> `optional` **channel?**: [`Channel`](/references/engine/3.0.0/network/index/enumerations/Channel)
+
+Defined in: [modules/network/src/shared/packet.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L26)
+
+Channel the packet is sent on when `send` gets no `channel` option.
+
+#### Default Value
+
+`Channel.ReliableOrdered`
+
+***
+
+### validate?
+
+> `optional` **validate?**: (`data`) => `data is T`
+
+Defined in: [modules/network/src/shared/packet.ts:31](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L31)
+
+Check a received payload before it reaches listeners or `read`.  Packets
+that fail it, or make it throw, are dropped with a warning.
+
+#### Parameters
+
+##### data
+
+`unknown`
+
+#### Returns
+
+`data is T`

@@ -1,0 +1,162 @@
+---
+title: "ServerPacketsApi"
+description: "Typed packets of the server, exposed as ctx.network.packets."
+---
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L19)
+
+Typed packets of the server, exposed as `ctx.network.packets`.
+
+## Example
+
+```ts
+network.packets.on(Input, ({ key }, { clientId, ctx }) => handleInput(clientId, key, ctx));
+for (const { data, clientId } of ctx.network.packets.read(Input)) handleInput(clientId, data.key);
+ctx.network.packets.sendToAll(Move, move);
+```
+
+## Methods
+
+### on()
+
+> **on**\<`T`\>(`packet`, `listener`): () => `void`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:28](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L28)
+
+Be notified of every packet of a type, each tick before the ECS systems
+(not while paused).
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+##### listener
+
+[`PacketListener`](/references/engine/3.0.0/network/client/type-aliases/PacketListener)\<`NoInfer`\<`T`\>, [`ServerPacketInfo`](/references/engine/3.0.0/network/server/type-aliases/ServerPacketInfo)\>
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+#### Throws
+
+When another definition with the same name has another channel or
+`validate`.
+
+***
+
+### read()
+
+> **read**\<`T`\>(`packet`): ([`ServerPacketInfo`](/references/engine/3.0.0/network/server/type-aliases/ServerPacketInfo) & `object`)[]
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:38](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L38)
+
+Return the packets of a type received this tick, for an ECS system.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+#### Returns
+
+([`ServerPacketInfo`](/references/engine/3.0.0/network/server/type-aliases/ServerPacketInfo) & `object`)[]
+
+#### Throws
+
+When another definition with the same name has another channel or
+`validate`.
+
+***
+
+### sendToAll()
+
+> **sendToAll**\<`T`\>(`packet`, ...`args`): `void`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:47](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L47)
+
+Send a packet to every client reachable on the definition's channel,
+unless another `channel` is given.  `data` is left out for a packet without
+payload: `sendToAll(Start)`.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+##### args
+
+...[`PacketArgs`](/references/engine/3.0.0/network/client/type-aliases/PacketArgs)\<`NoInfer`\<`T`\>\>
+
+#### Returns
+
+`void`
+
+#### Throws
+
+When the channel's port was not configured, or `data` cannot be
+encoded as JSON.
+
+***
+
+### sendToClient()
+
+> **sendToClient**\<`T`\>(`clientId`, `packet`, ...`args`): `void`
+
+Defined in: [modules/network/src/server/network-server-context.type.ts:55](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/server/network-server-context.type.ts#L55)
+
+Send a packet to one client, on the definition's channel unless another
+`channel` is given.
+
+#### Type Parameters
+
+##### T
+
+`T`
+
+#### Parameters
+
+##### clientId
+
+`string`
+
+##### packet
+
+[`PacketDefinition`](/references/engine/3.0.0/network/index/interfaces/PacketDefinition)\<`T`\>
+
+##### args
+
+...[`PacketArgs`](/references/engine/3.0.0/network/client/type-aliases/PacketArgs)\<`NoInfer`\<`T`\>\>
+
+#### Returns
+
+`void`
+
+#### Throws
+
+When the channel's port was not configured, or `data` cannot be
+encoded as JSON.

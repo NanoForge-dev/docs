@@ -1,0 +1,43 @@
+---
+title: "EditorLog"
+---
+
+Defined in: [modules/editor/src/protocol.ts:129](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L129)
+
+## Properties
+
+### caller?
+
+> `optional` **caller?**: `string`
+
+Defined in: [modules/editor/src/protocol.ts:136](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L136)
+
+Where the game logged it (`logs.values`): `<bundle file or URL>:<line>:<column>`.
+
+***
+
+### level
+
+> **level**: `"error"` \| `"info"` \| `"debug"` \| `"warn"`
+
+Defined in: [modules/editor/src/protocol.ts:130](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L130)
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: [modules/editor/src/protocol.ts:132](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L132)
+
+The arguments of the console call, as one line of text.
+
+***
+
+### values?
+
+> `optional` **values?**: [`EditorLogValue`](/references/engine/3.0.0/editor-lib/type-aliases/EditorLogValue)[]
+
+Defined in: [modules/editor/src/protocol.ts:134](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L134)
+
+The arguments as trees (`logs.values`), made by the host's `serializeLogValue`.

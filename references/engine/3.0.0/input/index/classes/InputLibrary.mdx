@@ -1,0 +1,308 @@
+---
+title: "InputLibrary"
+description: "Built-in input library."
+---
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L21)
+
+Built-in input library.
+
+## Remarks
+
+Listens to browser `keydown`/`keyup` (on `window`) and `mousedown`/
+`mouseup`/`mousemove`/`wheel`/`mouseenter`/`mouseleave`/`blur`/
+`visibilitychange` (on the client container) and exposes a per-frame
+snapshot of the current input state on `Context.input`. Mouse and drag
+positions are in game coordinates (mapped through `Context.viewport`, so
+they follow the design resolution, fit mode and window resizes). Client-only —
+`__init` throws if `InitContext.container` is missing.
+
+## Extends
+
+- `Library`
+
+## Constructors
+
+### Constructor
+
+> **new InputLibrary**(): `InputLibrary`
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L26)
+
+#### Returns
+
+`InputLibrary`
+
+#### Overrides
+
+`Library.constructor`
+
+## Properties
+
+### key
+
+> `readonly` **key**: `"input"`
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:22](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L22)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+#### Overrides
+
+`Library.key`
+
+## Accessors
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): `LibraryRelationships`
+
+Defined in: packages/common/dist/index.d.ts:512
+
+**`Internal`**
+
+##### Returns
+
+`LibraryRelationships`
+
+#### Inherited from
+
+`Library.relationships`
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L42)
+
+Called once after the tick loop stops.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__clear`
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: packages/common/dist/index.d.ts:521
+
+Called every tick, in run order, whether or not the tick loop is
+paused — unlike `__run`. Use this for event/message draining that must
+not be affected by pause (e.g. listening for the command that resumes
+the loop), not for gameplay simulation.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`Library.__events`
+
+***
+
+### \_\_init()
+
+> **\_\_init**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:30](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L30)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Parameters
+
+##### ctx
+
+`InitContext`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__init`
+
+***
+
+### \_\_run()
+
+> **\_\_run**(): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:37](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L37)
+
+Called every tick, in run order, while the tick loop is active and not paused.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__run`
+
+***
+
+### expose()
+
+> **expose**(): [`InputContextApi`](/references/engine/3.0.0/input/index/interfaces/InputContextApi)
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:90](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L90)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+[`InputContextApi`](/references/engine/3.0.0/input/index/interfaces/InputContextApi)
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+#### Overrides
+
+`Library.expose`
+
+***
+
+### getDragState()
+
+> **getDragState**(): [`DragState`](/references/engine/3.0.0/input/index/type-aliases/DragState)
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:80](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L80)
+
+#### Returns
+
+[`DragState`](/references/engine/3.0.0/input/index/type-aliases/DragState)
+
+***
+
+### getMousePosition()
+
+> **getMousePosition**(): `object`
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:65](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L65)
+
+#### Returns
+
+`object`
+
+##### x
+
+> **x**: `number`
+
+##### y
+
+> **y**: `number`
+
+***
+
+### getMouseState()
+
+> **getMouseState**(): [`MouseState`](/references/engine/3.0.0/input/index/type-aliases/MouseState)
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L70)
+
+#### Returns
+
+[`MouseState`](/references/engine/3.0.0/input/index/type-aliases/MouseState)
+
+***
+
+### getPressedKeys()
+
+> **getPressedKeys**(): [`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)[]
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:55](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L55)
+
+#### Returns
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)[]
+
+***
+
+### getWheelState()
+
+> **getWheelState**(): [`WheelState`](/references/engine/3.0.0/input/index/type-aliases/WheelState)
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:85](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L85)
+
+#### Returns
+
+[`WheelState`](/references/engine/3.0.0/input/index/type-aliases/WheelState)
+
+***
+
+### isDragging()
+
+> **isDragging**(`button?`): `boolean`
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:75](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L75)
+
+#### Parameters
+
+##### button?
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)
+
+#### Returns
+
+`boolean`
+
+***
+
+### isKeyPressed()
+
+> **isKeyPressed**(`key`): `boolean` \| `undefined`
+
+Defined in: [modules/input/src/keyboard-mouse/input.library.ts:50](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/keyboard-mouse/input.library.ts#L50)
+
+#### Parameters
+
+##### key
+
+[`InputEnum`](/references/engine/3.0.0/input/index/enumerations/InputEnum)
+
+#### Returns
+
+`boolean` \| `undefined`
+
+`true`/`false` for a held/released key, `undefined` if the key
+has never been seen.
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: packages/common/dist/index.d.ts:536
+
+#### Returns
+
+`never`
+
+#### Inherited from
+
+`Library.throwNotInitializedError`

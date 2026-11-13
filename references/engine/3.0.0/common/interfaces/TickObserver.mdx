@@ -1,0 +1,80 @@
+---
+title: "TickObserver"
+description: "Observer of the tick loop (see AppContext.observeTicks)."
+---
+
+Defined in: [packages/common/src/context/context.type.ts:54](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L54)
+
+Observer of the tick loop (see `AppContext.observeTicks`).
+
+## Properties
+
+### timings?
+
+> `readonly` `optional` **timings?**: `boolean`
+
+Defined in: [packages/common/src/context/context.type.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L56)
+
+Whether `onHook` is wanted (read each tick): hooks are only timed when it is.
+
+## Methods
+
+### onHook()?
+
+> `optional` **onHook**(`key`, `ms`): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:58](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L58)
+
+Time a library spent in a hook (`__events` or `__run`) of the current tick, in ms.
+
+#### Parameters
+
+##### key
+
+`string`
+
+##### ms
+
+`number`
+
+#### Returns
+
+`void`
+
+***
+
+### onStop()?
+
+> `optional` **onStop**(): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:62](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L62)
+
+The loop stopped: every library was cleared.
+
+#### Returns
+
+`void`
+
+***
+
+### onTick()?
+
+> `optional` **onTick**(`ms`, `now`): `void`
+
+Defined in: [packages/common/src/context/context.type.ts:60](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/context/context.type.ts#L60)
+
+End of a tick, paused ones too: its duration in ms and the current time.
+
+#### Parameters
+
+##### ms
+
+`number`
+
+##### now
+
+`number`
+
+#### Returns
+
+`void`

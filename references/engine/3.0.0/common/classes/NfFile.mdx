@@ -1,0 +1,168 @@
+---
+title: "NfFile"
+description: "Represents a file asset that has been registered with the engine."
+---
+
+Defined in: [packages/common/src/common/file.ts:20](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L20)
+
+Represents a file asset that has been registered with the engine.
+
+## Remarks
+
+Instances are returned by `AssetContext.getAsset`. Each method lazily
+fetches the file from the engine's virtual file system and returns the
+content in the requested format.
+
+All read methods throw `NfFetchException` when the underlying `fetch`
+returns a non-OK response.
+
+## Example
+
+```ts
+const file = asset.getAsset("/textures/hero.png");
+const buffer = await file.arrayBuffer();
+```
+
+## Constructors
+
+### Constructor
+
+> **new NfFile**(`path`): `NfFile`
+
+Defined in: [packages/common/src/common/file.ts:26](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L26)
+
+#### Parameters
+
+##### path
+
+`string`
+
+Internal URL path used to fetch the file.
+
+#### Returns
+
+`NfFile`
+
+## Accessors
+
+### path
+
+#### Get Signature
+
+> **get** **path**(): `string`
+
+Defined in: [packages/common/src/common/file.ts:33](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L33)
+
+Internal URL path used to fetch the file.
+
+##### Returns
+
+`string`
+
+## Methods
+
+### arrayBuffer()
+
+> **arrayBuffer**(): `Promise`\<`ArrayBuffer`\>
+
+Defined in: [packages/common/src/common/file.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L42)
+
+Fetch the file and return its content as an `ArrayBuffer`.
+
+#### Returns
+
+`Promise`\<`ArrayBuffer`\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.
+
+***
+
+### blob()
+
+> **blob**(): `Promise`\<`Blob`\>
+
+Defined in: [packages/common/src/common/file.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L52)
+
+Fetch the file and return its content as a `Blob`.
+
+#### Returns
+
+`Promise`\<`Blob`\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.
+
+***
+
+### bytes()
+
+> **bytes**(): `Promise`\<`Uint8Array`\<`ArrayBuffer`\>\>
+
+Defined in: [packages/common/src/common/file.ts:62](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L62)
+
+Fetch the file and return its content as a `Uint8Array`.
+
+#### Returns
+
+`Promise`\<`Uint8Array`\<`ArrayBuffer`\>\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.
+
+***
+
+### formData()
+
+> **formData**(): `Promise`\<`FormData`\>
+
+Defined in: [packages/common/src/common/file.ts:72](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L72)
+
+Fetch the file and return its content as `FormData`.
+
+#### Returns
+
+`Promise`\<`FormData`\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.
+
+***
+
+### json()
+
+> **json**(): `Promise`\<`any`\>
+
+Defined in: [packages/common/src/common/file.ts:82](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L82)
+
+Fetch the file, parse it as JSON, and return the result.
+
+#### Returns
+
+`Promise`\<`any`\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.
+
+***
+
+### text()
+
+> **text**(): `Promise`\<`string`\>
+
+Defined in: [packages/common/src/common/file.ts:92](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/common/file.ts#L92)
+
+Fetch the file and return its content as a UTF-8 string.
+
+#### Returns
+
+`Promise`\<`string`\>
+
+#### Throws
+
+`NfFetchException` When the HTTP response is not OK.

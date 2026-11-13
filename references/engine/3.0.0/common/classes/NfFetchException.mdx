@@ -1,0 +1,139 @@
+---
+title: "NfFetchException"
+description: "Thrown when an HTTP fetch performed internally by the engine fails."
+---
+
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/fetch.exception.ts#L10)
+
+Thrown when an HTTP fetch performed internally by the engine fails.
+
+## Remarks
+
+Raised by `NfFile` methods when the underlying `fetch` call returns a
+non-OK HTTP response.
+
+## Extends
+
+- [`NfException`](/references/engine/3.0.0/common/classes/NfException)
+
+## Constructors
+
+### Constructor
+
+> **new NfFetchException**(`code`, `text`): `NfFetchException`
+
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/fetch.exception.ts#L21)
+
+#### Parameters
+
+##### code
+
+`number`
+
+HTTP status code of the failed response.
+
+##### text
+
+`string`
+
+Status text of the failed response.
+
+#### Returns
+
+`NfFetchException`
+
+#### Overrides
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`constructor`](/references/engine/3.0.0/common/classes/NfException#constructor)
+
+## Properties
+
+### cause?
+
+> `optional` **cause?**: `unknown`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es2022.error.d.ts:24
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`cause`](/references/engine/3.0.0/common/classes/NfException#cause)
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1075
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`message`](/references/engine/3.0.0/common/classes/NfException#message)
+
+***
+
+### name
+
+> **name**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1074
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`name`](/references/engine/3.0.0/common/classes/NfException#name)
+
+***
+
+### stack?
+
+> `optional` **stack?**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1076
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`stack`](/references/engine/3.0.0/common/classes/NfException#stack)
+
+## Accessors
+
+### code
+
+#### Get Signature
+
+> **get** **code**(): `number`
+
+Defined in: [packages/common/src/exception/exceptions/fetch.exception.ts:13](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/exception/exceptions/fetch.exception.ts#L13)
+
+HTTP-style numeric code identifying the error category.
+
+##### Returns
+
+`number`
+
+#### Overrides
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`code`](/references/engine/3.0.0/common/classes/NfException#code)
+
+## Methods
+
+### isError()
+
+> `static` **isError**(`error`): `error is Error`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.esnext.error.d.ts:21
+
+Indicates whether the argument provided is a built-in Error instance or not.
+
+#### Parameters
+
+##### error
+
+`unknown`
+
+#### Returns
+
+`error is Error`
+
+#### Inherited from
+
+[`NfException`](/references/engine/3.0.0/common/classes/NfException).[`isError`](/references/engine/3.0.0/common/classes/NfException#iserror)

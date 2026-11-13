@@ -1,0 +1,128 @@
+---
+title: "NfSceneCycleException"
+description: "Thrown when a scene ends up among its own parents."
+---
+
+Defined in: [modules/scene/src/scene-path.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-path.ts#L8)
+
+Thrown when a scene ends up among its own parents.
+
+## Extends
+
+- `NfException`
+
+## Constructors
+
+### Constructor
+
+> **new NfSceneCycleException**(`scene`): `NfSceneCycleException`
+
+Defined in: [modules/scene/src/scene-path.ts:14](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-path.ts#L14)
+
+#### Parameters
+
+##### scene
+
+`AnySceneClass`
+
+The scene found among its own parents.
+
+#### Returns
+
+`NfSceneCycleException`
+
+#### Overrides
+
+`NfException.constructor`
+
+## Properties
+
+### cause?
+
+> `optional` **cause?**: `unknown`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es2022.error.d.ts:24
+
+#### Inherited from
+
+`NfException.cause`
+
+***
+
+### message
+
+> **message**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1075
+
+#### Inherited from
+
+`NfException.message`
+
+***
+
+### name
+
+> **name**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1074
+
+#### Inherited from
+
+`NfException.name`
+
+***
+
+### stack?
+
+> `optional` **stack?**: `string`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.es5.d.ts:1076
+
+#### Inherited from
+
+`NfException.stack`
+
+## Accessors
+
+### code
+
+#### Get Signature
+
+> **get** **code**(): `number`
+
+Defined in: [modules/scene/src/scene-path.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-path.ts#L9)
+
+HTTP-style numeric code identifying the error category.
+
+##### Returns
+
+`number`
+
+#### Overrides
+
+`NfException.code`
+
+## Methods
+
+### isError()
+
+> `static` **isError**(`error`): `error is Error`
+
+Defined in: node\_modules/.pnpm/typescript@6.0.3/node\_modules/typescript/lib/lib.esnext.error.d.ts:21
+
+Indicates whether the argument provided is a built-in Error instance or not.
+
+#### Parameters
+
+##### error
+
+`unknown`
+
+#### Returns
+
+`error is Error`
+
+#### Inherited from
+
+`NfException.isError`

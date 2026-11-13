@@ -1,0 +1,186 @@
+---
+title: "NanoforgeServer"
+description: "Server-side NanoForge application."
+---
+
+Defined in: [nanoforge-server.ts:21](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-server.ts#L21)
+
+Server-side NanoForge application.
+
+## Remarks
+
+Extends `NanoforgeApplication` for use in Node.js server processes.
+Create an instance via `NanoforgeFactory.createServer`.
+
+## Example
+
+```ts
+const server = NanoforgeFactory.createServer();
+server.use(new NetworkServerLibrary());
+server.use(new EcsLibrary());
+await server.init(`files, env `);
+server.run();
+```
+
+## Extends
+
+- `NanoforgeApplication`
+
+## Properties
+
+### viewport?
+
+> `protected` `optional` **viewport?**: `InternalViewportState`
+
+Defined in: [nanoforge-application.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L44)
+
+Client-only viewport, created by `NanoforgeClient.init` before `initialize`.
+
+#### Inherited from
+
+`NanoforgeApplication.viewport`
+
+## Methods
+
+### init()
+
+> **init**(`options`): `Promise`\<`void`\>
+
+Defined in: [nanoforge-server.ts:35](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-server.ts#L35)
+
+Initialise all registered libraries in dependency order and prepare the
+engine for the game loop.
+
+#### Parameters
+
+##### options
+
+`ServerRunOptions`
+
+Run options providing the canvas container, files map, and
+  environment variables.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Must be called before `run`.  Resolves once every library's `__init`
+hook has completed.
+
+***
+
+### initialize()
+
+> `protected` **initialize**(`options`): `Promise`\<`void`\>
+
+Defined in: [nanoforge-application.ts:138](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L138)
+
+#### Parameters
+
+##### options
+
+`RunOptions` \| `ClientRunOptions`
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`NanoforgeApplication.initialize`
+
+***
+
+### run()
+
+> **run**(): `Promise`\<`void`\>
+
+Defined in: [nanoforge-application.ts:77](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L77)
+
+Start the game loop.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Remarks
+
+Must be called after `init` has resolved.
+
+#### Throws
+
+`NfNotInitializedException` When called before `init`.
+
+#### Inherited from
+
+`NanoforgeApplication.run`
+
+***
+
+### schedule()
+
+> `protected` **schedule**(`tick`, `delayMs`): `void`
+
+Defined in: [nanoforge-server.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-server.ts#L44)
+
+In a browser (a peer-to-peer host), ticks are timed by a worker: the
+timers of a hidden tab are throttled, which would slow the game down for
+every player.
+
+#### Parameters
+
+##### tick
+
+() => `void`
+
+##### delayMs
+
+`number`
+
+#### Returns
+
+`void`
+
+#### Overrides
+
+`NanoforgeApplication.schedule`
+
+***
+
+### use()
+
+> **use**\<`L`\>(`library`): `void`
+
+Defined in: [nanoforge-application.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/core/src/application/nanoforge-application.ts#L64)
+
+Registers a library. Single argument — the library owns its own
+context key (see `defineLibraryKey`).
+
+#### Type Parameters
+
+##### L
+
+`L` *extends* `Library`
+
+#### Parameters
+
+##### library
+
+`L`
+
+Library instance to register.
+
+#### Returns
+
+`void`
+
+#### Throws
+
+NfDuplicateLibraryException If the key is already
+registered or reserved (`"app"`, `"vars"`, `"assets"`).
+
+#### Inherited from
+
+`NanoforgeApplication.use`

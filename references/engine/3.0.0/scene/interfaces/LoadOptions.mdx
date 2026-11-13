@@ -1,0 +1,37 @@
+---
+title: "LoadOptions"
+description: "Options of ctx.scenes.load."
+---
+
+Defined in: [modules/scene/src/scene.ts:108](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L108)
+
+Options of `ctx.scenes.load`.
+
+## Type Parameters
+
+### TParams
+
+`TParams` = `unknown`
+
+Shape of the params the scene expects.
+
+## Properties
+
+### params?
+
+> `optional` **params?**: `TParams`
+
+Defined in: [modules/scene/src/scene.ts:110](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L110)
+
+Handed to the scene's `load`.
+
+***
+
+### parent?
+
+> `optional` **parent?**: [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\> \| `"current"`
+
+Defined in: [modules/scene/src/scene.ts:115](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L115)
+
+Loads the scene under this parent instead of its static `parent`:
+a scene class, or `"current"` for the scene loaded deepest.

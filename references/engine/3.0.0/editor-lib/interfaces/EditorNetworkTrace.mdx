@@ -1,0 +1,69 @@
+---
+title: "EditorNetworkTrace"
+---
+
+Defined in: [modules/editor/src/protocol.ts:185](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L185)
+
+## Properties
+
+### clientId?
+
+> `optional` **clientId?**: `string`
+
+Defined in: [modules/editor/src/protocol.ts:189](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L189)
+
+Server side: the client the packet goes to or comes from.
+
+***
+
+### data?
+
+> `optional` **data?**: `string`
+
+Defined in: [modules/editor/src/protocol.ts:194](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L194)
+
+The first `maxBytes` bytes, hex encoded (when the editor asked for them).
+
+***
+
+### direction
+
+> **direction**: `"in"` \| `"out"`
+
+Defined in: [modules/editor/src/protocol.ts:186](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L186)
+
+***
+
+### head
+
+> **head**: `string`
+
+Defined in: [modules/editor/src/protocol.ts:192](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L192)
+
+First bytes, hex encoded.
+
+***
+
+### size
+
+> **size**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:190](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L190)
+
+***
+
+### time
+
+> **time**: `number`
+
+Defined in: [modules/editor/src/protocol.ts:196](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L196)
+
+ms since epoch.
+
+***
+
+### transport
+
+> **transport**: `"tcp"` \| `"udp"`
+
+Defined in: [modules/editor/src/protocol.ts:187](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L187)

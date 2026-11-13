@@ -1,0 +1,834 @@
+[
+  {
+    "group": "@nanoforge-dev/asset",
+    "root": "references/engine/3.0.0/asset/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/asset/classes/AssetLibrary"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/asset/variables/ASSET_LIBRARY_KEY"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/common",
+    "root": "references/engine/3.0.0/common/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/common/classes/Library",
+          "references/engine/3.0.0/common/classes/NfDuplicateLibraryException",
+          "references/engine/3.0.0/common/classes/NfException",
+          "references/engine/3.0.0/common/classes/NfFetchException",
+          "references/engine/3.0.0/common/classes/NfFile",
+          "references/engine/3.0.0/common/classes/NfNotFound",
+          "references/engine/3.0.0/common/classes/NfNotInitializedException"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/common/interfaces/AppContext",
+          "references/engine/3.0.0/common/interfaces/AssetContext",
+          "references/engine/3.0.0/common/interfaces/ClientRunOptions",
+          "references/engine/3.0.0/common/interfaces/Context",
+          "references/engine/3.0.0/common/interfaces/EventEmitter",
+          "references/engine/3.0.0/common/interfaces/InitContext",
+          "references/engine/3.0.0/common/interfaces/LibraryRelationships",
+          "references/engine/3.0.0/common/interfaces/RunOptions",
+          "references/engine/3.0.0/common/interfaces/ServerRunOptions",
+          "references/engine/3.0.0/common/interfaces/TickObserver",
+          "references/engine/3.0.0/common/interfaces/VarsContext",
+          "references/engine/3.0.0/common/interfaces/ViewportContext",
+          "references/engine/3.0.0/common/interfaces/ViewportOptions",
+          "references/engine/3.0.0/common/interfaces/ViewportState"
+        ]
+      },
+      {
+        "group": "Type aliases",
+        "pages": [
+          "references/engine/3.0.0/common/type-aliases/ViewportFit"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/common/variables/DEFAULT_LIBRARY_RELATIONSHIPS"
+        ]
+      },
+      {
+        "group": "Functions",
+        "pages": [
+          "references/engine/3.0.0/common/functions/computeViewport",
+          "references/engine/3.0.0/common/functions/defineLibraryKey"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/core",
+    "root": "references/engine/3.0.0/core/index",
+    "pages": [
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/core/interfaces/ApplicationOptions",
+          "references/engine/3.0.0/core/interfaces/ClientApplicationOptions",
+          "references/engine/3.0.0/core/interfaces/NanoforgeClient",
+          "references/engine/3.0.0/core/interfaces/NanoforgeServer"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/core/variables/NanoforgeFactory"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/ecs",
+    "root": "references/engine/3.0.0/ecs/index",
+    "pages": [
+      {
+        "group": "@nanoforge-dev/ecs",
+        "root": "references/engine/3.0.0/ecs/index/index",
+        "pages": [
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/ecs/index/interfaces/Context",
+              "references/engine/3.0.0/ecs/index/interfaces/EcsContextApi",
+              "references/engine/3.0.0/ecs/index/interfaces/Entity",
+              "references/engine/3.0.0/ecs/index/interfaces/Registry",
+              "references/engine/3.0.0/ecs/index/interfaces/SparseArray"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/ecs/index/type-aliases/Component",
+              "references/engine/3.0.0/ecs/index/type-aliases/EditorComponentManifest",
+              "references/engine/3.0.0/ecs/index/type-aliases/EditorSystemManifest",
+              "references/engine/3.0.0/ecs/index/type-aliases/System"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/ecs/client",
+        "root": "references/engine/3.0.0/ecs/client/index",
+        "pages": [
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/ecs/client/classes/EcsLibrary"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/ecs/client/interfaces/EcsEditorCommands",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorCallSite",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorSystemStats",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorSystemTiming",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorWorld",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorWorldEntity",
+              "references/engine/3.0.0/ecs/client/interfaces/EditorWorldSystem"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/ecs/client/type-aliases/EditorValue"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/ecs/scene",
+        "root": "references/engine/3.0.0/ecs/scene/index",
+        "pages": [
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/ecs/scene/classes/EcsScene"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/ecs/server",
+        "root": "references/engine/3.0.0/ecs/server/index",
+        "pages": [
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/ecs/server/classes/EcsLibrary"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/ecs/server/interfaces/Entity",
+              "references/engine/3.0.0/ecs/server/interfaces/Registry",
+              "references/engine/3.0.0/ecs/server/interfaces/SparseArray"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/ecs/server/type-aliases/Component",
+              "references/engine/3.0.0/ecs/server/type-aliases/System"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/editor-lib",
+    "root": "references/engine/3.0.0/editor-lib/index",
+    "pages": [
+      {
+        "group": "Enums",
+        "pages": [
+          "references/engine/3.0.0/editor-lib/enumerations/EditorBridgeCommand",
+          "references/engine/3.0.0/editor-lib/enumerations/EditorBridgeEvent"
+        ]
+      },
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/editor-lib/classes/EditorLibrary",
+          "references/engine/3.0.0/editor-lib/classes/QueuedEventEmitter"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/editor-lib/interfaces/EditorAwareLibrary",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorChannels",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorCommandMap",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorContextApi",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorEventMap",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorFeatures",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorFrameStats",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorHello",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorLog",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorNetworkStats",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTotals",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorNetworkTrace",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorTiming",
+          "references/engine/3.0.0/editor-lib/interfaces/EditorWelcome"
+        ]
+      },
+      {
+        "group": "Type aliases",
+        "pages": [
+          "references/engine/3.0.0/editor-lib/type-aliases/EditorCommand",
+          "references/engine/3.0.0/editor-lib/type-aliases/EditorInitContext",
+          "references/engine/3.0.0/editor-lib/type-aliases/EditorLogValue",
+          "references/engine/3.0.0/editor-lib/type-aliases/EditorRunState",
+          "references/engine/3.0.0/editor-lib/type-aliases/EditorViewport"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/editor-lib/variables/EDITOR_INIT_HOOK",
+          "references/engine/3.0.0/editor-lib/variables/EDITOR_PROTOCOL_VERSION",
+          "references/engine/3.0.0/editor-lib/variables/EditorCommand"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/env",
+    "root": "references/engine/3.0.0/env/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/env/classes/NfEnvValidationException"
+        ]
+      },
+      {
+        "group": "Functions",
+        "pages": [
+          "references/engine/3.0.0/env/functions/Allow",
+          "references/engine/3.0.0/env/functions/ArrayContains",
+          "references/engine/3.0.0/env/functions/ArrayMaxSize",
+          "references/engine/3.0.0/env/functions/ArrayMinSize",
+          "references/engine/3.0.0/env/functions/ArrayNotContains",
+          "references/engine/3.0.0/env/functions/ArrayNotEmpty",
+          "references/engine/3.0.0/env/functions/ArrayUnique",
+          "references/engine/3.0.0/env/functions/Contains",
+          "references/engine/3.0.0/env/functions/Default",
+          "references/engine/3.0.0/env/functions/Equals",
+          "references/engine/3.0.0/env/functions/Expose",
+          "references/engine/3.0.0/env/functions/IsAlpha",
+          "references/engine/3.0.0/env/functions/IsAlphanumeric",
+          "references/engine/3.0.0/env/functions/IsArray",
+          "references/engine/3.0.0/env/functions/IsAscii",
+          "references/engine/3.0.0/env/functions/IsBase32",
+          "references/engine/3.0.0/env/functions/IsBase58",
+          "references/engine/3.0.0/env/functions/IsBase64",
+          "references/engine/3.0.0/env/functions/IsBIC",
+          "references/engine/3.0.0/env/functions/IsBoolean",
+          "references/engine/3.0.0/env/functions/IsBooleanString",
+          "references/engine/3.0.0/env/functions/IsBtcAddress",
+          "references/engine/3.0.0/env/functions/IsByteLength",
+          "references/engine/3.0.0/env/functions/IsCreditCard",
+          "references/engine/3.0.0/env/functions/IsCurrency",
+          "references/engine/3.0.0/env/functions/IsDataURI",
+          "references/engine/3.0.0/env/functions/IsDate",
+          "references/engine/3.0.0/env/functions/IsDateString",
+          "references/engine/3.0.0/env/functions/IsDecimal",
+          "references/engine/3.0.0/env/functions/IsDefined",
+          "references/engine/3.0.0/env/functions/IsDivisibleBy",
+          "references/engine/3.0.0/env/functions/IsEAN",
+          "references/engine/3.0.0/env/functions/IsEmail",
+          "references/engine/3.0.0/env/functions/IsEmpty",
+          "references/engine/3.0.0/env/functions/IsEnum",
+          "references/engine/3.0.0/env/functions/IsEthereumAddress",
+          "references/engine/3.0.0/env/functions/IsFirebasePushId",
+          "references/engine/3.0.0/env/functions/IsFQDN",
+          "references/engine/3.0.0/env/functions/IsFullWidth",
+          "references/engine/3.0.0/env/functions/IsHalfWidth",
+          "references/engine/3.0.0/env/functions/IsHash",
+          "references/engine/3.0.0/env/functions/IsHexadecimal",
+          "references/engine/3.0.0/env/functions/IsHexColor",
+          "references/engine/3.0.0/env/functions/IsHSL",
+          "references/engine/3.0.0/env/functions/IsIBAN",
+          "references/engine/3.0.0/env/functions/IsIdentityCard",
+          "references/engine/3.0.0/env/functions/IsIn",
+          "references/engine/3.0.0/env/functions/IsInstance",
+          "references/engine/3.0.0/env/functions/IsInt",
+          "references/engine/3.0.0/env/functions/IsIP",
+          "references/engine/3.0.0/env/functions/IsIpOrURL",
+          "references/engine/3.0.0/env/functions/IsISBN",
+          "references/engine/3.0.0/env/functions/IsISIN",
+          "references/engine/3.0.0/env/functions/IsISO31661Alpha2",
+          "references/engine/3.0.0/env/functions/IsISO31661Alpha3",
+          "references/engine/3.0.0/env/functions/IsISO4217CurrencyCode",
+          "references/engine/3.0.0/env/functions/IsISO8601",
+          "references/engine/3.0.0/env/functions/IsISRC",
+          "references/engine/3.0.0/env/functions/IsISSN",
+          "references/engine/3.0.0/env/functions/IsJSON",
+          "references/engine/3.0.0/env/functions/IsJWT",
+          "references/engine/3.0.0/env/functions/IsLatitude",
+          "references/engine/3.0.0/env/functions/IsLatLong",
+          "references/engine/3.0.0/env/functions/IsLocale",
+          "references/engine/3.0.0/env/functions/IsLongitude",
+          "references/engine/3.0.0/env/functions/IsLowercase",
+          "references/engine/3.0.0/env/functions/IsMACAddress",
+          "references/engine/3.0.0/env/functions/IsMagnetURI",
+          "references/engine/3.0.0/env/functions/IsMilitaryTime",
+          "references/engine/3.0.0/env/functions/IsMimeType",
+          "references/engine/3.0.0/env/functions/IsMobilePhone",
+          "references/engine/3.0.0/env/functions/IsMongoId",
+          "references/engine/3.0.0/env/functions/IsMultibyte",
+          "references/engine/3.0.0/env/functions/IsNegative",
+          "references/engine/3.0.0/env/functions/IsNotEmpty",
+          "references/engine/3.0.0/env/functions/IsNotEmptyObject",
+          "references/engine/3.0.0/env/functions/IsNotIn",
+          "references/engine/3.0.0/env/functions/IsNumber",
+          "references/engine/3.0.0/env/functions/IsNumberString",
+          "references/engine/3.0.0/env/functions/IsObject",
+          "references/engine/3.0.0/env/functions/IsOctal",
+          "references/engine/3.0.0/env/functions/IsOptional",
+          "references/engine/3.0.0/env/functions/IsPassportNumber",
+          "references/engine/3.0.0/env/functions/IsPhoneNumber",
+          "references/engine/3.0.0/env/functions/IsPort",
+          "references/engine/3.0.0/env/functions/IsPositive",
+          "references/engine/3.0.0/env/functions/IsPostalCode",
+          "references/engine/3.0.0/env/functions/IsRFC3339",
+          "references/engine/3.0.0/env/functions/IsRgbColor",
+          "references/engine/3.0.0/env/functions/IsSemVer",
+          "references/engine/3.0.0/env/functions/IsString",
+          "references/engine/3.0.0/env/functions/IsStrongPassword",
+          "references/engine/3.0.0/env/functions/IsSurrogatePair",
+          "references/engine/3.0.0/env/functions/IsTaxId",
+          "references/engine/3.0.0/env/functions/IsTimeZone",
+          "references/engine/3.0.0/env/functions/IsUppercase",
+          "references/engine/3.0.0/env/functions/IsUrl",
+          "references/engine/3.0.0/env/functions/IsUUID",
+          "references/engine/3.0.0/env/functions/IsVariableWidth",
+          "references/engine/3.0.0/env/functions/Length",
+          "references/engine/3.0.0/env/functions/Matches",
+          "references/engine/3.0.0/env/functions/Max",
+          "references/engine/3.0.0/env/functions/MaxDate",
+          "references/engine/3.0.0/env/functions/MaxLength",
+          "references/engine/3.0.0/env/functions/Min",
+          "references/engine/3.0.0/env/functions/MinDate",
+          "references/engine/3.0.0/env/functions/MinLength",
+          "references/engine/3.0.0/env/functions/NotContains",
+          "references/engine/3.0.0/env/functions/NotEquals",
+          "references/engine/3.0.0/env/functions/registerEnv",
+          "references/engine/3.0.0/env/functions/Transform",
+          "references/engine/3.0.0/env/functions/TransformToBoolean",
+          "references/engine/3.0.0/env/functions/Validate",
+          "references/engine/3.0.0/env/functions/ValidateBy",
+          "references/engine/3.0.0/env/functions/ValidateIf",
+          "references/engine/3.0.0/env/functions/ValidateNested",
+          "references/engine/3.0.0/env/functions/ValidatePromise"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/graphics-2d",
+    "root": "references/engine/3.0.0/graphics-2d/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/graphics-2d/classes/Graphics2DLibrary"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/graphics-2d/interfaces/GraphicsContextApi"
+        ]
+      },
+      {
+        "group": "Type aliases",
+        "pages": [
+          "references/engine/3.0.0/graphics-2d/type-aliases/Animation",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Arc",
+          "references/engine/3.0.0/graphics-2d/type-aliases/ArcConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Arrow",
+          "references/engine/3.0.0/graphics-2d/type-aliases/ArrowConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Canvas",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Circle",
+          "references/engine/3.0.0/graphics-2d/type-aliases/CircleConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Container",
+          "references/engine/3.0.0/graphics-2d/type-aliases/ContainerConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Context",
+          "references/engine/3.0.0/graphics-2d/type-aliases/DD",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Easings",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Ellipse",
+          "references/engine/3.0.0/graphics-2d/type-aliases/EllipseConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/FastLayer",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Filters",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Group",
+          "references/engine/3.0.0/graphics-2d/type-aliases/GroupConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Image",
+          "references/engine/3.0.0/graphics-2d/type-aliases/ImageConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/KonvaEventListener",
+          "references/engine/3.0.0/graphics-2d/type-aliases/KonvaEventObject",
+          "references/engine/3.0.0/graphics-2d/type-aliases/KonvaPointerEvent",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Label",
+          "references/engine/3.0.0/graphics-2d/type-aliases/LabelConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Layer",
+          "references/engine/3.0.0/graphics-2d/type-aliases/LayerConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Line",
+          "references/engine/3.0.0/graphics-2d/type-aliases/LineConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Node",
+          "references/engine/3.0.0/graphics-2d/type-aliases/NodeConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Path",
+          "references/engine/3.0.0/graphics-2d/type-aliases/PathConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Rect",
+          "references/engine/3.0.0/graphics-2d/type-aliases/RectConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/RegularPolygon",
+          "references/engine/3.0.0/graphics-2d/type-aliases/RegularPolygonConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Ring",
+          "references/engine/3.0.0/graphics-2d/type-aliases/RingConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Shape",
+          "references/engine/3.0.0/graphics-2d/type-aliases/ShapeConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Sprite",
+          "references/engine/3.0.0/graphics-2d/type-aliases/SpriteConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Stage",
+          "references/engine/3.0.0/graphics-2d/type-aliases/StageConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Star",
+          "references/engine/3.0.0/graphics-2d/type-aliases/StarConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Tag",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TagConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Text",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TextConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TextPath",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TextPathConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Transform",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Transformer",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TransformerConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Tween",
+          "references/engine/3.0.0/graphics-2d/type-aliases/TweenConfig",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Util",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Vector2d",
+          "references/engine/3.0.0/graphics-2d/type-aliases/Wedge",
+          "references/engine/3.0.0/graphics-2d/type-aliases/WedgeConfig"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/graphics-2d/variables/global",
+          "references/engine/3.0.0/graphics-2d/variables/injectGlobal",
+          "references/engine/3.0.0/graphics-2d/variables/mouseInDblClickWindow",
+          "references/engine/3.0.0/graphics-2d/variables/mouseListenClick",
+          "references/engine/3.0.0/graphics-2d/variables/pointerInDblClickWindow",
+          "references/engine/3.0.0/graphics-2d/variables/pointerListenClick",
+          "references/engine/3.0.0/graphics-2d/variables/renderBackend",
+          "references/engine/3.0.0/graphics-2d/variables/touchInDblClickWindow",
+          "references/engine/3.0.0/graphics-2d/variables/touchListenClick",
+          "references/engine/3.0.0/graphics-2d/variables/angleDeg",
+          "references/engine/3.0.0/graphics-2d/variables/Animation",
+          "references/engine/3.0.0/graphics-2d/variables/Arc",
+          "references/engine/3.0.0/graphics-2d/variables/Arrow",
+          "references/engine/3.0.0/graphics-2d/variables/autoDrawEnabled",
+          "references/engine/3.0.0/graphics-2d/variables/Canvas",
+          "references/engine/3.0.0/graphics-2d/variables/capturePointerEventsEnabled",
+          "references/engine/3.0.0/graphics-2d/variables/Circle",
+          "references/engine/3.0.0/graphics-2d/variables/Container",
+          "references/engine/3.0.0/graphics-2d/variables/Context",
+          "references/engine/3.0.0/graphics-2d/variables/dblClickWindow",
+          "references/engine/3.0.0/graphics-2d/variables/DD",
+          "references/engine/3.0.0/graphics-2d/variables/document",
+          "references/engine/3.0.0/graphics-2d/variables/dragButtons",
+          "references/engine/3.0.0/graphics-2d/variables/dragDistance",
+          "references/engine/3.0.0/graphics-2d/variables/Easings",
+          "references/engine/3.0.0/graphics-2d/variables/Ellipse",
+          "references/engine/3.0.0/graphics-2d/variables/enableTrace",
+          "references/engine/3.0.0/graphics-2d/variables/FastLayer",
+          "references/engine/3.0.0/graphics-2d/variables/Filters",
+          "references/engine/3.0.0/graphics-2d/variables/getAngle",
+          "references/engine/3.0.0/graphics-2d/variables/Group",
+          "references/engine/3.0.0/graphics-2d/variables/hitOnDragEnabled",
+          "references/engine/3.0.0/graphics-2d/variables/Image",
+          "references/engine/3.0.0/graphics-2d/variables/isBrowser",
+          "references/engine/3.0.0/graphics-2d/variables/isDragging",
+          "references/engine/3.0.0/graphics-2d/variables/isDragReady",
+          "references/engine/3.0.0/graphics-2d/variables/isTransforming",
+          "references/engine/3.0.0/graphics-2d/variables/isUnminified",
+          "references/engine/3.0.0/graphics-2d/variables/Label",
+          "references/engine/3.0.0/graphics-2d/variables/Layer",
+          "references/engine/3.0.0/graphics-2d/variables/legacyTextRendering",
+          "references/engine/3.0.0/graphics-2d/variables/Line",
+          "references/engine/3.0.0/graphics-2d/variables/Node",
+          "references/engine/3.0.0/graphics-2d/variables/Path",
+          "references/engine/3.0.0/graphics-2d/variables/pixelRatio",
+          "references/engine/3.0.0/graphics-2d/variables/pointerEventsEnabled",
+          "references/engine/3.0.0/graphics-2d/variables/Rect",
+          "references/engine/3.0.0/graphics-2d/variables/RegularPolygon",
+          "references/engine/3.0.0/graphics-2d/variables/releaseCanvasOnDestroy",
+          "references/engine/3.0.0/graphics-2d/variables/Ring",
+          "references/engine/3.0.0/graphics-2d/variables/Shape",
+          "references/engine/3.0.0/graphics-2d/variables/shapes",
+          "references/engine/3.0.0/graphics-2d/variables/showWarnings",
+          "references/engine/3.0.0/graphics-2d/variables/Sprite",
+          "references/engine/3.0.0/graphics-2d/variables/Stage",
+          "references/engine/3.0.0/graphics-2d/variables/stages",
+          "references/engine/3.0.0/graphics-2d/variables/Star",
+          "references/engine/3.0.0/graphics-2d/variables/Tag",
+          "references/engine/3.0.0/graphics-2d/variables/Text",
+          "references/engine/3.0.0/graphics-2d/variables/TextPath",
+          "references/engine/3.0.0/graphics-2d/variables/Transform",
+          "references/engine/3.0.0/graphics-2d/variables/Transformer",
+          "references/engine/3.0.0/graphics-2d/variables/Tween",
+          "references/engine/3.0.0/graphics-2d/variables/Util",
+          "references/engine/3.0.0/graphics-2d/variables/version",
+          "references/engine/3.0.0/graphics-2d/variables/Wedge"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/graphics-3d",
+    "root": "references/engine/3.0.0/graphics-3d/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/graphics-3d/classes/Graphics3DLibrary"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/graphics-3d/interfaces/EditorGraphicsCamera",
+          "references/engine/3.0.0/graphics-3d/interfaces/Graphics3DContextApi",
+          "references/engine/3.0.0/graphics-3d/interfaces/Graphics3DOptions",
+          "references/engine/3.0.0/graphics-3d/interfaces/ScreenPoint"
+        ]
+      },
+      {
+        "group": "Type aliases",
+        "pages": [
+          "references/engine/3.0.0/graphics-3d/type-aliases/Graphics3DBackend"
+        ]
+      },
+      {
+        "group": "Variables",
+        "pages": [
+          "references/engine/3.0.0/graphics-3d/variables/DRAW_CALL_WARNING"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/input",
+    "root": "references/engine/3.0.0/input/index",
+    "pages": [
+      {
+        "group": "@nanoforge-dev/input",
+        "root": "references/engine/3.0.0/input/index/index",
+        "pages": [
+          {
+            "group": "Enums",
+            "pages": [
+              "references/engine/3.0.0/input/index/enumerations/InputEnum"
+            ]
+          },
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/input/index/classes/InputLibrary"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/input/index/interfaces/InputContextApi"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/input/index/type-aliases/ButtonState",
+              "references/engine/3.0.0/input/index/type-aliases/DragState",
+              "references/engine/3.0.0/input/index/type-aliases/MouseState",
+              "references/engine/3.0.0/input/index/type-aliases/WheelState"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/input/controller",
+        "root": "references/engine/3.0.0/input/controller/index",
+        "pages": [
+          {
+            "group": "Enums",
+            "pages": [
+              "references/engine/3.0.0/input/controller/enumerations/ControllerAxis",
+              "references/engine/3.0.0/input/controller/enumerations/ControllerButton"
+            ]
+          },
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/input/controller/classes/ControllerLibrary"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/input/controller/interfaces/ControllerContextApi"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerButtonState",
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerLibraryOptions",
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerListener",
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerState",
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerStick",
+              "references/engine/3.0.0/input/controller/type-aliases/ControllerVibration",
+              "references/engine/3.0.0/input/controller/type-aliases/StickPosition"
+            ]
+          }
+        ]
+      },
+      "references/engine/3.0.0/input/keyboard-mouse/index"
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/music",
+    "root": "references/engine/3.0.0/music/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/music/classes/MusicLibrary"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/music/interfaces/MusicContextApi"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/network",
+    "root": "references/engine/3.0.0/network/index",
+    "pages": [
+      {
+        "group": "@nanoforge-dev/network",
+        "root": "references/engine/3.0.0/network/index/index",
+        "pages": [
+          {
+            "group": "Enums",
+            "pages": [
+              "references/engine/3.0.0/network/index/enumerations/Channel"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/network/index/interfaces/NetworkConfig",
+              "references/engine/3.0.0/network/index/interfaces/PacketDefinition"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/network/index/type-aliases/ChannelOptions",
+              "references/engine/3.0.0/network/index/type-aliases/PacketOptions"
+            ]
+          },
+          {
+            "group": "Functions",
+            "pages": [
+              "references/engine/3.0.0/network/index/functions/definePacket"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/network/client",
+        "root": "references/engine/3.0.0/network/client/index",
+        "pages": [
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/network/client/classes/ClientConfigNetwork",
+              "references/engine/3.0.0/network/client/classes/NetworkClientLibrary",
+              "references/engine/3.0.0/network/client/classes/NetworkData"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/network/client/interfaces/ClientPacketsApi",
+              "references/engine/3.0.0/network/client/interfaces/NetworkClientContextApi"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/network/client/type-aliases/ClientPacketInfo",
+              "references/engine/3.0.0/network/client/type-aliases/NetworkPayload",
+              "references/engine/3.0.0/network/client/type-aliases/PacketArgs",
+              "references/engine/3.0.0/network/client/type-aliases/PacketListener"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "@nanoforge-dev/network/server",
+        "root": "references/engine/3.0.0/network/server/index",
+        "pages": [
+          {
+            "group": "Classes",
+            "pages": [
+              "references/engine/3.0.0/network/server/classes/NetworkServerLibrary",
+              "references/engine/3.0.0/network/server/classes/ServerConfigNetwork"
+            ]
+          },
+          {
+            "group": "Interfaces",
+            "pages": [
+              "references/engine/3.0.0/network/server/interfaces/ClientsApi",
+              "references/engine/3.0.0/network/server/interfaces/NetworkServerContextApi",
+              "references/engine/3.0.0/network/server/interfaces/ServerPacketsApi"
+            ]
+          },
+          {
+            "group": "Type aliases",
+            "pages": [
+              "references/engine/3.0.0/network/server/type-aliases/ClientId",
+              "references/engine/3.0.0/network/server/type-aliases/ClientInfo",
+              "references/engine/3.0.0/network/server/type-aliases/ClientListener",
+              "references/engine/3.0.0/network/server/type-aliases/ConnectionInfo",
+              "references/engine/3.0.0/network/server/type-aliases/ServerPacketInfo",
+              "references/engine/3.0.0/network/server/type-aliases/Transport",
+              "references/engine/3.0.0/network/server/type-aliases/UDPServerIceConfig"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/scene",
+    "root": "references/engine/3.0.0/scene/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/scene/classes/NfSceneCycleException",
+          "references/engine/3.0.0/scene/classes/Scene",
+          "references/engine/3.0.0/scene/classes/SceneLibrary",
+          "references/engine/3.0.0/scene/classes/SceneManager"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/scene/interfaces/EditorLoadedScene",
+          "references/engine/3.0.0/scene/interfaces/EditorScenes",
+          "references/engine/3.0.0/scene/interfaces/EditorSceneVar",
+          "references/engine/3.0.0/scene/interfaces/LoadedSceneInfo",
+          "references/engine/3.0.0/scene/interfaces/LoadOptions",
+          "references/engine/3.0.0/scene/interfaces/SceneClass",
+          "references/engine/3.0.0/scene/interfaces/SceneEditorCommands",
+          "references/engine/3.0.0/scene/interfaces/SceneLibraryOptions",
+          "references/engine/3.0.0/scene/interfaces/SceneLoadContext",
+          "references/engine/3.0.0/scene/interfaces/ScenesContextApi",
+          "references/engine/3.0.0/scene/interfaces/SceneVarEntry",
+          "references/engine/3.0.0/scene/interfaces/SceneVarOptions",
+          "references/engine/3.0.0/scene/interfaces/SceneVars",
+          "references/engine/3.0.0/scene/interfaces/SceneVarsApi"
+        ]
+      },
+      {
+        "group": "Type aliases",
+        "pages": [
+          "references/engine/3.0.0/scene/type-aliases/EditorValue",
+          "references/engine/3.0.0/scene/type-aliases/SceneVarKey",
+          "references/engine/3.0.0/scene/type-aliases/SceneVarValue"
+        ]
+      }
+    ]
+  },
+  {
+    "group": "@nanoforge-dev/sound",
+    "root": "references/engine/3.0.0/sound/index",
+    "pages": [
+      {
+        "group": "Classes",
+        "pages": [
+          "references/engine/3.0.0/sound/classes/SoundLibrary"
+        ]
+      },
+      {
+        "group": "Interfaces",
+        "pages": [
+          "references/engine/3.0.0/sound/interfaces/SoundContextApi"
+        ]
+      }
+    ]
+  }
+]

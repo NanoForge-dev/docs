@@ -1,0 +1,285 @@
+---
+title: "SceneManager"
+description: "Loads and unloads scenes, and keeps the scene vars."
+---
+
+Defined in: [modules/scene/src/scene-manager.ts:42](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L42)
+
+Loads and unloads scenes, and keeps the scene vars.
+
+## Remarks
+
+`load` and `unload` only queue a change; `apply` makes the queued changes,
+one after the other, at a time no system runs.
+
+## Constructors
+
+### Constructor
+
+> **new SceneManager**(`scenes?`): `SceneManager`
+
+Defined in: [modules/scene/src/scene-manager.ts:56](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L56)
+
+#### Parameters
+
+##### scenes?
+
+`Readonly`\<`Record`\<`string`, [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\>\>\> = `{}`
+
+The game's scene classes by id. A scene missing from it is known by its
+class name.
+
+#### Returns
+
+`SceneManager`
+
+## Properties
+
+### vars
+
+> `readonly` **vars**: `SceneVarsStore`
+
+Defined in: [modules/scene/src/scene-manager.ts:43](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L43)
+
+## Accessors
+
+### chain
+
+#### Get Signature
+
+> **get** **chain**(): [`LoadedSceneInfo`](/references/engine/3.0.0/scene/interfaces/LoadedSceneInfo)[]
+
+Defined in: [modules/scene/src/scene-manager.ts:79](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L79)
+
+The loaded scenes' ids and params, root first.
+
+##### Returns
+
+[`LoadedSceneInfo`](/references/engine/3.0.0/scene/interfaces/LoadedSceneInfo)[]
+
+***
+
+### current
+
+#### Get Signature
+
+> **get** **current**(): `AnyScene` \| `undefined`
+
+Defined in: [modules/scene/src/scene-manager.ts:89](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L89)
+
+The scene loaded deepest.
+
+##### Returns
+
+`AnyScene` \| `undefined`
+
+***
+
+### knownIds
+
+#### Get Signature
+
+> **get** **knownIds**(): `string`[]
+
+Defined in: [modules/scene/src/scene-manager.ts:74](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L74)
+
+Ids of the scenes that can be loaded by id.
+
+##### Returns
+
+`string`[]
+
+***
+
+### loaded
+
+#### Get Signature
+
+> **get** **loaded**(): `AnyScene`[]
+
+Defined in: [modules/scene/src/scene-manager.ts:94](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L94)
+
+The loaded scenes, root first.
+
+##### Returns
+
+`AnyScene`[]
+
+## Methods
+
+### apply()
+
+> **apply**(`ctx`): `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scene-manager.ts:132](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L132)
+
+Makes the queued changes, including those queued by the scenes' hooks.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+Handed to the hooks of a change queued without a context.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Throws
+
+The first error of a hook or of a move: that request's promise is rejected too.
+
+***
+
+### byId()
+
+> **byId**(`id`): [`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\> \| `undefined`
+
+Defined in: [modules/scene/src/scene-manager.ts:69](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L69)
+
+The scene class of an id: from the `scenes` given, else a scene class seen so far.
+
+#### Parameters
+
+##### id
+
+`string`
+
+#### Returns
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\> \| `undefined`
+
+***
+
+### idOf()
+
+> **idOf**(`type`): `string`
+
+Defined in: [modules/scene/src/scene-manager.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L64)
+
+A scene class's id: its key in the `scenes` given, else its class name.
+
+#### Parameters
+
+##### type
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`never`\>
+
+#### Returns
+
+`string`
+
+***
+
+### idOfScene()
+
+> **idOfScene**(`scene`): `string` \| `undefined`
+
+Defined in: [modules/scene/src/scene-manager.ts:84](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L84)
+
+The id of a loaded scene instance.
+
+#### Parameters
+
+##### scene
+
+[`Scene`](/references/engine/3.0.0/scene/classes/Scene)\<`never`\>
+
+#### Returns
+
+`string` \| `undefined`
+
+***
+
+### isLoaded()
+
+> **isLoaded**(`type`): `boolean`
+
+Defined in: [modules/scene/src/scene-manager.ts:98](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L98)
+
+#### Parameters
+
+##### type
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)
+
+#### Returns
+
+`boolean`
+
+***
+
+### load()
+
+> **load**\<`TParams`\>(`ctx`, `type`, `options?`): `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scene-manager.ts:107](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L107)
+
+Queues a move to `type`.
+
+#### Type Parameters
+
+##### TParams
+
+`TParams`
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context) \| `undefined`
+
+##### type
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)\<`TParams`\>
+
+##### options?
+
+[`LoadOptions`](/references/engine/3.0.0/scene/interfaces/LoadOptions)\<`TParams`\>
+
+#### Returns
+
+`Promise`\<`void`\>
+
+A promise resolved once the move is made, rejected if it fails.
+
+***
+
+### reset()
+
+> **reset**(): `void`
+
+Defined in: [modules/scene/src/scene-manager.ts:146](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L146)
+
+Drops the loaded scenes and the vars, without calling the hooks.
+
+#### Returns
+
+`void`
+
+***
+
+### unload()
+
+> **unload**(`ctx`, `type`): `Promise`\<`void`\>
+
+Defined in: [modules/scene/src/scene-manager.ts:122](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene-manager.ts#L122)
+
+Queues the unload of `type` and of the scenes loaded under it. Nothing
+happens when it is not loaded by then.
+
+#### Parameters
+
+##### ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context) \| `undefined`
+
+##### type
+
+[`SceneClass`](/references/engine/3.0.0/scene/interfaces/SceneClass)
+
+#### Returns
+
+`Promise`\<`void`\>

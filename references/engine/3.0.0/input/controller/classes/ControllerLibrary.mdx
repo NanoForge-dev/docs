@@ -1,0 +1,463 @@
+---
+title: "ControllerLibrary"
+description: "Built-in controller library, based on the Gamepad API."
+---
+
+Defined in: [modules/input/src/controller/controller.library.ts:37](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L37)
+
+Built-in controller library, based on the Gamepad API.
+
+## Remarks
+
+Polls `navigator.getGamepads()` once per frame and exposes a snapshot of
+every connected controller on `Context.controller`. Buttons and axes follow
+the W3C "standard" layout (`ControllerButton`, `ControllerAxis`); every
+method takes an optional controller index, `0` by default. Client-only —
+`__init` throws if the Gamepad API is unavailable. Browsers only expose a
+controller after the user pressed one of its buttons.
+
+## Example
+
+```ts
+app.use(new ControllerLibrary({ deadzone: 0.2 }));
+
+// in a system
+const { x, y } = ctx.controller.getStick("left");
+if (ctx.controller.isButtonJustPressed(ControllerButton.A)) player.jump();
+```
+
+## Extends
+
+- `Library`
+
+## Constructors
+
+### Constructor
+
+> **new ControllerLibrary**(`options?`): `ControllerLibrary`
+
+Defined in: [modules/input/src/controller/controller.library.ts:43](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L43)
+
+#### Parameters
+
+##### options?
+
+[`ControllerLibraryOptions`](/references/engine/3.0.0/input/controller/type-aliases/ControllerLibraryOptions) = `{}`
+
+#### Returns
+
+`ControllerLibrary`
+
+#### Overrides
+
+`Library.constructor`
+
+## Properties
+
+### key
+
+> `readonly` **key**: `"controller"`
+
+Defined in: [modules/input/src/controller/controller.library.ts:38](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L38)
+
+This library's identity: its slot on `Context`, its registry key, and
+the identifier used to reference it in ordering relationships.
+
+#### Overrides
+
+`Library.key`
+
+## Accessors
+
+### relationships
+
+#### Get Signature
+
+> **get** **relationships**(): `LibraryRelationships`
+
+Defined in: packages/common/dist/index.d.ts:512
+
+**`Internal`**
+
+##### Returns
+
+`LibraryRelationships`
+
+#### Inherited from
+
+`Library.relationships`
+
+## Methods
+
+### \_\_clear()
+
+> **\_\_clear**(): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/controller/controller.library.ts:64](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L64)
+
+Called once after the tick loop stops.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__clear`
+
+***
+
+### \_\_events()
+
+> **\_\_events**(`_ctx`): `Promise`\<`void`\>
+
+Defined in: packages/common/dist/index.d.ts:521
+
+Called every tick, in run order, whether or not the tick loop is
+paused — unlike `__run`. Use this for event/message draining that must
+not be affected by pause (e.g. listening for the command that resumes
+the loop), not for gameplay simulation.
+
+#### Parameters
+
+##### \_ctx
+
+[`Context`](/references/engine/3.0.0/ecs/index/interfaces/Context)
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Inherited from
+
+`Library.__events`
+
+***
+
+### \_\_init()
+
+> **\_\_init**(): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/controller/controller.library.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L52)
+
+Called once, in dependency order, before the tick loop starts.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__init`
+
+***
+
+### \_\_run()
+
+> **\_\_run**(): `Promise`\<`void`\>
+
+Defined in: [modules/input/src/controller/controller.library.ts:59](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L59)
+
+Called every tick, in run order, while the tick loop is active and not paused.
+
+#### Returns
+
+`Promise`\<`void`\>
+
+#### Overrides
+
+`Library.__run`
+
+***
+
+### expose()
+
+> **expose**(): [`ControllerContextApi`](/references/engine/3.0.0/input/controller/interfaces/ControllerContextApi)
+
+Defined in: [modules/input/src/controller/controller.library.ts:143](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L143)
+
+Returns this library's public contribution to `Context[this.key]`.
+
+#### Returns
+
+[`ControllerContextApi`](/references/engine/3.0.0/input/controller/interfaces/ControllerContextApi)
+
+#### Remarks
+
+Return a plain object exposing only what game code should be able to
+reach — never `this` — so internal state and lifecycle hooks never leak
+onto `Context`. Libraries with nothing to expose (headless libraries)
+can leave this unimplemented; they simply won't appear on `Context`.
+
+#### Overrides
+
+`Library.expose`
+
+***
+
+### getAxis()
+
+> **getAxis**(`axis`, `index?`): `number`
+
+Defined in: [modules/input/src/controller/controller.library.ts:104](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L104)
+
+#### Parameters
+
+##### axis
+
+[`ControllerAxis`](/references/engine/3.0.0/input/controller/enumerations/ControllerAxis)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`number`
+
+The axis value between `-1` and `1`, with the deadzone applied.
+
+***
+
+### getButtonValue()
+
+> **getButtonValue**(`button`, `index?`): `number`
+
+Defined in: [modules/input/src/controller/controller.library.ts:98](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L98)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`number`
+
+The analog value of the button, between `0` and `1`.
+
+***
+
+### getController()
+
+> **getController**(`index?`): [`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState) \| `undefined`
+
+Defined in: [modules/input/src/controller/controller.library.ts:73](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L73)
+
+#### Parameters
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+[`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState) \| `undefined`
+
+***
+
+### getControllers()
+
+> **getControllers**(): [`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState)[]
+
+Defined in: [modules/input/src/controller/controller.library.ts:68](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L68)
+
+#### Returns
+
+[`ControllerState`](/references/engine/3.0.0/input/controller/type-aliases/ControllerState)[]
+
+***
+
+### getStick()
+
+> **getStick**(`stick`, `index?`): [`StickPosition`](/references/engine/3.0.0/input/controller/type-aliases/StickPosition)
+
+Defined in: [modules/input/src/controller/controller.library.ts:110](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L110)
+
+#### Parameters
+
+##### stick
+
+[`ControllerStick`](/references/engine/3.0.0/input/controller/type-aliases/ControllerStick)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+[`StickPosition`](/references/engine/3.0.0/input/controller/type-aliases/StickPosition)
+
+The stick position, with a radial deadzone applied.
+
+***
+
+### isButtonJustPressed()
+
+> **isButtonJustPressed**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller.library.ts:87](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L87)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isButtonJustReleased()
+
+> **isButtonJustReleased**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller.library.ts:92](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L92)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isButtonPressed()
+
+> **isButtonPressed**(`button`, `index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller.library.ts:82](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L82)
+
+#### Parameters
+
+##### button
+
+[`ControllerButton`](/references/engine/3.0.0/input/controller/enumerations/ControllerButton)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`boolean`
+
+***
+
+### isConnected()
+
+> **isConnected**(`index?`): `boolean`
+
+Defined in: [modules/input/src/controller/controller.library.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L78)
+
+#### Parameters
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`boolean`
+
+***
+
+### onConnect()
+
+> **onConnect**(`listener`): () => `void`
+
+Defined in: [modules/input/src/controller/controller.library.ts:132](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L132)
+
+#### Parameters
+
+##### listener
+
+[`ControllerListener`](/references/engine/3.0.0/input/controller/type-aliases/ControllerListener)
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+***
+
+### onDisconnect()
+
+> **onDisconnect**(`listener`): () => `void`
+
+Defined in: [modules/input/src/controller/controller.library.ts:138](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L138)
+
+#### Parameters
+
+##### listener
+
+[`ControllerListener`](/references/engine/3.0.0/input/controller/type-aliases/ControllerListener)
+
+#### Returns
+
+A function that removes the listener.
+
+() => `void`
+
+***
+
+### throwNotInitializedError()
+
+> `protected` **throwNotInitializedError**(): `never`
+
+Defined in: packages/common/dist/index.d.ts:536
+
+#### Returns
+
+`never`
+
+#### Inherited from
+
+`Library.throwNotInitializedError`
+
+***
+
+### vibrate()
+
+> **vibrate**(`effect`, `index?`): `Promise`\<`boolean`\>
+
+Defined in: [modules/input/src/controller/controller.library.ts:121](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.library.ts#L121)
+
+Plays a rumble effect.
+
+#### Parameters
+
+##### effect
+
+[`ControllerVibration`](/references/engine/3.0.0/input/controller/type-aliases/ControllerVibration)
+
+##### index?
+
+`number` = `0`
+
+#### Returns
+
+`Promise`\<`boolean`\>
+
+`true` if the effect played to completion, `false` if the
+controller has no vibration support or the effect was interrupted.

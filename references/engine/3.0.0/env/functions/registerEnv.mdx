@@ -1,0 +1,45 @@
+---
+title: "registerEnv"
+description: "Validates a raw environment object against a class-validator-decorated class and returns a populated instance."
+---
+
+> **registerEnv**\<`T`\>(`EnvClass`, `env`): `Promise`\<`T`\>
+
+Defined in: [packages/env/src/registry/register-env.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/env/src/registry/register-env.ts#L19)
+
+Validates a raw environment object against a `class-validator`-decorated
+class and returns a populated instance.
+
+## Type Parameters
+
+### T
+
+`T` *extends* `object`
+
+## Parameters
+
+### EnvClass
+
+new () => `T`
+
+A class decorated with `class-validator`/`class-transformer` decorators.
+
+### env
+
+`Record`\<`string`, `unknown`\>
+
+Raw, unvalidated environment values (e.g. `process.env` or `InitContext.env`).
+
+## Returns
+
+`Promise`\<`T`\>
+
+## Remarks
+
+Callable from anywhere — inside a library's own `__init(ctx)` (reading
+`ctx.env`), or from an app's `main.ts` before constructing the
+application. Not tied to `@nanoforge-dev/core` in any way.
+
+## Throws
+
+`NfEnvValidationException` When validation fails.

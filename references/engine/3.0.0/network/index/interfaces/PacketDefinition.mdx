@@ -1,0 +1,72 @@
+---
+title: "PacketDefinition"
+description: "A packet type, shared by the client and the server."
+---
+
+Defined in: [modules/network/src/shared/packet.ts:44](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L44)
+
+A packet type, shared by the client and the server.
+
+## Remarks
+
+Create it with `definePacket`, in a file both apps import.  Its `name` is
+written in front of every packet of this type, so both sides must use the
+same one.
+
+## Type Parameters
+
+### T
+
+`T`
+
+Payload type of the packet.
+
+## Properties
+
+### \_\_payload?
+
+> `readonly` `optional` **\_\_payload?**: `T`
+
+Defined in: [modules/network/src/shared/packet.ts:52](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L52)
+
+Never set: only keeps definitions of different payloads apart.
+
+***
+
+### channel
+
+> `readonly` **channel**: [`Channel`](/references/engine/3.0.0/network/index/enumerations/Channel)
+
+Defined in: [modules/network/src/shared/packet.ts:48](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L48)
+
+Channel used when `send` gets no `channel` option.
+
+***
+
+### name
+
+> `readonly` **name**: `string`
+
+Defined in: [modules/network/src/shared/packet.ts:46](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L46)
+
+Name identifying the packet type on the wire.
+
+***
+
+### validate?
+
+> `readonly` `optional` **validate?**: (`data`) => `data is T`
+
+Defined in: [modules/network/src/shared/packet.ts:50](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L50)
+
+Check run on every received payload, see `PacketOptions.validate`.
+
+#### Parameters
+
+##### data
+
+`unknown`
+
+#### Returns
+
+`data is T`

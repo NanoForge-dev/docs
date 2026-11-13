@@ -1,0 +1,28 @@
+---
+title: "IsPhoneNumber"
+description: "Checks if the string is a valid phone number. To successfully validate any phone number the text must include the intl. calling code, if the calling code wont be provided then the region must be set."
+---
+
+> **IsPhoneNumber**(`region?`, `validationOptions?`): `PropertyDecorator`
+
+Defined in: node\_modules/.pnpm/class-validator@0.14.4/node\_modules/class-validator/types/decorator/string/IsPhoneNumber.d.ts:20
+
+Checks if the string is a valid phone number. To successfully validate any phone number the text must include
+the intl. calling code, if the calling code wont be provided then the region must be set.
+
+## Parameters
+
+### region?
+
+`CountryCode`
+
+2 characters uppercase country code (e.g. DE, US, CH) for country specific validation.
+If text doesn't start with the international calling code (e.g. +41), then you must set this parameter.
+
+### validationOptions?
+
+`ValidationOptions`
+
+## Returns
+
+`PropertyDecorator`

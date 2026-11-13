@@ -1,0 +1,63 @@
+---
+title: "EditorBridgeCommand"
+description: "Editor → engine commands handled by EditorLibrary itself, sent on RunOptions.editor.fromEditor."
+---
+
+Defined in: [modules/editor/src/protocol.ts:34](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L34)
+
+Editor → engine commands handled by `EditorLibrary` itself, sent on
+`RunOptions.editor.fromEditor`.
+
+## Enumeration Members
+
+### Mute
+
+> **Mute**: `"mute"`
+
+Defined in: [modules/editor/src/protocol.ts:43](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L43)
+
+Payload: muted (boolean). Handled by the sound and music libraries.
+
+***
+
+### Pause
+
+> **Pause**: `"pause"`
+
+Defined in: [modules/editor/src/protocol.ts:37](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L37)
+
+***
+
+### Resume
+
+> **Resume**: `"resume"`
+
+Defined in: [modules/editor/src/protocol.ts:38](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L38)
+
+***
+
+### Step
+
+> **Step**: `"step"`
+
+Defined in: [modules/editor/src/protocol.ts:40](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L40)
+
+Runs exactly one tick while paused.
+
+***
+
+### Stop
+
+> **Stop**: `"stop"`
+
+Defined in: [modules/editor/src/protocol.ts:41](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L41)
+
+***
+
+### Welcome
+
+> **Welcome**: `"welcome"`
+
+Defined in: [modules/editor/src/protocol.ts:36](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L36)
+
+Answer to `hello`: the editor's protocol version and the features it wants.

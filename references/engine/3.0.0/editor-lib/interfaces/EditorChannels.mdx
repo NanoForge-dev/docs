@@ -1,0 +1,53 @@
+---
+title: "EditorChannels"
+description: "Raw editor bridge (RunOptions.editor), supplied by whoever starts the app under an editor host. EditorLibrary turns this pair into the single Context.editor facade every library sees."
+---
+
+Defined in: [modules/editor/src/protocol.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L8)
+
+Raw editor bridge (`RunOptions.editor`), supplied by whoever starts the app
+under an editor host. `EditorLibrary` turns this pair into the single
+`Context.editor` facade every library sees.
+
+## Properties
+
+### fromEditor
+
+> **fromEditor**: [`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter)
+
+Defined in: [modules/editor/src/protocol.ts:12](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L12)
+
+Editor → engine channel. Drained by `EditorLibrary` at the start of every tick.
+
+***
+
+### serializeLogValue?
+
+> `optional` **serializeLogValue?**: (`value`) => [`EditorLogValue`](/references/engine/3.0.0/editor-lib/type-aliases/EditorLogValue)
+
+Defined in: [modules/editor/src/protocol.ts:19](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L19)
+
+Snapshots a logged value in the editor's format, at the moment it is
+logged. Supplied by a host that runs the game in its own page (the editor
+runs clients this way), which owns the format. Without it, `log` events
+carry text only, even when the editor asks for values.
+
+#### Parameters
+
+##### value
+
+`unknown`
+
+#### Returns
+
+[`EditorLogValue`](/references/engine/3.0.0/editor-lib/type-aliases/EditorLogValue)
+
+***
+
+### toEditor
+
+> **toEditor**: [`EventEmitter`](/references/engine/3.0.0/common/interfaces/EventEmitter)
+
+Defined in: [modules/editor/src/protocol.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/editor/src/protocol.ts#L10)
+
+Engine → editor channel.

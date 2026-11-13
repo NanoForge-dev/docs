@@ -1,0 +1,15 @@
+---
+title: "ViewportFit"
+description: "How the game's design resolution is fitted into the client container, mirroring CSS object-fit."
+---
+
+> **ViewportFit** = `"fill"` \| `"contain"` \| `"cover"`
+
+Defined in: [packages/common/src/viewport/viewport.type.ts:9](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/packages/common/src/viewport/viewport.type.ts#L9)
+
+How the game's design resolution is fitted into the client container,
+mirroring CSS `object-fit`.
+
+- `"fill"`: stretches the game to the container; the aspect ratio is not kept.
+- `"contain"`: scales uniformly so the whole game is visible (letterboxed).
+- `"cover"`: scales uniformly so the container is filled (edges cropped).

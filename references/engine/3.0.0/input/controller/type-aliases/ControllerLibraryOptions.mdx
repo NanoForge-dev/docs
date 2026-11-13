@@ -1,0 +1,21 @@
+---
+title: "ControllerLibraryOptions"
+description: "Options accepted by the ControllerLibrary constructor."
+---
+
+> **ControllerLibraryOptions** = `object`
+
+Defined in: [modules/input/src/controller/controller.types.ts:49](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L49)
+
+Options accepted by the `ControllerLibrary` constructor.
+
+## Properties
+
+### deadzone?
+
+> `optional` **deadzone?**: `number`
+
+Defined in: [modules/input/src/controller/controller.types.ts:54](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/input/src/controller/controller.types.ts#L54)
+
+Axis values whose magnitude is below this threshold are reported as `0`
+by `getAxis` and `getStick`. Must be in `[0, 1)`. Defaults to `0.15`.

@@ -1,0 +1,37 @@
+---
+title: "SceneLoadContext"
+description: "What a scene's load receives besides the engine context."
+---
+
+Defined in: [modules/scene/src/scene.ts:8](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L8)
+
+What a scene's `load` receives besides the engine context.
+
+## Type Parameters
+
+### TParams
+
+`TParams` = `undefined`
+
+Shape of the params the scene expects.
+
+## Properties
+
+### id
+
+> `readonly` **id**: `string`
+
+Defined in: [modules/scene/src/scene.ts:10](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L10)
+
+The scene's id: its key in `SceneLibrary`'s `scenes`, else its class name.
+
+***
+
+### params
+
+> `readonly` **params**: `TParams` \| `undefined`
+
+Defined in: [modules/scene/src/scene.ts:15](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/scene/src/scene.ts#L15)
+
+The params given to `ctx.scenes.load`. `undefined` when the scene is
+loaded as the parent of the scene that was asked for.

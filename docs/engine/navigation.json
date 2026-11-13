@@ -4,14 +4,21 @@
     "pages": [
       "docs/engine/getting-started/index",
       "docs/engine/getting-started/how-to-use",
+      "docs/engine/getting-started/quickstart",
+      "docs/engine/getting-started/concepts",
       "docs/engine/getting-started/documentation"
     ]
   },
   {
-    "group": "Registry",
+    "group": "Building a game",
     "pages": [
-      "docs/engine/registry/index",
-      "docs/engine/registry/writing-web-assembly"
+      "docs/engine/ecs/index",
+      "docs/engine/graphics-2d/index",
+      "docs/engine/input/index",
+      "docs/engine/audio/index",
+      "docs/engine/assets/index",
+      "docs/engine/scene/index",
+      "docs/engine/env/index"
     ]
   },
   {
@@ -41,20 +48,10 @@
     ]
   },
   {
-    "group": "Design notes",
+    "group": "ECS internals",
     "pages": [
-      "docs/engine/graphics-3d/editor-proposal",
-      {
-        "group": "3D graphics library benchmark",
-        "pages": [
-          "docs/engine/lib-graphic-3d/index",
-          "docs/engine/lib-graphic-3d/three-js",
-          "docs/engine/lib-graphic-3d/babylon-js",
-          "docs/engine/lib-graphic-3d/playcanvas",
-          "docs/engine/lib-graphic-3d/luma-gl",
-          "docs/engine/lib-graphic-3d/poc"
-        ]
-      }
+      "docs/engine/registry/index",
+      "docs/engine/registry/writing-web-assembly"
     ]
   }
 ]

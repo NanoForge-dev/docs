@@ -1,0 +1,121 @@
+---
+title: "NetworkClientContextApi"
+description: "Public surface of NetworkClientLibrary, exposed on Context.network."
+---
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:57](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L57)
+
+Public surface of `NetworkClientLibrary`, exposed on `Context.network`.
+
+## Remarks
+
+Every method takes an optional `{ channel }`.  Reliable channels need
+`SERVER_TCP_PORT`, unreliable ones `SERVER_UDP_PORT`; using a channel whose
+port is not configured throws.
+
+## Properties
+
+### clientId
+
+> `readonly` **clientId**: `string` \| `undefined`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:61](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L61)
+
+Client id assigned by the server, shared by TCP and UDP. `undefined` until welcomed.
+
+***
+
+### inviteLink
+
+> `readonly` **inviteLink**: `string` \| `undefined`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:65](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L65)
+
+Link to send to other players so they join this peer-to-peer game, `undefined` otherwise.
+
+***
+
+### packets
+
+> `readonly` **packets**: [`ClientPacketsApi`](/references/engine/3.0.0/network/client/interfaces/ClientPacketsApi)
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:59](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L59)
+
+Typed packets: per-type listeners, `read` and `send`.
+
+***
+
+### roomCode
+
+> `readonly` **roomCode**: `string` \| `undefined`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:63](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L63)
+
+Code of the peer-to-peer game this player hosts or joined, `undefined` otherwise.
+
+## Methods
+
+### getReceivedPackets()
+
+> **getReceivedPackets**(`options?`): [`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:76](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L76)
+
+Return the packets received since the last call, from `channel` or from
+every configured channel.  Call it once per frame:
+packets left unread for a whole tick are dropped.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+[`NetworkData`](/references/engine/3.0.0/network/client/classes/NetworkData)[]
+
+***
+
+### isConnected()
+
+> **isConnected**(`options?`): `boolean`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:78](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L78)
+
+Return `true` when `channel`, or every configured channel, is connected.
+
+#### Parameters
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`boolean`
+
+***
+
+### sendData()
+
+> **sendData**(`data`, `options?`): `void`
+
+Defined in: [modules/network/src/client/network-client-context.type.ts:70](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/client/network-client-context.type.ts#L70)
+
+Send bytes, a string or a JSON value to the server, on
+`Channel.ReliableOrdered` unless another `channel` is given.
+
+#### Parameters
+
+##### data
+
+[`NetworkPayload`](/references/engine/3.0.0/network/client/type-aliases/NetworkPayload)
+
+##### options?
+
+[`ChannelOptions`](/references/engine/3.0.0/network/index/type-aliases/ChannelOptions)
+
+#### Returns
+
+`void`

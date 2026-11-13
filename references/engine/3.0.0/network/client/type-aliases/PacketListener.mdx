@@ -1,0 +1,39 @@
+---
+title: "PacketListener"
+description: "Callback of packets.on, called with the payload of each packet received."
+---
+
+> **PacketListener**\<`T`, `Info`\> = (`data`, `info`) => `void`
+
+Defined in: [modules/network/src/shared/packet.ts:154](https://github.com/NanoForge-dev/Engine/blob/ed8c7e0b33d17f8343c32659cf63ba4166a4fa53/modules/network/src/shared/packet.ts#L154)
+
+Callback of `packets.on`, called with the payload of each packet received.
+
+## Type Parameters
+
+### T
+
+`T`
+
+Payload type of the packet.
+
+### Info
+
+`Info`
+
+Where the packet comes from: its channel, and its
+sender on the server.
+
+## Parameters
+
+### data
+
+`T`
+
+### info
+
+`Info` & `object`
+
+## Returns
+
+`void`
